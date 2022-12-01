@@ -1,0 +1,181 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>2022-JCO-SpaceSurvivors:  Fichier source de player.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">2022-JCO-SpaceSurvivors<span id="projectnumber">&#160;0.1</span>
+   </div>
+   <div id="projectbrief">2022-JCO-SpaceSurvivors</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.5 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">player.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="player_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#ifndef PLAYER_H</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#define PLAYER_H</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;<a class="code" href="sprite_8h.html">sprite.h</a>&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="resources_8h.html">resources.h</a>&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;QObject&gt;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;<a class="code" href="gamescene_8h.html">gamescene.h</a>&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &lt;QProgressBar&gt;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="class_player.html">   19</a></span><span class="keyword">class </span><a class="code hl_class" href="class_player.html">Player</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_sprite.html">Sprite</a></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>{</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="comment">// Pour bénéficier du mécanisme de signaux / slots</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    Q_OBJECT</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <a class="code hl_class" href="class_player.html">Player</a>(<span class="keyword">const</span> <a class="code hl_classRef" href="http://qt-project.org/doc/qt-5/qpixmap.html">QPixmap</a> &amp;rPixmap = <a class="code hl_classRef" href="http://qt-project.org/doc/qt-5/qpixmap.html">QPixmap</a>(<a class="code hl_function" href="namespace_game_framework.html#a94ecbf249f954a70e95558d979a75614">GameFramework::imagesPath</a>(<span class="stringliteral">&quot;ship&quot;</span>) + <span class="stringliteral">&quot;ship.png&quot;</span>), <a class="code hl_classRef" href="http://qt-project.org/doc/qt-5/qgraphicsitem.html">QGraphicsItem</a>* pParent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_player.html#a4f11b8c5c6ad11c4be885e61b70feba2">shoot</a>(<a class="code hl_class" href="class_game_scene.html">GameScene</a>* pScene);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="class_player.html#afb02be780e8a5fc4a8da1f79b5f5d2fe">   27</a></span>    <a class="code hl_classRef" href="http://qt-project.org/doc/qt-5/qprogressbar.html">QProgressBar</a>* <a class="code hl_variable" href="class_player.html#afb02be780e8a5fc4a8da1f79b5f5d2fe">m_pHealthBar</a> = <span class="keyword">new</span> <a class="code hl_classRef" href="http://qt-project.org/doc/qt-5/qprogressbar.html">QProgressBar</a>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="class_player.html#a9c0a6be7f7782d4e019d9812a721ed21">   28</a></span>    <a class="code hl_classRef" href="http://qt-project.org/doc/qt-5/qprogressbar.html">QProgressBar</a>* <a class="code hl_variable" href="class_player.html#a9c0a6be7f7782d4e019d9812a721ed21">m_pExpBar</a> = <span class="keyword">new</span> <a class="code hl_classRef" href="http://qt-project.org/doc/qt-5/qprogressbar.html">QProgressBar</a>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="class_player.html#a176e4deff64c434b3e4af6f164314deb">   30</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_player.html#a176e4deff64c434b3e4af6f164314deb">m_playerLevel</a> = 1;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="class_player.html#a87bf0ea770e1de9b1ee6b4c0ea4fadbb">   31</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_player.html#a87bf0ea770e1de9b1ee6b4c0ea4fadbb">m_maxHealtPoint</a>;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="class_player.html#ad8528b6882cc380e19c13756c350ac34">   32</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_player.html#ad8528b6882cc380e19c13756c350ac34">m_actualHealtPoint</a>;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="class_player.html#ae639ea2ac4cfdc13bb6fb7b6cf6ca73c">   33</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_player.html#ae639ea2ac4cfdc13bb6fb7b6cf6ca73c">m_experenceForLevel</a> = 100;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="class_player.html#aa4695c774e169d2803e7b843b34b8d3e">   34</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_player.html#aa4695c774e169d2803e7b843b34b8d3e">m_actualExperience</a> = 0;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="class_player.html#a2242cdc19e61e5d6926438639585cf1b">   36</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_player.html#a2242cdc19e61e5d6926438639585cf1b">m_shipSpeed</a> = 400;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="class_player.html#ac31222025379a617782e34aed00eef97">   37</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_player.html#ac31222025379a617782e34aed00eef97">m_damageReduction</a> = 0;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="class_player.html#ade9b0805b7558eb93a5e141387f75e80">   38</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_player.html#ade9b0805b7558eb93a5e141387f75e80">m_bulletDamage</a> = 40;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="class_player.html#aa1571702510855159a0ba7e6b76567fb">   39</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_player.html#aa1571702510855159a0ba7e6b76567fb">m_bulletPierce</a> = 0;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="class_player.html#a408283608f55c73f0e3e74141bad2faa">   40</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_player.html#a408283608f55c73f0e3e74141bad2faa">m_critChance</a> = 10;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="class_player.html#aa2c7b1176531e9f52f0c9644615e1e00">   41</a></span>    <span class="keywordtype">double</span> <a class="code hl_variable" href="class_player.html#aa2c7b1176531e9f52f0c9644615e1e00">m_critDamage</a> = 1;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="class_player.html#a6237075c94c38688709591f6fde93219">   42</a></span>    <span class="keywordtype">double</span> <a class="code hl_variable" href="class_player.html#a6237075c94c38688709591f6fde93219">m_lessDamagePiercing</a> = 2;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="class_player.html#a5c1c93f9c0cdde13bb3ee944cba8f1bd">   43</a></span>    <span class="keywordtype">double</span> <a class="code hl_variable" href="class_player.html#a5c1c93f9c0cdde13bb3ee944cba8f1bd">m_shootingRate</a> = 1;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="class_player.html#ad0ad934716eb9ae02f31980b847cbbbc">   45</a></span>    <a class="code hl_classRef" href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a> <a class="code hl_variable" href="class_player.html#ad0ad934716eb9ae02f31980b847cbbbc">m_mousePos</a> = <a class="code hl_classRef" href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a>(0, 0);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="class_player.html#ad5bbee46bbffad160fbdbde449f2024a">   47</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="class_player.html#ad5bbee46bbffad160fbdbde449f2024a">m_multiFireActivated</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_player.html#ab34143512a6d4456e31942c6135d79e9">reduceAttackSpeed</a>(<span class="keywordtype">double</span> reduceAmount);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="class_player.html#a281da0a69ddb49ff7e34337bc08cbf6f">   52</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="class_player.html#a281da0a69ddb49ff7e34337bc08cbf6f">m_playerIsDead</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="class_player.html#a9309e52ff033225f064c7cb1f1b65f75">   53</a></span>    <span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code hl_variable" href="class_player.html#a9309e52ff033225f064c7cb1f1b65f75">m_DAMAGE_RATE</a> = 0.5;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="class_player.html#ab71d26581ed3cc7331f2a69dd52dadb2">   54</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_player.html#ab71d26581ed3cc7331f2a69dd52dadb2">m_ballFired</a> = 0;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="class_player.html#a912e50682bb02f9080d69f9590a26b66">   56</a></span>    std::chrono::system_clock::time_point <a class="code hl_variable" href="class_player.html#a912e50682bb02f9080d69f9590a26b66">m_rateBetweenTwoDamage</a> = std::chrono::system_clock::now();</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>signals:</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="class_player.html#ad66ccbd8cb75322001fd2ba1d49d8fb5">   59</a></span>    <span class="keywordtype">void</span> <a class="code hl_signal" href="class_player.html#ad66ccbd8cb75322001fd2ba1d49d8fb5">notifyPlayerIncreaseLevel</a>();</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="class_player.html#a5d73743d5187254005ed4d04500cba85">   60</a></span>    <span class="keywordtype">void</span> <a class="code hl_signal" href="class_player.html#a5d73743d5187254005ed4d04500cba85">playerDead</a>();</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="keyword">public</span> slots:</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_player.html#abe2c15123972d99890f84b20d0dfa512">damageTaken</a>(<span class="keywordtype">int</span> damage);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_player.html#a63d0f235d396b72f2b3b37f7212aedf2">gainExp</a>(<span class="keywordtype">int</span> experenceGain);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_player.html#a711dddcfddc34ee48f7b4cbc24b88d30">animationFinish</a>();</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>};</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="preprocessor">#endif </span><span class="comment">// PLAYER_H</span></div>
+<div class="ttc" id="aclass_game_scene_html"><div class="ttname"><a href="class_game_scene.html">GameScene</a></div><div class="ttdoc">Représente l'espace 2D du jeu.</div><div class="ttdef"><b>Definition:</b> <a href="gamescene_8h_source.html#l00046">gamescene.h:47</a></div></div>
+<div class="ttc" id="aclass_player_html"><div class="ttname"><a href="class_player.html">Player</a></div><div class="ttdoc">Classe qui représente le joueur principal du jeu. cette classe permet de gérer tous ce que consitue l...</div><div class="ttdef"><b>Definition:</b> <a href="player_8h_source.html#l00019">player.h:20</a></div></div>
+<div class="ttc" id="aclass_player_html_a176e4deff64c434b3e4af6f164314deb"><div class="ttname"><a href="class_player.html#a176e4deff64c434b3e4af6f164314deb">Player::m_playerLevel</a></div><div class="ttdeci">int m_playerLevel</div><div class="ttdef"><b>Definition:</b> <a href="player_8h_source.html#l00030">player.h:30</a></div></div>
+<div class="ttc" id="aclass_player_html_a2242cdc19e61e5d6926438639585cf1b"><div class="ttname"><a href="class_player.html#a2242cdc19e61e5d6926438639585cf1b">Player::m_shipSpeed</a></div><div class="ttdeci">int m_shipSpeed</div><div class="ttdef"><b>Definition:</b> <a href="player_8h_source.html#l00036">player.h:36</a></div></div>
+<div class="ttc" id="aclass_player_html_a281da0a69ddb49ff7e34337bc08cbf6f"><div class="ttname"><a href="class_player.html#a281da0a69ddb49ff7e34337bc08cbf6f">Player::m_playerIsDead</a></div><div class="ttdeci">bool m_playerIsDead</div><div class="ttdef"><b>Definition:</b> <a href="player_8h_source.html#l00052">player.h:52</a></div></div>
+<div class="ttc" id="aclass_player_html_a408283608f55c73f0e3e74141bad2faa"><div class="ttname"><a href="class_player.html#a408283608f55c73f0e3e74141bad2faa">Player::m_critChance</a></div><div class="ttdeci">int m_critChance</div><div class="ttdef"><b>Definition:</b> <a href="player_8h_source.html#l00040">player.h:40</a></div></div>
+<div class="ttc" id="aclass_player_html_a4f11b8c5c6ad11c4be885e61b70feba2"><div class="ttname"><a href="class_player.html#a4f11b8c5c6ad11c4be885e61b70feba2">Player::shoot</a></div><div class="ttdeci">void shoot(GameScene *pScene)</div><div class="ttdef"><b>Definition:</b> <a href="player_8cpp_source.html#l00046">player.cpp:46</a></div></div>
+<div class="ttc" id="aclass_player_html_a5c1c93f9c0cdde13bb3ee944cba8f1bd"><div class="ttname"><a href="class_player.html#a5c1c93f9c0cdde13bb3ee944cba8f1bd">Player::m_shootingRate</a></div><div class="ttdeci">double m_shootingRate</div><div class="ttdef"><b>Definition:</b> <a href="player_8h_source.html#l00043">player.h:43</a></div></div>
+<div class="ttc" id="aclass_player_html_a5d73743d5187254005ed4d04500cba85"><div class="ttname"><a href="class_player.html#a5d73743d5187254005ed4d04500cba85">Player::playerDead</a></div><div class="ttdeci">void playerDead()</div></div>
+<div class="ttc" id="aclass_player_html_a6237075c94c38688709591f6fde93219"><div class="ttname"><a href="class_player.html#a6237075c94c38688709591f6fde93219">Player::m_lessDamagePiercing</a></div><div class="ttdeci">double m_lessDamagePiercing</div><div class="ttdef"><b>Definition:</b> <a href="player_8h_source.html#l00042">player.h:42</a></div></div>
+<div class="ttc" id="aclass_player_html_a63d0f235d396b72f2b3b37f7212aedf2"><div class="ttname"><a href="class_player.html#a63d0f235d396b72f2b3b37f7212aedf2">Player::gainExp</a></div><div class="ttdeci">void gainExp(int experenceGain)</div><div class="ttdef"><b>Definition:</b> <a href="player_8cpp_source.html#l00131">player.cpp:131</a></div></div>
+<div class="ttc" id="aclass_player_html_a711dddcfddc34ee48f7b4cbc24b88d30"><div class="ttname"><a href="class_player.html#a711dddcfddc34ee48f7b4cbc24b88d30">Player::animationFinish</a></div><div class="ttdeci">void animationFinish()</div><div class="ttdoc">stop l'animation de prise de degats</div><div class="ttdef"><b>Definition:</b> <a href="player_8cpp_source.html#l00125">player.cpp:125</a></div></div>
+<div class="ttc" id="aclass_player_html_a87bf0ea770e1de9b1ee6b4c0ea4fadbb"><div class="ttname"><a href="class_player.html#a87bf0ea770e1de9b1ee6b4c0ea4fadbb">Player::m_maxHealtPoint</a></div><div class="ttdeci">int m_maxHealtPoint</div><div class="ttdef"><b>Definition:</b> <a href="player_8h_source.html#l00031">player.h:31</a></div></div>
+<div class="ttc" id="aclass_player_html_a912e50682bb02f9080d69f9590a26b66"><div class="ttname"><a href="class_player.html#a912e50682bb02f9080d69f9590a26b66">Player::m_rateBetweenTwoDamage</a></div><div class="ttdeci">std::chrono::system_clock::time_point m_rateBetweenTwoDamage</div><div class="ttdef"><b>Definition:</b> <a href="player_8h_source.html#l00056">player.h:56</a></div></div>
+<div class="ttc" id="aclass_player_html_a9309e52ff033225f064c7cb1f1b65f75"><div class="ttname"><a href="class_player.html#a9309e52ff033225f064c7cb1f1b65f75">Player::m_DAMAGE_RATE</a></div><div class="ttdeci">const double m_DAMAGE_RATE</div><div class="ttdef"><b>Definition:</b> <a href="player_8h_source.html#l00053">player.h:53</a></div></div>
+<div class="ttc" id="aclass_player_html_a9c0a6be7f7782d4e019d9812a721ed21"><div class="ttname"><a href="class_player.html#a9c0a6be7f7782d4e019d9812a721ed21">Player::m_pExpBar</a></div><div class="ttdeci">QProgressBar * m_pExpBar</div><div class="ttdef"><b>Definition:</b> <a href="player_8h_source.html#l00028">player.h:28</a></div></div>
+<div class="ttc" id="aclass_player_html_aa1571702510855159a0ba7e6b76567fb"><div class="ttname"><a href="class_player.html#aa1571702510855159a0ba7e6b76567fb">Player::m_bulletPierce</a></div><div class="ttdeci">int m_bulletPierce</div><div class="ttdef"><b>Definition:</b> <a href="player_8h_source.html#l00039">player.h:39</a></div></div>
+<div class="ttc" id="aclass_player_html_aa2c7b1176531e9f52f0c9644615e1e00"><div class="ttname"><a href="class_player.html#aa2c7b1176531e9f52f0c9644615e1e00">Player::m_critDamage</a></div><div class="ttdeci">double m_critDamage</div><div class="ttdef"><b>Definition:</b> <a href="player_8h_source.html#l00041">player.h:41</a></div></div>
+<div class="ttc" id="aclass_player_html_aa4695c774e169d2803e7b843b34b8d3e"><div class="ttname"><a href="class_player.html#aa4695c774e169d2803e7b843b34b8d3e">Player::m_actualExperience</a></div><div class="ttdeci">int m_actualExperience</div><div class="ttdef"><b>Definition:</b> <a href="player_8h_source.html#l00034">player.h:34</a></div></div>
+<div class="ttc" id="aclass_player_html_ab34143512a6d4456e31942c6135d79e9"><div class="ttname"><a href="class_player.html#ab34143512a6d4456e31942c6135d79e9">Player::reduceAttackSpeed</a></div><div class="ttdeci">void reduceAttackSpeed(double reduceAmount)</div><div class="ttdef"><b>Definition:</b> <a href="player_8cpp_source.html#l00168">player.cpp:168</a></div></div>
+<div class="ttc" id="aclass_player_html_ab71d26581ed3cc7331f2a69dd52dadb2"><div class="ttname"><a href="class_player.html#ab71d26581ed3cc7331f2a69dd52dadb2">Player::m_ballFired</a></div><div class="ttdeci">int m_ballFired</div><div class="ttdef"><b>Definition:</b> <a href="player_8h_source.html#l00054">player.h:54</a></div></div>
+<div class="ttc" id="aclass_player_html_abe2c15123972d99890f84b20d0dfa512"><div class="ttname"><a href="class_player.html#abe2c15123972d99890f84b20d0dfa512">Player::damageTaken</a></div><div class="ttdeci">void damageTaken(int damage)</div><div class="ttdef"><b>Definition:</b> <a href="player_8cpp_source.html#l00095">player.cpp:95</a></div></div>
+<div class="ttc" id="aclass_player_html_ac31222025379a617782e34aed00eef97"><div class="ttname"><a href="class_player.html#ac31222025379a617782e34aed00eef97">Player::m_damageReduction</a></div><div class="ttdeci">int m_damageReduction</div><div class="ttdef"><b>Definition:</b> <a href="player_8h_source.html#l00037">player.h:37</a></div></div>
+<div class="ttc" id="aclass_player_html_ad0ad934716eb9ae02f31980b847cbbbc"><div class="ttname"><a href="class_player.html#ad0ad934716eb9ae02f31980b847cbbbc">Player::m_mousePos</a></div><div class="ttdeci">QPointF m_mousePos</div><div class="ttdef"><b>Definition:</b> <a href="player_8h_source.html#l00045">player.h:45</a></div></div>
+<div class="ttc" id="aclass_player_html_ad5bbee46bbffad160fbdbde449f2024a"><div class="ttname"><a href="class_player.html#ad5bbee46bbffad160fbdbde449f2024a">Player::m_multiFireActivated</a></div><div class="ttdeci">bool m_multiFireActivated</div><div class="ttdef"><b>Definition:</b> <a href="player_8h_source.html#l00047">player.h:47</a></div></div>
+<div class="ttc" id="aclass_player_html_ad66ccbd8cb75322001fd2ba1d49d8fb5"><div class="ttname"><a href="class_player.html#ad66ccbd8cb75322001fd2ba1d49d8fb5">Player::notifyPlayerIncreaseLevel</a></div><div class="ttdeci">void notifyPlayerIncreaseLevel()</div></div>
+<div class="ttc" id="aclass_player_html_ad8528b6882cc380e19c13756c350ac34"><div class="ttname"><a href="class_player.html#ad8528b6882cc380e19c13756c350ac34">Player::m_actualHealtPoint</a></div><div class="ttdeci">int m_actualHealtPoint</div><div class="ttdef"><b>Definition:</b> <a href="player_8h_source.html#l00032">player.h:32</a></div></div>
+<div class="ttc" id="aclass_player_html_ade9b0805b7558eb93a5e141387f75e80"><div class="ttname"><a href="class_player.html#ade9b0805b7558eb93a5e141387f75e80">Player::m_bulletDamage</a></div><div class="ttdeci">int m_bulletDamage</div><div class="ttdef"><b>Definition:</b> <a href="player_8h_source.html#l00038">player.h:38</a></div></div>
+<div class="ttc" id="aclass_player_html_ae639ea2ac4cfdc13bb6fb7b6cf6ca73c"><div class="ttname"><a href="class_player.html#ae639ea2ac4cfdc13bb6fb7b6cf6ca73c">Player::m_experenceForLevel</a></div><div class="ttdeci">int m_experenceForLevel</div><div class="ttdef"><b>Definition:</b> <a href="player_8h_source.html#l00033">player.h:33</a></div></div>
+<div class="ttc" id="aclass_player_html_afb02be780e8a5fc4a8da1f79b5f5d2fe"><div class="ttname"><a href="class_player.html#afb02be780e8a5fc4a8da1f79b5f5d2fe">Player::m_pHealthBar</a></div><div class="ttdeci">QProgressBar * m_pHealthBar</div><div class="ttdef"><b>Definition:</b> <a href="player_8h_source.html#l00027">player.h:27</a></div></div>
+<div class="ttc" id="aclass_sprite_html"><div class="ttname"><a href="class_sprite.html">Sprite</a></div><div class="ttdoc">Classe qui représente un élément d'animation graphique 2D.</div><div class="ttdef"><b>Definition:</b> <a href="sprite_8h_source.html#l00114">sprite.h:115</a></div></div>
+<div class="ttc" id="agamescene_8h_html"><div class="ttname"><a href="gamescene_8h.html">gamescene.h</a></div><div class="ttdoc">Déclaration de la classe GameScene.</div></div>
+<div class="ttc" id="anamespace_game_framework_html_a94ecbf249f954a70e95558d979a75614"><div class="ttname"><a href="namespace_game_framework.html#a94ecbf249f954a70e95558d979a75614">GameFramework::imagesPath</a></div><div class="ttdeci">QString imagesPath(const QString &amp;subfolder)</div><div class="ttdef"><b>Definition:</b> <a href="resources_8cpp_source.html#l00095">resources.cpp:95</a></div></div>
+<div class="ttc" id="aqgraphicsitem_html"><div class="ttname"><a href="http://qt-project.org/doc/qt-5/qgraphicsitem.html">QGraphicsItem</a></div></div>
+<div class="ttc" id="aqpixmap_html"><div class="ttname"><a href="http://qt-project.org/doc/qt-5/qpixmap.html">QPixmap</a></div></div>
+<div class="ttc" id="aqpointf_html"><div class="ttname"><a href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a></div></div>
+<div class="ttc" id="aqprogressbar_html"><div class="ttname"><a href="http://qt-project.org/doc/qt-5/qprogressbar.html">QProgressBar</a></div></div>
+<div class="ttc" id="aresources_8h_html"><div class="ttname"><a href="resources_8h.html">resources.h</a></div><div class="ttdoc">Méthodes utilitaires permettant d'accéder aux ressources.</div></div>
+<div class="ttc" id="asprite_8h_html"><div class="ttname"><a href="sprite_8h.html">sprite.h</a></div><div class="ttdoc">Déclaration de la classe Sprite.</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Jeudi 1 Décembre 2022 07:56:37 pour 2022-JCO-SpaceSurvivors par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+</small></address>
+</body>
+</html>

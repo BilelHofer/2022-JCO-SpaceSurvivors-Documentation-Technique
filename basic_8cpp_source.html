@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>2022-JCO-SpaceSurvivors:  Fichier source de basic.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">2022-JCO-SpaceSurvivors<span id="projectnumber">&#160;0.1</span>
+   </div>
+   <div id="projectbrief">2022-JCO-SpaceSurvivors</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.5 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">basic.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="basic_8cpp.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;<a class="code" href="basic_8h.html">basic.h</a>&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;QGraphicsScale&quot;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="class_basic.html#a8e5ba1d69f605165e636818d8d2227f5">   17</a></span><a class="code hl_function" href="class_basic.html#a8e5ba1d69f605165e636818d8d2227f5">Basic::Basic</a>(<span class="keywordtype">int</span> maxHealthPoint, <a class="code hl_class" href="class_game_scene.html">GameScene</a>* m_pScene, <span class="keywordtype">int</span> enemySpeed, <span class="keywordtype">int</span> enemyDamage, <a class="code hl_classRef" href="http://qt-project.org/doc/qt-5/qgraphicsitem.html">QGraphicsItem</a>* pParent)</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    : <a class="code hl_class" href="class_enemy.html">Enemy</a>(maxHealthPoint, m_pScene, enemySpeed, enemyDamage, pParent)</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>{</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <a class="code hl_variable" href="class_enemy.html#abd6abc3ae56432de53fae8dba442cbb2">m_enemyExpValue</a> = maxHealthPoint/5;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    this-&gt;<a class="code hl_function" href="class_sprite.html#a38a5549e535c3250db75f66bd32cdb3c">clearAnimations</a>();</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    this-&gt;<a class="code hl_function" href="class_sprite.html#a4047b63d33642d0f04d7856b12ad873e">addAnimation</a>();</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    this-&gt;<a class="code hl_function" href="class_sprite.html#a4559f867e583934a097cca9ace923785">setActiveAnimation</a>(0);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="comment">//Crée une animation pour le déplacement</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> imageNumber = 1; imageNumber &lt;= 4; imageNumber++) {</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        this-&gt;<a class="code hl_function" href="class_sprite.html#ad382222eee275aa4bf98bdbeb6b0fc66">addAnimationFrame</a>(<a class="code hl_function" href="namespace_game_framework.html#a94ecbf249f954a70e95558d979a75614">GameFramework::imagesPath</a>()+<a class="code hl_classRef" href="http://qt-project.org/doc/qt-5/qstring.html">QString</a>(<span class="stringliteral">&quot;enemy/basic%1.png&quot;</span>).arg(imageNumber));</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    }</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    this-&gt;<a class="code hl_function" href="class_sprite.html#aa27e28e0a1ed0153f4fcc9a9a3402e0f">setAnimationSpeed</a>(150);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="comment">// Déplacement du point d&#39;application des transformation au centre du sprite</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    this-&gt;<a class="code hl_functionRef" href="http://qt-project.org/doc/qt-5/qgraphicsitem.html#setTransformOriginPoint">setTransformOriginPoint</a>(this-&gt;<a class="code hl_function" href="class_sprite.html#ae54fdccd78b9b3c0e7698e31bc52d369">width</a>()/2, this-&gt;<a class="code hl_function" href="class_sprite.html#ab4754e16f1e56e9ce1795ae2233e2653">height</a>()/2);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="comment">// Création d&#39;une matrice de transformation horizontale pour la direction gauche</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <a class="code hl_classRef" href="http://qt-project.org/doc/qt-5/qgraphicsscale.html">QGraphicsScale</a>* pHorizontalTransform = <span class="keyword">new</span> <a class="code hl_classRef" href="http://qt-project.org/doc/qt-5/qgraphicsscale.html">QGraphicsScale</a>(<span class="keyword">this</span>);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    pHorizontalTransform-&gt;<a class="code hl_functionRef" href="http://qt-project.org/doc/qt-5/qgraphicsscale.html#origin-prop">setOrigin</a>(<a class="code hl_classRef" href="http://qt-project.org/doc/qt-5/qvector3d.html">QVector3D</a>(this-&gt;<a class="code hl_function" href="class_sprite.html#ae54fdccd78b9b3c0e7698e31bc52d369">width</a>()/2,0,0));</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    pHorizontalTransform-&gt;<a class="code hl_functionRef" href="http://qt-project.org/doc/qt-5/qgraphicsscale.html#xScale-prop">setXScale</a>(-1);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="comment">// Configuration de la listes de transformations pour le déplacement à gauche</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <a class="code hl_variable" href="class_enemy.html#a68a13328fd0a7774d11415bac2721e3e">m_pLeftDirectionTransform</a> &lt;&lt; pHorizontalTransform;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <a class="code hl_function" href="class_basic.html#afa3db7b385e154ddeb98b9daa5d708ee">initDamageTakenAnimation</a>();</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>}</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="class_basic.html#a4e371f345997d0eac70260d449de981c">   48</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_basic.html#a4e371f345997d0eac70260d449de981c">Basic::damageToPlayer</a>()</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>{</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    emit <a class="code hl_signal" href="class_enemy.html#ae3d66b8bc006825ba9813e0d3c802788">notifyPlayerTakingDamage</a>(<a class="code hl_variable" href="class_enemy.html#a2707a04b4d0f5aefc56596d02044b978">m_enemyDamage</a>);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <a class="code hl_function" href="class_enemy.html#aa9516b7218485905bcc0ef7b05662fbc">launchDeath</a>();</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>}</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="class_basic.html#afa3db7b385e154ddeb98b9daa5d708ee">   55</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_basic.html#afa3db7b385e154ddeb98b9daa5d708ee">Basic::initDamageTakenAnimation</a>() {</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="comment">// Initialiation des animations du joueur</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    this-&gt;<a class="code hl_function" href="class_sprite.html#a4047b63d33642d0f04d7856b12ad873e">addAnimation</a>();</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    this-&gt;<a class="code hl_function" href="class_sprite.html#a4559f867e583934a097cca9ace923785">setActiveAnimation</a>(1);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    this-&gt;<a class="code hl_function" href="class_sprite.html#ad382222eee275aa4bf98bdbeb6b0fc66">addAnimationFrame</a>(<a class="code hl_classRef" href="http://qt-project.org/doc/qt-5/qpixmap.html">QPixmap</a>(<a class="code hl_function" href="namespace_game_framework.html#a94ecbf249f954a70e95558d979a75614">GameFramework::imagesPath</a>() + <span class="stringliteral">&quot;enemy/basic_take_damage.png&quot;</span>));</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    this-&gt;<a class="code hl_function" href="class_sprite.html#ad382222eee275aa4bf98bdbeb6b0fc66">addAnimationFrame</a>(<a class="code hl_classRef" href="http://qt-project.org/doc/qt-5/qpixmap.html">QPixmap</a>(<a class="code hl_function" href="namespace_game_framework.html#a94ecbf249f954a70e95558d979a75614">GameFramework::imagesPath</a>() + <span class="stringliteral">&quot;enemy/basic_take_damage.png&quot;</span>));</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    this-&gt;<a class="code hl_function" href="class_sprite.html#aa27e28e0a1ed0153f4fcc9a9a3402e0f">setAnimationSpeed</a>(300);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    this-&gt;<a class="code hl_function" href="class_sprite.html#a93d7b808a1bcb070fa0b484a9f0ab35b">setEmitSignalEndOfAnimationEnabled</a>(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <a class="code hl_functionRef" href="http://qt-project.org/doc/qt-5/qobject.html#connect">connect</a>(<span class="keyword">this</span>, &amp;<a class="code hl_signal" href="class_sprite.html#a795fd87ba5a11956ddd7d504babb0c58">Sprite::animationFinished</a>, <span class="keyword">this</span>, &amp;<a class="code hl_slot" href="class_enemy.html#af8631de7c43d13413d1ad8321ce250fc">Enemy::animationFinish</a>);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    this-&gt;<a class="code hl_function" href="class_sprite.html#a4559f867e583934a097cca9ace923785">setActiveAnimation</a>(0);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>}</div>
+<div class="ttc" id="abasic_8h_html"><div class="ttname"><a href="basic_8h.html">basic.h</a></div><div class="ttdoc">Déclaration de la classe Basic qui hérite de la class Enemy.</div></div>
+<div class="ttc" id="aclass_basic_html_a4e371f345997d0eac70260d449de981c"><div class="ttname"><a href="class_basic.html#a4e371f345997d0eac70260d449de981c">Basic::damageToPlayer</a></div><div class="ttdeci">void damageToPlayer()</div><div class="ttdoc">notifi le joueur qu'il reçoit des dégats</div><div class="ttdef"><b>Definition:</b> <a href="basic_8cpp_source.html#l00048">basic.cpp:48</a></div></div>
+<div class="ttc" id="aclass_basic_html_a8e5ba1d69f605165e636818d8d2227f5"><div class="ttname"><a href="class_basic.html#a8e5ba1d69f605165e636818d8d2227f5">Basic::Basic</a></div><div class="ttdeci">Basic(int maxHealthPoint=100, GameScene *pScene=nullptr, int enemySpeed=400, int enemyDamage=1, QGraphicsItem *pParent=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="basic_8cpp_source.html#l00017">basic.cpp:17</a></div></div>
+<div class="ttc" id="aclass_basic_html_afa3db7b385e154ddeb98b9daa5d708ee"><div class="ttname"><a href="class_basic.html#afa3db7b385e154ddeb98b9daa5d708ee">Basic::initDamageTakenAnimation</a></div><div class="ttdeci">void initDamageTakenAnimation()</div><div class="ttdoc">initialise l'animation de prise de dégats</div><div class="ttdef"><b>Definition:</b> <a href="basic_8cpp_source.html#l00055">basic.cpp:55</a></div></div>
+<div class="ttc" id="aclass_enemy_html"><div class="ttname"><a href="class_enemy.html">Enemy</a></div><div class="ttdoc">Classe qui représente un Enemy. cette classe permet de gérer tous ce que consitue un ennemie.</div><div class="ttdef"><b>Definition:</b> <a href="enemy_8h_source.html#l00022">enemy.h:23</a></div></div>
+<div class="ttc" id="aclass_enemy_html_a2707a04b4d0f5aefc56596d02044b978"><div class="ttname"><a href="class_enemy.html#a2707a04b4d0f5aefc56596d02044b978">Enemy::m_enemyDamage</a></div><div class="ttdeci">int m_enemyDamage</div><div class="ttdef"><b>Definition:</b> <a href="enemy_8h_source.html#l00035">enemy.h:35</a></div></div>
+<div class="ttc" id="aclass_enemy_html_a68a13328fd0a7774d11415bac2721e3e"><div class="ttname"><a href="class_enemy.html#a68a13328fd0a7774d11415bac2721e3e">Enemy::m_pLeftDirectionTransform</a></div><div class="ttdeci">QList&lt; QGraphicsTransform * &gt; m_pLeftDirectionTransform</div><div class="ttdef"><b>Definition:</b> <a href="enemy_8h_source.html#l00040">enemy.h:40</a></div></div>
+<div class="ttc" id="aclass_enemy_html_aa9516b7218485905bcc0ef7b05662fbc"><div class="ttname"><a href="class_enemy.html#aa9516b7218485905bcc0ef7b05662fbc">Enemy::launchDeath</a></div><div class="ttdeci">virtual void launchDeath()</div><div class="ttdoc">Lance la mort de l'Enemy.</div><div class="ttdef"><b>Definition:</b> <a href="enemy_8cpp_source.html#l00189">enemy.cpp:189</a></div></div>
+<div class="ttc" id="aclass_enemy_html_abd6abc3ae56432de53fae8dba442cbb2"><div class="ttname"><a href="class_enemy.html#abd6abc3ae56432de53fae8dba442cbb2">Enemy::m_enemyExpValue</a></div><div class="ttdeci">int m_enemyExpValue</div><div class="ttdef"><b>Definition:</b> <a href="enemy_8h_source.html#l00036">enemy.h:36</a></div></div>
+<div class="ttc" id="aclass_enemy_html_ae3d66b8bc006825ba9813e0d3c802788"><div class="ttname"><a href="class_enemy.html#ae3d66b8bc006825ba9813e0d3c802788">Enemy::notifyPlayerTakingDamage</a></div><div class="ttdeci">void notifyPlayerTakingDamage(int damageTaken)</div></div>
+<div class="ttc" id="aclass_enemy_html_af8631de7c43d13413d1ad8321ce250fc"><div class="ttname"><a href="class_enemy.html#af8631de7c43d13413d1ad8321ce250fc">Enemy::animationFinish</a></div><div class="ttdeci">void animationFinish()</div><div class="ttdoc">Met l'animation de déplacement en animation active.</div><div class="ttdef"><b>Definition:</b> <a href="enemy_8cpp_source.html#l00183">enemy.cpp:183</a></div></div>
+<div class="ttc" id="aclass_game_scene_html"><div class="ttname"><a href="class_game_scene.html">GameScene</a></div><div class="ttdoc">Représente l'espace 2D du jeu.</div><div class="ttdef"><b>Definition:</b> <a href="gamescene_8h_source.html#l00046">gamescene.h:47</a></div></div>
+<div class="ttc" id="aclass_sprite_html_a38a5549e535c3250db75f66bd32cdb3c"><div class="ttname"><a href="class_sprite.html#a38a5549e535c3250db75f66bd32cdb3c">Sprite::clearAnimations</a></div><div class="ttdeci">void clearAnimations()</div><div class="ttdoc">Efface toutes les animations d'un sprite mais en préserve une vide.</div><div class="ttdef"><b>Definition:</b> <a href="sprite_8cpp_source.html#l00148">sprite.cpp:148</a></div></div>
+<div class="ttc" id="aclass_sprite_html_a4047b63d33642d0f04d7856b12ad873e"><div class="ttname"><a href="class_sprite.html#a4047b63d33642d0f04d7856b12ad873e">Sprite::addAnimation</a></div><div class="ttdeci">void addAnimation()</div><div class="ttdef"><b>Definition:</b> <a href="sprite_8cpp_source.html#l00142">sprite.cpp:142</a></div></div>
+<div class="ttc" id="aclass_sprite_html_a4559f867e583934a097cca9ace923785"><div class="ttname"><a href="class_sprite.html#a4559f867e583934a097cca9ace923785">Sprite::setActiveAnimation</a></div><div class="ttdeci">void setActiveAnimation(int index)</div><div class="ttdef"><b>Definition:</b> <a href="sprite_8cpp_source.html#l00165">sprite.cpp:165</a></div></div>
+<div class="ttc" id="aclass_sprite_html_a795fd87ba5a11956ddd7d504babb0c58"><div class="ttname"><a href="class_sprite.html#a795fd87ba5a11956ddd7d504babb0c58">Sprite::animationFinished</a></div><div class="ttdeci">void animationFinished()</div></div>
+<div class="ttc" id="aclass_sprite_html_a93d7b808a1bcb070fa0b484a9f0ab35b"><div class="ttname"><a href="class_sprite.html#a93d7b808a1bcb070fa0b484a9f0ab35b">Sprite::setEmitSignalEndOfAnimationEnabled</a></div><div class="ttdeci">void setEmitSignalEndOfAnimationEnabled(bool enabled)</div><div class="ttdef"><b>Definition:</b> <a href="sprite_8cpp_source.html#l00187">sprite.cpp:187</a></div></div>
+<div class="ttc" id="aclass_sprite_html_aa27e28e0a1ed0153f4fcc9a9a3402e0f"><div class="ttname"><a href="class_sprite.html#aa27e28e0a1ed0153f4fcc9a9a3402e0f">Sprite::setAnimationSpeed</a></div><div class="ttdeci">void setAnimationSpeed(int frameDuration)</div><div class="ttdef"><b>Definition:</b> <a href="sprite_8cpp_source.html#l00092">sprite.cpp:92</a></div></div>
+<div class="ttc" id="aclass_sprite_html_ab4754e16f1e56e9ce1795ae2233e2653"><div class="ttname"><a href="class_sprite.html#ab4754e16f1e56e9ce1795ae2233e2653">Sprite::height</a></div><div class="ttdeci">int height() const</div><div class="ttdef"><b>Definition:</b> <a href="sprite_8h_source.html#l00161">sprite.h:161</a></div></div>
+<div class="ttc" id="aclass_sprite_html_ad382222eee275aa4bf98bdbeb6b0fc66"><div class="ttname"><a href="class_sprite.html#ad382222eee275aa4bf98bdbeb6b0fc66">Sprite::addAnimationFrame</a></div><div class="ttdeci">void addAnimationFrame(const QPixmap &amp;rPixmap)</div><div class="ttdef"><b>Definition:</b> <a href="sprite_8cpp_source.html#l00053">sprite.cpp:53</a></div></div>
+<div class="ttc" id="aclass_sprite_html_ae54fdccd78b9b3c0e7698e31bc52d369"><div class="ttname"><a href="class_sprite.html#ae54fdccd78b9b3c0e7698e31bc52d369">Sprite::width</a></div><div class="ttdeci">int width() const</div><div class="ttdef"><b>Definition:</b> <a href="sprite_8h_source.html#l00160">sprite.h:160</a></div></div>
+<div class="ttc" id="anamespace_game_framework_html_a94ecbf249f954a70e95558d979a75614"><div class="ttname"><a href="namespace_game_framework.html#a94ecbf249f954a70e95558d979a75614">GameFramework::imagesPath</a></div><div class="ttdeci">QString imagesPath(const QString &amp;subfolder)</div><div class="ttdef"><b>Definition:</b> <a href="resources_8cpp_source.html#l00095">resources.cpp:95</a></div></div>
+<div class="ttc" id="aqgraphicsitem_html"><div class="ttname"><a href="http://qt-project.org/doc/qt-5/qgraphicsitem.html">QGraphicsItem</a></div></div>
+<div class="ttc" id="aqgraphicsitem_html_setTransformOriginPoint"><div class="ttname"><a href="http://qt-project.org/doc/qt-5/qgraphicsitem.html#setTransformOriginPoint">QGraphicsItem::setTransformOriginPoint</a></div><div class="ttdeci">void setTransformOriginPoint(const QPointF &amp;origin)</div></div>
+<div class="ttc" id="aqgraphicsscale_html"><div class="ttname"><a href="http://qt-project.org/doc/qt-5/qgraphicsscale.html">QGraphicsScale</a></div></div>
+<div class="ttc" id="aqgraphicsscale_html_origin-prop"><div class="ttname"><a href="http://qt-project.org/doc/qt-5/qgraphicsscale.html#origin-prop">QGraphicsScale::setOrigin</a></div><div class="ttdeci">void setOrigin(const QVector3D &amp;point)</div></div>
+<div class="ttc" id="aqgraphicsscale_html_xScale-prop"><div class="ttname"><a href="http://qt-project.org/doc/qt-5/qgraphicsscale.html#xScale-prop">QGraphicsScale::setXScale</a></div><div class="ttdeci">void setXScale(qreal)</div></div>
+<div class="ttc" id="aqobject_html_connect"><div class="ttname"><a href="http://qt-project.org/doc/qt-5/qobject.html#connect">QObject::connect</a></div><div class="ttdeci">QMetaObject::Connection connect(const QObject *sender, const char *signal, const QObject *receiver, const char *method, Qt::ConnectionType type)</div></div>
+<div class="ttc" id="aqpixmap_html"><div class="ttname"><a href="http://qt-project.org/doc/qt-5/qpixmap.html">QPixmap</a></div></div>
+<div class="ttc" id="aqstring_html"><div class="ttname"><a href="http://qt-project.org/doc/qt-5/qstring.html">QString</a></div></div>
+<div class="ttc" id="aqvector3d_html"><div class="ttname"><a href="http://qt-project.org/doc/qt-5/qvector3d.html">QVector3D</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Jeudi 1 Décembre 2022 07:56:36 pour 2022-JCO-SpaceSurvivors par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+</small></address>
+</body>
+</html>

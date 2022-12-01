@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>2022-JCO-SpaceSurvivors:  Fichier source de bullet.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">2022-JCO-SpaceSurvivors<span id="projectnumber">&#160;0.1</span>
+   </div>
+   <div id="projectbrief">2022-JCO-SpaceSurvivors</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.5 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">bullet.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="bullet_8cpp.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;<a class="code" href="bullet_8h.html">bullet.h</a>&quot;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;<a class="code" href="resources_8h.html">resources.h</a>&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="class_bullet.html#afd323fd45ff03cdbf075d045ced2ca6d">   12</a></span><a class="code hl_function" href="class_bullet.html#afd323fd45ff03cdbf075d045ced2ca6d">Bullet::Bullet</a>(<span class="keywordtype">int</span> bulletDamage, <span class="keywordtype">int</span> bulletPierce, <span class="keywordtype">double</span> lessDamagePiercing, <span class="keywordtype">int</span> critChance, <span class="keywordtype">double</span> critDamage, <a class="code hl_classRef" href="http://qt-project.org/doc/qt-5/qgraphicsitem.html">QGraphicsItem</a>* pParent): <a class="code hl_class" href="class_sprite.html">Sprite</a>(<a class="code hl_namespace" href="namespace_game_framework.html">GameFramework</a>::imagesPath() + <span class="stringliteral">&quot;bullet/laser.png&quot;</span>, pParent)</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>{</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <a class="code hl_variable" href="class_bullet.html#a51f6e0dd4012729258699a2f22574c84">m_bulletsPierce</a> = bulletPierce;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <a class="code hl_variable" href="class_bullet.html#a5e6e59dde5121266090041d00841aa02">m_lessDamagePiercing</a> = lessDamagePiercing;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <a class="code hl_variable" href="class_bullet.html#a764e959a3d3093f20784df74496ab21f">m_ballDamage</a> = bulletDamage;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <a class="code hl_variable" href="class_bullet.html#a7a4d3eab0172d3bef60d92db0aace556">m_critChance</a> = critChance;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <a class="code hl_variable" href="class_bullet.html#ab0a1738b6c25410cafa4bb0506ca87bf">m_critDamage</a> = critDamage;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>}</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="class_bullet.html#a6189d36c2e0aff855876ec4e50366ce7">   23</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_bullet.html#a6189d36c2e0aff855876ec4e50366ce7">Bullet::tick</a>(<span class="keywordtype">long</span> <span class="keywordtype">long</span> elapsedTimeInMilliseconds) {</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keywordtype">double</span> ballMovementX = <a class="code hl_variable" href="class_bullet.html#a5de06e62619d6ee62e6bd7d11361ab99">m_ballDirectionX</a> * <a class="code hl_variable" href="class_bullet.html#af55f0a25b01af22ccbe3c1da523e5d02">m_BULLET_VELOCITY</a> * elapsedTimeInMilliseconds / 1000.0;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keywordtype">double</span> ballMovementY = <a class="code hl_variable" href="class_bullet.html#abf20511afc60e39734e3aea9dbb5ae19">m_ballDirectionY</a> * <a class="code hl_variable" href="class_bullet.html#af55f0a25b01af22ccbe3c1da523e5d02">m_BULLET_VELOCITY</a> * elapsedTimeInMilliseconds / 1000.0;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <a class="code hl_classRef" href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a> nextMove = <a class="code hl_classRef" href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a>(ballMovementX,</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>                               ballMovementY);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <a class="code hl_classRef" href="http://qt-project.org/doc/qt-5/qrectf.html">QRectF</a> nextBoundaries = this-&gt;<a class="code hl_function" href="class_sprite.html#ad33022eec2e1a4ed897fe523af940856">globalBoundingRect</a>().<a class="code hl_functionRef" href="http://qt-project.org/doc/qt-5/qrectf.html#translated">translated</a>(nextMove);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="comment">// déplace la ball si elle reste dans la scène.</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="class_sprite.html#aaf157b163cef5562dbc6854fbb0fb9f8">isInsideScene</a>(nextBoundaries)) {</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        this-&gt;<a class="code hl_functionRef" href="http://qt-project.org/doc/qt-5/qgraphicsitem.html#setPos">setPos</a>(<a class="code hl_classRef" href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a>(this-&gt;<a class="code hl_property" href="class_sprite.html#a51090ee6576ba2c6aa421f7bdf44aceb">x</a>() + ballMovementX, this-&gt;<a class="code hl_property" href="class_sprite.html#afe352316b4e023697edd1e6199f43fc1">y</a>() + ballMovementY));</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        <a class="code hl_functionRef" href="http://qt-project.org/doc/qt-5/qobject.html#deleteLater">deleteLater</a>();</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    }</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>}</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="class_bullet.html#ae8956ff9bc86ad6ef53ed9a9d20ac9e9">   41</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_bullet.html#ae8956ff9bc86ad6ef53ed9a9d20ac9e9">Bullet::reduceDamage</a>() {</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="comment">// vérification pour éviter les divisions par 0</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <a class="code hl_variable" href="class_bullet.html#a764e959a3d3093f20784df74496ab21f">m_ballDamage</a> /= <a class="code hl_variable" href="class_bullet.html#a5e6e59dde5121266090041d00841aa02">m_lessDamagePiercing</a> &lt; 0.1 ? 0.1 : <a class="code hl_variable" href="class_bullet.html#a5e6e59dde5121266090041d00841aa02">m_lessDamagePiercing</a>;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>}</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="class_bullet.html#add8b6282591d3e0dbd0d6f5b65f511c2">   46</a></span><span class="keywordtype">double</span> <a class="code hl_function" href="class_bullet.html#add8b6282591d3e0dbd0d6f5b65f511c2">Bullet::inflictsDamage</a>() {</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keywordflow">if</span> (rand() % 100 + 1 &lt; <a class="code hl_variable" href="class_bullet.html#a7a4d3eab0172d3bef60d92db0aace556">m_critChance</a>)</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="class_bullet.html#a764e959a3d3093f20784df74496ab21f">m_ballDamage</a> * <a class="code hl_variable" href="class_bullet.html#ab0a1738b6c25410cafa4bb0506ca87bf">m_critDamage</a>;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_bullet.html#a764e959a3d3093f20784df74496ab21f">m_ballDamage</a>;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>}</div>
+<div class="ttc" id="abullet_8h_html"><div class="ttname"><a href="bullet_8h.html">bullet.h</a></div><div class="ttdoc">Déclaration de la classe bullet.</div></div>
+<div class="ttc" id="aclass_bullet_html_a51f6e0dd4012729258699a2f22574c84"><div class="ttname"><a href="class_bullet.html#a51f6e0dd4012729258699a2f22574c84">Bullet::m_bulletsPierce</a></div><div class="ttdeci">int m_bulletsPierce</div><div class="ttdef"><b>Definition:</b> <a href="bullet_8h_source.html#l00024">bullet.h:24</a></div></div>
+<div class="ttc" id="aclass_bullet_html_a5de06e62619d6ee62e6bd7d11361ab99"><div class="ttname"><a href="class_bullet.html#a5de06e62619d6ee62e6bd7d11361ab99">Bullet::m_ballDirectionX</a></div><div class="ttdeci">double m_ballDirectionX</div><div class="ttdef"><b>Definition:</b> <a href="bullet_8h_source.html#l00035">bullet.h:35</a></div></div>
+<div class="ttc" id="aclass_bullet_html_a5e6e59dde5121266090041d00841aa02"><div class="ttname"><a href="class_bullet.html#a5e6e59dde5121266090041d00841aa02">Bullet::m_lessDamagePiercing</a></div><div class="ttdeci">double m_lessDamagePiercing</div><div class="ttdef"><b>Definition:</b> <a href="bullet_8h_source.html#l00025">bullet.h:25</a></div></div>
+<div class="ttc" id="aclass_bullet_html_a6189d36c2e0aff855876ec4e50366ce7"><div class="ttname"><a href="class_bullet.html#a6189d36c2e0aff855876ec4e50366ce7">Bullet::tick</a></div><div class="ttdeci">virtual void tick(long long elapsedTimeInMilliseconds)</div><div class="ttdef"><b>Definition:</b> <a href="bullet_8cpp_source.html#l00023">bullet.cpp:23</a></div></div>
+<div class="ttc" id="aclass_bullet_html_a764e959a3d3093f20784df74496ab21f"><div class="ttname"><a href="class_bullet.html#a764e959a3d3093f20784df74496ab21f">Bullet::m_ballDamage</a></div><div class="ttdeci">double m_ballDamage</div><div class="ttdef"><b>Definition:</b> <a href="bullet_8h_source.html#l00026">bullet.h:26</a></div></div>
+<div class="ttc" id="aclass_bullet_html_a7a4d3eab0172d3bef60d92db0aace556"><div class="ttname"><a href="class_bullet.html#a7a4d3eab0172d3bef60d92db0aace556">Bullet::m_critChance</a></div><div class="ttdeci">int m_critChance</div><div class="ttdef"><b>Definition:</b> <a href="bullet_8h_source.html#l00033">bullet.h:33</a></div></div>
+<div class="ttc" id="aclass_bullet_html_ab0a1738b6c25410cafa4bb0506ca87bf"><div class="ttname"><a href="class_bullet.html#ab0a1738b6c25410cafa4bb0506ca87bf">Bullet::m_critDamage</a></div><div class="ttdeci">double m_critDamage</div><div class="ttdef"><b>Definition:</b> <a href="bullet_8h_source.html#l00032">bullet.h:32</a></div></div>
+<div class="ttc" id="aclass_bullet_html_abf20511afc60e39734e3aea9dbb5ae19"><div class="ttname"><a href="class_bullet.html#abf20511afc60e39734e3aea9dbb5ae19">Bullet::m_ballDirectionY</a></div><div class="ttdeci">double m_ballDirectionY</div><div class="ttdef"><b>Definition:</b> <a href="bullet_8h_source.html#l00036">bullet.h:36</a></div></div>
+<div class="ttc" id="aclass_bullet_html_add8b6282591d3e0dbd0d6f5b65f511c2"><div class="ttname"><a href="class_bullet.html#add8b6282591d3e0dbd0d6f5b65f511c2">Bullet::inflictsDamage</a></div><div class="ttdeci">double inflictsDamage()</div><div class="ttdef"><b>Definition:</b> <a href="bullet_8cpp_source.html#l00046">bullet.cpp:46</a></div></div>
+<div class="ttc" id="aclass_bullet_html_ae8956ff9bc86ad6ef53ed9a9d20ac9e9"><div class="ttname"><a href="class_bullet.html#ae8956ff9bc86ad6ef53ed9a9d20ac9e9">Bullet::reduceDamage</a></div><div class="ttdeci">void reduceDamage()</div><div class="ttdoc">réduit les dégats de la balles</div><div class="ttdef"><b>Definition:</b> <a href="bullet_8cpp_source.html#l00041">bullet.cpp:41</a></div></div>
+<div class="ttc" id="aclass_bullet_html_af55f0a25b01af22ccbe3c1da523e5d02"><div class="ttname"><a href="class_bullet.html#af55f0a25b01af22ccbe3c1da523e5d02">Bullet::m_BULLET_VELOCITY</a></div><div class="ttdeci">const double m_BULLET_VELOCITY</div><div class="ttdef"><b>Definition:</b> <a href="bullet_8h_source.html#l00038">bullet.h:38</a></div></div>
+<div class="ttc" id="aclass_bullet_html_afd323fd45ff03cdbf075d045ced2ca6d"><div class="ttname"><a href="class_bullet.html#afd323fd45ff03cdbf075d045ced2ca6d">Bullet::Bullet</a></div><div class="ttdeci">Bullet(int bulletDamage=40, int bulletPierce=0, double lessDamagePiercing=2, int critChance=20, double critDamage=1, QGraphicsItem *pParent=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="bullet_8cpp_source.html#l00012">bullet.cpp:12</a></div></div>
+<div class="ttc" id="aclass_sprite_html"><div class="ttname"><a href="class_sprite.html">Sprite</a></div><div class="ttdoc">Classe qui représente un élément d'animation graphique 2D.</div><div class="ttdef"><b>Definition:</b> <a href="sprite_8h_source.html#l00114">sprite.h:115</a></div></div>
+<div class="ttc" id="aclass_sprite_html_a51090ee6576ba2c6aa421f7bdf44aceb"><div class="ttname"><a href="class_sprite.html#a51090ee6576ba2c6aa421f7bdf44aceb">Sprite::x</a></div><div class="ttdeci">qreal x</div><div class="ttdef"><b>Definition:</b> <a href="sprite_8h_source.html#l00001">sprite.h:121</a></div></div>
+<div class="ttc" id="aclass_sprite_html_aaf157b163cef5562dbc6854fbb0fb9f8"><div class="ttname"><a href="class_sprite.html#aaf157b163cef5562dbc6854fbb0fb9f8">Sprite::isInsideScene</a></div><div class="ttdeci">bool isInsideScene(const QRectF &amp;rRect) const</div><div class="ttdef"><b>Definition:</b> <a href="sprite_8cpp_source.html#l00176">sprite.cpp:176</a></div></div>
+<div class="ttc" id="aclass_sprite_html_ad33022eec2e1a4ed897fe523af940856"><div class="ttname"><a href="class_sprite.html#ad33022eec2e1a4ed897fe523af940856">Sprite::globalBoundingRect</a></div><div class="ttdeci">QRectF globalBoundingRect() const</div><div class="ttdef"><b>Definition:</b> <a href="sprite_8h_source.html#l00158">sprite.h:158</a></div></div>
+<div class="ttc" id="aclass_sprite_html_afe352316b4e023697edd1e6199f43fc1"><div class="ttname"><a href="class_sprite.html#afe352316b4e023697edd1e6199f43fc1">Sprite::y</a></div><div class="ttdeci">qreal y</div><div class="ttdef"><b>Definition:</b> <a href="sprite_8h_source.html#l00001">sprite.h:122</a></div></div>
+<div class="ttc" id="anamespace_game_framework_html"><div class="ttname"><a href="namespace_game_framework.html">GameFramework</a></div><div class="ttdef"><b>Definition:</b> <a href="resources_8cpp_source.html#l00014">resources.cpp:14</a></div></div>
+<div class="ttc" id="aqgraphicsitem_html"><div class="ttname"><a href="http://qt-project.org/doc/qt-5/qgraphicsitem.html">QGraphicsItem</a></div></div>
+<div class="ttc" id="aqgraphicsitem_html_setPos"><div class="ttname"><a href="http://qt-project.org/doc/qt-5/qgraphicsitem.html#setPos">QGraphicsItem::setPos</a></div><div class="ttdeci">void setPos(const QPointF &amp;pos)</div></div>
+<div class="ttc" id="aqobject_html_deleteLater"><div class="ttname"><a href="http://qt-project.org/doc/qt-5/qobject.html#deleteLater">QObject::deleteLater</a></div><div class="ttdeci">void deleteLater()</div></div>
+<div class="ttc" id="aqpointf_html"><div class="ttname"><a href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a></div></div>
+<div class="ttc" id="aqrectf_html"><div class="ttname"><a href="http://qt-project.org/doc/qt-5/qrectf.html">QRectF</a></div></div>
+<div class="ttc" id="aqrectf_html_translated"><div class="ttname"><a href="http://qt-project.org/doc/qt-5/qrectf.html#translated">QRectF::translated</a></div><div class="ttdeci">QRectF translated(qreal dx, qreal dy) const</div></div>
+<div class="ttc" id="aresources_8h_html"><div class="ttname"><a href="resources_8h.html">resources.h</a></div><div class="ttdoc">Méthodes utilitaires permettant d'accéder aux ressources.</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Jeudi 1 Décembre 2022 07:56:36 pour 2022-JCO-SpaceSurvivors par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+</small></address>
+</body>
+</html>
