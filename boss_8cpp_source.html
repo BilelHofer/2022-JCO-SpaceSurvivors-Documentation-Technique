@@ -238,10 +238,9 @@ $(function() {
 <div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>    pExplosion-&gt;<a class="code hl_function" href="class_sprite.html#ac7d053af8f5cf1221d3cf016a4c65874">startAnimation</a>();</div>
 <div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span> </div>
 <div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>    <a class="code hl_variable" href="class_enemy.html#a9b1a66c531a3b47cf11d09fe0ece4d53">m_pScene</a>-&gt;<a class="code hl_variable" href="class_game_scene.html#ae43388d315c6b68250750534dd9637b2">m_bossIsAlive</a> = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>    <a class="code hl_variable" href="class_enemy.html#a9b1a66c531a3b47cf11d09fe0ece4d53">m_pScene</a>-&gt;<a class="code hl_variable" href="class_game_scene.html#a740e63a3bd19ad6bd9364a11f5432460">m_totalKill</a>++;</div>
-<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span> </div>
-<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>    <a class="code hl_functionRef" href="http://qt-project.org/doc/qt-5/qobject.html#deleteLater">deleteLater</a>();</div>
-<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>}</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span> </div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>    <a class="code hl_functionRef" href="http://qt-project.org/doc/qt-5/qobject.html#deleteLater">deleteLater</a>();</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>}</div>
 <div class="ttc" id="aboss_8h_html"><div class="ttname"><a href="boss_8h.html">boss.h</a></div><div class="ttdoc">Déclaration de la classe boss qui hérite de la class Enemy.</div></div>
 <div class="ttc" id="aclass_boss_html_a0ed82b0e34ba201775b2ff41acc740a8"><div class="ttname"><a href="class_boss.html#a0ed82b0e34ba201775b2ff41acc740a8">Boss::initDamageTakenAnimation</a></div><div class="ttdeci">void initDamageTakenAnimation()</div><div class="ttdoc">initialise l'animation de prise de dégats du Boss</div><div class="ttdef"><b>Definition:</b> <a href="boss_8cpp_source.html#l00073">boss.cpp:73</a></div></div>
 <div class="ttc" id="aclass_boss_html_a57939bd6c13759a16b34d795e1a5eb74"><div class="ttname"><a href="class_boss.html#a57939bd6c13759a16b34d795e1a5eb74">Boss::launchDeath</a></div><div class="ttdeci">void launchDeath()</div><div class="ttdoc">Lance la mort du Boss.</div><div class="ttdef"><b>Definition:</b> <a href="boss_8cpp_source.html#l00162">boss.cpp:162</a></div></div>
@@ -268,7 +267,6 @@ $(function() {
 <div class="ttc" id="aclass_game_scene_html"><div class="ttname"><a href="class_game_scene.html">GameScene</a></div><div class="ttdoc">Représente l'espace 2D du jeu.</div><div class="ttdef"><b>Definition:</b> <a href="gamescene_8h_source.html#l00046">gamescene.h:47</a></div></div>
 <div class="ttc" id="aclass_game_scene_html_a0a63f65536de7e4d07be813b48f8997c"><div class="ttname"><a href="class_game_scene.html#a0a63f65536de7e4d07be813b48f8997c">GameScene::addSpriteToScene</a></div><div class="ttdeci">void addSpriteToScene(Sprite *pSprite)</div><div class="ttdef"><b>Definition:</b> <a href="gamescene_8cpp_source.html#l00062">gamescene.cpp:62</a></div></div>
 <div class="ttc" id="aclass_game_scene_html_a1afbea38eb709b51019dcb1214446dc8"><div class="ttname"><a href="class_game_scene.html#a1afbea38eb709b51019dcb1214446dc8">GameScene::collidingSprites</a></div><div class="ttdeci">QList&lt; Sprite * &gt; collidingSprites(const Sprite *pSprite) const</div><div class="ttdef"><b>Definition:</b> <a href="gamescene_8cpp_source.html#l00104">gamescene.cpp:104</a></div></div>
-<div class="ttc" id="aclass_game_scene_html_a740e63a3bd19ad6bd9364a11f5432460"><div class="ttname"><a href="class_game_scene.html#a740e63a3bd19ad6bd9364a11f5432460">GameScene::m_totalKill</a></div><div class="ttdeci">unsigned long long m_totalKill</div><div class="ttdef"><b>Definition:</b> <a href="gamescene_8h_source.html#l00072">gamescene.h:72</a></div></div>
 <div class="ttc" id="aclass_game_scene_html_ae43388d315c6b68250750534dd9637b2"><div class="ttname"><a href="class_game_scene.html#ae43388d315c6b68250750534dd9637b2">GameScene::m_bossIsAlive</a></div><div class="ttdeci">bool m_bossIsAlive</div><div class="ttdef"><b>Definition:</b> <a href="gamescene_8h_source.html#l00080">gamescene.h:80</a></div></div>
 <div class="ttc" id="aclass_player_html"><div class="ttname"><a href="class_player.html">Player</a></div><div class="ttdoc">Classe qui représente le joueur principal du jeu. cette classe permet de gérer tous ce que consitue l...</div><div class="ttdef"><b>Definition:</b> <a href="player_8h_source.html#l00019">player.h:20</a></div></div>
 <div class="ttc" id="aclass_sprite_html"><div class="ttname"><a href="class_sprite.html">Sprite</a></div><div class="ttdoc">Classe qui représente un élément d'animation graphique 2D.</div><div class="ttdef"><b>Definition:</b> <a href="sprite_8h_source.html#l00114">sprite.h:115</a></div></div>
@@ -316,7 +314,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Généré le Jeudi 1 Décembre 2022 07:56:36 pour 2022-JCO-SpaceSurvivors par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Généré le Mardi 6 Décembre 2022 11:26:36 pour 2022-JCO-SpaceSurvivors par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

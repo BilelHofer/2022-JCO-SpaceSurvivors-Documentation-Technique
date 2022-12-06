@@ -78,7 +78,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Classe qui représente une boite à outils. elle possède des méthods pour obtenir de vecteur 2D de direction elle possède une methods boolean pour savoir si la souris est sur un sprite.  
+<p>Classe qui représente une boite à outils.  
  <a href="class_tool_box.html#details">Plus de détails...</a></p>
 
 <p><code>#include &lt;<a class="el" href="toolbox_8h_source.html">toolbox.h</a>&gt;</code></p>
@@ -96,11 +96,18 @@ Fonctions membres publiques statiques</h2></td></tr>
 <tr class="separator:ab63d939d1f0265dc118d7f9e2acd149b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac172a7f3a2df6ad3cb8797a28645f91d"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tool_box.html#ac172a7f3a2df6ad3cb8797a28645f91d">isInsideSprite</a> (<a class="el" href="class_sprite.html">Sprite</a> *sprite, <a class="elRef" href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a> mousePos)</td></tr>
 <tr class="separator:ac172a7f3a2df6ad3cb8797a28645f91d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6998068661edf766c7ec7d850b51037a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tool_box.html#a6998068661edf766c7ec7d850b51037a">saveGame</a> (double kill, unsigned int damage, double minAlive, double secAlive)</td></tr>
+<tr class="separator:a6998068661edf766c7ec7d850b51037a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
-<div class="textblock"><p >Classe qui représente une boite à outils. elle possède des méthods pour obtenir de vecteur 2D de direction elle possède une methods boolean pour savoir si la souris est sur un sprite. </p>
+<div class="textblock"><p >Classe qui représente une boite à outils. </p>
+<p >Cette classe à pour but de regroupé plusieurs fonction utile. Actuellement elle en possède 4.</p>
+<p >getVector2dDirection qui prend en paramètre 2 position, l'origine et la cible cette méthods permet de connaitre le vecteur à utiliser pour atteindre la cible depuis l'origine</p>
+<p >getVector2dDirectionShot prend en paramètre 2 position, l'origine et la cible mais aussi un boolean qui regarde c'est une balle aditionnel et le nombre de ball déjà tirer par le joueur. Cette méthods permet de décaler le vecteur en fonction du nombre de ball déjà tirer.</p>
+<p >isInsideSprite prend en paramètre le sprite a tester et la position de la souris. Cette fonction retourne un boolean qui informe si la position de la souris ce situ dessus le sprite.</p>
+<p >saveGame qui prend un paramètre le nombre de kill, le nombre de dégats infligé, le nombre de minute en vie et le nombre de seconde en vie, cette fonction enregistre ces information dans un fichier json. </p>
 
-<p class="definition">Définition à la ligne <a class="el" href="toolbox_8h_source.html#l00019">19</a> du fichier <a class="el" href="toolbox_8h_source.html">toolbox.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="toolbox_8h_source.html#l00043">43</a> du fichier <a class="el" href="toolbox_8h_source.html">toolbox.h</a>.</p>
 </div><h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
 <a id="ad8a1d0d5f989fb2233d22ed9d1548782" name="ad8a1d0d5f989fb2233d22ed9d1548782"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad8a1d0d5f989fb2233d22ed9d1548782">&#9670;&#160;</a></span>ToolBox()</h2>
@@ -273,6 +280,65 @@ Fonctions membres publiques statiques</h2></td></tr>
 
 </div>
 </div>
+<a id="a6998068661edf766c7ec7d850b51037a" name="a6998068661edf766c7ec7d850b51037a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6998068661edf766c7ec7d850b51037a">&#9670;&#160;</a></span>saveGame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ToolBox::saveGame </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>kill</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>damage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>minAlive</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>secAlive</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Ecrit dans le fichier json pour enregistrer une partie </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">kill</td><td>le nombre de kill de la partie </td></tr>
+    <tr><td class="paramname">damage</td><td>le nombre de dégats de la partie </td></tr>
+    <tr><td class="paramname">minAlive</td><td>le nombre de minute resté en vie </td></tr>
+    <tr><td class="paramname">secAlive</td><td>le nombre de seconde resté en vie </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="toolbox_8cpp_source.html#l00096">96</a> du fichier <a class="el" href="toolbox_8cpp_source.html">toolbox.cpp</a>.</p>
+
+</div>
+</div>
 <hr/>La documentation de cette classe a été générée à partir du fichier suivant :<ul>
 <li><a class="el" href="toolbox_8h_source.html">toolbox.h</a></li>
 <li><a class="el" href="toolbox_8cpp_source.html">toolbox.cpp</a></li>
@@ -280,7 +346,7 @@ Fonctions membres publiques statiques</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Généré le Jeudi 1 Décembre 2022 07:56:42 pour 2022-JCO-SpaceSurvivors par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Généré le Mardi 6 Décembre 2022 11:26:39 pour 2022-JCO-SpaceSurvivors par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

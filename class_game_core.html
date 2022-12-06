@@ -277,6 +277,8 @@ Attributs protégés</h2></td></tr>
 <tr class="separator:acc0650e6dc050a16d6b38c19080db6da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5af86ef207c5968d456d99ba8757bf0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#ad5af86ef207c5968d456d99ba8757bf0">m_timeMinuteAlive</a> = 0</td></tr>
 <tr class="separator:ad5af86ef207c5968d456d99ba8757bf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae03eb49c30d60a7ad3a94f561b37d02f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#ae03eb49c30d60a7ad3a94f561b37d02f">m_numberOfBombs</a> = 0</td></tr>
+<tr class="separator:ae03eb49c30d60a7ad3a94f561b37d02f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada938d668d44decbd001599868967421"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game_canvas.html">GameCanvas</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#ada938d668d44decbd001599868967421">m_pGameCanvas</a> = nullptr</td></tr>
 <tr class="separator:ada938d668d44decbd001599868967421"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab932f6ecd365bcdc5d3a3c278641a9ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game_scene.html">GameScene</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#ab932f6ecd365bcdc5d3a3c278641a9ec">m_pSceneBreak</a> = nullptr</td></tr>
@@ -287,8 +289,10 @@ Attributs protégés</h2></td></tr>
 <tr class="separator:a7792ee71659ea751a062d34dc2387a80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a68be50a57bf376336e7bd9d36e79ffc6"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="http://qt-project.org/doc/qt-5/qgraphicsitem.html">QGraphicsItem</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a68be50a57bf376336e7bd9d36e79ffc6">m_pDisplayedStat</a> =nullptr</td></tr>
 <tr class="separator:a68be50a57bf376336e7bd9d36e79ffc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0acaf2d1443b3d303bdaf933ec87830"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="http://qt-project.org/doc/qt-5/qgraphicstextitem.html">QGraphicsTextItem</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#af0acaf2d1443b3d303bdaf933ec87830">m_pHudText</a> = nullptr</td></tr>
-<tr class="separator:af0acaf2d1443b3d303bdaf933ec87830"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27d6d966adf6d589d494b36be76b19b5"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="http://qt-project.org/doc/qt-5/qgraphicstextitem.html">QGraphicsTextItem</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a27d6d966adf6d589d494b36be76b19b5">m_pHudTextTime</a> = nullptr</td></tr>
+<tr class="separator:a27d6d966adf6d589d494b36be76b19b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a906f3fd77e47b19f2c9b2bccf35b1f06"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="http://qt-project.org/doc/qt-5/qgraphicstextitem.html">QGraphicsTextItem</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a906f3fd77e47b19f2c9b2bccf35b1f06">m_pHudTextBombe</a> = nullptr</td></tr>
+<tr class="separator:a906f3fd77e47b19f2c9b2bccf35b1f06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf622c8074794131398f6e6137db5648"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_player.html">Player</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#aaf622c8074794131398f6e6137db5648">m_pPlayer</a> = nullptr</td></tr>
 <tr class="separator:aaf622c8074794131398f6e6137db5648"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72fd35c0d56b12dfd006a35198378e34"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_sprite.html">Sprite</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a72fd35c0d56b12dfd006a35198378e34">m_pPlayerHitBox</a> = nullptr</td></tr>
@@ -421,7 +425,7 @@ Membres hérités additionnels</h2></td></tr>
 <tr><td class="fieldname"><a id="a1265dd6dd8dacfb051bd2672fd06be2eaf047e19fcc5a120e8edc3d34455a1a04" name="a1265dd6dd8dacfb051bd2672fd06be2eaf047e19fcc5a120e8edc3d34455a1a04"></a>ENDED&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Définition à la ligne <a class="el" href="gamecore_8h_source.html#l00071">71</a> du fichier <a class="el" href="gamecore_8h_source.html">gamecore.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="gamecore_8h_source.html#l00074">74</a> du fichier <a class="el" href="gamecore_8h_source.html">gamecore.h</a>.</p>
 
 </div>
 </div>
@@ -505,7 +509,7 @@ Membres hérités additionnels</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Définition à la ligne <a class="el" href="gamecore_8cpp_source.html#l00464">464</a> du fichier <a class="el" href="gamecore_8cpp_source.html">gamecore.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="gamecore_8cpp_source.html#l00469">469</a> du fichier <a class="el" href="gamecore_8cpp_source.html">gamecore.cpp</a>.</p>
 
 </div>
 </div>
@@ -534,7 +538,7 @@ Membres hérités additionnels</h2></td></tr>
 
 <p>Choisi des bonus aleatoirement. </p>
 
-<p class="definition">Définition à la ligne <a class="el" href="gamecore_8cpp_source.html#l00383">383</a> du fichier <a class="el" href="gamecore_8cpp_source.html">gamecore.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="gamecore_8cpp_source.html#l00388">388</a> du fichier <a class="el" href="gamecore_8cpp_source.html">gamecore.cpp</a>.</p>
 
 </div>
 </div>
@@ -563,7 +567,7 @@ Membres hérités additionnels</h2></td></tr>
 
 <p>retourne un nombre choisi aleatoire </p>
 
-<p class="definition">Définition à la ligne <a class="el" href="gamecore_8cpp_source.html#l00399">399</a> du fichier <a class="el" href="gamecore_8cpp_source.html">gamecore.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="gamecore_8cpp_source.html#l00404">404</a> du fichier <a class="el" href="gamecore_8cpp_source.html">gamecore.cpp</a>.</p>
 
 </div>
 </div>
@@ -592,7 +596,7 @@ Membres hérités additionnels</h2></td></tr>
 
 <p>Efface les statistique afficher. </p>
 
-<p class="definition">Définition à la ligne <a class="el" href="gamecore_8cpp_source.html#l00236">236</a> du fichier <a class="el" href="gamecore_8cpp_source.html">gamecore.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="gamecore_8cpp_source.html#l00241">241</a> du fichier <a class="el" href="gamecore_8cpp_source.html">gamecore.cpp</a>.</p>
 
 </div>
 </div>
@@ -643,7 +647,7 @@ Membres hérités additionnels</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Définition à la ligne <a class="el" href="gamecore_8cpp_source.html#l00205">205</a> du fichier <a class="el" href="gamecore_8cpp_source.html">gamecore.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="gamecore_8cpp_source.html#l00210">210</a> du fichier <a class="el" href="gamecore_8cpp_source.html">gamecore.cpp</a>.</p>
 
 </div>
 </div>
@@ -672,7 +676,7 @@ Membres hérités additionnels</h2></td></tr>
 
 <p>Met en place la fin de partie. </p>
 
-<p class="definition">Définition à la ligne <a class="el" href="gamecore_8cpp_source.html#l00366">366</a> du fichier <a class="el" href="gamecore_8cpp_source.html">gamecore.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="gamecore_8cpp_source.html#l00368">368</a> du fichier <a class="el" href="gamecore_8cpp_source.html">gamecore.cpp</a>.</p>
 
 </div>
 </div>
@@ -766,7 +770,7 @@ Membres hérités additionnels</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Définition à la ligne <a class="el" href="gamecore_8cpp_source.html#l00061">61</a> du fichier <a class="el" href="gamecore_8cpp_source.html">gamecore.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="gamecore_8cpp_source.html#l00066">66</a> du fichier <a class="el" href="gamecore_8cpp_source.html">gamecore.cpp</a>.</p>
 
 </div>
 </div>
@@ -795,7 +799,7 @@ Membres hérités additionnels</h2></td></tr>
 
 <p>Lance l'explosion du joueur. </p>
 
-<p class="definition">Définition à la ligne <a class="el" href="gamecore_8cpp_source.html#l00318">318</a> du fichier <a class="el" href="gamecore_8cpp_source.html">gamecore.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="gamecore_8cpp_source.html#l00320">320</a> du fichier <a class="el" href="gamecore_8cpp_source.html">gamecore.cpp</a>.</p>
 
 </div>
 </div>
@@ -835,7 +839,7 @@ Membres hérités additionnels</h2></td></tr>
 
 <p>Traite l'appui sur un bouton de la souris. </p>
 
-<p class="definition">Définition à la ligne <a class="el" href="gamecore_8cpp_source.html#l00091">91</a> du fichier <a class="el" href="gamecore_8cpp_source.html">gamecore.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="gamecore_8cpp_source.html#l00096">96</a> du fichier <a class="el" href="gamecore_8cpp_source.html">gamecore.cpp</a>.</p>
 
 </div>
 </div>
@@ -875,7 +879,7 @@ Membres hérités additionnels</h2></td></tr>
 
 <p>Traite le relâchement d'un bouton de la souris. </p>
 
-<p class="definition">Définition à la ligne <a class="el" href="gamecore_8cpp_source.html#l00134">134</a> du fichier <a class="el" href="gamecore_8cpp_source.html">gamecore.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="gamecore_8cpp_source.html#l00139">139</a> du fichier <a class="el" href="gamecore_8cpp_source.html">gamecore.cpp</a>.</p>
 
 </div>
 </div>
@@ -904,7 +908,7 @@ Membres hérités additionnels</h2></td></tr>
 </div><div class="memdoc">
 <p >La souris a été déplacée. Pour que cet événement soit pris en compte, la propriété MouseTracking de <a class="el" href="class_game_view.html" title="Classe de visualisation d&#39;un espace 2D de jeu.">GameView</a> doit être enclenchée avec <a class="el" href="class_game_canvas.html#a7736798ad6218b4329bf4b29064f7d6a" title="Enclenche le suivi du déplacement de la souris.">GameCanvas::startMouseTracking()</a>. </p>
 
-<p class="definition">Définition à la ligne <a class="el" href="gamecore_8cpp_source.html#l00084">84</a> du fichier <a class="el" href="gamecore_8cpp_source.html">gamecore.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="gamecore_8cpp_source.html#l00089">89</a> du fichier <a class="el" href="gamecore_8cpp_source.html">gamecore.cpp</a>.</p>
 
 </div>
 </div>
@@ -930,7 +934,7 @@ Membres hérités additionnels</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Définition à la ligne <a class="el" href="gamecore_8cpp_source.html#l00141">141</a> du fichier <a class="el" href="gamecore_8cpp_source.html">gamecore.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="gamecore_8cpp_source.html#l00146">146</a> du fichier <a class="el" href="gamecore_8cpp_source.html">gamecore.cpp</a>.</p>
 
 </div>
 </div>
@@ -1191,7 +1195,7 @@ Membres hérités additionnels</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Définition à la ligne <a class="el" href="gamecore_8cpp_source.html#l00428">428</a> du fichier <a class="el" href="gamecore_8cpp_source.html">gamecore.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="gamecore_8cpp_source.html#l00433">433</a> du fichier <a class="el" href="gamecore_8cpp_source.html">gamecore.cpp</a>.</p>
 
 </div>
 </div>
@@ -1225,7 +1229,7 @@ Membres hérités additionnels</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Définition à la ligne <a class="el" href="gamecore_8cpp_source.html#l00183">183</a> du fichier <a class="el" href="gamecore_8cpp_source.html">gamecore.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="gamecore_8cpp_source.html#l00188">188</a> du fichier <a class="el" href="gamecore_8cpp_source.html">gamecore.cpp</a>.</p>
 
 </div>
 </div>
@@ -1281,7 +1285,7 @@ Membres hérités additionnels</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="gamecore_8cpp_source.html#l00277">277</a> du fichier <a class="el" href="gamecore_8cpp_source.html">gamecore.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="gamecore_8cpp_source.html#l00282">282</a> du fichier <a class="el" href="gamecore_8cpp_source.html">gamecore.cpp</a>.</p>
 
 </div>
 </div>
@@ -1326,7 +1330,7 @@ Membres hérités additionnels</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Définition à la ligne <a class="el" href="gamecore_8cpp_source.html#l00246">246</a> du fichier <a class="el" href="gamecore_8cpp_source.html">gamecore.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="gamecore_8cpp_source.html#l00251">251</a> du fichier <a class="el" href="gamecore_8cpp_source.html">gamecore.cpp</a>.</p>
 
 </div>
 </div>
@@ -1351,7 +1355,7 @@ Membres hérités additionnels</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="gamecore_8h_source.html#l00096">96</a> du fichier <a class="el" href="gamecore_8h_source.html">gamecore.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="gamecore_8h_source.html#l00099">99</a> du fichier <a class="el" href="gamecore_8h_source.html">gamecore.h</a>.</p>
 
 </div>
 </div>
@@ -1375,7 +1379,7 @@ Membres hérités additionnels</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="gamecore_8h_source.html#l00089">89</a> du fichier <a class="el" href="gamecore_8h_source.html">gamecore.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="gamecore_8h_source.html#l00092">92</a> du fichier <a class="el" href="gamecore_8h_source.html">gamecore.h</a>.</p>
 
 </div>
 </div>
@@ -1399,7 +1403,7 @@ Membres hérités additionnels</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="gamecore_8h_source.html#l00087">87</a> du fichier <a class="el" href="gamecore_8h_source.html">gamecore.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="gamecore_8h_source.html#l00090">90</a> du fichier <a class="el" href="gamecore_8h_source.html">gamecore.h</a>.</p>
 
 </div>
 </div>
@@ -1423,7 +1427,7 @@ Membres hérités additionnels</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="gamecore_8h_source.html#l00088">88</a> du fichier <a class="el" href="gamecore_8h_source.html">gamecore.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="gamecore_8h_source.html#l00091">91</a> du fichier <a class="el" href="gamecore_8h_source.html">gamecore.h</a>.</p>
 
 </div>
 </div>
@@ -1447,7 +1451,7 @@ Membres hérités additionnels</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="gamecore_8h_source.html#l00090">90</a> du fichier <a class="el" href="gamecore_8h_source.html">gamecore.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="gamecore_8h_source.html#l00093">93</a> du fichier <a class="el" href="gamecore_8h_source.html">gamecore.h</a>.</p>
 
 </div>
 </div>
@@ -1471,7 +1475,7 @@ Membres hérités additionnels</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="gamecore_8h_source.html#l00091">91</a> du fichier <a class="el" href="gamecore_8h_source.html">gamecore.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="gamecore_8h_source.html#l00094">94</a> du fichier <a class="el" href="gamecore_8h_source.html">gamecore.h</a>.</p>
 
 </div>
 </div>
@@ -1495,7 +1499,7 @@ Membres hérités additionnels</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="gamecore_8h_source.html#l00092">92</a> du fichier <a class="el" href="gamecore_8h_source.html">gamecore.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="gamecore_8h_source.html#l00095">95</a> du fichier <a class="el" href="gamecore_8h_source.html">gamecore.h</a>.</p>
 
 </div>
 </div>
@@ -1519,7 +1523,7 @@ Membres hérités additionnels</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="gamecore_8h_source.html#l00077">77</a> du fichier <a class="el" href="gamecore_8h_source.html">gamecore.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="gamecore_8h_source.html#l00080">80</a> du fichier <a class="el" href="gamecore_8h_source.html">gamecore.h</a>.</p>
 
 </div>
 </div>
@@ -1543,7 +1547,7 @@ Membres hérités additionnels</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="gamecore_8h_source.html#l00100">100</a> du fichier <a class="el" href="gamecore_8h_source.html">gamecore.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="gamecore_8h_source.html#l00103">103</a> du fichier <a class="el" href="gamecore_8h_source.html">gamecore.h</a>.</p>
 
 </div>
 </div>
@@ -1567,7 +1571,31 @@ Membres hérités additionnels</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="gamecore_8h_source.html#l00098">98</a> du fichier <a class="el" href="gamecore_8h_source.html">gamecore.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="gamecore_8h_source.html#l00101">101</a> du fichier <a class="el" href="gamecore_8h_source.html">gamecore.h</a>.</p>
+
+</div>
+</div>
+<a id="ae03eb49c30d60a7ad3a94f561b37d02f" name="ae03eb49c30d60a7ad3a94f561b37d02f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae03eb49c30d60a7ad3a94f561b37d02f">&#9670;&#160;</a></span>m_numberOfBombs</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int GameCore::m_numberOfBombs = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="gamecore_8h_source.html#l00050">50</a> du fichier <a class="el" href="gamecore_8h_source.html">gamecore.h</a>.</p>
 
 </div>
 </div>
@@ -1591,7 +1619,7 @@ Membres hérités additionnels</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="gamecore_8h_source.html#l00067">67</a> du fichier <a class="el" href="gamecore_8h_source.html">gamecore.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="gamecore_8h_source.html#l00070">70</a> du fichier <a class="el" href="gamecore_8h_source.html">gamecore.h</a>.</p>
 
 </div>
 </div>
@@ -1615,7 +1643,7 @@ Membres hérités additionnels</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="gamecore_8h_source.html#l00068">68</a> du fichier <a class="el" href="gamecore_8h_source.html">gamecore.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="gamecore_8h_source.html#l00071">71</a> du fichier <a class="el" href="gamecore_8h_source.html">gamecore.h</a>.</p>
 
 </div>
 </div>
@@ -1639,7 +1667,7 @@ Membres hérités additionnels</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="gamecore_8h_source.html#l00069">69</a> du fichier <a class="el" href="gamecore_8h_source.html">gamecore.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="gamecore_8h_source.html#l00072">72</a> du fichier <a class="el" href="gamecore_8h_source.html">gamecore.h</a>.</p>
 
 </div>
 </div>
@@ -1663,7 +1691,7 @@ Membres hérités additionnels</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="gamecore_8h_source.html#l00064">64</a> du fichier <a class="el" href="gamecore_8h_source.html">gamecore.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="gamecore_8h_source.html#l00067">67</a> du fichier <a class="el" href="gamecore_8h_source.html">gamecore.h</a>.</p>
 
 </div>
 </div>
@@ -1711,7 +1739,7 @@ Membres hérités additionnels</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="gamecore_8h_source.html#l00057">57</a> du fichier <a class="el" href="gamecore_8h_source.html">gamecore.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="gamecore_8h_source.html#l00059">59</a> du fichier <a class="el" href="gamecore_8h_source.html">gamecore.h</a>.</p>
 
 </div>
 </div>
@@ -1735,7 +1763,7 @@ Membres hérités additionnels</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="gamecore_8h_source.html#l00065">65</a> du fichier <a class="el" href="gamecore_8h_source.html">gamecore.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="gamecore_8h_source.html#l00068">68</a> du fichier <a class="el" href="gamecore_8h_source.html">gamecore.h</a>.</p>
 
 </div>
 </div>
@@ -1759,12 +1787,12 @@ Membres hérités additionnels</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="gamecore_8h_source.html#l00050">50</a> du fichier <a class="el" href="gamecore_8h_source.html">gamecore.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="gamecore_8h_source.html#l00052">52</a> du fichier <a class="el" href="gamecore_8h_source.html">gamecore.h</a>.</p>
 
 </div>
 </div>
-<a id="af0acaf2d1443b3d303bdaf933ec87830" name="af0acaf2d1443b3d303bdaf933ec87830"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af0acaf2d1443b3d303bdaf933ec87830">&#9670;&#160;</a></span>m_pHudText</h2>
+<a id="a906f3fd77e47b19f2c9b2bccf35b1f06" name="a906f3fd77e47b19f2c9b2bccf35b1f06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a906f3fd77e47b19f2c9b2bccf35b1f06">&#9670;&#160;</a></span>m_pHudTextBombe</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1773,7 +1801,7 @@ Membres hérités additionnels</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" href="http://qt-project.org/doc/qt-5/qgraphicstextitem.html">QGraphicsTextItem</a>* GameCore::m_pHudText = nullptr</td>
+          <td class="memname"><a class="elRef" href="http://qt-project.org/doc/qt-5/qgraphicstextitem.html">QGraphicsTextItem</a>* GameCore::m_pHudTextBombe = nullptr</td>
         </tr>
       </table>
   </td>
@@ -1783,7 +1811,31 @@ Membres hérités additionnels</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="gamecore_8h_source.html#l00060">60</a> du fichier <a class="el" href="gamecore_8h_source.html">gamecore.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="gamecore_8h_source.html#l00063">63</a> du fichier <a class="el" href="gamecore_8h_source.html">gamecore.h</a>.</p>
+
+</div>
+</div>
+<a id="a27d6d966adf6d589d494b36be76b19b5" name="a27d6d966adf6d589d494b36be76b19b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27d6d966adf6d589d494b36be76b19b5">&#9670;&#160;</a></span>m_pHudTextTime</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" href="http://qt-project.org/doc/qt-5/qgraphicstextitem.html">QGraphicsTextItem</a>* GameCore::m_pHudTextTime = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="gamecore_8h_source.html#l00062">62</a> du fichier <a class="el" href="gamecore_8h_source.html">gamecore.h</a>.</p>
 
 </div>
 </div>
@@ -1807,7 +1859,7 @@ Membres hérités additionnels</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="gamecore_8h_source.html#l00079">79</a> du fichier <a class="el" href="gamecore_8h_source.html">gamecore.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="gamecore_8h_source.html#l00082">82</a> du fichier <a class="el" href="gamecore_8h_source.html">gamecore.h</a>.</p>
 
 </div>
 </div>
@@ -1831,7 +1883,7 @@ Membres hérités additionnels</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="gamecore_8h_source.html#l00080">80</a> du fichier <a class="el" href="gamecore_8h_source.html">gamecore.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="gamecore_8h_source.html#l00083">83</a> du fichier <a class="el" href="gamecore_8h_source.html">gamecore.h</a>.</p>
 
 </div>
 </div>
@@ -1855,7 +1907,7 @@ Membres hérités additionnels</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="gamecore_8h_source.html#l00081">81</a> du fichier <a class="el" href="gamecore_8h_source.html">gamecore.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="gamecore_8h_source.html#l00084">84</a> du fichier <a class="el" href="gamecore_8h_source.html">gamecore.h</a>.</p>
 
 </div>
 </div>
@@ -1879,7 +1931,7 @@ Membres hérités additionnels</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="gamecore_8h_source.html#l00082">82</a> du fichier <a class="el" href="gamecore_8h_source.html">gamecore.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="gamecore_8h_source.html#l00085">85</a> du fichier <a class="el" href="gamecore_8h_source.html">gamecore.h</a>.</p>
 
 </div>
 </div>
@@ -1903,7 +1955,7 @@ Membres hérités additionnels</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="gamecore_8h_source.html#l00062">62</a> du fichier <a class="el" href="gamecore_8h_source.html">gamecore.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="gamecore_8h_source.html#l00065">65</a> du fichier <a class="el" href="gamecore_8h_source.html">gamecore.h</a>.</p>
 
 </div>
 </div>
@@ -1927,7 +1979,7 @@ Membres hérités additionnels</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="gamecore_8h_source.html#l00063">63</a> du fichier <a class="el" href="gamecore_8h_source.html">gamecore.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="gamecore_8h_source.html#l00066">66</a> du fichier <a class="el" href="gamecore_8h_source.html">gamecore.h</a>.</p>
 
 </div>
 </div>
@@ -1951,7 +2003,7 @@ Membres hérités additionnels</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="gamecore_8h_source.html#l00053">53</a> du fichier <a class="el" href="gamecore_8h_source.html">gamecore.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="gamecore_8h_source.html#l00055">55</a> du fichier <a class="el" href="gamecore_8h_source.html">gamecore.h</a>.</p>
 
 </div>
 </div>
@@ -1975,7 +2027,7 @@ Membres hérités additionnels</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="gamecore_8h_source.html#l00051">51</a> du fichier <a class="el" href="gamecore_8h_source.html">gamecore.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="gamecore_8h_source.html#l00053">53</a> du fichier <a class="el" href="gamecore_8h_source.html">gamecore.h</a>.</p>
 
 </div>
 </div>
@@ -1999,7 +2051,7 @@ Membres hérités additionnels</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="gamecore_8h_source.html#l00052">52</a> du fichier <a class="el" href="gamecore_8h_source.html">gamecore.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="gamecore_8h_source.html#l00054">54</a> du fichier <a class="el" href="gamecore_8h_source.html">gamecore.h</a>.</p>
 
 </div>
 </div>
@@ -2023,7 +2075,7 @@ Membres hérités additionnels</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="gamecore_8h_source.html#l00104">104</a> du fichier <a class="el" href="gamecore_8h_source.html">gamecore.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="gamecore_8h_source.html#l00107">107</a> du fichier <a class="el" href="gamecore_8h_source.html">gamecore.h</a>.</p>
 
 </div>
 </div>
@@ -2047,7 +2099,7 @@ Membres hérités additionnels</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="gamecore_8h_source.html#l00103">103</a> du fichier <a class="el" href="gamecore_8h_source.html">gamecore.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="gamecore_8h_source.html#l00106">106</a> du fichier <a class="el" href="gamecore_8h_source.html">gamecore.h</a>.</p>
 
 </div>
 </div>
@@ -2071,7 +2123,7 @@ Membres hérités additionnels</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="gamecore_8h_source.html#l00094">94</a> du fichier <a class="el" href="gamecore_8h_source.html">gamecore.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="gamecore_8h_source.html#l00097">97</a> du fichier <a class="el" href="gamecore_8h_source.html">gamecore.h</a>.</p>
 
 </div>
 </div>
@@ -2095,7 +2147,7 @@ Membres hérités additionnels</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="gamecore_8h_source.html#l00101">101</a> du fichier <a class="el" href="gamecore_8h_source.html">gamecore.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="gamecore_8h_source.html#l00104">104</a> du fichier <a class="el" href="gamecore_8h_source.html">gamecore.h</a>.</p>
 
 </div>
 </div>
@@ -2119,7 +2171,7 @@ Membres hérités additionnels</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="gamecore_8h_source.html#l00105">105</a> du fichier <a class="el" href="gamecore_8h_source.html">gamecore.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="gamecore_8h_source.html#l00108">108</a> du fichier <a class="el" href="gamecore_8h_source.html">gamecore.h</a>.</p>
 
 </div>
 </div>
@@ -2191,7 +2243,7 @@ Membres hérités additionnels</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="gamecore_8h_source.html#l00085">85</a> du fichier <a class="el" href="gamecore_8h_source.html">gamecore.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="gamecore_8h_source.html#l00088">88</a> du fichier <a class="el" href="gamecore_8h_source.html">gamecore.h</a>.</p>
 
 </div>
 </div>
@@ -2215,7 +2267,7 @@ Membres hérités additionnels</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="gamecore_8h_source.html#l00084">84</a> du fichier <a class="el" href="gamecore_8h_source.html">gamecore.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="gamecore_8h_source.html#l00087">87</a> du fichier <a class="el" href="gamecore_8h_source.html">gamecore.h</a>.</p>
 
 </div>
 </div>
@@ -2239,7 +2291,7 @@ Membres hérités additionnels</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="gamecore_8h_source.html#l00097">97</a> du fichier <a class="el" href="gamecore_8h_source.html">gamecore.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="gamecore_8h_source.html#l00100">100</a> du fichier <a class="el" href="gamecore_8h_source.html">gamecore.h</a>.</p>
 
 </div>
 </div>
@@ -2250,7 +2302,7 @@ Membres hérités additionnels</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Généré le Jeudi 1 Décembre 2022 07:56:40 pour 2022-JCO-SpaceSurvivors par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Généré le Mardi 6 Décembre 2022 11:26:38 pour 2022-JCO-SpaceSurvivors par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

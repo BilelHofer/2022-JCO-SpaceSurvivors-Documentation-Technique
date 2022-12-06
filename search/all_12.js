@@ -233,8 +233,8 @@ var searchData=
   ['restoreoverridecursor_230',['restoreOverrideCursor',['http://qt-project.org/doc/qt-5/qguiapplication.html#restoreOverrideCursor',1,'QGuiApplication']]],
   ['restoreredirected_231',['restoreRedirected',['http://qt-project.org/doc/qt-5/qpainter-obsolete.html#restoreRedirected',1,'QPainter']]],
   ['restorestate_232',['restoreState',['http://qt-project.org/doc/qt-5/qfiledialog.html#restoreState',1,'QFileDialog::restoreState()'],['http://qt-project.org/doc/qt-5/qheaderview.html#restoreState',1,'QHeaderView::restoreState()'],['http://qt-project.org/doc/qt-5/qmainwindow.html#restoreState',1,'QMainWindow::restoreState()'],['http://qt-project.org/doc/qt-5/qsplitter.html#restoreState',1,'QSplitter::restoreState()']]],
-  ['result_233',['result',['http://qt-project.org/doc/qt-5/qfuture.html#result',1,'QFuture::result()'],['http://qt-project.org/doc/qt-5/qfuturewatcher.html#result',1,'QFutureWatcher::result()'],['http://qt-project.org/doc/qt-5/qcryptographichash.html#result',1,'QCryptographicHash::result()'],['http://qt-project.org/doc/qt-5/qmessageauthenticationcode.html#result',1,'QMessageAuthenticationCode::result()'],['http://qt-project.org/doc/qt-5/qdialog.html#result',1,'QDialog::result()']]],
-  ['result_234',['Result',['http://qt-project.org/doc/qt-5/qgesturerecognizer.html#ResultFlag-enum',1,'QGestureRecognizer']]],
+  ['result_233',['Result',['http://qt-project.org/doc/qt-5/qgesturerecognizer.html#ResultFlag-enum',1,'QGestureRecognizer']]],
+  ['result_234',['result',['http://qt-project.org/doc/qt-5/qfuture.html#result',1,'QFuture::result()'],['http://qt-project.org/doc/qt-5/qfuturewatcher.html#result',1,'QFutureWatcher::result()'],['http://qt-project.org/doc/qt-5/qcryptographichash.html#result',1,'QCryptographicHash::result()'],['http://qt-project.org/doc/qt-5/qmessageauthenticationcode.html#result',1,'QMessageAuthenticationCode::result()'],['http://qt-project.org/doc/qt-5/qdialog.html#result',1,'QDialog::result()']]],
   ['resultat_235',['resultAt',['http://qt-project.org/doc/qt-5/qfuturewatcher.html#resultAt',1,'QFutureWatcher::resultAt()'],['http://qt-project.org/doc/qt-5/qfuture.html#resultAt',1,'QFuture::resultAt(int index) const']]],
   ['resultcount_236',['resultCount',['http://qt-project.org/doc/qt-5/qfuture.html#resultCount',1,'QFuture']]],
   ['resultreadyat_237',['resultReadyAt',['http://qt-project.org/doc/qt-5/qfuturewatcher.html#resultReadyAt',1,'QFutureWatcher']]],
@@ -316,11 +316,10 @@ var searchData=
   ['rubberbandrect_313',['rubberBandRect',['http://qt-project.org/doc/qt-5/qgraphicsview.html#rubberBandRect',1,'QGraphicsView']]],
   ['rubberbandselectionmode_314',['rubberBandSelectionMode',['http://qt-project.org/doc/qt-5/qgraphicsview.html#rubberBandSelectionMode-prop',1,'QGraphicsView::rubberBandSelectionMode()'],['http://qt-project.org/doc/qt-5/qgraphicsview.html#rubberBandSelectionMode-prop',1,'QGraphicsView::rubberBandSelectionMode() const']]],
   ['run_315',['run',['http://qt-project.org/doc/qt-5/qrunnable.html#run',1,'QRunnable::run()'],['http://qt-project.org/doc/qt-5/qthread.html#run',1,'QThread::run()']]],
-  ['running_316',['RUNNING',['../class_game_core.html#a1265dd6dd8dacfb051bd2672fd06be2eabb42b8a2992e3bd588c7a5b2b8073492',1,'GameCore']]],
+  ['running_316',['RUNNING',['../class_enemy.html#a54999459ea867f07c491903e78f0af88aea5e5f313cae1a7afd37170cb304dac7',1,'Enemy::RUNNING()'],['../class_game_core.html#a1265dd6dd8dacfb051bd2672fd06be2eabb42b8a2992e3bd588c7a5b2b8073492',1,'GameCore::RUNNING()']]],
   ['running_317',['running',['http://qt-project.org/doc/qt-5/qstatemachine.html#running-prop',1,'QStateMachine']]],
-  ['running_318',['RUNNING',['../class_enemy.html#a54999459ea867f07c491903e78f0af88aea5e5f313cae1a7afd37170cb304dac7',1,'Enemy']]],
-  ['runningchanged_319',['runningChanged',['http://qt-project.org/doc/qt-5/qstatemachine.html#running-prop',1,'QStateMachine']]],
-  ['rwidth_320',['rwidth',['http://qt-project.org/doc/qt-5/qsize.html#rwidth',1,'QSize::rwidth()'],['http://qt-project.org/doc/qt-5/qsizef.html#rwidth',1,'QSizeF::rwidth()']]],
-  ['rx_321',['rx',['http://qt-project.org/doc/qt-5/qpoint.html#rx',1,'QPoint::rx()'],['http://qt-project.org/doc/qt-5/qpointf.html#rx',1,'QPointF::rx()']]],
-  ['ry_322',['ry',['http://qt-project.org/doc/qt-5/qpoint.html#ry',1,'QPoint::ry()'],['http://qt-project.org/doc/qt-5/qpointf.html#ry',1,'QPointF::ry()']]]
+  ['runningchanged_318',['runningChanged',['http://qt-project.org/doc/qt-5/qstatemachine.html#running-prop',1,'QStateMachine']]],
+  ['rwidth_319',['rwidth',['http://qt-project.org/doc/qt-5/qsize.html#rwidth',1,'QSize::rwidth()'],['http://qt-project.org/doc/qt-5/qsizef.html#rwidth',1,'QSizeF::rwidth()']]],
+  ['rx_320',['rx',['http://qt-project.org/doc/qt-5/qpoint.html#rx',1,'QPoint::rx()'],['http://qt-project.org/doc/qt-5/qpointf.html#rx',1,'QPointF::rx()']]],
+  ['ry_321',['ry',['http://qt-project.org/doc/qt-5/qpoint.html#ry',1,'QPoint::ry()'],['http://qt-project.org/doc/qt-5/qpointf.html#ry',1,'QPointF::ry()']]]
 ];
