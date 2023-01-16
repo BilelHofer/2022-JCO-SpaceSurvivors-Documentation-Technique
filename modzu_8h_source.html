@@ -1,0 +1,255 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>2022-JCO-SpaceSurvivors:  Fichier source de modzu.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">2022-JCO-SpaceSurvivors<span id="projectnumber">&#160;0.1</span>
+   </div>
+   <div id="projectbrief">2022-JCO-SpaceSurvivors</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">modzu.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="modzu_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#ifndef MODZU_H</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#define MODZU_H</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;QObject&gt;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="sprite_8h.html">sprite.h</a>&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;<a class="code" href="player_8h.html">player.h</a>&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;<a class="code" href="laser_8h.html">laser.h</a>&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;<a class="code" href="aoe_8h.html">aoe.h</a>&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &lt;QProgressBar&gt;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &lt;QGraphicsEllipseItem&gt;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="class_modzu.html">   40</a></span><span class="keyword">class </span><a class="code hl_class" href="class_modzu.html">Modzu</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_sprite.html">Sprite</a></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>{</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    Q_OBJECT</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <a class="code hl_class" href="class_modzu.html">Modzu</a>(<a class="code hl_classRef" href="http://qt-project.org/doc/qt-5/qrectf.html">QRectF</a> mapEdge, <a class="code hl_class" href="class_player.html">Player</a>* pPlayer);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_modzu.html#ac0e88d2638340fefccd96a4928a6a2c2">tick</a>(<span class="keywordtype">long</span> <span class="keywordtype">long</span> elapsedTimeInMilliseconds);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_modzu.html#afba72a35ba923ca13021eb6447143ac3">boostModzu</a>();</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_modzu.html#a2552d57a51f91d36c8b93f4a8e1a23ec">replaceZone</a>();</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <a class="code hl_classRef" href="http://qt-project.org/doc/qt-5/qprogressbar.html">QProgressBar</a>* <a class="code hl_function" href="class_modzu.html#ac48d76ecab39b3c172961d2dedaf39ba">getHealthBar</a>();</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="class_modzu.html#a9feec6924368bd6514f166e77fd8e802">   52</a></span>    <span class="keyword">enum</span> <a class="code hl_enumeration" href="class_modzu.html#a9feec6924368bd6514f166e77fd8e802">mode</a> {</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="class_modzu.html#a9feec6924368bd6514f166e77fd8e802a17a50ad5cf68f30c4ad24d3a83efaa7e">   53</a></span>        <a class="code hl_enumvalue" href="class_modzu.html#a9feec6924368bd6514f166e77fd8e802a17a50ad5cf68f30c4ad24d3a83efaa7e">WAITING</a>,</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="class_modzu.html#a9feec6924368bd6514f166e77fd8e802a58c8660d53f6f6f27fda05aa79a0297a">   54</a></span>        <a class="code hl_enumvalue" href="class_modzu.html#a9feec6924368bd6514f166e77fd8e802a58c8660d53f6f6f27fda05aa79a0297a">SHOT_LASER</a>,</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="class_modzu.html#a9feec6924368bd6514f166e77fd8e802a510f3da31b404dbec7c80ccdaeb33948">   55</a></span>        <a class="code hl_enumvalue" href="class_modzu.html#a9feec6924368bd6514f166e77fd8e802a510f3da31b404dbec7c80ccdaeb33948">SUMMON</a>,</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    };</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="class_modzu.html#ad0a89a24501aa87ec6263820d85c20a4">   58</a></span>    <a class="code hl_classRef" href="http://qt-project.org/doc/qt-5/qgraphicsellipseitem.html">QGraphicsEllipseItem</a>* <a class="code hl_variable" href="class_modzu.html#ad0a89a24501aa87ec6263820d85c20a4">m_AOEHitBox</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="class_modzu.html#a972fea2dc96b64ad8ef98237b50be1b5">   60</a></span>    <a class="code hl_class" href="class_player.html">Player</a>* <a class="code hl_variable" href="class_modzu.html#a972fea2dc96b64ad8ef98237b50be1b5">m_pPlayer</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="class_modzu.html#a54d648d685f141f04f85adaa25050308">   62</a></span>    <a class="code hl_class" href="class_laser.html">Laser</a>* <a class="code hl_variable" href="class_modzu.html#a54d648d685f141f04f85adaa25050308">m_pLaser</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="class_modzu.html#a66132ad38858fc577c6ef688dc714471">   63</a></span>    <a class="code hl_class" href="class_a_o_e.html">AOE</a>* <a class="code hl_variable" href="class_modzu.html#a66132ad38858fc577c6ef688dc714471">m_pAOE</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="class_modzu.html#a70ed772f979d02b586ffbc82d8453869">   65</a></span>    <a class="code hl_classRef" href="http://qt-project.org/doc/qt-5/qrectf.html">QRectF</a> <a class="code hl_variable" href="class_modzu.html#a70ed772f979d02b586ffbc82d8453869">m_mapEdge</a>;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="class_modzu.html#a2603c25be8667d2cef58016dd71fb3a3">   67</a></span>    <a class="code hl_class" href="class_sprite.html">Sprite</a>* <a class="code hl_variable" href="class_modzu.html#a2603c25be8667d2cef58016dd71fb3a3">m_poisonBombZone</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="class_modzu.html#ad9b36d3d84481cb618d6693245ef4b02">   68</a></span>    <a class="code hl_class" href="class_sprite.html">Sprite</a>* <a class="code hl_variable" href="class_modzu.html#ad9b36d3d84481cb618d6693245ef4b02">m_laserZone</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="class_modzu.html#ac2ddb9625ac90c1c14f7634473c01158">   70</a></span>    <a class="code hl_classRef" href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a> <a class="code hl_variable" href="class_modzu.html#ac2ddb9625ac90c1c14f7634473c01158">m_playerPos</a> = <a class="code hl_classRef" href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a>(0, 0);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="class_modzu.html#ad19753ae6922dfc71d4f7716664731a1">   71</a></span>    <a class="code hl_classRef" href="http://qt-project.org/doc/qt-5/qprogressbar.html">QProgressBar</a>* <a class="code hl_variable" href="class_modzu.html#ad19753ae6922dfc71d4f7716664731a1">m_pHealthBar</a> = <span class="keyword">new</span> <a class="code hl_classRef" href="http://qt-project.org/doc/qt-5/qprogressbar.html">QProgressBar</a>;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_modzu.html#adcc31bacd4d45963924ff68a265dbf57">launchAOE</a>();</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_modzu.html#ad744171b70bb1fdce13e51e62aa45a83">launchOrb</a>();</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_modzu.html#a31d3eae3a0ef84113f7552b33071a7aa">launchPoisonBomb</a>(<span class="keywordtype">long</span> <span class="keywordtype">long</span> elapsedTime);</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_modzu.html#ad9d08b5918f224a1b6502c11529cfbe4">launchLaser</a>();</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_modzu.html#ab2a0f915af2545a6fb93b7e695ef7e5c">testCollisions</a>();</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_modzu.html#a051247264da69611bd6ff287154e6bb3">initHitBoxes</a>();</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_modzu.html#a443696dd752b8de34f5c348a854a5a93">launchDeath</a>();</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="class_modzu.html#a71e993cfff639da8882f03ecf3a0b89e">   83</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="class_modzu.html#a71e993cfff639da8882f03ecf3a0b89e">m_hitBoxAlreadyAdded</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="class_modzu.html#a57e6a3fa283db193850f67960cd5aa2e">   85</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_modzu.html#a57e6a3fa283db193850f67960cd5aa2e">m_percentEnrage</a> = 12;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="class_modzu.html#a3e6df0e51435f7e63a2230f5a6b7791a">   87</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_modzu.html#a3e6df0e51435f7e63a2230f5a6b7791a">m_maximumHealth</a> = 25000;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="class_modzu.html#aea585ee23a4ce401faefef2b9c0fa0aa">   88</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_modzu.html#aea585ee23a4ce401faefef2b9c0fa0aa">m_actualHealth</a>;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="class_modzu.html#a623f17d3663cfd46c024b5160dbd476e">   90</a></span>    <span class="keywordtype">double</span> <a class="code hl_variable" href="class_modzu.html#a623f17d3663cfd46c024b5160dbd476e">m_poisonBombSize</a> = 2.2;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="class_modzu.html#a3222e872176ff17e011575a69e5fea66">   91</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_modzu.html#a3222e872176ff17e011575a69e5fea66">m_poisonBombAnimationSpeed</a> = 80;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="class_modzu.html#a2e1f7136e0e565d7920d22c1e1ef78f8">   92</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_modzu.html#a2e1f7136e0e565d7920d22c1e1ef78f8">m_poisonBombDamage</a> = 1;</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="class_modzu.html#aa597e1a1695ab5e7b93fb52cd7b666c9">   93</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_modzu.html#aa597e1a1695ab5e7b93fb52cd7b666c9">m_poisonBombZoneSlowness</a> = 50;</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="class_modzu.html#a742d3ee3f73c35181fd92a6617416f1f">   94</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_modzu.html#a742d3ee3f73c35181fd92a6617416f1f">m_poisonBombNumber</a> = 3;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="class_modzu.html#a2e5ababe583a01e225252611ac6c6534">   95</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_modzu.html#a2e5ababe583a01e225252611ac6c6534">m_actualPoisonBombLaunched</a> = 0;</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="class_modzu.html#a7880dc05166441da670a154d64c551ed">   96</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="class_modzu.html#a7880dc05166441da670a154d64c551ed">m_PoisonBombInLaunch</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="class_modzu.html#a76f491937bdfabdec04f7fdaf3e8bad3">   98</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_modzu.html#a76f491937bdfabdec04f7fdaf3e8bad3">m_laserDamage</a> = 10;</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="class_modzu.html#a62aa50b676864decb55146f4bd80a0cc">   99</a></span>    <span class="keywordtype">double</span> <a class="code hl_variable" href="class_modzu.html#a62aa50b676864decb55146f4bd80a0cc">m_laserSize</a> = 1;</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno"><a class="line" href="class_modzu.html#a793842f8c7df94d1fc96492711e6a806">  102</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_modzu.html#a793842f8c7df94d1fc96492711e6a806">m_boostOrbSpeed</a> = 60;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="class_modzu.html#a2dce481e0b1577101c9e1b9b0fcb264b">  103</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_modzu.html#a2dce481e0b1577101c9e1b9b0fcb264b">m_numberOfOrbAttack</a> = 0;</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="class_modzu.html#ad48199486b3a5f2d2983c057dc7a4023">  104</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_modzu.html#ad48199486b3a5f2d2983c057dc7a4023">m_maxOrbAttack</a> = 2;</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="class_modzu.html#a5bea701f2b58396fe1e9c63f86fd8903">  106</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_modzu.html#a5bea701f2b58396fe1e9c63f86fd8903">m_AOEDamage</a> = 1;</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="class_modzu.html#aa1f654e7f2c9a30b62304d12557b0841">  108</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="class_modzu.html#aa1f654e7f2c9a30b62304d12557b0841">m_enrageModeActivated</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno"><a class="line" href="class_modzu.html#a81671023b0bd9148c93c93f516338091">  109</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_modzu.html#a81671023b0bd9148c93c93f516338091">m_percentReduceDamageWithEnrageMode</a> = 50;</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="class_modzu.html#ab1bd9b4fdc84f88b118dd98b11840c63">  111</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_modzu.html#ab1bd9b4fdc84f88b118dd98b11840c63">m_pauseBetweenAttacksInMilliseconds</a> = 2000;</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="class_modzu.html#aec1e17c56f40c1e02d932b40b78fea1a">  112</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_modzu.html#aec1e17c56f40c1e02d932b40b78fea1a">m_actualTimeInPauseBetweenAttacksInMilliseconds</a> = 2000;</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno"><a class="line" href="class_modzu.html#ae9bc14f3aaa0b7b207d9293a23383186">  114</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_modzu.html#ae9bc14f3aaa0b7b207d9293a23383186">m_delayBetweenTwoBomb</a> = 750;</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno"><a class="line" href="class_modzu.html#afe0b78f24ccc9beb82ed4456e337721e">  115</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_modzu.html#afe0b78f24ccc9beb82ed4456e337721e">m_actualDelayBetweenTwoBomb</a> = 750;</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_modzu.html#a00c0b6e04722c81d2f9e3e5e3b64abbb">initEnragedMode</a>();</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><span class="keyword">public</span> slots:</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_modzu.html#a673b18241ee3b2a64369725342a03740">animationAOEFinished</a>();</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_modzu.html#a7cdc5b84cff07d8a70f000a4c2656e89">animationFinished</a>();</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_modzu.html#aa4e5e7c7a7d0a04f58c33188ab33ad32">animationLaserFinished</a>();</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_modzu.html#ac388a38f81aaedd8de0e4dd18998dc54">newPlayerPose</a>(<a class="code hl_classRef" href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a> playerPos);</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_modzu.html#a2b851e71496d593630ba61806d028719">playerIsMoved</a>(<span class="keywordtype">bool</span> isMoved);</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>signals:</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno"><a class="line" href="class_modzu.html#ad6264c226087764a0ce7771bd29de20b">  127</a></span>    <span class="keywordtype">void</span> <a class="code hl_signal" href="class_modzu.html#ad6264c226087764a0ce7771bd29de20b">notifyPlayerIsMovedByForce</a>(<span class="keywordtype">bool</span> isMoved);</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno"><a class="line" href="class_modzu.html#a95e589e0d63c0a3beb115b79703a4f1e">  128</a></span>    <span class="keywordtype">void</span> <a class="code hl_signal" href="class_modzu.html#a95e589e0d63c0a3beb115b79703a4f1e">notifyModzuIsDead</a>();</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>};</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span><span class="preprocessor">#endif </span><span class="comment">// MODZU_H</span></div>
+<div class="ttc" id="aaoe_8h_html"><div class="ttname"><a href="aoe_8h.html">aoe.h</a></div><div class="ttdoc">Déclaration de la classe Aoe.</div></div>
+<div class="ttc" id="aclass_a_o_e_html"><div class="ttname"><a href="class_a_o_e.html">AOE</a></div><div class="ttdoc">Cette classe représente une aoe.</div><div class="ttdef"><b>Definition:</b> <a href="aoe_8h_source.html#l00020">aoe.h:21</a></div></div>
+<div class="ttc" id="aclass_laser_html"><div class="ttname"><a href="class_laser.html">Laser</a></div><div class="ttdoc">Classe qui représente un laser.</div><div class="ttdef"><b>Definition:</b> <a href="laser_8h_source.html#l00020">laser.h:21</a></div></div>
+<div class="ttc" id="aclass_modzu_html"><div class="ttname"><a href="class_modzu.html">Modzu</a></div><div class="ttdoc">Classe qui représente un boss du nom de Modzu.</div><div class="ttdef"><b>Definition:</b> <a href="modzu_8h_source.html#l00040">modzu.h:41</a></div></div>
+<div class="ttc" id="aclass_modzu_html_a00c0b6e04722c81d2f9e3e5e3b64abbb"><div class="ttname"><a href="class_modzu.html#a00c0b6e04722c81d2f9e3e5e3b64abbb">Modzu::initEnragedMode</a></div><div class="ttdeci">void initEnragedMode()</div><div class="ttdoc">lance le mode enragement du boss</div><div class="ttdef"><b>Definition:</b> <a href="modzu_8cpp_source.html#l00433">modzu.cpp:433</a></div></div>
+<div class="ttc" id="aclass_modzu_html_a051247264da69611bd6ff287154e6bb3"><div class="ttname"><a href="class_modzu.html#a051247264da69611bd6ff287154e6bb3">Modzu::initHitBoxes</a></div><div class="ttdeci">void initHitBoxes()</div><div class="ttdoc">Initialise les hitboxes des attaques.</div><div class="ttdef"><b>Definition:</b> <a href="modzu_8cpp_source.html#l00478">modzu.cpp:478</a></div></div>
+<div class="ttc" id="aclass_modzu_html_a2552d57a51f91d36c8b93f4a8e1a23ec"><div class="ttname"><a href="class_modzu.html#a2552d57a51f91d36c8b93f4a8e1a23ec">Modzu::replaceZone</a></div><div class="ttdeci">void replaceZone()</div><div class="ttdoc">Replace les zones pour le préshot du futur emplacement du joueur.</div><div class="ttdef"><b>Definition:</b> <a href="modzu_8cpp_source.html#l00367">modzu.cpp:367</a></div></div>
+<div class="ttc" id="aclass_modzu_html_a2603c25be8667d2cef58016dd71fb3a3"><div class="ttname"><a href="class_modzu.html#a2603c25be8667d2cef58016dd71fb3a3">Modzu::m_poisonBombZone</a></div><div class="ttdeci">Sprite * m_poisonBombZone</div><div class="ttdef"><b>Definition:</b> <a href="modzu_8h_source.html#l00067">modzu.h:67</a></div></div>
+<div class="ttc" id="aclass_modzu_html_a2b851e71496d593630ba61806d028719"><div class="ttname"><a href="class_modzu.html#a2b851e71496d593630ba61806d028719">Modzu::playerIsMoved</a></div><div class="ttdeci">void playerIsMoved(bool isMoved)</div><div class="ttdoc">Modifie la position du joueur.</div><div class="ttdef"><b>Definition:</b> <a href="modzu_8cpp_source.html#l00352">modzu.cpp:352</a></div></div>
+<div class="ttc" id="aclass_modzu_html_a2dce481e0b1577101c9e1b9b0fcb264b"><div class="ttname"><a href="class_modzu.html#a2dce481e0b1577101c9e1b9b0fcb264b">Modzu::m_numberOfOrbAttack</a></div><div class="ttdeci">int m_numberOfOrbAttack</div><div class="ttdef"><b>Definition:</b> <a href="modzu_8h_source.html#l00103">modzu.h:103</a></div></div>
+<div class="ttc" id="aclass_modzu_html_a2e1f7136e0e565d7920d22c1e1ef78f8"><div class="ttname"><a href="class_modzu.html#a2e1f7136e0e565d7920d22c1e1ef78f8">Modzu::m_poisonBombDamage</a></div><div class="ttdeci">int m_poisonBombDamage</div><div class="ttdef"><b>Definition:</b> <a href="modzu_8h_source.html#l00092">modzu.h:92</a></div></div>
+<div class="ttc" id="aclass_modzu_html_a2e5ababe583a01e225252611ac6c6534"><div class="ttname"><a href="class_modzu.html#a2e5ababe583a01e225252611ac6c6534">Modzu::m_actualPoisonBombLaunched</a></div><div class="ttdeci">int m_actualPoisonBombLaunched</div><div class="ttdef"><b>Definition:</b> <a href="modzu_8h_source.html#l00095">modzu.h:95</a></div></div>
+<div class="ttc" id="aclass_modzu_html_a31d3eae3a0ef84113f7552b33071a7aa"><div class="ttname"><a href="class_modzu.html#a31d3eae3a0ef84113f7552b33071a7aa">Modzu::launchPoisonBomb</a></div><div class="ttdeci">void launchPoisonBomb(long long elapsedTime)</div><div class="ttdef"><b>Definition:</b> <a href="modzu_8cpp_source.html#l00290">modzu.cpp:290</a></div></div>
+<div class="ttc" id="aclass_modzu_html_a3222e872176ff17e011575a69e5fea66"><div class="ttname"><a href="class_modzu.html#a3222e872176ff17e011575a69e5fea66">Modzu::m_poisonBombAnimationSpeed</a></div><div class="ttdeci">int m_poisonBombAnimationSpeed</div><div class="ttdef"><b>Definition:</b> <a href="modzu_8h_source.html#l00091">modzu.h:91</a></div></div>
+<div class="ttc" id="aclass_modzu_html_a3e6df0e51435f7e63a2230f5a6b7791a"><div class="ttname"><a href="class_modzu.html#a3e6df0e51435f7e63a2230f5a6b7791a">Modzu::m_maximumHealth</a></div><div class="ttdeci">int m_maximumHealth</div><div class="ttdef"><b>Definition:</b> <a href="modzu_8h_source.html#l00087">modzu.h:87</a></div></div>
+<div class="ttc" id="aclass_modzu_html_a443696dd752b8de34f5c348a854a5a93"><div class="ttname"><a href="class_modzu.html#a443696dd752b8de34f5c348a854a5a93">Modzu::launchDeath</a></div><div class="ttdeci">void launchDeath()</div><div class="ttdoc">Lance la mort de Modzu.</div><div class="ttdef"><b>Definition:</b> <a href="modzu_8cpp_source.html#l00507">modzu.cpp:507</a></div></div>
+<div class="ttc" id="aclass_modzu_html_a54d648d685f141f04f85adaa25050308"><div class="ttname"><a href="class_modzu.html#a54d648d685f141f04f85adaa25050308">Modzu::m_pLaser</a></div><div class="ttdeci">Laser * m_pLaser</div><div class="ttdef"><b>Definition:</b> <a href="modzu_8h_source.html#l00062">modzu.h:62</a></div></div>
+<div class="ttc" id="aclass_modzu_html_a57e6a3fa283db193850f67960cd5aa2e"><div class="ttname"><a href="class_modzu.html#a57e6a3fa283db193850f67960cd5aa2e">Modzu::m_percentEnrage</a></div><div class="ttdeci">int m_percentEnrage</div><div class="ttdef"><b>Definition:</b> <a href="modzu_8h_source.html#l00085">modzu.h:85</a></div></div>
+<div class="ttc" id="aclass_modzu_html_a5bea701f2b58396fe1e9c63f86fd8903"><div class="ttname"><a href="class_modzu.html#a5bea701f2b58396fe1e9c63f86fd8903">Modzu::m_AOEDamage</a></div><div class="ttdeci">int m_AOEDamage</div><div class="ttdef"><b>Definition:</b> <a href="modzu_8h_source.html#l00106">modzu.h:106</a></div></div>
+<div class="ttc" id="aclass_modzu_html_a623f17d3663cfd46c024b5160dbd476e"><div class="ttname"><a href="class_modzu.html#a623f17d3663cfd46c024b5160dbd476e">Modzu::m_poisonBombSize</a></div><div class="ttdeci">double m_poisonBombSize</div><div class="ttdef"><b>Definition:</b> <a href="modzu_8h_source.html#l00090">modzu.h:90</a></div></div>
+<div class="ttc" id="aclass_modzu_html_a62aa50b676864decb55146f4bd80a0cc"><div class="ttname"><a href="class_modzu.html#a62aa50b676864decb55146f4bd80a0cc">Modzu::m_laserSize</a></div><div class="ttdeci">double m_laserSize</div><div class="ttdef"><b>Definition:</b> <a href="modzu_8h_source.html#l00099">modzu.h:99</a></div></div>
+<div class="ttc" id="aclass_modzu_html_a66132ad38858fc577c6ef688dc714471"><div class="ttname"><a href="class_modzu.html#a66132ad38858fc577c6ef688dc714471">Modzu::m_pAOE</a></div><div class="ttdeci">AOE * m_pAOE</div><div class="ttdef"><b>Definition:</b> <a href="modzu_8h_source.html#l00063">modzu.h:63</a></div></div>
+<div class="ttc" id="aclass_modzu_html_a673b18241ee3b2a64369725342a03740"><div class="ttname"><a href="class_modzu.html#a673b18241ee3b2a64369725342a03740">Modzu::animationAOEFinished</a></div><div class="ttdeci">void animationAOEFinished()</div><div class="ttdoc">Une fois l'animation terminer supprime l'aoe.</div><div class="ttdef"><b>Definition:</b> <a href="modzu_8cpp_source.html#l00240">modzu.cpp:240</a></div></div>
+<div class="ttc" id="aclass_modzu_html_a70ed772f979d02b586ffbc82d8453869"><div class="ttname"><a href="class_modzu.html#a70ed772f979d02b586ffbc82d8453869">Modzu::m_mapEdge</a></div><div class="ttdeci">QRectF m_mapEdge</div><div class="ttdef"><b>Definition:</b> <a href="modzu_8h_source.html#l00065">modzu.h:65</a></div></div>
+<div class="ttc" id="aclass_modzu_html_a71e993cfff639da8882f03ecf3a0b89e"><div class="ttname"><a href="class_modzu.html#a71e993cfff639da8882f03ecf3a0b89e">Modzu::m_hitBoxAlreadyAdded</a></div><div class="ttdeci">bool m_hitBoxAlreadyAdded</div><div class="ttdef"><b>Definition:</b> <a href="modzu_8h_source.html#l00083">modzu.h:83</a></div></div>
+<div class="ttc" id="aclass_modzu_html_a742d3ee3f73c35181fd92a6617416f1f"><div class="ttname"><a href="class_modzu.html#a742d3ee3f73c35181fd92a6617416f1f">Modzu::m_poisonBombNumber</a></div><div class="ttdeci">int m_poisonBombNumber</div><div class="ttdef"><b>Definition:</b> <a href="modzu_8h_source.html#l00094">modzu.h:94</a></div></div>
+<div class="ttc" id="aclass_modzu_html_a76f491937bdfabdec04f7fdaf3e8bad3"><div class="ttname"><a href="class_modzu.html#a76f491937bdfabdec04f7fdaf3e8bad3">Modzu::m_laserDamage</a></div><div class="ttdeci">int m_laserDamage</div><div class="ttdef"><b>Definition:</b> <a href="modzu_8h_source.html#l00098">modzu.h:98</a></div></div>
+<div class="ttc" id="aclass_modzu_html_a7880dc05166441da670a154d64c551ed"><div class="ttname"><a href="class_modzu.html#a7880dc05166441da670a154d64c551ed">Modzu::m_PoisonBombInLaunch</a></div><div class="ttdeci">bool m_PoisonBombInLaunch</div><div class="ttdef"><b>Definition:</b> <a href="modzu_8h_source.html#l00096">modzu.h:96</a></div></div>
+<div class="ttc" id="aclass_modzu_html_a793842f8c7df94d1fc96492711e6a806"><div class="ttname"><a href="class_modzu.html#a793842f8c7df94d1fc96492711e6a806">Modzu::m_boostOrbSpeed</a></div><div class="ttdeci">int m_boostOrbSpeed</div><div class="ttdef"><b>Definition:</b> <a href="modzu_8h_source.html#l00102">modzu.h:102</a></div></div>
+<div class="ttc" id="aclass_modzu_html_a7cdc5b84cff07d8a70f000a4c2656e89"><div class="ttname"><a href="class_modzu.html#a7cdc5b84cff07d8a70f000a4c2656e89">Modzu::animationFinished</a></div><div class="ttdeci">void animationFinished()</div><div class="ttdoc">À chaque fin d'animation vérifie sa nouvelle action.</div><div class="ttdef"><b>Definition:</b> <a href="modzu_8cpp_source.html#l00323">modzu.cpp:323</a></div></div>
+<div class="ttc" id="aclass_modzu_html_a81671023b0bd9148c93c93f516338091"><div class="ttname"><a href="class_modzu.html#a81671023b0bd9148c93c93f516338091">Modzu::m_percentReduceDamageWithEnrageMode</a></div><div class="ttdeci">int m_percentReduceDamageWithEnrageMode</div><div class="ttdef"><b>Definition:</b> <a href="modzu_8h_source.html#l00109">modzu.h:109</a></div></div>
+<div class="ttc" id="aclass_modzu_html_a95e589e0d63c0a3beb115b79703a4f1e"><div class="ttname"><a href="class_modzu.html#a95e589e0d63c0a3beb115b79703a4f1e">Modzu::notifyModzuIsDead</a></div><div class="ttdeci">void notifyModzuIsDead()</div></div>
+<div class="ttc" id="aclass_modzu_html_a972fea2dc96b64ad8ef98237b50be1b5"><div class="ttname"><a href="class_modzu.html#a972fea2dc96b64ad8ef98237b50be1b5">Modzu::m_pPlayer</a></div><div class="ttdeci">Player * m_pPlayer</div><div class="ttdef"><b>Definition:</b> <a href="modzu_8h_source.html#l00060">modzu.h:60</a></div></div>
+<div class="ttc" id="aclass_modzu_html_a9feec6924368bd6514f166e77fd8e802"><div class="ttname"><a href="class_modzu.html#a9feec6924368bd6514f166e77fd8e802">Modzu::mode</a></div><div class="ttdeci">mode</div><div class="ttdef"><b>Definition:</b> <a href="modzu_8h_source.html#l00052">modzu.h:52</a></div></div>
+<div class="ttc" id="aclass_modzu_html_a9feec6924368bd6514f166e77fd8e802a17a50ad5cf68f30c4ad24d3a83efaa7e"><div class="ttname"><a href="class_modzu.html#a9feec6924368bd6514f166e77fd8e802a17a50ad5cf68f30c4ad24d3a83efaa7e">Modzu::WAITING</a></div><div class="ttdeci">@ WAITING</div><div class="ttdef"><b>Definition:</b> <a href="modzu_8h_source.html#l00053">modzu.h:53</a></div></div>
+<div class="ttc" id="aclass_modzu_html_a9feec6924368bd6514f166e77fd8e802a510f3da31b404dbec7c80ccdaeb33948"><div class="ttname"><a href="class_modzu.html#a9feec6924368bd6514f166e77fd8e802a510f3da31b404dbec7c80ccdaeb33948">Modzu::SUMMON</a></div><div class="ttdeci">@ SUMMON</div><div class="ttdef"><b>Definition:</b> <a href="modzu_8h_source.html#l00055">modzu.h:55</a></div></div>
+<div class="ttc" id="aclass_modzu_html_a9feec6924368bd6514f166e77fd8e802a58c8660d53f6f6f27fda05aa79a0297a"><div class="ttname"><a href="class_modzu.html#a9feec6924368bd6514f166e77fd8e802a58c8660d53f6f6f27fda05aa79a0297a">Modzu::SHOT_LASER</a></div><div class="ttdeci">@ SHOT_LASER</div><div class="ttdef"><b>Definition:</b> <a href="modzu_8h_source.html#l00054">modzu.h:54</a></div></div>
+<div class="ttc" id="aclass_modzu_html_aa1f654e7f2c9a30b62304d12557b0841"><div class="ttname"><a href="class_modzu.html#aa1f654e7f2c9a30b62304d12557b0841">Modzu::m_enrageModeActivated</a></div><div class="ttdeci">bool m_enrageModeActivated</div><div class="ttdef"><b>Definition:</b> <a href="modzu_8h_source.html#l00108">modzu.h:108</a></div></div>
+<div class="ttc" id="aclass_modzu_html_aa4e5e7c7a7d0a04f58c33188ab33ad32"><div class="ttname"><a href="class_modzu.html#aa4e5e7c7a7d0a04f58c33188ab33ad32">Modzu::animationLaserFinished</a></div><div class="ttdeci">void animationLaserFinished()</div><div class="ttdoc">Une fois, l'animation du laser terminer le supprime.</div><div class="ttdef"><b>Definition:</b> <a href="modzu_8cpp_source.html#l00214">modzu.cpp:214</a></div></div>
+<div class="ttc" id="aclass_modzu_html_aa597e1a1695ab5e7b93fb52cd7b666c9"><div class="ttname"><a href="class_modzu.html#aa597e1a1695ab5e7b93fb52cd7b666c9">Modzu::m_poisonBombZoneSlowness</a></div><div class="ttdeci">int m_poisonBombZoneSlowness</div><div class="ttdef"><b>Definition:</b> <a href="modzu_8h_source.html#l00093">modzu.h:93</a></div></div>
+<div class="ttc" id="aclass_modzu_html_ab1bd9b4fdc84f88b118dd98b11840c63"><div class="ttname"><a href="class_modzu.html#ab1bd9b4fdc84f88b118dd98b11840c63">Modzu::m_pauseBetweenAttacksInMilliseconds</a></div><div class="ttdeci">int m_pauseBetweenAttacksInMilliseconds</div><div class="ttdef"><b>Definition:</b> <a href="modzu_8h_source.html#l00111">modzu.h:111</a></div></div>
+<div class="ttc" id="aclass_modzu_html_ab2a0f915af2545a6fb93b7e695ef7e5c"><div class="ttname"><a href="class_modzu.html#ab2a0f915af2545a6fb93b7e695ef7e5c">Modzu::testCollisions</a></div><div class="ttdeci">void testCollisions()</div><div class="ttdoc">Teste les collisions avec les hitboxes.</div><div class="ttdef"><b>Definition:</b> <a href="modzu_8cpp_source.html#l00162">modzu.cpp:162</a></div></div>
+<div class="ttc" id="aclass_modzu_html_ac0e88d2638340fefccd96a4928a6a2c2"><div class="ttname"><a href="class_modzu.html#ac0e88d2638340fefccd96a4928a6a2c2">Modzu::tick</a></div><div class="ttdeci">virtual void tick(long long elapsedTimeInMilliseconds)</div><div class="ttdef"><b>Definition:</b> <a href="modzu_8cpp_source.html#l00081">modzu.cpp:81</a></div></div>
+<div class="ttc" id="aclass_modzu_html_ac2ddb9625ac90c1c14f7634473c01158"><div class="ttname"><a href="class_modzu.html#ac2ddb9625ac90c1c14f7634473c01158">Modzu::m_playerPos</a></div><div class="ttdeci">QPointF m_playerPos</div><div class="ttdef"><b>Definition:</b> <a href="modzu_8h_source.html#l00070">modzu.h:70</a></div></div>
+<div class="ttc" id="aclass_modzu_html_ac388a38f81aaedd8de0e4dd18998dc54"><div class="ttname"><a href="class_modzu.html#ac388a38f81aaedd8de0e4dd18998dc54">Modzu::newPlayerPose</a></div><div class="ttdeci">void newPlayerPose(QPointF playerPos)</div><div class="ttdef"><b>Definition:</b> <a href="modzu_8cpp_source.html#l00360">modzu.cpp:360</a></div></div>
+<div class="ttc" id="aclass_modzu_html_ac48d76ecab39b3c172961d2dedaf39ba"><div class="ttname"><a href="class_modzu.html#ac48d76ecab39b3c172961d2dedaf39ba">Modzu::getHealthBar</a></div><div class="ttdeci">QProgressBar * getHealthBar()</div><div class="ttdoc">Getter pour obtenir la barre de point de vie du boss.</div><div class="ttdef"><b>Definition:</b> <a href="modzu_8cpp_source.html#l00428">modzu.cpp:428</a></div></div>
+<div class="ttc" id="aclass_modzu_html_ad0a89a24501aa87ec6263820d85c20a4"><div class="ttname"><a href="class_modzu.html#ad0a89a24501aa87ec6263820d85c20a4">Modzu::m_AOEHitBox</a></div><div class="ttdeci">QGraphicsEllipseItem * m_AOEHitBox</div><div class="ttdef"><b>Definition:</b> <a href="modzu_8h_source.html#l00058">modzu.h:58</a></div></div>
+<div class="ttc" id="aclass_modzu_html_ad19753ae6922dfc71d4f7716664731a1"><div class="ttname"><a href="class_modzu.html#ad19753ae6922dfc71d4f7716664731a1">Modzu::m_pHealthBar</a></div><div class="ttdeci">QProgressBar * m_pHealthBar</div><div class="ttdef"><b>Definition:</b> <a href="modzu_8h_source.html#l00071">modzu.h:71</a></div></div>
+<div class="ttc" id="aclass_modzu_html_ad48199486b3a5f2d2983c057dc7a4023"><div class="ttname"><a href="class_modzu.html#ad48199486b3a5f2d2983c057dc7a4023">Modzu::m_maxOrbAttack</a></div><div class="ttdeci">int m_maxOrbAttack</div><div class="ttdef"><b>Definition:</b> <a href="modzu_8h_source.html#l00104">modzu.h:104</a></div></div>
+<div class="ttc" id="aclass_modzu_html_ad6264c226087764a0ce7771bd29de20b"><div class="ttname"><a href="class_modzu.html#ad6264c226087764a0ce7771bd29de20b">Modzu::notifyPlayerIsMovedByForce</a></div><div class="ttdeci">void notifyPlayerIsMovedByForce(bool isMoved)</div></div>
+<div class="ttc" id="aclass_modzu_html_ad744171b70bb1fdce13e51e62aa45a83"><div class="ttname"><a href="class_modzu.html#ad744171b70bb1fdce13e51e62aa45a83">Modzu::launchOrb</a></div><div class="ttdeci">void launchOrb()</div><div class="ttdoc">Lance 8 orbe autour du boss.</div><div class="ttdef"><b>Definition:</b> <a href="modzu_8cpp_source.html#l00249">modzu.cpp:249</a></div></div>
+<div class="ttc" id="aclass_modzu_html_ad9b36d3d84481cb618d6693245ef4b02"><div class="ttname"><a href="class_modzu.html#ad9b36d3d84481cb618d6693245ef4b02">Modzu::m_laserZone</a></div><div class="ttdeci">Sprite * m_laserZone</div><div class="ttdef"><b>Definition:</b> <a href="modzu_8h_source.html#l00068">modzu.h:68</a></div></div>
+<div class="ttc" id="aclass_modzu_html_ad9d08b5918f224a1b6502c11529cfbe4"><div class="ttname"><a href="class_modzu.html#ad9d08b5918f224a1b6502c11529cfbe4">Modzu::launchLaser</a></div><div class="ttdeci">void launchLaser()</div><div class="ttdef"><b>Definition:</b> <a href="modzu_8cpp_source.html#l00197">modzu.cpp:197</a></div></div>
+<div class="ttc" id="aclass_modzu_html_adcc31bacd4d45963924ff68a265dbf57"><div class="ttname"><a href="class_modzu.html#adcc31bacd4d45963924ff68a265dbf57">Modzu::launchAOE</a></div><div class="ttdeci">void launchAOE()</div><div class="ttdoc">Lance une AOE.</div><div class="ttdef"><b>Definition:</b> <a href="modzu_8cpp_source.html#l00224">modzu.cpp:224</a></div></div>
+<div class="ttc" id="aclass_modzu_html_ae9bc14f3aaa0b7b207d9293a23383186"><div class="ttname"><a href="class_modzu.html#ae9bc14f3aaa0b7b207d9293a23383186">Modzu::m_delayBetweenTwoBomb</a></div><div class="ttdeci">int m_delayBetweenTwoBomb</div><div class="ttdef"><b>Definition:</b> <a href="modzu_8h_source.html#l00114">modzu.h:114</a></div></div>
+<div class="ttc" id="aclass_modzu_html_aea585ee23a4ce401faefef2b9c0fa0aa"><div class="ttname"><a href="class_modzu.html#aea585ee23a4ce401faefef2b9c0fa0aa">Modzu::m_actualHealth</a></div><div class="ttdeci">int m_actualHealth</div><div class="ttdef"><b>Definition:</b> <a href="modzu_8h_source.html#l00088">modzu.h:88</a></div></div>
+<div class="ttc" id="aclass_modzu_html_aec1e17c56f40c1e02d932b40b78fea1a"><div class="ttname"><a href="class_modzu.html#aec1e17c56f40c1e02d932b40b78fea1a">Modzu::m_actualTimeInPauseBetweenAttacksInMilliseconds</a></div><div class="ttdeci">int m_actualTimeInPauseBetweenAttacksInMilliseconds</div><div class="ttdef"><b>Definition:</b> <a href="modzu_8h_source.html#l00112">modzu.h:112</a></div></div>
+<div class="ttc" id="aclass_modzu_html_afba72a35ba923ca13021eb6447143ac3"><div class="ttname"><a href="class_modzu.html#afba72a35ba923ca13021eb6447143ac3">Modzu::boostModzu</a></div><div class="ttdeci">void boostModzu()</div><div class="ttdoc">Améliore les statistiques de Modzu.</div><div class="ttdef"><b>Definition:</b> <a href="modzu_8cpp_source.html#l00341">modzu.cpp:341</a></div></div>
+<div class="ttc" id="aclass_modzu_html_afe0b78f24ccc9beb82ed4456e337721e"><div class="ttname"><a href="class_modzu.html#afe0b78f24ccc9beb82ed4456e337721e">Modzu::m_actualDelayBetweenTwoBomb</a></div><div class="ttdeci">int m_actualDelayBetweenTwoBomb</div><div class="ttdef"><b>Definition:</b> <a href="modzu_8h_source.html#l00115">modzu.h:115</a></div></div>
+<div class="ttc" id="aclass_player_html"><div class="ttname"><a href="class_player.html">Player</a></div><div class="ttdoc">Classe qui représente un vaisseau spatial.</div><div class="ttdef"><b>Definition:</b> <a href="player_8h_source.html#l00033">player.h:34</a></div></div>
+<div class="ttc" id="aclass_sprite_html"><div class="ttname"><a href="class_sprite.html">Sprite</a></div><div class="ttdoc">Classe qui représente un élément d'animation graphique 2D.</div><div class="ttdef"><b>Definition:</b> <a href="sprite_8h_source.html#l00114">sprite.h:115</a></div></div>
+<div class="ttc" id="alaser_8h_html"><div class="ttname"><a href="laser_8h.html">laser.h</a></div><div class="ttdoc">Déclaration de la classe Laser.</div></div>
+<div class="ttc" id="aplayer_8h_html"><div class="ttname"><a href="player_8h.html">player.h</a></div><div class="ttdoc">Déclaration de la classe Player.</div></div>
+<div class="ttc" id="aqgraphicsellipseitem_html"><div class="ttname"><a href="http://qt-project.org/doc/qt-5/qgraphicsellipseitem.html">QGraphicsEllipseItem</a></div></div>
+<div class="ttc" id="aqpointf_html"><div class="ttname"><a href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a></div></div>
+<div class="ttc" id="aqprogressbar_html"><div class="ttname"><a href="http://qt-project.org/doc/qt-5/qprogressbar.html">QProgressBar</a></div></div>
+<div class="ttc" id="aqrectf_html"><div class="ttname"><a href="http://qt-project.org/doc/qt-5/qrectf.html">QRectF</a></div></div>
+<div class="ttc" id="asprite_8h_html"><div class="ttname"><a href="sprite_8h.html">sprite.h</a></div><div class="ttdoc">Déclaration de la classe Sprite.</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Lundi 16 Janvier 2023 09:15:37 pour 2022-JCO-SpaceSurvivors par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+</small></address>
+</body>
+</html>

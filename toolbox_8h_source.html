@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
-<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>2022-JCO-SpaceSurvivors:  Fichier source de toolbox.h</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
@@ -30,7 +30,7 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Généré par Doxygen 1.9.5 -->
+<!-- Généré par Doxygen 1.9.6 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 var searchBox = new SearchBox("searchBox", "search/",'.html');
@@ -77,47 +77,40 @@ $(function() {
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#ifndef TOOLBOX_H</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#define TOOLBOX_H</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;QFile&gt;</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;QJsonParseError&gt;</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &lt;QJsonDocument&gt;</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &lt;QJsonArray&gt;</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &lt;QJsonObject&gt;</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &lt;QDir&gt;</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &lt;QPointF&gt;</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &quot;cmath&quot;</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &quot;<a class="code" href="sprite_8h.html">sprite.h</a>&quot;</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &quot;<a class="code" href="resources_8h.html">resources.h</a>&quot;</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="class_tool_box.html">   43</a></span><span class="keyword">class </span><a class="code hl_class" href="class_tool_box.html">ToolBox</a></div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>{</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <a class="code hl_function" href="class_tool_box.html#ad8a1d0d5f989fb2233d22ed9d1548782">ToolBox</a>();</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keyword">static</span> <a class="code hl_classRef" href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a> <a class="code hl_function" href="class_tool_box.html#a00d69e1d4cc2610047ae692c6fb4b54c">getVector2dDirection</a>(<a class="code hl_classRef" href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a> orgine, <a class="code hl_classRef" href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a> cible);</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keyword">static</span> <a class="code hl_classRef" href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a> <a class="code hl_function" href="class_tool_box.html#ab63d939d1f0265dc118d7f9e2acd149b">getVector2dDirectionShot</a>(<a class="code hl_classRef" href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a> orgine, <a class="code hl_classRef" href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a> cible, <span class="keywordtype">bool</span> isAnAditionnalBall = <span class="keyword">false</span>, <span class="keywordtype">int</span> nbBallFired = 0);</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_tool_box.html#ac172a7f3a2df6ad3cb8797a28645f91d">isInsideSprite</a>(<a class="code hl_class" href="class_sprite.html">Sprite</a>* sprite, <a class="code hl_classRef" href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a> mousePos);</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_tool_box.html#a6998068661edf766c7ec7d850b51037a">saveGame</a>(<span class="keywordtype">double</span> kill, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> damage, <span class="keywordtype">double</span> minAlive, <span class="keywordtype">double</span> secAlive);</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>};</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="preprocessor">#endif </span><span class="comment">// TOOLBOX_H</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="sprite_8h.html">sprite.h</a>&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="class_tool_box.html">   39</a></span><span class="keyword">class </span><a class="code hl_class" href="class_tool_box.html">ToolBox</a></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>{</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <a class="code hl_function" href="class_tool_box.html#ad8a1d0d5f989fb2233d22ed9d1548782">ToolBox</a>();</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keyword">static</span> <a class="code hl_classRef" href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a> <a class="code hl_function" href="class_tool_box.html#a00d69e1d4cc2610047ae692c6fb4b54c">getVector2dDirection</a>(<a class="code hl_classRef" href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a> orgine, <a class="code hl_classRef" href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a> cible);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keyword">static</span> <a class="code hl_classRef" href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a> <a class="code hl_function" href="class_tool_box.html#ab63d939d1f0265dc118d7f9e2acd149b">getVector2dDirectionShot</a>(<a class="code hl_classRef" href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a> orgine, <a class="code hl_classRef" href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a> cible, <span class="keywordtype">bool</span> isAnAditionnalBall = <span class="keyword">false</span>, <span class="keywordtype">int</span> nbBallFired = 0);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_tool_box.html#ac172a7f3a2df6ad3cb8797a28645f91d">isInsideSprite</a>(<a class="code hl_class" href="class_sprite.html">Sprite</a>* sprite, <a class="code hl_classRef" href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a> mousePos);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_tool_box.html#a6998068661edf766c7ec7d850b51037a">saveGame</a>(<span class="keywordtype">double</span> kill, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> damage, <span class="keywordtype">double</span> minAlive, <span class="keywordtype">double</span> secAlive);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_tool_box.html#a6998068661edf766c7ec7d850b51037a">saveGame</a>(<span class="keywordtype">double</span> modzuPercentHealth, <span class="keywordtype">double</span> minAlive, <span class="keywordtype">double</span> secAlive);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keyword">static</span> qreal <a class="code hl_function" href="class_tool_box.html#a5647e751e43db0ad4aadad3444b14d55">getAngle</a>(<a class="code hl_classRef" href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a> origine, <a class="code hl_classRef" href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a> cible);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>};</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="preprocessor">#endif </span><span class="comment">// TOOLBOX_H</span></div>
 <div class="ttc" id="aclass_sprite_html"><div class="ttname"><a href="class_sprite.html">Sprite</a></div><div class="ttdoc">Classe qui représente un élément d'animation graphique 2D.</div><div class="ttdef"><b>Definition:</b> <a href="sprite_8h_source.html#l00114">sprite.h:115</a></div></div>
-<div class="ttc" id="aclass_tool_box_html"><div class="ttname"><a href="class_tool_box.html">ToolBox</a></div><div class="ttdoc">Classe qui représente une boite à outils.</div><div class="ttdef"><b>Definition:</b> <a href="toolbox_8h_source.html#l00043">toolbox.h:44</a></div></div>
-<div class="ttc" id="aclass_tool_box_html_a00d69e1d4cc2610047ae692c6fb4b54c"><div class="ttname"><a href="class_tool_box.html#a00d69e1d4cc2610047ae692c6fb4b54c">ToolBox::getVector2dDirection</a></div><div class="ttdeci">static QPointF getVector2dDirection(QPointF orgine, QPointF cible)</div><div class="ttdef"><b>Definition:</b> <a href="toolbox_8cpp_source.html#l00010">toolbox.cpp:10</a></div></div>
-<div class="ttc" id="aclass_tool_box_html_a6998068661edf766c7ec7d850b51037a"><div class="ttname"><a href="class_tool_box.html#a6998068661edf766c7ec7d850b51037a">ToolBox::saveGame</a></div><div class="ttdeci">static void saveGame(double kill, unsigned int damage, double minAlive, double secAlive)</div><div class="ttdef"><b>Definition:</b> <a href="toolbox_8cpp_source.html#l00096">toolbox.cpp:96</a></div></div>
-<div class="ttc" id="aclass_tool_box_html_ab63d939d1f0265dc118d7f9e2acd149b"><div class="ttname"><a href="class_tool_box.html#ab63d939d1f0265dc118d7f9e2acd149b">ToolBox::getVector2dDirectionShot</a></div><div class="ttdeci">static QPointF getVector2dDirectionShot(QPointF orgine, QPointF cible, bool isAnAditionnalBall=false, int nbBallFired=0)</div><div class="ttdef"><b>Definition:</b> <a href="toolbox_8cpp_source.html#l00040">toolbox.cpp:40</a></div></div>
-<div class="ttc" id="aclass_tool_box_html_ac172a7f3a2df6ad3cb8797a28645f91d"><div class="ttname"><a href="class_tool_box.html#ac172a7f3a2df6ad3cb8797a28645f91d">ToolBox::isInsideSprite</a></div><div class="ttdeci">static bool isInsideSprite(Sprite *sprite, QPointF mousePos)</div><div class="ttdef"><b>Definition:</b> <a href="toolbox_8cpp_source.html#l00085">toolbox.cpp:85</a></div></div>
-<div class="ttc" id="aclass_tool_box_html_ad8a1d0d5f989fb2233d22ed9d1548782"><div class="ttname"><a href="class_tool_box.html#ad8a1d0d5f989fb2233d22ed9d1548782">ToolBox::ToolBox</a></div><div class="ttdeci">ToolBox()</div><div class="ttdef"><b>Definition:</b> <a href="toolbox_8cpp_source.html#l00004">toolbox.cpp:4</a></div></div>
+<div class="ttc" id="aclass_tool_box_html"><div class="ttname"><a href="class_tool_box.html">ToolBox</a></div><div class="ttdoc">Classe qui représente une boite à outils.</div><div class="ttdef"><b>Definition:</b> <a href="toolbox_8h_source.html#l00039">toolbox.h:40</a></div></div>
+<div class="ttc" id="aclass_tool_box_html_a00d69e1d4cc2610047ae692c6fb4b54c"><div class="ttname"><a href="class_tool_box.html#a00d69e1d4cc2610047ae692c6fb4b54c">ToolBox::getVector2dDirection</a></div><div class="ttdeci">static QPointF getVector2dDirection(QPointF orgine, QPointF cible)</div><div class="ttdef"><b>Definition:</b> <a href="toolbox_8cpp_source.html#l00020">toolbox.cpp:20</a></div></div>
+<div class="ttc" id="aclass_tool_box_html_a5647e751e43db0ad4aadad3444b14d55"><div class="ttname"><a href="class_tool_box.html#a5647e751e43db0ad4aadad3444b14d55">ToolBox::getAngle</a></div><div class="ttdeci">static qreal getAngle(QPointF origine, QPointF cible)</div><div class="ttdef"><b>Definition:</b> <a href="toolbox_8cpp_source.html#l00169">toolbox.cpp:169</a></div></div>
+<div class="ttc" id="aclass_tool_box_html_a6998068661edf766c7ec7d850b51037a"><div class="ttname"><a href="class_tool_box.html#a6998068661edf766c7ec7d850b51037a">ToolBox::saveGame</a></div><div class="ttdeci">static void saveGame(double kill, unsigned int damage, double minAlive, double secAlive)</div><div class="ttdef"><b>Definition:</b> <a href="toolbox_8cpp_source.html#l00106">toolbox.cpp:106</a></div></div>
+<div class="ttc" id="aclass_tool_box_html_ab63d939d1f0265dc118d7f9e2acd149b"><div class="ttname"><a href="class_tool_box.html#ab63d939d1f0265dc118d7f9e2acd149b">ToolBox::getVector2dDirectionShot</a></div><div class="ttdeci">static QPointF getVector2dDirectionShot(QPointF orgine, QPointF cible, bool isAnAditionnalBall=false, int nbBallFired=0)</div><div class="ttdef"><b>Definition:</b> <a href="toolbox_8cpp_source.html#l00050">toolbox.cpp:50</a></div></div>
+<div class="ttc" id="aclass_tool_box_html_ac172a7f3a2df6ad3cb8797a28645f91d"><div class="ttname"><a href="class_tool_box.html#ac172a7f3a2df6ad3cb8797a28645f91d">ToolBox::isInsideSprite</a></div><div class="ttdeci">static bool isInsideSprite(Sprite *sprite, QPointF mousePos)</div><div class="ttdef"><b>Definition:</b> <a href="toolbox_8cpp_source.html#l00095">toolbox.cpp:95</a></div></div>
+<div class="ttc" id="aclass_tool_box_html_ad8a1d0d5f989fb2233d22ed9d1548782"><div class="ttname"><a href="class_tool_box.html#ad8a1d0d5f989fb2233d22ed9d1548782">ToolBox::ToolBox</a></div><div class="ttdeci">ToolBox()</div><div class="ttdef"><b>Definition:</b> <a href="toolbox_8cpp_source.html#l00014">toolbox.cpp:14</a></div></div>
 <div class="ttc" id="aqpointf_html"><div class="ttname"><a href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a></div></div>
-<div class="ttc" id="aresources_8h_html"><div class="ttname"><a href="resources_8h.html">resources.h</a></div><div class="ttdoc">Méthodes utilitaires permettant d'accéder aux ressources.</div></div>
 <div class="ttc" id="asprite_8h_html"><div class="ttname"><a href="sprite_8h.html">sprite.h</a></div><div class="ttdoc">Déclaration de la classe Sprite.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Généré le Mardi 6 Décembre 2022 11:38:40 pour 2022-JCO-SpaceSurvivors par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Généré le Lundi 16 Janvier 2023 09:15:38 pour 2022-JCO-SpaceSurvivors par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

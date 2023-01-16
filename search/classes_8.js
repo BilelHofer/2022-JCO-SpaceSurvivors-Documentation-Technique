@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['levelupcard_0',['LevelUpCard',['../class_level_up_card.html',1,'']]]
+  ['laser_0',['Laser',['../class_laser.html',1,'']]],
+  ['levelupcard_1',['LevelUpCard',['../class_level_up_card.html',1,'']]]
 ];

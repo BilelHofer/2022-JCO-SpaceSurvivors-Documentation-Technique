@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
-<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>2022-JCO-SpaceSurvivors: Référence de la classe Player</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
@@ -30,7 +30,7 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Généré par Doxygen 1.9.5 -->
+<!-- Généré par Doxygen 1.9.6 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 var searchBox = new SearchBox("searchBox", "search/",'.html');
@@ -74,14 +74,13 @@ $(function() {
 <a href="#pub-slots">Connecteurs publics</a> &#124;
 <a href="#signals">Signaux</a> &#124;
 <a href="#pub-methods">Fonctions membres publiques</a> &#124;
-<a href="#pub-attribs">Attributs publics</a> &#124;
 <a href="#pri-attribs">Attributs privés</a> &#124;
 <a href="class_player-members.html">Liste de tous les membres</a>  </div>
   <div class="headertitle"><div class="title">Référence de la classe Player</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Classe qui représente le joueur principal du jeu. cette classe permet de gérer tous ce que consitue le joueur.  
+<p>Classe qui représente un vaisseau spatial.  
  <a href="class_player.html#details">Plus de détails...</a></p>
 
 <p><code>#include &lt;<a class="el" href="player_8h_source.html">player.h</a>&gt;</code></p>
@@ -105,7 +104,7 @@ Connecteurs publics</h2></td></tr>
 <tr class="memitem:a63d0f235d396b72f2b3b37f7212aedf2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a63d0f235d396b72f2b3b37f7212aedf2">gainExp</a> (int experenceGain)</td></tr>
 <tr class="separator:a63d0f235d396b72f2b3b37f7212aedf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a711dddcfddc34ee48f7b4cbc24b88d30"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a711dddcfddc34ee48f7b4cbc24b88d30">animationFinish</a> ()</td></tr>
-<tr class="memdesc:a711dddcfddc34ee48f7b4cbc24b88d30"><td class="mdescLeft">&#160;</td><td class="mdescRight">stop l'animation de prise de degats  <a href="class_player.html#a711dddcfddc34ee48f7b4cbc24b88d30">Plus de détails...</a><br /></td></tr>
+<tr class="memdesc:a711dddcfddc34ee48f7b4cbc24b88d30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop l'animation de prise de dégâts.  <br /></td></tr>
 <tr class="separator:a711dddcfddc34ee48f7b4cbc24b88d30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="signals" name="signals"></a>
@@ -138,19 +137,117 @@ Signaux</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Fonctions membres publiques</h2></td></tr>
-<tr class="memitem:a39b8e3961c18171b6e40319370e7d728"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a39b8e3961c18171b6e40319370e7d728">Player</a> (const <a class="elRef" href="http://qt-project.org/doc/qt-5/qpixmap.html">QPixmap</a> &amp;rPixmap=<a class="elRef" href="http://qt-project.org/doc/qt-5/qpixmap.html">QPixmap</a>(<a class="el" href="namespace_game_framework.html#a94ecbf249f954a70e95558d979a75614">GameFramework::imagesPath</a>(&quot;ship&quot;)+&quot;ship.png&quot;), <a class="elRef" href="http://qt-project.org/doc/qt-5/qgraphicsitem.html">QGraphicsItem</a> *pParent=nullptr)</td></tr>
-<tr class="separator:a39b8e3961c18171b6e40319370e7d728"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f11b8c5c6ad11c4be885e61b70feba2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a4f11b8c5c6ad11c4be885e61b70feba2">shoot</a> (<a class="el" href="class_game_scene.html">GameScene</a> *pScene)</td></tr>
-<tr class="separator:a4f11b8c5c6ad11c4be885e61b70feba2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f32d611e847e976e80fe33dfb0f6bc9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a8f32d611e847e976e80fe33dfb0f6bc9">Player</a> (double damageRate=0.5, int shipSpeed=400, int healthPoint=10, const <a class="elRef" href="http://qt-project.org/doc/qt-5/qpixmap.html">QPixmap</a> &amp;rPixmap=<a class="elRef" href="http://qt-project.org/doc/qt-5/qpixmap.html">QPixmap</a>(<a class="el" href="namespace_game_framework.html#a94ecbf249f954a70e95558d979a75614">GameFramework::imagesPath</a>()+&quot;ship/ship.png&quot;), <a class="elRef" href="http://qt-project.org/doc/qt-5/qgraphicsitem.html">QGraphicsItem</a> *pParent=nullptr)</td></tr>
+<tr class="separator:a8f32d611e847e976e80fe33dfb0f6bc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cdc67fd9ca2de09af89d9ae19efe5f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a4cdc67fd9ca2de09af89d9ae19efe5f8">shoot</a> ()</td></tr>
+<tr class="memdesc:a4cdc67fd9ca2de09af89d9ae19efe5f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Crée les balles et les lances dans la bonne direction.  <br /></td></tr>
+<tr class="separator:a4cdc67fd9ca2de09af89d9ae19efe5f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9fbe62134eb97b5b7654ba671af7f9e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#ab9fbe62134eb97b5b7654ba671af7f9e">getPlayerLevel</a> ()</td></tr>
+<tr class="memdesc:ab9fbe62134eb97b5b7654ba671af7f9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter pour obtenir le niveau du joueur.  <br /></td></tr>
+<tr class="separator:ab9fbe62134eb97b5b7654ba671af7f9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4c9b0d313196d535584c3f7d55ef02f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#ad4c9b0d313196d535584c3f7d55ef02f">setHealthBarMaximum</a> (int newMaximum)</td></tr>
+<tr class="memdesc:ad4c9b0d313196d535584c3f7d55ef02f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setter pour mettre à jour le montant maximum de la barre de point de vie.  <br /></td></tr>
+<tr class="separator:ad4c9b0d313196d535584c3f7d55ef02f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bf6f0aefb994cb27dfa0399867dbd4f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a6bf6f0aefb994cb27dfa0399867dbd4f">setHealthBarValue</a> (int newValue)</td></tr>
+<tr class="memdesc:a6bf6f0aefb994cb27dfa0399867dbd4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setter pour mettre à jour le moontant actuel de la barre de point de vie.  <br /></td></tr>
+<tr class="separator:a6bf6f0aefb994cb27dfa0399867dbd4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a672ad264a9fd0099b142588c12a592ec"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a672ad264a9fd0099b142588c12a592ec">getMaximumHealthPoint</a> ()</td></tr>
+<tr class="memdesc:a672ad264a9fd0099b142588c12a592ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter pour obtenir le nombre de points de vie maximum.  <br /></td></tr>
+<tr class="separator:a672ad264a9fd0099b142588c12a592ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe226eb1d0e577393d5a2f23c90844c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#abe226eb1d0e577393d5a2f23c90844c4">setMaximumHealthPoint</a> (int newMaxHealth)</td></tr>
+<tr class="memdesc:abe226eb1d0e577393d5a2f23c90844c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setter pour mettre à jour le maximum de point de vie.  <br /></td></tr>
+<tr class="separator:abe226eb1d0e577393d5a2f23c90844c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66c3dec97475905321a410e11d5cce0f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a66c3dec97475905321a410e11d5cce0f">getActualHealthPoint</a> ()</td></tr>
+<tr class="memdesc:a66c3dec97475905321a410e11d5cce0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter pour obtenir le nombre de points de vie actuel.  <br /></td></tr>
+<tr class="separator:a66c3dec97475905321a410e11d5cce0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb9cffc3efeba0f6350985c78e0226f6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#abb9cffc3efeba0f6350985c78e0226f6">setActualHealthPoint</a> (int newActualHealth)</td></tr>
+<tr class="memdesc:abb9cffc3efeba0f6350985c78e0226f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setter pour mettre à jour le nombre de points de vie actuel.  <br /></td></tr>
+<tr class="separator:abb9cffc3efeba0f6350985c78e0226f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7812d0841113f69740d4982ac2e1539"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#ae7812d0841113f69740d4982ac2e1539">getMultiFireStatu</a> ()</td></tr>
+<tr class="memdesc:ae7812d0841113f69740d4982ac2e1539"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter pour obtenir si le tir multiple est activé.  <br /></td></tr>
+<tr class="separator:ae7812d0841113f69740d4982ac2e1539"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40d9601b70000673f24edc27a751485f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a40d9601b70000673f24edc27a751485f">setMultiFireStatu</a> (bool newStatu)</td></tr>
+<tr class="memdesc:a40d9601b70000673f24edc27a751485f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setter pour mettre à jour le statut du tir multiple.  <br /></td></tr>
+<tr class="separator:a40d9601b70000673f24edc27a751485f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac73335578e67fe3734a9331d7cd3be0c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#ac73335578e67fe3734a9331d7cd3be0c">getExperienceForLevel</a> ()</td></tr>
+<tr class="memdesc:ac73335578e67fe3734a9331d7cd3be0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter pour obtenir l'expérience requise pour passer de niveau.  <br /></td></tr>
+<tr class="separator:ac73335578e67fe3734a9331d7cd3be0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ab4c338ccd25578b0dd7900cd755fef"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a2ab4c338ccd25578b0dd7900cd755fef">getExperienceActual</a> ()</td></tr>
+<tr class="memdesc:a2ab4c338ccd25578b0dd7900cd755fef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter pour obtenir le nombre d'expériences actuel.  <br /></td></tr>
+<tr class="separator:a2ab4c338ccd25578b0dd7900cd755fef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f80c3e2f777a671dbf66b2ace08b9a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a0f80c3e2f777a671dbf66b2ace08b9a5">setMousPos</a> (<a class="elRef" href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a> newMousePos)</td></tr>
+<tr class="memdesc:a0f80c3e2f777a671dbf66b2ace08b9a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Settter pour mettre à jour la position de la souris.  <br /></td></tr>
+<tr class="separator:a0f80c3e2f777a671dbf66b2ace08b9a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2382d7a9b82f8ec0fd93a274177032eb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a2382d7a9b82f8ec0fd93a274177032eb">getShipSpeed</a> ()</td></tr>
+<tr class="memdesc:a2382d7a9b82f8ec0fd93a274177032eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter pour obtenir la vitesse du vaisseau.  <br /></td></tr>
+<tr class="separator:a2382d7a9b82f8ec0fd93a274177032eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a745556826ebd0970340690fdd7b8a3f3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a745556826ebd0970340690fdd7b8a3f3">setShipSpeed</a> (int newShipSpeed)</td></tr>
+<tr class="memdesc:a745556826ebd0970340690fdd7b8a3f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setter pour mettre à jour la vitesse du vaisseau.  <br /></td></tr>
+<tr class="separator:a745556826ebd0970340690fdd7b8a3f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a412e7d64c9c156fa38c6362fffc56617"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a412e7d64c9c156fa38c6362fffc56617">getDamageReduction</a> ()</td></tr>
+<tr class="memdesc:a412e7d64c9c156fa38c6362fffc56617"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter pour obtenir le nombre de dégâts réduit.  <br /></td></tr>
+<tr class="separator:a412e7d64c9c156fa38c6362fffc56617"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91ef79845355b03bfb4dcef5b0b5acd3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a91ef79845355b03bfb4dcef5b0b5acd3">setDamageReduction</a> (int newDamageReduction)</td></tr>
+<tr class="memdesc:a91ef79845355b03bfb4dcef5b0b5acd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setter pour mettre à jour le nombre de dégâts réduit.  <br /></td></tr>
+<tr class="separator:a91ef79845355b03bfb4dcef5b0b5acd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ceff7912437598599496fec851b7a9e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a1ceff7912437598599496fec851b7a9e">getBulletDamage</a> ()</td></tr>
+<tr class="memdesc:a1ceff7912437598599496fec851b7a9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter pour obtenir le nombre de dégâts avec une balle.  <br /></td></tr>
+<tr class="separator:a1ceff7912437598599496fec851b7a9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6093649063a95ace700c214b21797eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#ae6093649063a95ace700c214b21797eb">setBulletDamage</a> (int newBulletDamage)</td></tr>
+<tr class="memdesc:ae6093649063a95ace700c214b21797eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setter pour mettre à jour le nombre de dégâts avec une balle.  <br /></td></tr>
+<tr class="separator:ae6093649063a95ace700c214b21797eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ee2722804a0be3f59a999a425e9a249"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a4ee2722804a0be3f59a999a425e9a249">getBulletPierce</a> ()</td></tr>
+<tr class="memdesc:a4ee2722804a0be3f59a999a425e9a249"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter pour obtenir le nombre de percements de la balle.  <br /></td></tr>
+<tr class="separator:a4ee2722804a0be3f59a999a425e9a249"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04ced2d49510a32b73741d7ffdb929d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a04ced2d49510a32b73741d7ffdb929d8">setBulletPierce</a> (int newPierce)</td></tr>
+<tr class="memdesc:a04ced2d49510a32b73741d7ffdb929d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setter pour mettre à jour le nombre de percements de la balle.  <br /></td></tr>
+<tr class="separator:a04ced2d49510a32b73741d7ffdb929d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d69e0a6c230f76737818c877cdf0c91"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a8d69e0a6c230f76737818c877cdf0c91">getCritChance</a> ()</td></tr>
+<tr class="memdesc:a8d69e0a6c230f76737818c877cdf0c91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter pour obtenir le nombre de chances critique.  <br /></td></tr>
+<tr class="separator:a8d69e0a6c230f76737818c877cdf0c91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a705be934598663f69746e1ebfd39eb8b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a705be934598663f69746e1ebfd39eb8b">getCritDamage</a> ()</td></tr>
+<tr class="memdesc:a705be934598663f69746e1ebfd39eb8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setter pour mettre à jour le nombre de chances critique.  <br /></td></tr>
+<tr class="separator:a705be934598663f69746e1ebfd39eb8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6615f20868b91e706e914acf01710f54"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a6615f20868b91e706e914acf01710f54">setCritDamage</a> (double newCritDamage)</td></tr>
+<tr class="memdesc:a6615f20868b91e706e914acf01710f54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setter pour mettre à jour le nombre de dégâts critique.  <br /></td></tr>
+<tr class="separator:a6615f20868b91e706e914acf01710f54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ce235e798ca761b50f03cab498afc60"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a6ce235e798ca761b50f03cab498afc60">getLessDamagePiercing</a> ()</td></tr>
+<tr class="memdesc:a6ce235e798ca761b50f03cab498afc60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter pour obtenir le nombre de dégâts réduit par percement.  <br /></td></tr>
+<tr class="separator:a6ce235e798ca761b50f03cab498afc60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fa06ef07e6408d667dac6b7a6533097"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a1fa06ef07e6408d667dac6b7a6533097">setLessDamagePiercing</a> (double newLessDamage)</td></tr>
+<tr class="memdesc:a1fa06ef07e6408d667dac6b7a6533097"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setter pour mettre à jour le nombre de dégâts réduit par percement.  <br /></td></tr>
+<tr class="separator:a1fa06ef07e6408d667dac6b7a6533097"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa38936dd7a7df14c8a6277dba88c524e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#aa38936dd7a7df14c8a6277dba88c524e">getShootingRate</a> ()</td></tr>
+<tr class="memdesc:aa38936dd7a7df14c8a6277dba88c524e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter pour obtenir la cadence de tir.  <br /></td></tr>
+<tr class="separator:aa38936dd7a7df14c8a6277dba88c524e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3ed38a3e42aad82b9bc067afae826d7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#ad3ed38a3e42aad82b9bc067afae826d7">setShootingRate</a> (double newShootingRate)</td></tr>
+<tr class="memdesc:ad3ed38a3e42aad82b9bc067afae826d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setter pour mettre à jour la cadence de tir.  <br /></td></tr>
+<tr class="separator:ad3ed38a3e42aad82b9bc067afae826d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadd13410eab234e316241423701b05fa"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#aadd13410eab234e316241423701b05fa">getDirections</a> ()</td></tr>
+<tr class="memdesc:aadd13410eab234e316241423701b05fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter pour obtenir la direction du vaisseau.  <br /></td></tr>
+<tr class="separator:aadd13410eab234e316241423701b05fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a308ed9300b3222005e0a71d8ecbca78f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a308ed9300b3222005e0a71d8ecbca78f">setDirection</a> (int <a class="el" href="class_sprite.html#a51090ee6576ba2c6aa421f7bdf44aceb">x</a>, int <a class="el" href="class_sprite.html#afe352316b4e023697edd1e6199f43fc1">y</a>)</td></tr>
+<tr class="memdesc:a308ed9300b3222005e0a71d8ecbca78f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setter pour mettre à jour sa direction.  <br /></td></tr>
+<tr class="separator:a308ed9300b3222005e0a71d8ecbca78f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7699157cbc4185202967224eeaab779"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#af7699157cbc4185202967224eeaab779">moveBar</a> (double <a class="el" href="class_sprite.html#a51090ee6576ba2c6aa421f7bdf44aceb">x</a>, double <a class="el" href="class_sprite.html#afe352316b4e023697edd1e6199f43fc1">y</a>)</td></tr>
+<tr class="memdesc:af7699157cbc4185202967224eeaab779"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permets de déplacer les barres de point de vie et d'expérience.  <br /></td></tr>
+<tr class="separator:af7699157cbc4185202967224eeaab779"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4c1223460ce396cc704cba344664fdb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#ab4c1223460ce396cc704cba344664fdb">addBarToScene</a> (int mode=0)</td></tr>
+<tr class="separator:ab4c1223460ce396cc704cba344664fdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab34143512a6d4456e31942c6135d79e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#ab34143512a6d4456e31942c6135d79e9">reduceAttackSpeed</a> (double reduceAmount)</td></tr>
 <tr class="separator:ab34143512a6d4456e31942c6135d79e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcf6cf10cd1db87e43919a94d7553657"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#adcf6cf10cd1db87e43919a94d7553657">getBaseShipSpeed</a> ()</td></tr>
+<tr class="memdesc:adcf6cf10cd1db87e43919a94d7553657"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter pour obtenir la vitesse de base du vaisseau.  <br /></td></tr>
+<tr class="separator:adcf6cf10cd1db87e43919a94d7553657"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_sprite"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_sprite')"><img src="closed.png" alt="-"/>&#160;Fonctions membres publiques hérités de <a class="el" href="class_sprite.html">Sprite</a></td></tr>
+<tr class="memitem:aaf606dfaaf05fba692b467ade8db69c9 inherit pub_methods_class_sprite"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="http://qt-project.org/doc/qt-5/qlist.html">QList</a>&lt; <a class="el" href="class_sprite.html">Sprite</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sprite.html#aaf606dfaaf05fba692b467ade8db69c9">collidingSprites</a> () const</td></tr>
+<tr class="separator:aaf606dfaaf05fba692b467ade8db69c9 inherit pub_methods_class_sprite"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada1c078eb2f8d53a21cf1546570bb95b inherit pub_methods_class_sprite"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sprite.html#ada1c078eb2f8d53a21cf1546570bb95b">Sprite</a> (<a class="elRef" href="http://qt-project.org/doc/qt-5/qgraphicsitem.html">QGraphicsItem</a> *pParent=nullptr)</td></tr>
 <tr class="separator:ada1c078eb2f8d53a21cf1546570bb95b inherit pub_methods_class_sprite"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3105c58966f9b1ef45b0efa8742b4e80 inherit pub_methods_class_sprite"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sprite.html#a3105c58966f9b1ef45b0efa8742b4e80">Sprite</a> (const <a class="elRef" href="http://qt-project.org/doc/qt-5/qpixmap.html">QPixmap</a> &amp;rPixmap, <a class="elRef" href="http://qt-project.org/doc/qt-5/qgraphicsitem.html">QGraphicsItem</a> *pParent=nullptr)</td></tr>
 <tr class="separator:a3105c58966f9b1ef45b0efa8742b4e80 inherit pub_methods_class_sprite"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c755f9671770919be9eb24f48d52067 inherit pub_methods_class_sprite"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sprite.html#a3c755f9671770919be9eb24f48d52067">~Sprite</a> () override</td></tr>
-<tr class="memdesc:a3c755f9671770919be9eb24f48d52067 inherit pub_methods_class_sprite"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructeur.  <a href="class_sprite.html#a3c755f9671770919be9eb24f48d52067">Plus de détails...</a><br /></td></tr>
+<tr class="memdesc:a3c755f9671770919be9eb24f48d52067 inherit pub_methods_class_sprite"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructeur.  <br /></td></tr>
 <tr class="separator:a3c755f9671770919be9eb24f48d52067 inherit pub_methods_class_sprite"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad382222eee275aa4bf98bdbeb6b0fc66 inherit pub_methods_class_sprite"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sprite.html#ad382222eee275aa4bf98bdbeb6b0fc66">addAnimationFrame</a> (const <a class="elRef" href="http://qt-project.org/doc/qt-5/qpixmap.html">QPixmap</a> &amp;rPixmap)</td></tr>
 <tr class="separator:ad382222eee275aa4bf98bdbeb6b0fc66 inherit pub_methods_class_sprite"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -161,7 +258,7 @@ Fonctions membres publiques</h2></td></tr>
 <tr class="memitem:a469d5c309dbd48895b4b98dfdb7e1917 inherit pub_methods_class_sprite"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sprite.html#a469d5c309dbd48895b4b98dfdb7e1917">clearAnimationFrames</a> ()</td></tr>
 <tr class="separator:a469d5c309dbd48895b4b98dfdb7e1917 inherit pub_methods_class_sprite"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9817e2be70640236e55aaa83ade0dbf inherit pub_methods_class_sprite"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sprite.html#ad9817e2be70640236e55aaa83ade0dbf">showNextAnimationFrame</a> ()</td></tr>
-<tr class="memdesc:ad9817e2be70640236e55aaa83ade0dbf inherit pub_methods_class_sprite"><td class="mdescLeft">&#160;</td><td class="mdescRight">Affiche l'image suivante.  <a href="class_sprite.html#ad9817e2be70640236e55aaa83ade0dbf">Plus de détails...</a><br /></td></tr>
+<tr class="memdesc:ad9817e2be70640236e55aaa83ade0dbf inherit pub_methods_class_sprite"><td class="mdescLeft">&#160;</td><td class="mdescRight">Affiche l'image suivante.  <br /></td></tr>
 <tr class="separator:ad9817e2be70640236e55aaa83ade0dbf inherit pub_methods_class_sprite"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa27e28e0a1ed0153f4fcc9a9a3402e0f inherit pub_methods_class_sprite"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sprite.html#aa27e28e0a1ed0153f4fcc9a9a3402e0f">setAnimationSpeed</a> (int frameDuration)</td></tr>
 <tr class="separator:aa27e28e0a1ed0153f4fcc9a9a3402e0f inherit pub_methods_class_sprite"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -176,12 +273,14 @@ Fonctions membres publiques</h2></td></tr>
 <tr class="memitem:a4047b63d33642d0f04d7856b12ad873e inherit pub_methods_class_sprite"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sprite.html#a4047b63d33642d0f04d7856b12ad873e">addAnimation</a> ()</td></tr>
 <tr class="separator:a4047b63d33642d0f04d7856b12ad873e inherit pub_methods_class_sprite"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a38a5549e535c3250db75f66bd32cdb3c inherit pub_methods_class_sprite"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sprite.html#a38a5549e535c3250db75f66bd32cdb3c">clearAnimations</a> ()</td></tr>
-<tr class="memdesc:a38a5549e535c3250db75f66bd32cdb3c inherit pub_methods_class_sprite"><td class="mdescLeft">&#160;</td><td class="mdescRight">Efface toutes les animations d'un sprite mais en préserve une vide.  <a href="class_sprite.html#a38a5549e535c3250db75f66bd32cdb3c">Plus de détails...</a><br /></td></tr>
+<tr class="memdesc:a38a5549e535c3250db75f66bd32cdb3c inherit pub_methods_class_sprite"><td class="mdescLeft">&#160;</td><td class="mdescRight">Efface toutes les animations d'un sprite mais en préserve une vide.  <br /></td></tr>
 <tr class="separator:a38a5549e535c3250db75f66bd32cdb3c inherit pub_methods_class_sprite"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe18f94d14e60caf9d3e463e584fc786 inherit pub_methods_class_sprite"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sprite.html#afe18f94d14e60caf9d3e463e584fc786">animationCount</a> () const</td></tr>
 <tr class="separator:afe18f94d14e60caf9d3e463e584fc786 inherit pub_methods_class_sprite"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4559f867e583934a097cca9ace923785 inherit pub_methods_class_sprite"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sprite.html#a4559f867e583934a097cca9ace923785">setActiveAnimation</a> (int index)</td></tr>
 <tr class="separator:a4559f867e583934a097cca9ace923785 inherit pub_methods_class_sprite"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d17ae8011afd459402911ecd6af5198 inherit pub_methods_class_sprite"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sprite.html#a2d17ae8011afd459402911ecd6af5198">getActiveAnimation</a> ()</td></tr>
+<tr class="separator:a2d17ae8011afd459402911ecd6af5198 inherit pub_methods_class_sprite"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93d7b808a1bcb070fa0b484a9f0ab35b inherit pub_methods_class_sprite"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sprite.html#a93d7b808a1bcb070fa0b484a9f0ab35b">setEmitSignalEndOfAnimationEnabled</a> (bool <a class="el" href="class_sprite.html#a8befe765354d0ff4ab22a6a541c46c2f">enabled</a>)</td></tr>
 <tr class="separator:a93d7b808a1bcb070fa0b484a9f0ab35b inherit pub_methods_class_sprite"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8161492c75be0a4c785a77c9ca52e112 inherit pub_methods_class_sprite"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sprite.html#a8161492c75be0a4c785a77c9ca52e112">isEmitSignalEndOfAnimationEnabled</a> () const</td></tr>
@@ -211,14 +310,14 @@ Fonctions membres publiques</h2></td></tr>
 <tr class="memitem:ad7b9cb1b2fea3a130b3ceb322d46f8e1 inherit pub_methods_class_sprite"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sprite.html#ad7b9cb1b2fea3a130b3ceb322d46f8e1">registerForTick</a> ()</td></tr>
 <tr class="separator:ad7b9cb1b2fea3a130b3ceb322d46f8e1 inherit pub_methods_class_sprite"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8ad9166332d3552b4be37416b6eb6f4 inherit pub_methods_class_sprite"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sprite.html#ab8ad9166332d3552b4be37416b6eb6f4">unregisterFromTick</a> ()</td></tr>
-<tr class="memdesc:ab8ad9166332d3552b4be37416b6eb6f4 inherit pub_methods_class_sprite"><td class="mdescLeft">&#160;</td><td class="mdescRight">Désolidarise ce sprite de la cadence.  <a href="class_sprite.html#ab8ad9166332d3552b4be37416b6eb6f4">Plus de détails...</a><br /></td></tr>
+<tr class="memdesc:ab8ad9166332d3552b4be37416b6eb6f4 inherit pub_methods_class_sprite"><td class="mdescLeft">&#160;</td><td class="mdescRight">Désolidarise ce sprite de la cadence.  <br /></td></tr>
 <tr class="separator:ab8ad9166332d3552b4be37416b6eb6f4 inherit pub_methods_class_sprite"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a824c82dee03274adfee1287bda73ff66 inherit pub_methods_class_sprite"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sprite.html#a824c82dee03274adfee1287bda73ff66">setTickHandler</a> (<a class="el" href="class_sprite_tick_handler.html">SpriteTickHandler</a> *pTickHandler)</td></tr>
 <tr class="separator:a824c82dee03274adfee1287bda73ff66 inherit pub_methods_class_sprite"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef81d20c2b5b6d307eb56c0679f2b4fd inherit pub_methods_class_sprite"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_sprite_tick_handler.html">SpriteTickHandler</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sprite.html#aef81d20c2b5b6d307eb56c0679f2b4fd">tickHandler</a> () const</td></tr>
 <tr class="separator:aef81d20c2b5b6d307eb56c0679f2b4fd inherit pub_methods_class_sprite"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4f515244ff52da72e5fb58a9042ea84 inherit pub_methods_class_sprite"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sprite.html#aa4f515244ff52da72e5fb58a9042ea84">removeTickHandler</a> ()</td></tr>
-<tr class="memdesc:aa4f515244ff52da72e5fb58a9042ea84 inherit pub_methods_class_sprite"><td class="mdescLeft">&#160;</td><td class="mdescRight">Supprime (et efface) le gestionnaire de tick actuel.  <a href="class_sprite.html#aa4f515244ff52da72e5fb58a9042ea84">Plus de détails...</a><br /></td></tr>
+<tr class="memdesc:aa4f515244ff52da72e5fb58a9042ea84 inherit pub_methods_class_sprite"><td class="mdescLeft">&#160;</td><td class="mdescRight">Supprime (et efface) le gestionnaire de tick actuel.  <br /></td></tr>
 <tr class="separator:aa4f515244ff52da72e5fb58a9042ea84 inherit pub_methods_class_sprite"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62f3d63b0ce906fa1caa71efd847ffec inherit pub_methods_class_sprite"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game_scene.html">GameScene</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sprite.html#a62f3d63b0ce906fa1caa71efd847ffec">parentScene</a> () const</td></tr>
 <tr class="separator:a62f3d63b0ce906fa1caa71efd847ffec inherit pub_methods_class_sprite"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -720,24 +819,38 @@ Fonctions membres publiques</h2></td></tr>
 <tr class="memitem:removeSceneEventFilter inherit pub_methods_qgraphicsitem"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://qt-project.org/doc/qt-5/qgraphicsitem.html#removeSceneEventFilter">removeSceneEventFilter</a> (<a class="elRef" href="http://qt-project.org/doc/qt-5/qgraphicsitem.html">QGraphicsItem</a> *filterItem)</td></tr>
 <tr class="separator:removeSceneEventFilter inherit pub_methods_qgraphicsitem"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
-Attributs publics</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Attributs privés</h2></td></tr>
+<tr class="memitem:a281da0a69ddb49ff7e34337bc08cbf6f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a281da0a69ddb49ff7e34337bc08cbf6f">m_playerIsDead</a> = false</td></tr>
+<tr class="separator:a281da0a69ddb49ff7e34337bc08cbf6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d2392c134d1a2400d8bccf2c2d1be4a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a9d2392c134d1a2400d8bccf2c2d1be4a">m_damageRate</a></td></tr>
+<tr class="separator:a9d2392c134d1a2400d8bccf2c2d1be4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab71d26581ed3cc7331f2a69dd52dadb2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#ab71d26581ed3cc7331f2a69dd52dadb2">m_ballFired</a> = 0</td></tr>
+<tr class="separator:ab71d26581ed3cc7331f2a69dd52dadb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a912e50682bb02f9080d69f9590a26b66"><td class="memItemLeft" align="right" valign="top">std::chrono::system_clock::time_point&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a912e50682bb02f9080d69f9590a26b66">m_rateBetweenTwoDamage</a> = std::chrono::system_clock::now()</td></tr>
+<tr class="separator:a912e50682bb02f9080d69f9590a26b66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a176e4deff64c434b3e4af6f164314deb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a176e4deff64c434b3e4af6f164314deb">m_playerLevel</a> = 1</td></tr>
+<tr class="separator:a176e4deff64c434b3e4af6f164314deb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb02be780e8a5fc4a8da1f79b5f5d2fe"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="http://qt-project.org/doc/qt-5/qprogressbar.html">QProgressBar</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#afb02be780e8a5fc4a8da1f79b5f5d2fe">m_pHealthBar</a> = new <a class="elRef" href="http://qt-project.org/doc/qt-5/qprogressbar.html">QProgressBar</a></td></tr>
 <tr class="separator:afb02be780e8a5fc4a8da1f79b5f5d2fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c0a6be7f7782d4e019d9812a721ed21"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="http://qt-project.org/doc/qt-5/qprogressbar.html">QProgressBar</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a9c0a6be7f7782d4e019d9812a721ed21">m_pExpBar</a> = new <a class="elRef" href="http://qt-project.org/doc/qt-5/qprogressbar.html">QProgressBar</a></td></tr>
 <tr class="separator:a9c0a6be7f7782d4e019d9812a721ed21"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a176e4deff64c434b3e4af6f164314deb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a176e4deff64c434b3e4af6f164314deb">m_playerLevel</a> = 1</td></tr>
-<tr class="separator:a176e4deff64c434b3e4af6f164314deb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a87bf0ea770e1de9b1ee6b4c0ea4fadbb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a87bf0ea770e1de9b1ee6b4c0ea4fadbb">m_maxHealtPoint</a></td></tr>
-<tr class="separator:a87bf0ea770e1de9b1ee6b4c0ea4fadbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8528b6882cc380e19c13756c350ac34"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#ad8528b6882cc380e19c13756c350ac34">m_actualHealtPoint</a></td></tr>
-<tr class="separator:ad8528b6882cc380e19c13756c350ac34"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae639ea2ac4cfdc13bb6fb7b6cf6ca73c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#ae639ea2ac4cfdc13bb6fb7b6cf6ca73c">m_experenceForLevel</a> = 100</td></tr>
-<tr class="separator:ae639ea2ac4cfdc13bb6fb7b6cf6ca73c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f9a982429a258a0107920b203d6a071"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a8f9a982429a258a0107920b203d6a071">m_maxHealthPoint</a></td></tr>
+<tr class="separator:a8f9a982429a258a0107920b203d6a071"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac80edffc58fac5651215df2b559a8ec5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#ac80edffc58fac5651215df2b559a8ec5">m_actualHealthPoint</a></td></tr>
+<tr class="separator:ac80edffc58fac5651215df2b559a8ec5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5bbee46bbffad160fbdbde449f2024a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#ad5bbee46bbffad160fbdbde449f2024a">m_multiFireActivated</a> = false</td></tr>
+<tr class="separator:ad5bbee46bbffad160fbdbde449f2024a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6693513b7987bb3d48a31fb699f4d499"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a6693513b7987bb3d48a31fb699f4d499">m_experienceForLevel</a> = 100</td></tr>
+<tr class="separator:a6693513b7987bb3d48a31fb699f4d499"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4695c774e169d2803e7b843b34b8d3e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#aa4695c774e169d2803e7b843b34b8d3e">m_actualExperience</a> = 0</td></tr>
 <tr class="separator:aa4695c774e169d2803e7b843b34b8d3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0ad934716eb9ae02f31980b847cbbbc"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#ad0ad934716eb9ae02f31980b847cbbbc">m_mousePos</a> = <a class="elRef" href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a>(0, 0)</td></tr>
+<tr class="separator:ad0ad934716eb9ae02f31980b847cbbbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2242cdc19e61e5d6926438639585cf1b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a2242cdc19e61e5d6926438639585cf1b">m_shipSpeed</a> = 400</td></tr>
 <tr class="separator:a2242cdc19e61e5d6926438639585cf1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a473e80b4c8d4f2abc3fbad2d8eda38de"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a473e80b4c8d4f2abc3fbad2d8eda38de">m_baseShipSpeed</a> = 0</td></tr>
+<tr class="separator:a473e80b4c8d4f2abc3fbad2d8eda38de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac31222025379a617782e34aed00eef97"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#ac31222025379a617782e34aed00eef97">m_damageReduction</a> = 0</td></tr>
 <tr class="separator:ac31222025379a617782e34aed00eef97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade9b0805b7558eb93a5e141387f75e80"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#ade9b0805b7558eb93a5e141387f75e80">m_bulletDamage</a> = 40</td></tr>
@@ -752,24 +865,10 @@ Attributs publics</h2></td></tr>
 <tr class="separator:a6237075c94c38688709591f6fde93219"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c1c93f9c0cdde13bb3ee944cba8f1bd"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a5c1c93f9c0cdde13bb3ee944cba8f1bd">m_shootingRate</a> = 1</td></tr>
 <tr class="separator:a5c1c93f9c0cdde13bb3ee944cba8f1bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0ad934716eb9ae02f31980b847cbbbc"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#ad0ad934716eb9ae02f31980b847cbbbc">m_mousePos</a> = <a class="elRef" href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a>(0, 0)</td></tr>
-<tr class="separator:ad0ad934716eb9ae02f31980b847cbbbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5bbee46bbffad160fbdbde449f2024a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#ad5bbee46bbffad160fbdbde449f2024a">m_multiFireActivated</a> = false</td></tr>
-<tr class="separator:ad5bbee46bbffad160fbdbde449f2024a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_attribs_qgraphicsitem"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_qgraphicsitem')"><img src="closed.png" alt="-"/>&#160;Attributs publics hérités de <a class="el"  href="http://qt-project.org/doc/qt-5/qgraphicsitem.html">QGraphicsItem</a></td></tr>
-<tr class="memitem:GraphicsItemFlag-enum inherit pub_attribs_qgraphicsitem"><td class="memItemLeft" align="right" valign="top">typedef&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://qt-project.org/doc/qt-5/qgraphicsitem.html#GraphicsItemFlag-enum">GraphicsItemFlags</a></td></tr>
-<tr class="separator:GraphicsItemFlag-enum inherit pub_attribs_qgraphicsitem"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
-Attributs privés</h2></td></tr>
-<tr class="memitem:a281da0a69ddb49ff7e34337bc08cbf6f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a281da0a69ddb49ff7e34337bc08cbf6f">m_playerIsDead</a> = false</td></tr>
-<tr class="separator:a281da0a69ddb49ff7e34337bc08cbf6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9309e52ff033225f064c7cb1f1b65f75"><td class="memItemLeft" align="right" valign="top">const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a9309e52ff033225f064c7cb1f1b65f75">m_DAMAGE_RATE</a> = 0.5</td></tr>
-<tr class="separator:a9309e52ff033225f064c7cb1f1b65f75"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab71d26581ed3cc7331f2a69dd52dadb2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#ab71d26581ed3cc7331f2a69dd52dadb2">m_ballFired</a> = 0</td></tr>
-<tr class="separator:ab71d26581ed3cc7331f2a69dd52dadb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a912e50682bb02f9080d69f9590a26b66"><td class="memItemLeft" align="right" valign="top">std::chrono::system_clock::time_point&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a912e50682bb02f9080d69f9590a26b66">m_rateBetweenTwoDamage</a> = std::chrono::system_clock::now()</td></tr>
-<tr class="separator:a912e50682bb02f9080d69f9590a26b66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00c5f88dc112f1996bdf0cb5ff77a72b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a00c5f88dc112f1996bdf0cb5ff77a72b">directionX</a> = 0</td></tr>
+<tr class="separator:a00c5f88dc112f1996bdf0cb5ff77a72b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f2797e53482796e4333600725a784e3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a6f2797e53482796e4333600725a784e3">directionY</a> = 0</td></tr>
+<tr class="separator:a6f2797e53482796e4333600725a784e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Membres hérités additionnels</h2></td></tr>
@@ -804,9 +903,10 @@ Membres hérités additionnels</h2></td></tr>
 <tr class="separator:disconnect-3 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:disconnect-6 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://qt-project.org/doc/qt-5/qobject.html#disconnect-6">disconnect</a> (const <a class="elRef" href="http://qt-project.org/doc/qt-5/qobject.html">QObject</a> *<a class="elRef" href="http://qt-project.org/doc/qt-5/qobject.html#sender">sender</a>, PointerToMemberFunction signal, const <a class="elRef" href="http://qt-project.org/doc/qt-5/qobject.html">QObject</a> *receiver, PointerToMemberFunction method)</td></tr>
 <tr class="separator:disconnect-6 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_qgraphicsitem"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_qgraphicsitem')"><img src="closed.png" alt="-"/>&#160;Attributs publics hérités de <a class="el"  href="http://qt-project.org/doc/qt-5/qgraphicsitem.html">QGraphicsItem</a></td></tr>
+<tr class="memitem:GraphicsItemFlag-enum inherit pub_attribs_qgraphicsitem"><td class="memItemLeft" align="right" valign="top">typedef&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://qt-project.org/doc/qt-5/qgraphicsitem.html#GraphicsItemFlag-enum">GraphicsItemFlags</a></td></tr>
+<tr class="separator:GraphicsItemFlag-enum inherit pub_attribs_qgraphicsitem"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_sprite"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_sprite')"><img src="closed.png" alt="-"/>&#160;Fonctions membres protégées hérités de <a class="el" href="class_sprite.html">Sprite</a></td></tr>
-<tr class="memitem:aaf606dfaaf05fba692b467ade8db69c9 inherit pro_methods_class_sprite"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="http://qt-project.org/doc/qt-5/qlist.html">QList</a>&lt; <a class="el" href="class_sprite.html">Sprite</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sprite.html#aaf606dfaaf05fba692b467ade8db69c9">collidingSprites</a> () const</td></tr>
-<tr class="separator:aaf606dfaaf05fba692b467ade8db69c9 inherit pro_methods_class_sprite"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee974358c719cd67af3d1f9c7afbf98f inherit pro_methods_class_sprite"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="http://qt-project.org/doc/qt-5/qlist.html">QList</a>&lt; <a class="el" href="class_sprite.html">Sprite</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sprite.html#aee974358c719cd67af3d1f9c7afbf98f">collidingSprites</a> (const <a class="elRef" href="http://qt-project.org/doc/qt-5/qrectf.html">QRectF</a> &amp;rRect) const</td></tr>
 <tr class="separator:aee974358c719cd67af3d1f9c7afbf98f inherit pro_methods_class_sprite"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81cce6d62f74f36080906542a19e3219 inherit pro_methods_class_sprite"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="http://qt-project.org/doc/qt-5/qlist.html">QList</a>&lt; <a class="el" href="class_sprite.html">Sprite</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sprite.html#a81cce6d62f74f36080906542a19e3219">collidingSprites</a> (const <a class="elRef" href="http://qt-project.org/doc/qt-5/qpainterpath.html">QPainterPath</a> &amp;rShape) const</td></tr>
@@ -912,12 +1012,26 @@ Membres hérités additionnels</h2></td></tr>
 <tr class="separator:objectName-prop inherit properties_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
-<div class="textblock"><p >Classe qui représente le joueur principal du jeu. cette classe permet de gérer tous ce que consitue le joueur. </p>
+<div class="textblock"><p>Classe qui représente un vaisseau spatial. </p>
+<p>Contiens toutes les statistiques du vaisseau.</p><ul>
+<li>m_damageRate le délai entre deux dégâts</li>
+<li>m_pHealthBar la barre d'expérience</li>
+<li>m_pProgressBar la barre d'expérience</li>
+<li>m_shipSpeed la vitesse du vaisseau</li>
+<li>m_damageReduction la réduction de dégâts lors d'un choc</li>
+<li>m_bulletDamage les dégâts des balles tirées</li>
+<li>m_bulletPierce le nombre d'ennemies percer avec une balle</li>
+<li>m_critChance les chances de coup critique</li>
+<li>m_critDamage le multiplicateur de dégâts au critique</li>
+<li>m_lessDamagePiercing les dégâts réduits à chaque percement</li>
+<li>m_shootingRate la cadence de tir</li>
+</ul>
+<p>Cette class peux : tirer une balle et déplacer les barres de points de vie et d'expérience. </p>
 
-<p class="definition">Définition à la ligne <a class="el" href="player_8h_source.html#l00019">19</a> du fichier <a class="el" href="player_8h_source.html">player.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="player_8h_source.html#l00033">33</a> du fichier <a class="el" href="player_8h_source.html">player.h</a>.</p>
 </div><h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
-<a id="a39b8e3961c18171b6e40319370e7d728" name="a39b8e3961c18171b6e40319370e7d728"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a39b8e3961c18171b6e40319370e7d728">&#9670;&#160;</a></span>Player()</h2>
+<a id="a8f32d611e847e976e80fe33dfb0f6bc9" name="a8f32d611e847e976e80fe33dfb0f6bc9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f32d611e847e976e80fe33dfb0f6bc9">&#9670;&#160;</a></span>Player()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -925,8 +1039,26 @@ Membres hérités additionnels</h2></td></tr>
         <tr>
           <td class="memname">Player::Player </td>
           <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>damageRate</em> = <code>0.5</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>shipSpeed</em> = <code>400</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>healthPoint</em> = <code>10</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">const <a class="elRef" href="http://qt-project.org/doc/qt-5/qpixmap.html">QPixmap</a> &amp;&#160;</td>
-          <td class="paramname"><em>rPixmap</em> = <code><a class="elRef" href="http://qt-project.org/doc/qt-5/qpixmap.html">QPixmap</a>(<a class="el" href="namespace_game_framework.html#a94ecbf249f954a70e95558d979a75614">GameFramework::imagesPath</a>(&quot;ship&quot;)&#160;+&#160;&quot;ship.png&quot;)</code>, </td>
+          <td class="paramname"><em>rPixmap</em> = <code><a class="elRef" href="http://qt-project.org/doc/qt-5/qpixmap.html">QPixmap</a>(<a class="el" href="namespace_game_framework.html#a94ecbf249f954a70e95558d979a75614">GameFramework::imagesPath</a>()&#160;+&#160;&quot;ship/ship.png&quot;)</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -941,18 +1073,48 @@ Membres hérités additionnels</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Construit et initialise un joueur. </p><dl class="params"><dt>Paramètres</dt><dd>
+<p>Construit et initialise un joueur. </p><dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pParent</td><td>Objet propiétaire de cet objet. </td></tr>
+    <tr><td class="paramname">damageRate</td><td>le temps d'invincibilité après avoir pris un coup </td></tr>
+    <tr><td class="paramname">shipSpeed</td><td>la vitesse du vaisseau </td></tr>
+    <tr><td class="paramname">healthPoint</td><td>les points de vie du vaisseau </td></tr>
+    <tr><td class="paramname">rPixmap</td><td>l'image du vaisseau </td></tr>
+    <tr><td class="paramname">pParent</td><td>l'objet parent </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Définition à la ligne <a class="el" href="player_8cpp_source.html#l00014">14</a> du fichier <a class="el" href="player_8cpp_source.html">player.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="player_8cpp_source.html#l00019">19</a> du fichier <a class="el" href="player_8cpp_source.html">player.cpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Documentation des fonctions membres</h2>
+<a id="ab4c1223460ce396cc704cba344664fdb" name="ab4c1223460ce396cc704cba344664fdb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4c1223460ce396cc704cba344664fdb">&#9670;&#160;</a></span>addBarToScene()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Player::addBarToScene </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>mode</em> = <code>0</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Ajoute la barre de point de vie et d'expérience à la scène </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mode</td><td>0: Ajout une barre de point de vie et d'expérience | Autre: Ajout que de la barre de point de vie. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="player_8cpp_source.html#l00165">165</a> du fichier <a class="el" href="player_8cpp_source.html">player.cpp</a>.</p>
+
+</div>
+</div>
 <a id="a711dddcfddc34ee48f7b4cbc24b88d30" name="a711dddcfddc34ee48f7b4cbc24b88d30"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a711dddcfddc34ee48f7b4cbc24b88d30">&#9670;&#160;</a></span>animationFinish</h2>
 
@@ -976,9 +1138,9 @@ Membres hérités additionnels</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>stop l'animation de prise de degats </p>
+<p>Stop l'animation de prise de dégâts. </p>
 
-<p class="definition">Définition à la ligne <a class="el" href="player_8cpp_source.html#l00125">125</a> du fichier <a class="el" href="player_8cpp_source.html">player.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="player_8cpp_source.html#l00117">117</a> du fichier <a class="el" href="player_8cpp_source.html">player.cpp</a>.</p>
 
 </div>
 </div>
@@ -1005,14 +1167,14 @@ Membres hérités additionnels</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >fait perdre des points de vie au joueur. </p><dl class="params"><dt>Paramètres</dt><dd>
+<p>fait perdre des points de vie au joueur. </p><dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramname">damage</td><td>le nombre de dégats soubis. </td></tr>
+    <tr><td class="paramname">damage</td><td>le nombre de dégâts subis. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Définition à la ligne <a class="el" href="player_8cpp_source.html#l00095">95</a> du fichier <a class="el" href="player_8cpp_source.html">player.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="player_8cpp_source.html#l00087">87</a> du fichier <a class="el" href="player_8cpp_source.html">player.cpp</a>.</p>
 
 </div>
 </div>
@@ -1039,14 +1201,382 @@ Membres hérités additionnels</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >met à jour l'experience et le niveau du joueur </p><dl class="params"><dt>Paramètres</dt><dd>
+<p>Mets à jour l'expérience et le niveau du joueur. </p><dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramname">experenceGain</td><td>le nombre d'experence gagner </td></tr>
+    <tr><td class="paramname">experenceGain</td><td>le nombre d'expériences gagner </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Définition à la ligne <a class="el" href="player_8cpp_source.html#l00131">131</a> du fichier <a class="el" href="player_8cpp_source.html">player.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="player_8cpp_source.html#l00123">123</a> du fichier <a class="el" href="player_8cpp_source.html">player.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a66c3dec97475905321a410e11d5cce0f" name="a66c3dec97475905321a410e11d5cce0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66c3dec97475905321a410e11d5cce0f">&#9670;&#160;</a></span>getActualHealthPoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Player::getActualHealthPoint </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Getter pour obtenir le nombre de points de vie actuel. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="player_8cpp_source.html#l00205">205</a> du fichier <a class="el" href="player_8cpp_source.html">player.cpp</a>.</p>
+
+</div>
+</div>
+<a id="adcf6cf10cd1db87e43919a94d7553657" name="adcf6cf10cd1db87e43919a94d7553657"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adcf6cf10cd1db87e43919a94d7553657">&#9670;&#160;</a></span>getBaseShipSpeed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Player::getBaseShipSpeed </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Getter pour obtenir la vitesse de base du vaisseau. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="player_8cpp_source.html#l00315">315</a> du fichier <a class="el" href="player_8cpp_source.html">player.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a1ceff7912437598599496fec851b7a9e" name="a1ceff7912437598599496fec851b7a9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ceff7912437598599496fec851b7a9e">&#9670;&#160;</a></span>getBulletDamage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Player::getBulletDamage </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Getter pour obtenir le nombre de dégâts avec une balle. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="player_8cpp_source.html#l00260">260</a> du fichier <a class="el" href="player_8cpp_source.html">player.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a4ee2722804a0be3f59a999a425e9a249" name="a4ee2722804a0be3f59a999a425e9a249"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ee2722804a0be3f59a999a425e9a249">&#9670;&#160;</a></span>getBulletPierce()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Player::getBulletPierce </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Getter pour obtenir le nombre de percements de la balle. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="player_8cpp_source.html#l00270">270</a> du fichier <a class="el" href="player_8cpp_source.html">player.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a8d69e0a6c230f76737818c877cdf0c91" name="a8d69e0a6c230f76737818c877cdf0c91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d69e0a6c230f76737818c877cdf0c91">&#9670;&#160;</a></span>getCritChance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Player::getCritChance </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Getter pour obtenir le nombre de chances critique. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="player_8cpp_source.html#l00280">280</a> du fichier <a class="el" href="player_8cpp_source.html">player.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a705be934598663f69746e1ebfd39eb8b" name="a705be934598663f69746e1ebfd39eb8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a705be934598663f69746e1ebfd39eb8b">&#9670;&#160;</a></span>getCritDamage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Player::getCritDamage </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Setter pour mettre à jour le nombre de chances critique. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="player_8cpp_source.html#l00285">285</a> du fichier <a class="el" href="player_8cpp_source.html">player.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a412e7d64c9c156fa38c6362fffc56617" name="a412e7d64c9c156fa38c6362fffc56617"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a412e7d64c9c156fa38c6362fffc56617">&#9670;&#160;</a></span>getDamageReduction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Player::getDamageReduction </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Getter pour obtenir le nombre de dégâts réduit. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="player_8cpp_source.html#l00250">250</a> du fichier <a class="el" href="player_8cpp_source.html">player.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aadd13410eab234e316241423701b05fa" name="aadd13410eab234e316241423701b05fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aadd13410eab234e316241423701b05fa">&#9670;&#160;</a></span>getDirections()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a> Player::getDirections </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Getter pour obtenir la direction du vaisseau. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="player_8cpp_source.html#l00326">326</a> du fichier <a class="el" href="player_8cpp_source.html">player.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a2ab4c338ccd25578b0dd7900cd755fef" name="a2ab4c338ccd25578b0dd7900cd755fef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ab4c338ccd25578b0dd7900cd755fef">&#9670;&#160;</a></span>getExperienceActual()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Player::getExperienceActual </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Getter pour obtenir le nombre d'expériences actuel. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="player_8cpp_source.html#l00230">230</a> du fichier <a class="el" href="player_8cpp_source.html">player.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac73335578e67fe3734a9331d7cd3be0c" name="ac73335578e67fe3734a9331d7cd3be0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac73335578e67fe3734a9331d7cd3be0c">&#9670;&#160;</a></span>getExperienceForLevel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Player::getExperienceForLevel </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Getter pour obtenir l'expérience requise pour passer de niveau. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="player_8cpp_source.html#l00225">225</a> du fichier <a class="el" href="player_8cpp_source.html">player.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a6ce235e798ca761b50f03cab498afc60" name="a6ce235e798ca761b50f03cab498afc60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ce235e798ca761b50f03cab498afc60">&#9670;&#160;</a></span>getLessDamagePiercing()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Player::getLessDamagePiercing </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Getter pour obtenir le nombre de dégâts réduit par percement. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="player_8cpp_source.html#l00295">295</a> du fichier <a class="el" href="player_8cpp_source.html">player.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a672ad264a9fd0099b142588c12a592ec" name="a672ad264a9fd0099b142588c12a592ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a672ad264a9fd0099b142588c12a592ec">&#9670;&#160;</a></span>getMaximumHealthPoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Player::getMaximumHealthPoint </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Getter pour obtenir le nombre de points de vie maximum. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="player_8cpp_source.html#l00195">195</a> du fichier <a class="el" href="player_8cpp_source.html">player.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ae7812d0841113f69740d4982ac2e1539" name="ae7812d0841113f69740d4982ac2e1539"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7812d0841113f69740d4982ac2e1539">&#9670;&#160;</a></span>getMultiFireStatu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Player::getMultiFireStatu </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Getter pour obtenir si le tir multiple est activé. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="player_8cpp_source.html#l00215">215</a> du fichier <a class="el" href="player_8cpp_source.html">player.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ab9fbe62134eb97b5b7654ba671af7f9e" name="ab9fbe62134eb97b5b7654ba671af7f9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9fbe62134eb97b5b7654ba671af7f9e">&#9670;&#160;</a></span>getPlayerLevel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Player::getPlayerLevel </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Getter pour obtenir le niveau du joueur. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="player_8cpp_source.html#l00173">173</a> du fichier <a class="el" href="player_8cpp_source.html">player.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a2382d7a9b82f8ec0fd93a274177032eb" name="a2382d7a9b82f8ec0fd93a274177032eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2382d7a9b82f8ec0fd93a274177032eb">&#9670;&#160;</a></span>getShipSpeed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Player::getShipSpeed </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Getter pour obtenir la vitesse du vaisseau. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="player_8cpp_source.html#l00240">240</a> du fichier <a class="el" href="player_8cpp_source.html">player.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa38936dd7a7df14c8a6277dba88c524e" name="aa38936dd7a7df14c8a6277dba88c524e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa38936dd7a7df14c8a6277dba88c524e">&#9670;&#160;</a></span>getShootingRate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Player::getShootingRate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Getter pour obtenir la cadence de tir. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="player_8cpp_source.html#l00305">305</a> du fichier <a class="el" href="player_8cpp_source.html">player.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af7699157cbc4185202967224eeaab779" name="af7699157cbc4185202967224eeaab779"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7699157cbc4185202967224eeaab779">&#9670;&#160;</a></span>moveBar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Player::moveBar </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Permets de déplacer les barres de point de vie et d'expérience. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="player_8cpp_source.html#l00178">178</a> du fichier <a class="el" href="player_8cpp_source.html">player.cpp</a>.</p>
 
 </div>
 </div>
@@ -1115,19 +1645,337 @@ Membres hérités additionnels</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Réduit l'attaque speed du vaisseau </p><dl class="params"><dt>Paramètres</dt><dd>
+<p>Réduis la cadence de tir du vaisseau. </p><dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
     <tr><td class="paramname">reduceAmount</td><td>le montant à réduire </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Définition à la ligne <a class="el" href="player_8cpp_source.html#l00168">168</a> du fichier <a class="el" href="player_8cpp_source.html">player.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="player_8cpp_source.html#l00158">158</a> du fichier <a class="el" href="player_8cpp_source.html">player.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a4f11b8c5c6ad11c4be885e61b70feba2" name="a4f11b8c5c6ad11c4be885e61b70feba2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4f11b8c5c6ad11c4be885e61b70feba2">&#9670;&#160;</a></span>shoot()</h2>
+<a id="abb9cffc3efeba0f6350985c78e0226f6" name="abb9cffc3efeba0f6350985c78e0226f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb9cffc3efeba0f6350985c78e0226f6">&#9670;&#160;</a></span>setActualHealthPoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Player::setActualHealthPoint </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>newActualHealth</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Setter pour mettre à jour le nombre de points de vie actuel. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="player_8cpp_source.html#l00210">210</a> du fichier <a class="el" href="player_8cpp_source.html">player.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ae6093649063a95ace700c214b21797eb" name="ae6093649063a95ace700c214b21797eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6093649063a95ace700c214b21797eb">&#9670;&#160;</a></span>setBulletDamage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Player::setBulletDamage </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>newBulletDamage</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Setter pour mettre à jour le nombre de dégâts avec une balle. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="player_8cpp_source.html#l00265">265</a> du fichier <a class="el" href="player_8cpp_source.html">player.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a04ced2d49510a32b73741d7ffdb929d8" name="a04ced2d49510a32b73741d7ffdb929d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04ced2d49510a32b73741d7ffdb929d8">&#9670;&#160;</a></span>setBulletPierce()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Player::setBulletPierce </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>newPierce</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Setter pour mettre à jour le nombre de percements de la balle. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="player_8cpp_source.html#l00275">275</a> du fichier <a class="el" href="player_8cpp_source.html">player.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a6615f20868b91e706e914acf01710f54" name="a6615f20868b91e706e914acf01710f54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6615f20868b91e706e914acf01710f54">&#9670;&#160;</a></span>setCritDamage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Player::setCritDamage </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>newCritDamage</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Setter pour mettre à jour le nombre de dégâts critique. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="player_8cpp_source.html#l00290">290</a> du fichier <a class="el" href="player_8cpp_source.html">player.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a91ef79845355b03bfb4dcef5b0b5acd3" name="a91ef79845355b03bfb4dcef5b0b5acd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91ef79845355b03bfb4dcef5b0b5acd3">&#9670;&#160;</a></span>setDamageReduction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Player::setDamageReduction </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>newDamageReduction</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Setter pour mettre à jour le nombre de dégâts réduit. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="player_8cpp_source.html#l00255">255</a> du fichier <a class="el" href="player_8cpp_source.html">player.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a308ed9300b3222005e0a71d8ecbca78f" name="a308ed9300b3222005e0a71d8ecbca78f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a308ed9300b3222005e0a71d8ecbca78f">&#9670;&#160;</a></span>setDirection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Player::setDirection </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Setter pour mettre à jour sa direction. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="player_8cpp_source.html#l00320">320</a> du fichier <a class="el" href="player_8cpp_source.html">player.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad4c9b0d313196d535584c3f7d55ef02f" name="ad4c9b0d313196d535584c3f7d55ef02f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4c9b0d313196d535584c3f7d55ef02f">&#9670;&#160;</a></span>setHealthBarMaximum()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Player::setHealthBarMaximum </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>newMaximum</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Setter pour mettre à jour le montant maximum de la barre de point de vie. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="player_8cpp_source.html#l00185">185</a> du fichier <a class="el" href="player_8cpp_source.html">player.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a6bf6f0aefb994cb27dfa0399867dbd4f" name="a6bf6f0aefb994cb27dfa0399867dbd4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6bf6f0aefb994cb27dfa0399867dbd4f">&#9670;&#160;</a></span>setHealthBarValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Player::setHealthBarValue </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>newValue</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Setter pour mettre à jour le moontant actuel de la barre de point de vie. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="player_8cpp_source.html#l00190">190</a> du fichier <a class="el" href="player_8cpp_source.html">player.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a1fa06ef07e6408d667dac6b7a6533097" name="a1fa06ef07e6408d667dac6b7a6533097"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fa06ef07e6408d667dac6b7a6533097">&#9670;&#160;</a></span>setLessDamagePiercing()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Player::setLessDamagePiercing </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>newLessDamage</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Setter pour mettre à jour le nombre de dégâts réduit par percement. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="player_8cpp_source.html#l00300">300</a> du fichier <a class="el" href="player_8cpp_source.html">player.cpp</a>.</p>
+
+</div>
+</div>
+<a id="abe226eb1d0e577393d5a2f23c90844c4" name="abe226eb1d0e577393d5a2f23c90844c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe226eb1d0e577393d5a2f23c90844c4">&#9670;&#160;</a></span>setMaximumHealthPoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Player::setMaximumHealthPoint </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>newMaxHealth</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Setter pour mettre à jour le maximum de point de vie. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="player_8cpp_source.html#l00200">200</a> du fichier <a class="el" href="player_8cpp_source.html">player.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a0f80c3e2f777a671dbf66b2ace08b9a5" name="a0f80c3e2f777a671dbf66b2ace08b9a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f80c3e2f777a671dbf66b2ace08b9a5">&#9670;&#160;</a></span>setMousPos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Player::setMousPos </td>
+          <td>(</td>
+          <td class="paramtype"><a class="elRef" href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a>&#160;</td>
+          <td class="paramname"><em>newMousePos</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Settter pour mettre à jour la position de la souris. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="player_8cpp_source.html#l00235">235</a> du fichier <a class="el" href="player_8cpp_source.html">player.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a40d9601b70000673f24edc27a751485f" name="a40d9601b70000673f24edc27a751485f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40d9601b70000673f24edc27a751485f">&#9670;&#160;</a></span>setMultiFireStatu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Player::setMultiFireStatu </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>newStatu</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Setter pour mettre à jour le statut du tir multiple. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="player_8cpp_source.html#l00220">220</a> du fichier <a class="el" href="player_8cpp_source.html">player.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a745556826ebd0970340690fdd7b8a3f3" name="a745556826ebd0970340690fdd7b8a3f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a745556826ebd0970340690fdd7b8a3f3">&#9670;&#160;</a></span>setShipSpeed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Player::setShipSpeed </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>newShipSpeed</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Setter pour mettre à jour la vitesse du vaisseau. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="player_8cpp_source.html#l00245">245</a> du fichier <a class="el" href="player_8cpp_source.html">player.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad3ed38a3e42aad82b9bc067afae826d7" name="ad3ed38a3e42aad82b9bc067afae826d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3ed38a3e42aad82b9bc067afae826d7">&#9670;&#160;</a></span>setShootingRate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Player::setShootingRate </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>newShootingRate</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Setter pour mettre à jour la cadence de tir. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="player_8cpp_source.html#l00310">310</a> du fichier <a class="el" href="player_8cpp_source.html">player.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a4cdc67fd9ca2de09af89d9ae19efe5f8" name="a4cdc67fd9ca2de09af89d9ae19efe5f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cdc67fd9ca2de09af89d9ae19efe5f8">&#9670;&#160;</a></span>shoot()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1135,53 +1983,112 @@ Membres hérités additionnels</h2></td></tr>
         <tr>
           <td class="memname">void Player::shoot </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_game_scene.html">GameScene</a> *&#160;</td>
-          <td class="paramname"><em>scene</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Crée une balle et lui met sa direction </p><dl class="params"><dt>Paramètres</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">scene</td><td>La scène ou se situ la balle </td></tr>
-  </table>
-  </dd>
-</dl>
 
-<p class="definition">Définition à la ligne <a class="el" href="player_8cpp_source.html#l00046">46</a> du fichier <a class="el" href="player_8cpp_source.html">player.cpp</a>.</p>
+<p>Crée les balles et les lances dans la bonne direction. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="player_8cpp_source.html#l00055">55</a> du fichier <a class="el" href="player_8cpp_source.html">player.cpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Documentation des données membres</h2>
+<a id="a00c5f88dc112f1996bdf0cb5ff77a72b" name="a00c5f88dc112f1996bdf0cb5ff77a72b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00c5f88dc112f1996bdf0cb5ff77a72b">&#9670;&#160;</a></span>directionX</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Player::directionX = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="player_8h_source.html#l00124">124</a> du fichier <a class="el" href="player_8h_source.html">player.h</a>.</p>
+
+</div>
+</div>
+<a id="a6f2797e53482796e4333600725a784e3" name="a6f2797e53482796e4333600725a784e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f2797e53482796e4333600725a784e3">&#9670;&#160;</a></span>directionY</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Player::directionY = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="player_8h_source.html#l00125">125</a> du fichier <a class="el" href="player_8h_source.html">player.h</a>.</p>
+
+</div>
+</div>
 <a id="aa4695c774e169d2803e7b843b34b8d3e" name="aa4695c774e169d2803e7b843b34b8d3e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa4695c774e169d2803e7b843b34b8d3e">&#9670;&#160;</a></span>m_actualExperience</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">int Player::m_actualExperience = 0</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="player_8h_source.html#l00034">34</a> du fichier <a class="el" href="player_8h_source.html">player.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="player_8h_source.html#l00109">109</a> du fichier <a class="el" href="player_8h_source.html">player.h</a>.</p>
 
 </div>
 </div>
-<a id="ad8528b6882cc380e19c13756c350ac34" name="ad8528b6882cc380e19c13756c350ac34"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad8528b6882cc380e19c13756c350ac34">&#9670;&#160;</a></span>m_actualHealtPoint</h2>
+<a id="ac80edffc58fac5651215df2b559a8ec5" name="ac80edffc58fac5651215df2b559a8ec5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac80edffc58fac5651215df2b559a8ec5">&#9670;&#160;</a></span>m_actualHealthPoint</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int Player::m_actualHealtPoint</td>
+          <td class="memname">int Player::m_actualHealthPoint</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="player_8h_source.html#l00032">32</a> du fichier <a class="el" href="player_8h_source.html">player.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="player_8h_source.html#l00104">104</a> du fichier <a class="el" href="player_8h_source.html">player.h</a>.</p>
 
 </div>
 </div>
@@ -1205,76 +2112,12 @@ Membres hérités additionnels</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="player_8h_source.html#l00054">54</a> du fichier <a class="el" href="player_8h_source.html">player.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="player_8h_source.html#l00094">94</a> du fichier <a class="el" href="player_8h_source.html">player.h</a>.</p>
 
 </div>
 </div>
-<a id="ade9b0805b7558eb93a5e141387f75e80" name="ade9b0805b7558eb93a5e141387f75e80"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ade9b0805b7558eb93a5e141387f75e80">&#9670;&#160;</a></span>m_bulletDamage</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int Player::m_bulletDamage = 40</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Définition à la ligne <a class="el" href="player_8h_source.html#l00038">38</a> du fichier <a class="el" href="player_8h_source.html">player.h</a>.</p>
-
-</div>
-</div>
-<a id="aa1571702510855159a0ba7e6b76567fb" name="aa1571702510855159a0ba7e6b76567fb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa1571702510855159a0ba7e6b76567fb">&#9670;&#160;</a></span>m_bulletPierce</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int Player::m_bulletPierce = 0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Définition à la ligne <a class="el" href="player_8h_source.html#l00039">39</a> du fichier <a class="el" href="player_8h_source.html">player.h</a>.</p>
-
-</div>
-</div>
-<a id="a408283608f55c73f0e3e74141bad2faa" name="a408283608f55c73f0e3e74141bad2faa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a408283608f55c73f0e3e74141bad2faa">&#9670;&#160;</a></span>m_critChance</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int Player::m_critChance = 10</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Définition à la ligne <a class="el" href="player_8h_source.html#l00040">40</a> du fichier <a class="el" href="player_8h_source.html">player.h</a>.</p>
-
-</div>
-</div>
-<a id="aa2c7b1176531e9f52f0c9644615e1e00" name="aa2c7b1176531e9f52f0c9644615e1e00"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa2c7b1176531e9f52f0c9644615e1e00">&#9670;&#160;</a></span>m_critDamage</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double Player::m_critDamage = 1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Définition à la ligne <a class="el" href="player_8h_source.html#l00041">41</a> du fichier <a class="el" href="player_8h_source.html">player.h</a>.</p>
-
-</div>
-</div>
-<a id="a9309e52ff033225f064c7cb1f1b65f75" name="a9309e52ff033225f064c7cb1f1b65f75"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9309e52ff033225f064c7cb1f1b65f75">&#9670;&#160;</a></span>m_DAMAGE_RATE</h2>
+<a id="a473e80b4c8d4f2abc3fbad2d8eda38de" name="a473e80b4c8d4f2abc3fbad2d8eda38de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a473e80b4c8d4f2abc3fbad2d8eda38de">&#9670;&#160;</a></span>m_baseShipSpeed</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1283,7 +2126,7 @@ Membres hérités additionnels</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const double Player::m_DAMAGE_RATE = 0.5</td>
+          <td class="memname">int Player::m_baseShipSpeed = 0</td>
         </tr>
       </table>
   </td>
@@ -1293,7 +2136,127 @@ Membres hérités additionnels</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="player_8h_source.html#l00053">53</a> du fichier <a class="el" href="player_8h_source.html">player.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="player_8h_source.html#l00114">114</a> du fichier <a class="el" href="player_8h_source.html">player.h</a>.</p>
+
+</div>
+</div>
+<a id="ade9b0805b7558eb93a5e141387f75e80" name="ade9b0805b7558eb93a5e141387f75e80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade9b0805b7558eb93a5e141387f75e80">&#9670;&#160;</a></span>m_bulletDamage</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Player::m_bulletDamage = 40</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="player_8h_source.html#l00117">117</a> du fichier <a class="el" href="player_8h_source.html">player.h</a>.</p>
+
+</div>
+</div>
+<a id="aa1571702510855159a0ba7e6b76567fb" name="aa1571702510855159a0ba7e6b76567fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1571702510855159a0ba7e6b76567fb">&#9670;&#160;</a></span>m_bulletPierce</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Player::m_bulletPierce = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="player_8h_source.html#l00118">118</a> du fichier <a class="el" href="player_8h_source.html">player.h</a>.</p>
+
+</div>
+</div>
+<a id="a408283608f55c73f0e3e74141bad2faa" name="a408283608f55c73f0e3e74141bad2faa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a408283608f55c73f0e3e74141bad2faa">&#9670;&#160;</a></span>m_critChance</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Player::m_critChance = 10</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="player_8h_source.html#l00119">119</a> du fichier <a class="el" href="player_8h_source.html">player.h</a>.</p>
+
+</div>
+</div>
+<a id="aa2c7b1176531e9f52f0c9644615e1e00" name="aa2c7b1176531e9f52f0c9644615e1e00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2c7b1176531e9f52f0c9644615e1e00">&#9670;&#160;</a></span>m_critDamage</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Player::m_critDamage = 1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="player_8h_source.html#l00120">120</a> du fichier <a class="el" href="player_8h_source.html">player.h</a>.</p>
+
+</div>
+</div>
+<a id="a9d2392c134d1a2400d8bccf2c2d1be4a" name="a9d2392c134d1a2400d8bccf2c2d1be4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d2392c134d1a2400d8bccf2c2d1be4a">&#9670;&#160;</a></span>m_damageRate</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Player::m_damageRate</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="player_8h_source.html#l00093">93</a> du fichier <a class="el" href="player_8h_source.html">player.h</a>.</p>
 
 </div>
 </div>
@@ -1302,30 +2265,46 @@ Membres hérités additionnels</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">int Player::m_damageReduction = 0</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="player_8h_source.html#l00037">37</a> du fichier <a class="el" href="player_8h_source.html">player.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="player_8h_source.html#l00116">116</a> du fichier <a class="el" href="player_8h_source.html">player.h</a>.</p>
 
 </div>
 </div>
-<a id="ae639ea2ac4cfdc13bb6fb7b6cf6ca73c" name="ae639ea2ac4cfdc13bb6fb7b6cf6ca73c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae639ea2ac4cfdc13bb6fb7b6cf6ca73c">&#9670;&#160;</a></span>m_experenceForLevel</h2>
+<a id="a6693513b7987bb3d48a31fb699f4d499" name="a6693513b7987bb3d48a31fb699f4d499"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6693513b7987bb3d48a31fb699f4d499">&#9670;&#160;</a></span>m_experienceForLevel</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int Player::m_experenceForLevel = 100</td>
+          <td class="memname">int Player::m_experienceForLevel = 100</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="player_8h_source.html#l00033">33</a> du fichier <a class="el" href="player_8h_source.html">player.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="player_8h_source.html#l00108">108</a> du fichier <a class="el" href="player_8h_source.html">player.h</a>.</p>
 
 </div>
 </div>
@@ -1334,30 +2313,46 @@ Membres hérités additionnels</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">double Player::m_lessDamagePiercing = 2</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="player_8h_source.html#l00042">42</a> du fichier <a class="el" href="player_8h_source.html">player.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="player_8h_source.html#l00121">121</a> du fichier <a class="el" href="player_8h_source.html">player.h</a>.</p>
 
 </div>
 </div>
-<a id="a87bf0ea770e1de9b1ee6b4c0ea4fadbb" name="a87bf0ea770e1de9b1ee6b4c0ea4fadbb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a87bf0ea770e1de9b1ee6b4c0ea4fadbb">&#9670;&#160;</a></span>m_maxHealtPoint</h2>
+<a id="a8f9a982429a258a0107920b203d6a071" name="a8f9a982429a258a0107920b203d6a071"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f9a982429a258a0107920b203d6a071">&#9670;&#160;</a></span>m_maxHealthPoint</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int Player::m_maxHealtPoint</td>
+          <td class="memname">int Player::m_maxHealthPoint</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="player_8h_source.html#l00031">31</a> du fichier <a class="el" href="player_8h_source.html">player.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="player_8h_source.html#l00103">103</a> du fichier <a class="el" href="player_8h_source.html">player.h</a>.</p>
 
 </div>
 </div>
@@ -1366,14 +2361,22 @@ Membres hérités additionnels</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="elRef" href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a> Player::m_mousePos = <a class="elRef" href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a>(0, 0)</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="player_8h_source.html#l00045">45</a> du fichier <a class="el" href="player_8h_source.html">player.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="player_8h_source.html#l00111">111</a> du fichier <a class="el" href="player_8h_source.html">player.h</a>.</p>
 
 </div>
 </div>
@@ -1382,14 +2385,22 @@ Membres hérités additionnels</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool Player::m_multiFireActivated = false</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="player_8h_source.html#l00047">47</a> du fichier <a class="el" href="player_8h_source.html">player.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="player_8h_source.html#l00106">106</a> du fichier <a class="el" href="player_8h_source.html">player.h</a>.</p>
 
 </div>
 </div>
@@ -1398,14 +2409,22 @@ Membres hérités additionnels</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="elRef" href="http://qt-project.org/doc/qt-5/qprogressbar.html">QProgressBar</a>* Player::m_pExpBar = new <a class="elRef" href="http://qt-project.org/doc/qt-5/qprogressbar.html">QProgressBar</a></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="player_8h_source.html#l00028">28</a> du fichier <a class="el" href="player_8h_source.html">player.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="player_8h_source.html#l00101">101</a> du fichier <a class="el" href="player_8h_source.html">player.h</a>.</p>
 
 </div>
 </div>
@@ -1414,14 +2433,22 @@ Membres hérités additionnels</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="elRef" href="http://qt-project.org/doc/qt-5/qprogressbar.html">QProgressBar</a>* Player::m_pHealthBar = new <a class="elRef" href="http://qt-project.org/doc/qt-5/qprogressbar.html">QProgressBar</a></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="player_8h_source.html#l00027">27</a> du fichier <a class="el" href="player_8h_source.html">player.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="player_8h_source.html#l00100">100</a> du fichier <a class="el" href="player_8h_source.html">player.h</a>.</p>
 
 </div>
 </div>
@@ -1445,7 +2472,7 @@ Membres hérités additionnels</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="player_8h_source.html#l00052">52</a> du fichier <a class="el" href="player_8h_source.html">player.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="player_8h_source.html#l00092">92</a> du fichier <a class="el" href="player_8h_source.html">player.h</a>.</p>
 
 </div>
 </div>
@@ -1454,14 +2481,22 @@ Membres hérités additionnels</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">int Player::m_playerLevel = 1</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="player_8h_source.html#l00030">30</a> du fichier <a class="el" href="player_8h_source.html">player.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="player_8h_source.html#l00098">98</a> du fichier <a class="el" href="player_8h_source.html">player.h</a>.</p>
 
 </div>
 </div>
@@ -1485,7 +2520,7 @@ Membres hérités additionnels</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="player_8h_source.html#l00056">56</a> du fichier <a class="el" href="player_8h_source.html">player.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="player_8h_source.html#l00096">96</a> du fichier <a class="el" href="player_8h_source.html">player.h</a>.</p>
 
 </div>
 </div>
@@ -1494,14 +2529,22 @@ Membres hérités additionnels</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">int Player::m_shipSpeed = 400</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="player_8h_source.html#l00036">36</a> du fichier <a class="el" href="player_8h_source.html">player.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="player_8h_source.html#l00113">113</a> du fichier <a class="el" href="player_8h_source.html">player.h</a>.</p>
 
 </div>
 </div>
@@ -1510,25 +2553,33 @@ Membres hérités additionnels</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">double Player::m_shootingRate = 1</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="player_8h_source.html#l00043">43</a> du fichier <a class="el" href="player_8h_source.html">player.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="player_8h_source.html#l00122">122</a> du fichier <a class="el" href="player_8h_source.html">player.h</a>.</p>
 
 </div>
 </div>
-<hr/>La documentation de cette classe a été générée à partir du fichier suivant :<ul>
+<hr/>La documentation de cette classe a été générée à partir des fichiers suivants :<ul>
 <li><a class="el" href="player_8h_source.html">player.h</a></li>
 <li><a class="el" href="player_8cpp_source.html">player.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Généré le Mardi 6 Décembre 2022 11:38:41 pour 2022-JCO-SpaceSurvivors par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Généré le Lundi 16 Janvier 2023 09:15:40 pour 2022-JCO-SpaceSurvivors par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

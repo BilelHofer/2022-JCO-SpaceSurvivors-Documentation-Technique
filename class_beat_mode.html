@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
-<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>2022-JCO-SpaceSurvivors: Référence de la classe BeatMode</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
@@ -30,7 +30,7 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Généré par Doxygen 1.9.5 -->
+<!-- Généré par Doxygen 1.9.6 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 var searchBox = new SearchBox("searchBox", "search/",'.html');
@@ -71,7 +71,10 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-slots">Connecteurs publics</a> &#124;
 <a href="#pub-methods">Fonctions membres publiques</a> &#124;
+<a href="#pri-methods">Fonctions membres privées</a> &#124;
+<a href="#pri-attribs">Attributs privés</a> &#124;
 <a href="class_beat_mode-members.html">Liste de tous les membres</a>  </div>
   <div class="headertitle"><div class="title">Référence de la classe BeatMode</div></div>
 </div><!--header-->
@@ -87,20 +90,50 @@ Graphe d'héritage de BeatMode:</div>
  <div class="center">
   <img src="class_beat_mode.png" usemap="#BeatMode_map" alt=""/>
   <map id="BeatMode_map" name="BeatMode_map">
-<area href="class_game_core.html" title="Classe qui gère le vaisseau du joueur." alt="GameCore" shape="rect" coords="0,56,72,80"/>
+<area href="class_game_core.html" title="Classe qui gère la logique du jeux." alt="GameCore" shape="rect" coords="0,56,72,80"/>
 <area target="_parent" href="http://qt-project.org/doc/qt-5/qobject.html" alt="QObject" shape="rect" coords="0,0,72,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-slots" name="pub-slots"></a>
+Connecteurs publics</h2></td></tr>
+<tr class="memitem:ae1e3336a0e4d399b5053ea680134acab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_beat_mode.html#ae1e3336a0e4d399b5053ea680134acab">updateGameMode</a> ()</td></tr>
+<tr class="memdesc:ae1e3336a0e4d399b5053ea680134acab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Met à jour les nouveau paramètre en fonction du mode de jeux.  <br /></td></tr>
+<tr class="separator:ae1e3336a0e4d399b5053ea680134acab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a8358297c082e1853697fc9f7e5e7db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_beat_mode.html#a5a8358297c082e1853697fc9f7e5e7db">endGame</a> ()</td></tr>
+<tr class="memdesc:a5a8358297c082e1853697fc9f7e5e7db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Termine la partie.  <br /></td></tr>
+<tr class="separator:a5a8358297c082e1853697fc9f7e5e7db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a896640a1c31a3b8f5161f72e0263e3a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_beat_mode.html#a896640a1c31a3b8f5161f72e0263e3a9">victory</a> ()</td></tr>
+<tr class="memdesc:a896640a1c31a3b8f5161f72e0263e3a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mets à jour le mode de jeux pour une victoire.  <br /></td></tr>
+<tr class="separator:a896640a1c31a3b8f5161f72e0263e3a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61ddd4fbe71319ae3f3c270821e0a5b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_beat_mode.html#a61ddd4fbe71319ae3f3c270821e0a5b5">playerMovedByForce</a> (bool isMoved)</td></tr>
+<tr class="memdesc:a61ddd4fbe71319ae3f3c270821e0a5b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mets à jour la variable pour savoir si le joueur est déplacé par force.  <br /></td></tr>
+<tr class="separator:a61ddd4fbe71319ae3f3c270821e0a5b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_slots_class_game_core"><td colspan="2" onclick="javascript:toggleInherit('pub_slots_class_game_core')"><img src="closed.png" alt="-"/>&#160;Connecteurs publics hérités de <a class="el" href="class_game_core.html">GameCore</a></td></tr>
+<tr class="memitem:af2a9de8d94844fa98f9f810c3968aa32 inherit pub_slots_class_game_core"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#af2a9de8d94844fa98f9f810c3968aa32">shipLookMouse</a> (<a class="elRef" href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a> mousePosition)</td></tr>
+<tr class="separator:af2a9de8d94844fa98f9f810c3968aa32 inherit pub_slots_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3993bfd31f61c9d2501cd7b7d6d8e40e inherit pub_slots_class_game_core"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a3993bfd31f61c9d2501cd7b7d6d8e40e">updateHUDPos</a> (int width, int height)</td></tr>
+<tr class="separator:a3993bfd31f61c9d2501cd7b7d6d8e40e inherit pub_slots_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acef906fb9747292aa79d35825cf348b1 inherit pub_slots_class_game_core"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#acef906fb9747292aa79d35825cf348b1">updateGameMode</a> ()=0</td></tr>
+<tr class="separator:acef906fb9747292aa79d35825cf348b1 inherit pub_slots_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a98c8ad176a2c54d8bb144a176a64af inherit pub_slots_class_game_core"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a2a98c8ad176a2c54d8bb144a176a64af">launchDeath</a> ()</td></tr>
+<tr class="memdesc:a2a98c8ad176a2c54d8bb144a176a64af inherit pub_slots_class_game_core"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lance l'explosion du joueur.  <br /></td></tr>
+<tr class="separator:a2a98c8ad176a2c54d8bb144a176a64af inherit pub_slots_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73affe0e5cb9888e9d0dfec4b1fd6183 inherit pub_slots_class_game_core"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a73affe0e5cb9888e9d0dfec4b1fd6183">endGame</a> ()</td></tr>
+<tr class="memdesc:a73affe0e5cb9888e9d0dfec4b1fd6183 inherit pub_slots_class_game_core"><td class="mdescLeft">&#160;</td><td class="mdescRight">Met en place la fin de partie.  <br /></td></tr>
+<tr class="separator:a73affe0e5cb9888e9d0dfec4b1fd6183 inherit pub_slots_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Fonctions membres publiques</h2></td></tr>
 <tr class="memitem:abb89058e4b4d5183c5c888d06a5ab20d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_beat_mode.html#abb89058e4b4d5183c5c888d06a5ab20d">BeatMode</a> (<a class="el" href="class_game_canvas.html">GameCanvas</a> *pGameCanvas, <a class="elRef" href="http://qt-project.org/doc/qt-5/qobject.html">QObject</a> *pParent=nullptr)</td></tr>
 <tr class="separator:abb89058e4b4d5183c5c888d06a5ab20d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f2c5539adf7f6f3bc7819a52b85aa3d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_beat_mode.html#a6f2c5539adf7f6f3bc7819a52b85aa3d">tick</a> (long long elapsedTimeInMilliseconds)</td></tr>
 <tr class="separator:a6f2c5539adf7f6f3bc7819a52b85aa3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1de7f0b5104c38bdeb32cb407e7704e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_beat_mode.html#a1de7f0b5104c38bdeb32cb407e7704e2">keyPressed</a> (int key)</td></tr>
+<tr class="separator:a1de7f0b5104c38bdeb32cb407e7704e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_game_core"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_game_core')"><img src="closed.png" alt="-"/>&#160;Fonctions membres publiques hérités de <a class="el" href="class_game_core.html">GameCore</a></td></tr>
-<tr class="memitem:a4ad25679d4041f90ac1fa6d16f900a37 inherit pub_methods_class_game_core"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a4ad25679d4041f90ac1fa6d16f900a37">GameCore</a> (<a class="el" href="class_game_core.html">GameCore</a> *pChildGame, <a class="elRef" href="http://qt-project.org/doc/qt-5/qobject.html">QObject</a> *pParent=nullptr)</td></tr>
-<tr class="separator:a4ad25679d4041f90ac1fa6d16f900a37 inherit pub_methods_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f80a12cacd1b7c422c56c123e4034c4 inherit pub_methods_class_game_core"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a6f80a12cacd1b7c422c56c123e4034c4">GameCore</a> (<a class="elRef" href="http://qt-project.org/doc/qt-5/qobject.html">QObject</a> *pParent=nullptr)</td></tr>
+<tr class="separator:a6f80a12cacd1b7c422c56c123e4034c4 inherit pub_methods_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7d1e03d52e81d846e5733d970120655 inherit pub_methods_class_game_core"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#af7d1e03d52e81d846e5733d970120655">keyPressed</a> (int key)</td></tr>
 <tr class="separator:af7d1e03d52e81d846e5733d970120655 inherit pub_methods_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e03c88acaf04467fc3213e09c58a441 inherit pub_methods_class_game_core"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a3e03c88acaf04467fc3213e09c58a441">keyReleased</a> (int key)</td></tr>
@@ -108,15 +141,13 @@ Fonctions membres publiques</h2></td></tr>
 <tr class="memitem:acb7e3ffb6923257ae234c274b2a2a2fc inherit pub_methods_class_game_core"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#acb7e3ffb6923257ae234c274b2a2a2fc">mouseMoved</a> (<a class="elRef" href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a> newMousePosition)</td></tr>
 <tr class="separator:acb7e3ffb6923257ae234c274b2a2a2fc inherit pub_methods_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1433068a5dcf2e4f7ddb7aee8475043b inherit pub_methods_class_game_core"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a1433068a5dcf2e4f7ddb7aee8475043b">mouseButtonPressed</a> (<a class="elRef" href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a> mousePosition, <a class="elRef" href="http://qt-project.org/doc/qt-5/qt.html#MouseButton-enum">Qt::MouseButtons</a> buttons)</td></tr>
-<tr class="memdesc:a1433068a5dcf2e4f7ddb7aee8475043b inherit pub_methods_class_game_core"><td class="mdescLeft">&#160;</td><td class="mdescRight">Traite l'appui sur un bouton de la souris.  <a href="class_game_core.html#a1433068a5dcf2e4f7ddb7aee8475043b">Plus de détails...</a><br /></td></tr>
+<tr class="memdesc:a1433068a5dcf2e4f7ddb7aee8475043b inherit pub_methods_class_game_core"><td class="mdescLeft">&#160;</td><td class="mdescRight">Traite l'appui sur un bouton de la souris.  <br /></td></tr>
 <tr class="separator:a1433068a5dcf2e4f7ddb7aee8475043b inherit pub_methods_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95621dec286dce595fd65418fbcee04a inherit pub_methods_class_game_core"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a95621dec286dce595fd65418fbcee04a">mouseButtonReleased</a> (<a class="elRef" href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a> mousePosition, <a class="elRef" href="http://qt-project.org/doc/qt-5/qt.html#MouseButton-enum">Qt::MouseButtons</a> buttons)</td></tr>
-<tr class="memdesc:a95621dec286dce595fd65418fbcee04a inherit pub_methods_class_game_core"><td class="mdescLeft">&#160;</td><td class="mdescRight">Traite le relâchement d'un bouton de la souris.  <a href="class_game_core.html#a95621dec286dce595fd65418fbcee04a">Plus de détails...</a><br /></td></tr>
+<tr class="memdesc:a95621dec286dce595fd65418fbcee04a inherit pub_methods_class_game_core"><td class="mdescLeft">&#160;</td><td class="mdescRight">Traite le relâchement d'un bouton de la souris.  <br /></td></tr>
 <tr class="separator:a95621dec286dce595fd65418fbcee04a inherit pub_methods_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b0dfc6a3b529cdb0035782923f093d2 inherit pub_methods_class_game_core"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a8b0dfc6a3b529cdb0035782923f093d2">tick</a> (long long elapsedTimeInMilliseconds)=0</td></tr>
 <tr class="separator:a8b0dfc6a3b529cdb0035782923f093d2 inherit pub_methods_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d2311dba0efc5c2c4651e7477b650e4 inherit pub_methods_class_game_core"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a3d2311dba0efc5c2c4651e7477b650e4">movePlayer</a> (long long elapsedTimeInMilliseconds)</td></tr>
-<tr class="separator:a3d2311dba0efc5c2c4651e7477b650e4 inherit pub_methods_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_qobject"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_qobject')"><img src="closed.png" alt="-"/>&#160;Fonctions membres publiques hérités de <a class="el"  href="http://qt-project.org/doc/qt-5/qobject.html">QObject</a></td></tr>
 <tr class="memitem:QObject inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://qt-project.org/doc/qt-5/qobject.html#QObject">QObject</a> (<a class="elRef" href="http://qt-project.org/doc/qt-5/qobject.html">QObject</a> *<a class="elRef" href="http://qt-project.org/doc/qt-5/qobject.html#parent">parent</a>)</td></tr>
 <tr class="separator:QObject inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -191,22 +222,45 @@ Fonctions membres publiques</h2></td></tr>
 <tr class="memitem:deleteLater inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://qt-project.org/doc/qt-5/qobject.html#deleteLater">deleteLater</a> ()</td></tr>
 <tr class="separator:deleteLater inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Fonctions membres privées</h2></td></tr>
+<tr class="memitem:a152c4cbdae00183b9abebcb3c6cb48ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_beat_mode.html#a152c4cbdae00183b9abebcb3c6cb48ed">displayStat</a> (<a class="el" href="class_game_scene.html">GameScene</a> *pScene, int textSize=40, <a class="elRef" href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a> pos=<a class="elRef" href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a>(0, 0))</td></tr>
+<tr class="separator:a152c4cbdae00183b9abebcb3c6cb48ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94dd6228240cb7566f8fe63444b6f13e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_beat_mode.html#a94dd6228240cb7566f8fe63444b6f13e">mouseButtonPressed</a> (<a class="elRef" href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a> mousePosition, <a class="elRef" href="http://qt-project.org/doc/qt-5/qt.html#MouseButton-enum">Qt::MouseButtons</a> buttons)</td></tr>
+<tr class="memdesc:a94dd6228240cb7566f8fe63444b6f13e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Traite l'appui sur un bouton de la souris.  <br /></td></tr>
+<tr class="separator:a94dd6228240cb7566f8fe63444b6f13e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ca9a16366b6b0afe69abdbee7926019"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_beat_mode.html#a2ca9a16366b6b0afe69abdbee7926019">mouseButtonReleased</a> (<a class="elRef" href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a> mousePosition, <a class="elRef" href="http://qt-project.org/doc/qt-5/qt.html#MouseButton-enum">Qt::MouseButtons</a> buttons)</td></tr>
+<tr class="memdesc:a2ca9a16366b6b0afe69abdbee7926019"><td class="mdescLeft">&#160;</td><td class="mdescRight">Traite le relâchement d'un bouton de la souris.  <br /></td></tr>
+<tr class="separator:a2ca9a16366b6b0afe69abdbee7926019"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Attributs privés</h2></td></tr>
+<tr class="memitem:aea175a4f3ff69032b3b1ed3ef58d2be2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_beat_mode.html#aea175a4f3ff69032b3b1ed3ef58d2be2">m_inShoot</a> = false</td></tr>
+<tr class="separator:aea175a4f3ff69032b3b1ed3ef58d2be2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a301dc3e04366b0a5b2c0f48adc47f285"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_beat_mode.html#a301dc3e04366b0a5b2c0f48adc47f285">ShotPressed</a> = false</td></tr>
+<tr class="separator:a301dc3e04366b0a5b2c0f48adc47f285"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6de9b987af6fa2242a38d11d499dbb30"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_beat_mode.html#a6de9b987af6fa2242a38d11d499dbb30">m_baseShipSpeed</a> = 500</td></tr>
+<tr class="separator:a6de9b987af6fa2242a38d11d499dbb30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07fbba983c183cb35e65182d9cc239a2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_beat_mode.html#a07fbba983c183cb35e65182d9cc239a2">m_percentOfSlowness</a> = 45</td></tr>
+<tr class="separator:a07fbba983c183cb35e65182d9cc239a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09e1872e578c5b74099d044ab2c85890"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_beat_mode.html#a09e1872e578c5b74099d044ab2c85890">m_playerHealth</a> = 50</td></tr>
+<tr class="separator:a09e1872e578c5b74099d044ab2c85890"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad630d1ad5f3789ae2e1a2400b4e74d0e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_beat_mode.html#ad630d1ad5f3789ae2e1a2400b4e74d0e">m_speedInLess</a> = 0</td></tr>
+<tr class="separator:ad630d1ad5f3789ae2e1a2400b4e74d0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad20a2dde8830792f3fb6174a5fc7020d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_beat_mode.html#ad20a2dde8830792f3fb6174a5fc7020d">m_playerIsMovedByForce</a> = false</td></tr>
+<tr class="separator:ad20a2dde8830792f3fb6174a5fc7020d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49605f9dcfffe3383edcc051148dd81a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_beat_mode.html#a49605f9dcfffe3383edcc051148dd81a">m_bossDefeated</a> = false</td></tr>
+<tr class="separator:a49605f9dcfffe3383edcc051148dd81a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab70f7f4651f8f31752718f55c0fed3b6"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="http://qt-project.org/doc/qt-5/qgraphicsproxywidget.html">QGraphicsProxyWidget</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_beat_mode.html#ab70f7f4651f8f31752718f55c0fed3b6">m_pHudBossHealth</a> = nullptr</td></tr>
+<tr class="separator:ab70f7f4651f8f31752718f55c0fed3b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a265106850489cbc1a70ad94c63dcd169"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_modzu.html">Modzu</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_beat_mode.html#a265106850489cbc1a70ad94c63dcd169">m_pModzu</a> = nullptr</td></tr>
+<tr class="separator:a265106850489cbc1a70ad94c63dcd169"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Membres hérités additionnels</h2></td></tr>
-<tr class="inherit_header pub_slots_class_game_core"><td colspan="2" onclick="javascript:toggleInherit('pub_slots_class_game_core')"><img src="closed.png" alt="-"/>&#160;Connecteurs publics hérités de <a class="el" href="class_game_core.html">GameCore</a></td></tr>
-<tr class="memitem:af2a9de8d94844fa98f9f810c3968aa32 inherit pub_slots_class_game_core"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#af2a9de8d94844fa98f9f810c3968aa32">shipLookMouse</a> (<a class="elRef" href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a> mousePosition)</td></tr>
-<tr class="separator:af2a9de8d94844fa98f9f810c3968aa32 inherit pub_slots_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3993bfd31f61c9d2501cd7b7d6d8e40e inherit pub_slots_class_game_core"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a3993bfd31f61c9d2501cd7b7d6d8e40e">updateHUDPos</a> (int width, int height)</td></tr>
-<tr class="separator:a3993bfd31f61c9d2501cd7b7d6d8e40e inherit pub_slots_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a256f82b465ee8bfc2316ef4c7c90fc86 inherit pub_slots_class_game_core"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a256f82b465ee8bfc2316ef4c7c90fc86">updateGameMode</a> (int newGameMode)</td></tr>
-<tr class="separator:a256f82b465ee8bfc2316ef4c7c90fc86 inherit pub_slots_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a98c8ad176a2c54d8bb144a176a64af inherit pub_slots_class_game_core"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a2a98c8ad176a2c54d8bb144a176a64af">launchDeath</a> ()</td></tr>
-<tr class="memdesc:a2a98c8ad176a2c54d8bb144a176a64af inherit pub_slots_class_game_core"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lance l'explosion du joueur.  <a href="class_game_core.html#a2a98c8ad176a2c54d8bb144a176a64af">Plus de détails...</a><br /></td></tr>
-<tr class="separator:a2a98c8ad176a2c54d8bb144a176a64af inherit pub_slots_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73affe0e5cb9888e9d0dfec4b1fd6183 inherit pub_slots_class_game_core"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a73affe0e5cb9888e9d0dfec4b1fd6183">endGame</a> ()</td></tr>
-<tr class="memdesc:a73affe0e5cb9888e9d0dfec4b1fd6183 inherit pub_slots_class_game_core"><td class="mdescLeft">&#160;</td><td class="mdescRight">Met en place la fin de partie.  <a href="class_game_core.html#a73affe0e5cb9888e9d0dfec4b1fd6183">Plus de détails...</a><br /></td></tr>
-<tr class="separator:a73affe0e5cb9888e9d0dfec4b1fd6183 inherit pub_slots_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header signals_class_game_core"><td colspan="2" onclick="javascript:toggleInherit('signals_class_game_core')"><img src="closed.png" alt="-"/>&#160;Signaux hérités de <a class="el" href="class_game_core.html">GameCore</a></td></tr>
+<tr class="memitem:a6dfad19e467cc9eefbdd35862cd57b94 inherit signals_class_game_core"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a6dfad19e467cc9eefbdd35862cd57b94">notifyPlayerMoved</a> (<a class="elRef" href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a> newPlayerPosition)</td></tr>
+<tr class="separator:a6dfad19e467cc9eefbdd35862cd57b94 inherit signals_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9697026190c472aa7d634e24b35bfcc9 inherit signals_class_game_core"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a9697026190c472aa7d634e24b35bfcc9">notifyMouseMoved</a> (<a class="elRef" href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a> newMousePosition)</td></tr>
 <tr class="separator:a9697026190c472aa7d634e24b35bfcc9 inherit signals_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abdb106ea6ea488b1a519e4f7a112abf4 inherit signals_class_game_core"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#abdb106ea6ea488b1a519e4f7a112abf4">notifyMouseButtonPressed</a> (<a class="elRef" href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a> mousePosition, <a class="elRef" href="http://qt-project.org/doc/qt-5/qt.html#MouseButton-enum">Qt::MouseButtons</a> buttons)</td></tr>
@@ -219,12 +273,8 @@ Membres hérités additionnels</h2></td></tr>
 <tr class="separator:a462fb6cd594ca9ab4e2513b43c8597b7 inherit signals_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a363b48fcc2f71e52894c5eaf064fd1b3 inherit signals_class_game_core"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a363b48fcc2f71e52894c5eaf064fd1b3">notifyKeyReleased</a> (int key)</td></tr>
 <tr class="separator:a363b48fcc2f71e52894c5eaf064fd1b3 inherit signals_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a642bec4f124761d071cf9800dcfb7455 inherit signals_class_game_core"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a642bec4f124761d071cf9800dcfb7455">gameModeChanged</a> (int newMode)</td></tr>
-<tr class="separator:a642bec4f124761d071cf9800dcfb7455 inherit signals_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c071b8f2e509509f9f6762c9c0c92dd inherit signals_class_game_core"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a7c071b8f2e509509f9f6762c9c0c92dd">needChangeCore</a> (int newCore)</td></tr>
 <tr class="separator:a7c071b8f2e509509f9f6762c9c0c92dd inherit signals_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52fc869b91acf3e04be68cbfab0f4900 inherit signals_class_game_core"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a52fc869b91acf3e04be68cbfab0f4900">nukeIsLaunched</a> ()</td></tr>
-<tr class="separator:a52fc869b91acf3e04be68cbfab0f4900 inherit signals_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_qobject"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_qobject')"><img src="closed.png" alt="-"/>&#160;Fonctions membres publiques statiques hérités de <a class="el"  href="http://qt-project.org/doc/qt-5/qobject.html">QObject</a></td></tr>
 <tr class="memitem:tr inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="http://qt-project.org/doc/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://qt-project.org/doc/qt-5/qobject.html#tr">tr</a> (const char *sourceText, const char *disambiguation, int n)</td></tr>
 <tr class="separator:tr inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -248,24 +298,14 @@ Membres hérités additionnels</h2></td></tr>
 <tr class="separator:disconnect-3 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:disconnect-6 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://qt-project.org/doc/qt-5/qobject.html#disconnect-6">disconnect</a> (const <a class="elRef" href="http://qt-project.org/doc/qt-5/qobject.html">QObject</a> *<a class="elRef" href="http://qt-project.org/doc/qt-5/qobject.html#sender">sender</a>, PointerToMemberFunction signal, const <a class="elRef" href="http://qt-project.org/doc/qt-5/qobject.html">QObject</a> *receiver, PointerToMemberFunction method)</td></tr>
 <tr class="separator:disconnect-6 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_types_class_game_core"><td colspan="2" onclick="javascript:toggleInherit('pro_types_class_game_core')"><img src="closed.png" alt="-"/>&#160;Types protégés hérités de <a class="el" href="class_game_core.html">GameCore</a></td></tr>
-<tr class="memitem:a1265dd6dd8dacfb051bd2672fd06be2e inherit pro_types_class_game_core"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a1265dd6dd8dacfb051bd2672fd06be2e">gameMode</a> { <a class="el" href="class_game_core.html#a1265dd6dd8dacfb051bd2672fd06be2ea21128e3a574d96c23a1999639adb35ec">MENU</a>
-, <a class="el" href="class_game_core.html#a1265dd6dd8dacfb051bd2672fd06be2eab2858a1a9762a0bc0859da09028f2976">BREAK</a>
-, <a class="el" href="class_game_core.html#a1265dd6dd8dacfb051bd2672fd06be2eabb42b8a2992e3bd588c7a5b2b8073492">RUNNING</a>
-, <a class="el" href="class_game_core.html#a1265dd6dd8dacfb051bd2672fd06be2eaf047e19fcc5a120e8edc3d34455a1a04">ENDED</a>
- }</td></tr>
-<tr class="separator:a1265dd6dd8dacfb051bd2672fd06be2e inherit pro_types_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_game_core"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_game_core')"><img src="closed.png" alt="-"/>&#160;Fonctions membres protégées hérités de <a class="el" href="class_game_core.html">GameCore</a></td></tr>
-<tr class="memitem:a24b29b55b0d632246e03821f48ac54da inherit pro_methods_class_game_core"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a24b29b55b0d632246e03821f48ac54da">displayStat</a> (<a class="el" href="class_game_scene.html">GameScene</a> *pScene, int textSize=40, <a class="elRef" href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a> pos=<a class="elRef" href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a>(0, 0))</td></tr>
-<tr class="separator:a24b29b55b0d632246e03821f48ac54da inherit pro_methods_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d2311dba0efc5c2c4651e7477b650e4 inherit pro_methods_class_game_core"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a3d2311dba0efc5c2c4651e7477b650e4">movePlayer</a> (long long elapsedTimeInMilliseconds)</td></tr>
+<tr class="separator:a3d2311dba0efc5c2c4651e7477b650e4 inherit pro_methods_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab168ed4a9773ed4f2352ccf03db9353 inherit pro_methods_class_game_core"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#aab168ed4a9773ed4f2352ccf03db9353">displayStat</a> (<a class="el" href="class_game_scene.html">GameScene</a> *pScene, int textSize=40, <a class="elRef" href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a> pos=<a class="elRef" href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a>(0, 0))=0</td></tr>
+<tr class="separator:aab168ed4a9773ed4f2352ccf03db9353 inherit pro_methods_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac926a9a69e2aa23b4350726fe8baf5d1 inherit pro_methods_class_game_core"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#ac926a9a69e2aa23b4350726fe8baf5d1">clearStat</a> ()</td></tr>
-<tr class="memdesc:ac926a9a69e2aa23b4350726fe8baf5d1 inherit pro_methods_class_game_core"><td class="mdescLeft">&#160;</td><td class="mdescRight">Efface les statistique afficher.  <a href="class_game_core.html#ac926a9a69e2aa23b4350726fe8baf5d1">Plus de détails...</a><br /></td></tr>
+<tr class="memdesc:ac926a9a69e2aa23b4350726fe8baf5d1 inherit pro_methods_class_game_core"><td class="mdescLeft">&#160;</td><td class="mdescRight">Efface les statistiques affichées.  <br /></td></tr>
 <tr class="separator:ac926a9a69e2aa23b4350726fe8baf5d1 inherit pro_methods_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7912672586825aa9ab7f493c356decf1 inherit pro_methods_class_game_core"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a7912672586825aa9ab7f493c356decf1">choiceRandomBonus</a> ()</td></tr>
-<tr class="memdesc:a7912672586825aa9ab7f493c356decf1 inherit pro_methods_class_game_core"><td class="mdescLeft">&#160;</td><td class="mdescRight">Choisi des bonus aleatoirement.  <a href="class_game_core.html#a7912672586825aa9ab7f493c356decf1">Plus de détails...</a><br /></td></tr>
-<tr class="separator:a7912672586825aa9ab7f493c356decf1 inherit pro_methods_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad29fa494a9813da2b838471b88b2d504 inherit pro_methods_class_game_core"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#ad29fa494a9813da2b838471b88b2d504">applyBonus</a> (int bonusIndex)</td></tr>
-<tr class="separator:ad29fa494a9813da2b838471b88b2d504 inherit pro_methods_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_qobject"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_qobject')"><img src="closed.png" alt="-"/>&#160;Fonctions membres protégées hérités de <a class="el"  href="http://qt-project.org/doc/qt-5/qobject.html">QObject</a></td></tr>
 <tr class="memitem:sender inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="http://qt-project.org/doc/qt-5/qobject.html">QObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://qt-project.org/doc/qt-5/qobject.html#sender">sender</a> () const</td></tr>
 <tr class="separator:sender inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -290,8 +330,6 @@ Membres hérités additionnels</h2></td></tr>
 <tr class="separator:acc0650e6dc050a16d6b38c19080db6da inherit pro_attribs_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5af86ef207c5968d456d99ba8757bf0 inherit pro_attribs_class_game_core"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#ad5af86ef207c5968d456d99ba8757bf0">m_timeMinuteAlive</a> = 0</td></tr>
 <tr class="separator:ad5af86ef207c5968d456d99ba8757bf0 inherit pro_attribs_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae03eb49c30d60a7ad3a94f561b37d02f inherit pro_attribs_class_game_core"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#ae03eb49c30d60a7ad3a94f561b37d02f">m_numberOfBombs</a> = 0</td></tr>
-<tr class="separator:ae03eb49c30d60a7ad3a94f561b37d02f inherit pro_attribs_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada938d668d44decbd001599868967421 inherit pro_attribs_class_game_core"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game_canvas.html">GameCanvas</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#ada938d668d44decbd001599868967421">m_pGameCanvas</a> = nullptr</td></tr>
 <tr class="separator:ada938d668d44decbd001599868967421 inherit pro_attribs_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab932f6ecd365bcdc5d3a3c278641a9ec inherit pro_attribs_class_game_core"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game_scene.html">GameScene</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#ab932f6ecd365bcdc5d3a3c278641a9ec">m_pSceneBreak</a> = nullptr</td></tr>
@@ -300,28 +338,20 @@ Membres hérités additionnels</h2></td></tr>
 <tr class="separator:ae9a67d58f90f37711ebc1fdf986454ad inherit pro_attribs_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7792ee71659ea751a062d34dc2387a80 inherit pro_attribs_class_game_core"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game_scene.html">GameScene</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a7792ee71659ea751a062d34dc2387a80">m_pScene</a> = nullptr</td></tr>
 <tr class="separator:a7792ee71659ea751a062d34dc2387a80 inherit pro_attribs_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b7f71be04fe5c67c6336656af258e83 inherit pro_attribs_class_game_core"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="http://qt-project.org/doc/qt-5/qrectf.html">QRectF</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a6b7f71be04fe5c67c6336656af258e83">m_pMapEdge</a> = nullptr</td></tr>
+<tr class="separator:a6b7f71be04fe5c67c6336656af258e83 inherit pro_attribs_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a68be50a57bf376336e7bd9d36e79ffc6 inherit pro_attribs_class_game_core"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="http://qt-project.org/doc/qt-5/qgraphicsitem.html">QGraphicsItem</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a68be50a57bf376336e7bd9d36e79ffc6">m_pDisplayedStat</a> =nullptr</td></tr>
 <tr class="separator:a68be50a57bf376336e7bd9d36e79ffc6 inherit pro_attribs_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27d6d966adf6d589d494b36be76b19b5 inherit pro_attribs_class_game_core"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="http://qt-project.org/doc/qt-5/qgraphicstextitem.html">QGraphicsTextItem</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a27d6d966adf6d589d494b36be76b19b5">m_pHudTextTime</a> = nullptr</td></tr>
 <tr class="separator:a27d6d966adf6d589d494b36be76b19b5 inherit pro_attribs_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a906f3fd77e47b19f2c9b2bccf35b1f06 inherit pro_attribs_class_game_core"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="http://qt-project.org/doc/qt-5/qgraphicstextitem.html">QGraphicsTextItem</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a906f3fd77e47b19f2c9b2bccf35b1f06">m_pHudTextBombe</a> = nullptr</td></tr>
-<tr class="separator:a906f3fd77e47b19f2c9b2bccf35b1f06 inherit pro_attribs_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf622c8074794131398f6e6137db5648 inherit pro_attribs_class_game_core"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_player.html">Player</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#aaf622c8074794131398f6e6137db5648">m_pPlayer</a> = nullptr</td></tr>
 <tr class="separator:aaf622c8074794131398f6e6137db5648 inherit pro_attribs_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72fd35c0d56b12dfd006a35198378e34 inherit pro_attribs_class_game_core"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_sprite.html">Sprite</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a72fd35c0d56b12dfd006a35198378e34">m_pPlayerHitBox</a> = nullptr</td></tr>
 <tr class="separator:a72fd35c0d56b12dfd006a35198378e34 inherit pro_attribs_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a498e0c6c824ed9cf15ed8d9ad1a36fcf inherit pro_attribs_class_game_core"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_sprite.html">Sprite</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a498e0c6c824ed9cf15ed8d9ad1a36fcf">m_pButtonMenu</a> = nullptr</td></tr>
 <tr class="separator:a498e0c6c824ed9cf15ed8d9ad1a36fcf inherit pro_attribs_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a772a0301942d346d70d8dc3dc663d8d7 inherit pro_attribs_class_game_core"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_sprite.html">Sprite</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a772a0301942d346d70d8dc3dc663d8d7">m_pEndText</a> = nullptr</td></tr>
-<tr class="separator:a772a0301942d346d70d8dc3dc663d8d7 inherit pro_attribs_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1af9200f681e6edda177d2a5aed36d5b inherit pro_attribs_class_game_core"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_level_up_card.html">LevelUpCard</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a1af9200f681e6edda177d2a5aed36d5b">m_pBonusCard1</a> = nullptr</td></tr>
-<tr class="separator:a1af9200f681e6edda177d2a5aed36d5b inherit pro_attribs_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace8c268ca72061ec83ce9ddd47fe1517 inherit pro_attribs_class_game_core"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_level_up_card.html">LevelUpCard</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#ace8c268ca72061ec83ce9ddd47fe1517">m_pBonusCard2</a> = nullptr</td></tr>
-<tr class="separator:ace8c268ca72061ec83ce9ddd47fe1517 inherit pro_attribs_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38cf1d8725b34cd1c2c52b5966046e2f inherit pro_attribs_class_game_core"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_level_up_card.html">LevelUpCard</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a38cf1d8725b34cd1c2c52b5966046e2f">m_pBonusCard3</a> = nullptr</td></tr>
-<tr class="separator:a38cf1d8725b34cd1c2c52b5966046e2f inherit pro_attribs_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89716491214271a294c187d4cc446fb2 inherit pro_attribs_class_game_core"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game_core.html#a1265dd6dd8dacfb051bd2672fd06be2e">gameMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a89716491214271a294c187d4cc446fb2">m_gameMode</a> = <a class="el" href="class_game_core.html#a1265dd6dd8dacfb051bd2672fd06be2eabb42b8a2992e3bd588c7a5b2b8073492">RUNNING</a></td></tr>
-<tr class="separator:a89716491214271a294c187d4cc446fb2 inherit pro_attribs_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adec27ee2d0aef7b23834f4d0c98e6b66 inherit pro_attribs_class_game_core"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_sprite.html">Sprite</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#adec27ee2d0aef7b23834f4d0c98e6b66">m_pButtonReplay</a> = nullptr</td></tr>
+<tr class="separator:adec27ee2d0aef7b23834f4d0c98e6b66 inherit pro_attribs_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a92bcdd277097dbd48234164780488a inherit pro_attribs_class_game_core"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a8a92bcdd277097dbd48234164780488a">m_playerAxeX</a> = 0</td></tr>
 <tr class="separator:a8a92bcdd277097dbd48234164780488a inherit pro_attribs_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49f015d88816b7244b43cf3cc31b9096 inherit pro_attribs_class_game_core"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a49f015d88816b7244b43cf3cc31b9096">m_playerAxeY</a> = 0</td></tr>
@@ -334,26 +364,6 @@ Membres hérités additionnels</h2></td></tr>
 <tr class="separator:ad3bd99549083db33bf358d1fd0f944de inherit pro_attribs_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a104bd1eed8fbc5b237863a7735f23b inherit pro_attribs_class_game_core"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a6a104bd1eed8fbc5b237863a7735f23b">m_viewHeight</a> = 0</td></tr>
 <tr class="separator:a6a104bd1eed8fbc5b237863a7735f23b inherit pro_attribs_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac323a468a5ccc41ddc961431f261b332 inherit pro_attribs_class_game_core"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#ac323a468a5ccc41ddc961431f261b332">m_basicHealthPoint</a> = 100</td></tr>
-<tr class="separator:ac323a468a5ccc41ddc961431f261b332 inherit pro_attribs_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb640f3f0f3c978074bde0d948f59fe9 inherit pro_attribs_class_game_core"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#afb640f3f0f3c978074bde0d948f59fe9">m_basicSpeed</a> = 120</td></tr>
-<tr class="separator:afb640f3f0f3c978074bde0d948f59fe9 inherit pro_attribs_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a181db20516cde6710318b39fa425507c inherit pro_attribs_class_game_core"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a181db20516cde6710318b39fa425507c">m_basicDamage</a> = 1</td></tr>
-<tr class="separator:a181db20516cde6710318b39fa425507c inherit pro_attribs_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a330d331c7ec10cc6f9147c28f52d31 inherit pro_attribs_class_game_core"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a5a330d331c7ec10cc6f9147c28f52d31">m_bonus1</a> = -1</td></tr>
-<tr class="separator:a5a330d331c7ec10cc6f9147c28f52d31 inherit pro_attribs_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35a462475d1d5981e1a09529595a0855 inherit pro_attribs_class_game_core"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a35a462475d1d5981e1a09529595a0855">m_bonus2</a> = -1</td></tr>
-<tr class="separator:a35a462475d1d5981e1a09529595a0855 inherit pro_attribs_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a77fdc8abc1511ff61b4d6e3ef010f5f3 inherit pro_attribs_class_game_core"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a77fdc8abc1511ff61b4d6e3ef010f5f3">m_bonus3</a> = -1</td></tr>
-<tr class="separator:a77fdc8abc1511ff61b4d6e3ef010f5f3 inherit pro_attribs_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a847b9454d27ced48e2ca3b4ae7648a13 inherit pro_attribs_class_game_core"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a847b9454d27ced48e2ca3b4ae7648a13">m_reactionTime</a> = 1</td></tr>
-<tr class="separator:a847b9454d27ced48e2ca3b4ae7648a13 inherit pro_attribs_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a1c1c4440dfe158b2fcd4ea084e621f inherit pro_attribs_class_game_core"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a6a1c1c4440dfe158b2fcd4ea084e621f">m_autoFireOn</a> = false</td></tr>
-<tr class="separator:a6a1c1c4440dfe158b2fcd4ea084e621f inherit pro_attribs_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40a61ee15c2eff80c222fae1c8f9ebe8 inherit pro_attribs_class_game_core"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a40a61ee15c2eff80c222fae1c8f9ebe8">m_waitingForChoice</a> = false</td></tr>
-<tr class="separator:a40a61ee15c2eff80c222fae1c8f9ebe8 inherit pro_attribs_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9381066711949ed45a92524fbc7d5e6 inherit pro_attribs_class_game_core"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#aa9381066711949ed45a92524fbc7d5e6">m_nukeNeedLaunch</a> = false</td></tr>
-<tr class="separator:aa9381066711949ed45a92524fbc7d5e6 inherit pro_attribs_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c659fcecc96cf3975d59d143c00700b inherit pro_attribs_class_game_core"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a0c659fcecc96cf3975d59d143c00700b">m_lastMousePos</a></td></tr>
 <tr class="separator:a0c659fcecc96cf3975d59d143c00700b inherit pro_attribs_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a700c205e1c62bafa2f6be885e88b7aae inherit pro_attribs_class_game_core"><td class="memItemLeft" align="right" valign="top">qreal&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a700c205e1c62bafa2f6be885e88b7aae">m_shipAngle</a></td></tr>
@@ -362,16 +372,15 @@ Membres hérités additionnels</h2></td></tr>
 <tr class="separator:a9442a701469a5a55689c131fb6a7cde0 inherit pro_attribs_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0972e17181cb2d36c741709a0b283dee inherit pro_attribs_class_game_core"><td class="memItemLeft" align="right" valign="top">std::chrono::system_clock::time_point&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a0972e17181cb2d36c741709a0b283dee">m_rateBetweenShot</a> = std::chrono::system_clock::now()</td></tr>
 <tr class="separator:a0972e17181cb2d36c741709a0b283dee inherit pro_attribs_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2cf68c22cb17b7dc3794ea17d1e3f3c inherit pro_attribs_class_game_core"><td class="memItemLeft" align="right" valign="top">std::chrono::system_clock::time_point&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#aa2cf68c22cb17b7dc3794ea17d1e3f3c">m_timeInBreak</a> = std::chrono::system_clock::now()</td></tr>
-<tr class="separator:aa2cf68c22cb17b7dc3794ea17d1e3f3c inherit pro_attribs_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header properties_qobject"><td colspan="2" onclick="javascript:toggleInherit('properties_qobject')"><img src="closed.png" alt="-"/>&#160;Propriétés hérités de <a class="el"  href="http://qt-project.org/doc/qt-5/qobject.html">QObject</a></td></tr>
 <tr class="memitem:objectName-prop inherit properties_qobject"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://qt-project.org/doc/qt-5/qobject.html#objectName-prop">objectName</a></td></tr>
 <tr class="separator:objectName-prop inherit properties_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
-<div class="textblock"><p >Classe qui gère le mode de jeu "battre". </p>
+<div class="textblock"><p>Classe qui gère le mode de jeu "battre". </p>
+<p>Cette classe permet de gérer le tick de ce mode, gérer le déplacement du joueur et de la mise à jour du temps de jeu. Contrôle l'affichage des écrans de pause, défaite et victoire. </p>
 
-<p class="definition">Définition à la ligne <a class="el" href="beatmode_8h_source.html#l00015">15</a> du fichier <a class="el" href="beatmode_8h_source.html">beatmode.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="beatmode_8h_source.html#l00021">21</a> du fichier <a class="el" href="beatmode_8h_source.html">beatmode.h</a>.</p>
 </div><h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
 <a id="abb89058e4b4d5183c5c888d06a5ab20d" name="abb89058e4b4d5183c5c888d06a5ab20d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abb89058e4b4d5183c5c888d06a5ab20d">&#9670;&#160;</a></span>BeatMode()</h2>
@@ -406,7 +415,7 @@ Membres hérités additionnels</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >Initialise le contrôleur de jeu. </p><dl class="params"><dt>Paramètres</dt><dd>
+<p>Initialise le mode de jeu. </p><dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
     <tr><td class="paramname">pGameCanvas</td><td><a class="el" href="class_game_canvas.html" title="Classe de gestion des scènes du jeu et de sa cadence.">GameCanvas</a> pour lequel cet objet travaille. </td></tr>
     <tr><td class="paramname">pParent</td><td>Pointeur sur le parent (afin d'obtenir une destruction automatique de cet objet). </td></tr>
@@ -414,11 +423,243 @@ Membres hérités additionnels</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Définition à la ligne <a class="el" href="beatmode_8cpp_source.html#l00028">28</a> du fichier <a class="el" href="beatmode_8cpp_source.html">beatmode.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="beatmode_8cpp_source.html#l00031">31</a> du fichier <a class="el" href="beatmode_8cpp_source.html">beatmode.cpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Documentation des fonctions membres</h2>
+<a id="a152c4cbdae00183b9abebcb3c6cb48ed" name="a152c4cbdae00183b9abebcb3c6cb48ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a152c4cbdae00183b9abebcb3c6cb48ed">&#9670;&#160;</a></span>displayStat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BeatMode::displayStat </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_game_scene.html">GameScene</a> *&#160;</td>
+          <td class="paramname"><em>pScene</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>testSize</em> = <code>40</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="elRef" href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a>&#160;</td>
+          <td class="paramname"><em>pos</em> = <code><a class="elRef" href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a>(0,&#160;0)</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Affiche les l'statistique sur l'écran </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">scene,la</td><td>scène ou afficher le message </td></tr>
+    <tr><td class="paramname">pos,la</td><td>position du message </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implémente <a class="el" href="class_game_core.html#aab168ed4a9773ed4f2352ccf03db9353">GameCore</a>.</p>
+
+<p class="definition">Définition à la ligne <a class="el" href="beatmode_8cpp_source.html#l00190">190</a> du fichier <a class="el" href="beatmode_8cpp_source.html">beatmode.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a5a8358297c082e1853697fc9f7e5e7db" name="a5a8358297c082e1853697fc9f7e5e7db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a8358297c082e1853697fc9f7e5e7db">&#9670;&#160;</a></span>endGame</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BeatMode::endGame </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Termine la partie. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="beatmode_8cpp_source.html#l00304">304</a> du fichier <a class="el" href="beatmode_8cpp_source.html">beatmode.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a1de7f0b5104c38bdeb32cb407e7704e2" name="a1de7f0b5104c38bdeb32cb407e7704e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1de7f0b5104c38bdeb32cb407e7704e2">&#9670;&#160;</a></span>keyPressed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BeatMode::keyPressed </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Traite la pression d'une touche. </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>Numéro de la touche (voir les constantes <a class="elRef" href="http://qt-project.org/doc/qt-5/qt.html">Qt</a>). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Réimplémentée à partir de <a class="el" href="class_game_core.html#af7d1e03d52e81d846e5733d970120655">GameCore</a>.</p>
+
+<p class="definition">Définition à la ligne <a class="el" href="beatmode_8cpp_source.html#l00270">270</a> du fichier <a class="el" href="beatmode_8cpp_source.html">beatmode.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a94dd6228240cb7566f8fe63444b6f13e" name="a94dd6228240cb7566f8fe63444b6f13e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94dd6228240cb7566f8fe63444b6f13e">&#9670;&#160;</a></span>mouseButtonPressed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BeatMode::mouseButtonPressed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="elRef" href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a>&#160;</td>
+          <td class="paramname"><em>mousePosition</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="elRef" href="http://qt-project.org/doc/qt-5/qt.html#MouseButton-enum">Qt::MouseButtons</a>&#160;</td>
+          <td class="paramname"><em>buttons</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Traite l'appui sur un bouton de la souris. </p>
+
+<p>Réimplémentée à partir de <a class="el" href="class_game_core.html#a1433068a5dcf2e4f7ddb7aee8475043b">GameCore</a>.</p>
+
+<p class="definition">Définition à la ligne <a class="el" href="beatmode_8cpp_source.html#l00206">206</a> du fichier <a class="el" href="beatmode_8cpp_source.html">beatmode.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a2ca9a16366b6b0afe69abdbee7926019" name="a2ca9a16366b6b0afe69abdbee7926019"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ca9a16366b6b0afe69abdbee7926019">&#9670;&#160;</a></span>mouseButtonReleased()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BeatMode::mouseButtonReleased </td>
+          <td>(</td>
+          <td class="paramtype"><a class="elRef" href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a>&#160;</td>
+          <td class="paramname"><em>mousePosition</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="elRef" href="http://qt-project.org/doc/qt-5/qt.html#MouseButton-enum">Qt::MouseButtons</a>&#160;</td>
+          <td class="paramname"><em>buttons</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Traite le relâchement d'un bouton de la souris. </p>
+
+<p>Réimplémentée à partir de <a class="el" href="class_game_core.html#a95621dec286dce595fd65418fbcee04a">GameCore</a>.</p>
+
+<p class="definition">Définition à la ligne <a class="el" href="beatmode_8cpp_source.html#l00230">230</a> du fichier <a class="el" href="beatmode_8cpp_source.html">beatmode.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a61ddd4fbe71319ae3f3c270821e0a5b5" name="a61ddd4fbe71319ae3f3c270821e0a5b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61ddd4fbe71319ae3f3c270821e0a5b5">&#9670;&#160;</a></span>playerMovedByForce</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BeatMode::playerMovedByForce </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isMoved</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Mets à jour la variable pour savoir si le joueur est déplacé par force. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="beatmode_8cpp_source.html#l00264">264</a> du fichier <a class="el" href="beatmode_8cpp_source.html">beatmode.cpp</a>.</p>
+
+</div>
+</div>
 <a id="a6f2c5539adf7f6f3bc7819a52b85aa3d" name="a6f2c5539adf7f6f3bc7819a52b85aa3d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6f2c5539adf7f6f3bc7819a52b85aa3d">&#9670;&#160;</a></span>tick()</h2>
 
@@ -442,7 +683,7 @@ Membres hérités additionnels</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >Cadence. </p><dl class="params"><dt>Paramètres</dt><dd>
+<p>Cadence. </p><dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
     <tr><td class="paramname">elapsedTimeInMilliseconds</td><td>Temps écoulé depuis le dernier appel. </td></tr>
   </table>
@@ -451,18 +692,317 @@ Membres hérités additionnels</h2></td></tr>
 
 <p>Implémente <a class="el" href="class_game_core.html#a8b0dfc6a3b529cdb0035782923f093d2">GameCore</a>.</p>
 
-<p class="definition">Définition à la ligne <a class="el" href="beatmode_8cpp_source.html#l00121">121</a> du fichier <a class="el" href="beatmode_8cpp_source.html">beatmode.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="beatmode_8cpp_source.html#l00128">128</a> du fichier <a class="el" href="beatmode_8cpp_source.html">beatmode.cpp</a>.</p>
 
 </div>
 </div>
-<hr/>La documentation de cette classe a été générée à partir du fichier suivant :<ul>
+<a id="ae1e3336a0e4d399b5053ea680134acab" name="ae1e3336a0e4d399b5053ea680134acab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1e3336a0e4d399b5053ea680134acab">&#9670;&#160;</a></span>updateGameMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BeatMode::updateGameMode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Met à jour les nouveau paramètre en fonction du mode de jeux. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="beatmode_8cpp_source.html#l00242">242</a> du fichier <a class="el" href="beatmode_8cpp_source.html">beatmode.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a896640a1c31a3b8f5161f72e0263e3a9" name="a896640a1c31a3b8f5161f72e0263e3a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a896640a1c31a3b8f5161f72e0263e3a9">&#9670;&#160;</a></span>victory</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BeatMode::victory </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Mets à jour le mode de jeux pour une victoire. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="beatmode_8cpp_source.html#l00295">295</a> du fichier <a class="el" href="beatmode_8cpp_source.html">beatmode.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des données membres</h2>
+<a id="a6de9b987af6fa2242a38d11d499dbb30" name="a6de9b987af6fa2242a38d11d499dbb30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6de9b987af6fa2242a38d11d499dbb30">&#9670;&#160;</a></span>m_baseShipSpeed</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int BeatMode::m_baseShipSpeed = 500</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="beatmode_8h_source.html#l00035">35</a> du fichier <a class="el" href="beatmode_8h_source.html">beatmode.h</a>.</p>
+
+</div>
+</div>
+<a id="a49605f9dcfffe3383edcc051148dd81a" name="a49605f9dcfffe3383edcc051148dd81a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49605f9dcfffe3383edcc051148dd81a">&#9670;&#160;</a></span>m_bossDefeated</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool BeatMode::m_bossDefeated = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="beatmode_8h_source.html#l00040">40</a> du fichier <a class="el" href="beatmode_8h_source.html">beatmode.h</a>.</p>
+
+</div>
+</div>
+<a id="aea175a4f3ff69032b3b1ed3ef58d2be2" name="aea175a4f3ff69032b3b1ed3ef58d2be2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea175a4f3ff69032b3b1ed3ef58d2be2">&#9670;&#160;</a></span>m_inShoot</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool BeatMode::m_inShoot = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="beatmode_8h_source.html#l00033">33</a> du fichier <a class="el" href="beatmode_8h_source.html">beatmode.h</a>.</p>
+
+</div>
+</div>
+<a id="a07fbba983c183cb35e65182d9cc239a2" name="a07fbba983c183cb35e65182d9cc239a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07fbba983c183cb35e65182d9cc239a2">&#9670;&#160;</a></span>m_percentOfSlowness</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int BeatMode::m_percentOfSlowness = 45</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="beatmode_8h_source.html#l00036">36</a> du fichier <a class="el" href="beatmode_8h_source.html">beatmode.h</a>.</p>
+
+</div>
+</div>
+<a id="ab70f7f4651f8f31752718f55c0fed3b6" name="ab70f7f4651f8f31752718f55c0fed3b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab70f7f4651f8f31752718f55c0fed3b6">&#9670;&#160;</a></span>m_pHudBossHealth</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" href="http://qt-project.org/doc/qt-5/qgraphicsproxywidget.html">QGraphicsProxyWidget</a>* BeatMode::m_pHudBossHealth = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="beatmode_8h_source.html#l00042">42</a> du fichier <a class="el" href="beatmode_8h_source.html">beatmode.h</a>.</p>
+
+</div>
+</div>
+<a id="a09e1872e578c5b74099d044ab2c85890" name="a09e1872e578c5b74099d044ab2c85890"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09e1872e578c5b74099d044ab2c85890">&#9670;&#160;</a></span>m_playerHealth</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int BeatMode::m_playerHealth = 50</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="beatmode_8h_source.html#l00037">37</a> du fichier <a class="el" href="beatmode_8h_source.html">beatmode.h</a>.</p>
+
+</div>
+</div>
+<a id="ad20a2dde8830792f3fb6174a5fc7020d" name="ad20a2dde8830792f3fb6174a5fc7020d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad20a2dde8830792f3fb6174a5fc7020d">&#9670;&#160;</a></span>m_playerIsMovedByForce</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool BeatMode::m_playerIsMovedByForce = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="beatmode_8h_source.html#l00039">39</a> du fichier <a class="el" href="beatmode_8h_source.html">beatmode.h</a>.</p>
+
+</div>
+</div>
+<a id="a265106850489cbc1a70ad94c63dcd169" name="a265106850489cbc1a70ad94c63dcd169"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a265106850489cbc1a70ad94c63dcd169">&#9670;&#160;</a></span>m_pModzu</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_modzu.html">Modzu</a>* BeatMode::m_pModzu = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="beatmode_8h_source.html#l00047">47</a> du fichier <a class="el" href="beatmode_8h_source.html">beatmode.h</a>.</p>
+
+</div>
+</div>
+<a id="ad630d1ad5f3789ae2e1a2400b4e74d0e" name="ad630d1ad5f3789ae2e1a2400b4e74d0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad630d1ad5f3789ae2e1a2400b4e74d0e">&#9670;&#160;</a></span>m_speedInLess</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int BeatMode::m_speedInLess = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="beatmode_8h_source.html#l00038">38</a> du fichier <a class="el" href="beatmode_8h_source.html">beatmode.h</a>.</p>
+
+</div>
+</div>
+<a id="a301dc3e04366b0a5b2c0f48adc47f285" name="a301dc3e04366b0a5b2c0f48adc47f285"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a301dc3e04366b0a5b2c0f48adc47f285">&#9670;&#160;</a></span>ShotPressed</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool BeatMode::ShotPressed = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="beatmode_8h_source.html#l00034">34</a> du fichier <a class="el" href="beatmode_8h_source.html">beatmode.h</a>.</p>
+
+</div>
+</div>
+<hr/>La documentation de cette classe a été générée à partir des fichiers suivants :<ul>
 <li><a class="el" href="beatmode_8h_source.html">beatmode.h</a></li>
 <li><a class="el" href="beatmode_8cpp_source.html">beatmode.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Généré le Mardi 6 Décembre 2022 11:38:40 pour 2022-JCO-SpaceSurvivors par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Généré le Lundi 16 Janvier 2023 09:15:39 pour 2022-JCO-SpaceSurvivors par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

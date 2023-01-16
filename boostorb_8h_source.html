@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>2022-JCO-SpaceSurvivors:  Fichier source de boostorb.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">2022-JCO-SpaceSurvivors<span id="projectnumber">&#160;0.1</span>
+   </div>
+   <div id="projectbrief">2022-JCO-SpaceSurvivors</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">boostorb.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="boostorb_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#ifndef BOOSTORB_H</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#define BOOSTORB_H</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;<a class="code" href="sprite_8h.html">sprite.h</a>&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="class_boost_orb.html">   18</a></span><span class="keyword">class </span><a class="code hl_class" href="class_boost_orb.html">BoostOrb</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_sprite.html">Sprite</a></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>{</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <a class="code hl_class" href="class_boost_orb.html">BoostOrb</a>(<a class="code hl_classRef" href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a> origine, <a class="code hl_classRef" href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a> cible, <span class="keywordtype">int</span> speed);</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_boost_orb.html#af5aef2d476ee3910cbb1af1eed01223c">tick</a>(<span class="keywordtype">long</span> <span class="keywordtype">long</span> elapsedTimeInMilliseconds);</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="class_boost_orb.html#ae9d85500452448feb27abd2b16235fab">   26</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_boost_orb.html#ae9d85500452448feb27abd2b16235fab">m_speed</a>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="class_boost_orb.html#addc7a01abd9123044147a9e9de3293b0">   27</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_boost_orb.html#addc7a01abd9123044147a9e9de3293b0">m_playerBoostDamage</a> = 5;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="class_boost_orb.html#a558bf990b485743c5a06c9d4a7db1431">   28</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_boost_orb.html#a558bf990b485743c5a06c9d4a7db1431">m_healthPoint</a> = 100;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="class_boost_orb.html#a158551ba521939779875a4352ee6369b">   30</a></span>    <a class="code hl_classRef" href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a> <a class="code hl_variable" href="class_boost_orb.html#a158551ba521939779875a4352ee6369b">m_direction</a>;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_boost_orb.html#a956fd6aa76cbdb4ba022f5e26d4bfe59">launchDeath</a>();</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>};</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#endif </span><span class="comment">// BOOSTORB_H</span></div>
+<div class="ttc" id="aclass_boost_orb_html"><div class="ttname"><a href="class_boost_orb.html">BoostOrb</a></div><div class="ttdoc">Classe qui représente une boule d'augementation.</div><div class="ttdef"><b>Definition:</b> <a href="boostorb_8h_source.html#l00018">boostorb.h:19</a></div></div>
+<div class="ttc" id="aclass_boost_orb_html_a158551ba521939779875a4352ee6369b"><div class="ttname"><a href="class_boost_orb.html#a158551ba521939779875a4352ee6369b">BoostOrb::m_direction</a></div><div class="ttdeci">QPointF m_direction</div><div class="ttdef"><b>Definition:</b> <a href="boostorb_8h_source.html#l00030">boostorb.h:30</a></div></div>
+<div class="ttc" id="aclass_boost_orb_html_a558bf990b485743c5a06c9d4a7db1431"><div class="ttname"><a href="class_boost_orb.html#a558bf990b485743c5a06c9d4a7db1431">BoostOrb::m_healthPoint</a></div><div class="ttdeci">int m_healthPoint</div><div class="ttdef"><b>Definition:</b> <a href="boostorb_8h_source.html#l00028">boostorb.h:28</a></div></div>
+<div class="ttc" id="aclass_boost_orb_html_a956fd6aa76cbdb4ba022f5e26d4bfe59"><div class="ttname"><a href="class_boost_orb.html#a956fd6aa76cbdb4ba022f5e26d4bfe59">BoostOrb::launchDeath</a></div><div class="ttdeci">void launchDeath()</div><div class="ttdoc">Lance la mort de l'orbe.</div><div class="ttdef"><b>Definition:</b> <a href="boostorb_8cpp_source.html#l00090">boostorb.cpp:90</a></div></div>
+<div class="ttc" id="aclass_boost_orb_html_addc7a01abd9123044147a9e9de3293b0"><div class="ttname"><a href="class_boost_orb.html#addc7a01abd9123044147a9e9de3293b0">BoostOrb::m_playerBoostDamage</a></div><div class="ttdeci">int m_playerBoostDamage</div><div class="ttdef"><b>Definition:</b> <a href="boostorb_8h_source.html#l00027">boostorb.h:27</a></div></div>
+<div class="ttc" id="aclass_boost_orb_html_ae9d85500452448feb27abd2b16235fab"><div class="ttname"><a href="class_boost_orb.html#ae9d85500452448feb27abd2b16235fab">BoostOrb::m_speed</a></div><div class="ttdeci">int m_speed</div><div class="ttdef"><b>Definition:</b> <a href="boostorb_8h_source.html#l00026">boostorb.h:26</a></div></div>
+<div class="ttc" id="aclass_boost_orb_html_af5aef2d476ee3910cbb1af1eed01223c"><div class="ttname"><a href="class_boost_orb.html#af5aef2d476ee3910cbb1af1eed01223c">BoostOrb::tick</a></div><div class="ttdeci">virtual void tick(long long elapsedTimeInMilliseconds)</div><div class="ttdef"><b>Definition:</b> <a href="boostorb_8cpp_source.html#l00041">boostorb.cpp:41</a></div></div>
+<div class="ttc" id="aclass_sprite_html"><div class="ttname"><a href="class_sprite.html">Sprite</a></div><div class="ttdoc">Classe qui représente un élément d'animation graphique 2D.</div><div class="ttdef"><b>Definition:</b> <a href="sprite_8h_source.html#l00114">sprite.h:115</a></div></div>
+<div class="ttc" id="aqpointf_html"><div class="ttname"><a href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a></div></div>
+<div class="ttc" id="asprite_8h_html"><div class="ttname"><a href="sprite_8h.html">sprite.h</a></div><div class="ttdoc">Déclaration de la classe Sprite.</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Lundi 16 Janvier 2023 09:15:37 pour 2022-JCO-SpaceSurvivors par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+</small></address>
+</body>
+</html>

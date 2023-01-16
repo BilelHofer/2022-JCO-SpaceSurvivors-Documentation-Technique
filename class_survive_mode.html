@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
-<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>2022-JCO-SpaceSurvivors: Référence de la classe SurviveMode</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
@@ -30,7 +30,7 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Généré par Doxygen 1.9.5 -->
+<!-- Généré par Doxygen 1.9.6 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 var searchBox = new SearchBox("searchBox", "search/",'.html');
@@ -72,6 +72,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-slots">Connecteurs publics</a> &#124;
+<a href="#signals">Signaux</a> &#124;
 <a href="#pub-methods">Fonctions membres publiques</a> &#124;
 <a href="#pri-methods">Fonctions membres privées</a> &#124;
 <a href="#pri-attribs">Attributs privés</a> &#124;
@@ -80,7 +81,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Classe qui gère le mode de jeu "survivre". Elle gère l'apparition des ennemies et des boss.  
+<p>Classe qui gère le mode de jeu "survivre".  
  <a href="class_survive_mode.html#details">Plus de détails...</a></p>
 
 <p><code>#include &lt;<a class="el" href="survivemode_8h_source.html">survivemode.h</a>&gt;</code></p>
@@ -90,7 +91,7 @@ Graphe d'héritage de SurviveMode:</div>
  <div class="center">
   <img src="class_survive_mode.png" usemap="#SurviveMode_map" alt=""/>
   <map id="SurviveMode_map" name="SurviveMode_map">
-<area href="class_game_core.html" title="Classe qui gère le vaisseau du joueur." alt="GameCore" shape="rect" coords="0,56,88,80"/>
+<area href="class_game_core.html" title="Classe qui gère la logique du jeux." alt="GameCore" shape="rect" coords="0,56,88,80"/>
 <area target="_parent" href="http://qt-project.org/doc/qt-5/qobject.html" alt="QObject" shape="rect" coords="0,0,88,24"/>
   </map>
 </div></div>
@@ -98,21 +99,47 @@ Graphe d'héritage de SurviveMode:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-slots" name="pub-slots"></a>
 Connecteurs publics</h2></td></tr>
 <tr class="memitem:ab6d472bbb76d6967cc51b395fe966198"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_survive_mode.html#ab6d472bbb76d6967cc51b395fe966198">newLevelForPlayer</a> ()</td></tr>
-<tr class="memdesc:ab6d472bbb76d6967cc51b395fe966198"><td class="mdescLeft">&#160;</td><td class="mdescRight">Propose un choix d'amélioration au joueur.  <a href="class_survive_mode.html#ab6d472bbb76d6967cc51b395fe966198">Plus de détails...</a><br /></td></tr>
+<tr class="memdesc:ab6d472bbb76d6967cc51b395fe966198"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mets le jeu en pause, quand le joueur passe de niveau.  <br /></td></tr>
 <tr class="separator:ab6d472bbb76d6967cc51b395fe966198"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fc73b180ed081d695b8e492fc9ed213"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_survive_mode.html#a8fc73b180ed081d695b8e492fc9ed213">updateGameMode</a> ()</td></tr>
+<tr class="separator:a8fc73b180ed081d695b8e492fc9ed213"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d08788914d52aaba5dce145e67862c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_survive_mode.html#a3d08788914d52aaba5dce145e67862c5">updateHUDPos</a> (int width, int height)</td></tr>
+<tr class="separator:a3d08788914d52aaba5dce145e67862c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_slots_class_game_core"><td colspan="2" onclick="javascript:toggleInherit('pub_slots_class_game_core')"><img src="closed.png" alt="-"/>&#160;Connecteurs publics hérités de <a class="el" href="class_game_core.html">GameCore</a></td></tr>
 <tr class="memitem:af2a9de8d94844fa98f9f810c3968aa32 inherit pub_slots_class_game_core"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#af2a9de8d94844fa98f9f810c3968aa32">shipLookMouse</a> (<a class="elRef" href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a> mousePosition)</td></tr>
 <tr class="separator:af2a9de8d94844fa98f9f810c3968aa32 inherit pub_slots_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3993bfd31f61c9d2501cd7b7d6d8e40e inherit pub_slots_class_game_core"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a3993bfd31f61c9d2501cd7b7d6d8e40e">updateHUDPos</a> (int width, int height)</td></tr>
+<tr class="memitem:a3993bfd31f61c9d2501cd7b7d6d8e40e inherit pub_slots_class_game_core"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a3993bfd31f61c9d2501cd7b7d6d8e40e">updateHUDPos</a> (int width, int height)</td></tr>
 <tr class="separator:a3993bfd31f61c9d2501cd7b7d6d8e40e inherit pub_slots_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a256f82b465ee8bfc2316ef4c7c90fc86 inherit pub_slots_class_game_core"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a256f82b465ee8bfc2316ef4c7c90fc86">updateGameMode</a> (int newGameMode)</td></tr>
-<tr class="separator:a256f82b465ee8bfc2316ef4c7c90fc86 inherit pub_slots_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acef906fb9747292aa79d35825cf348b1 inherit pub_slots_class_game_core"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#acef906fb9747292aa79d35825cf348b1">updateGameMode</a> ()=0</td></tr>
+<tr class="separator:acef906fb9747292aa79d35825cf348b1 inherit pub_slots_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a98c8ad176a2c54d8bb144a176a64af inherit pub_slots_class_game_core"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a2a98c8ad176a2c54d8bb144a176a64af">launchDeath</a> ()</td></tr>
-<tr class="memdesc:a2a98c8ad176a2c54d8bb144a176a64af inherit pub_slots_class_game_core"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lance l'explosion du joueur.  <a href="class_game_core.html#a2a98c8ad176a2c54d8bb144a176a64af">Plus de détails...</a><br /></td></tr>
+<tr class="memdesc:a2a98c8ad176a2c54d8bb144a176a64af inherit pub_slots_class_game_core"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lance l'explosion du joueur.  <br /></td></tr>
 <tr class="separator:a2a98c8ad176a2c54d8bb144a176a64af inherit pub_slots_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73affe0e5cb9888e9d0dfec4b1fd6183 inherit pub_slots_class_game_core"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a73affe0e5cb9888e9d0dfec4b1fd6183">endGame</a> ()</td></tr>
-<tr class="memdesc:a73affe0e5cb9888e9d0dfec4b1fd6183 inherit pub_slots_class_game_core"><td class="mdescLeft">&#160;</td><td class="mdescRight">Met en place la fin de partie.  <a href="class_game_core.html#a73affe0e5cb9888e9d0dfec4b1fd6183">Plus de détails...</a><br /></td></tr>
+<tr class="memitem:a73affe0e5cb9888e9d0dfec4b1fd6183 inherit pub_slots_class_game_core"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a73affe0e5cb9888e9d0dfec4b1fd6183">endGame</a> ()</td></tr>
+<tr class="memdesc:a73affe0e5cb9888e9d0dfec4b1fd6183 inherit pub_slots_class_game_core"><td class="mdescLeft">&#160;</td><td class="mdescRight">Met en place la fin de partie.  <br /></td></tr>
 <tr class="separator:a73affe0e5cb9888e9d0dfec4b1fd6183 inherit pub_slots_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="signals" name="signals"></a>
+Signaux</h2></td></tr>
+<tr class="memitem:a61494fe6881c329415187bab90752c2c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_survive_mode.html#a61494fe6881c329415187bab90752c2c">nukeIsLaunched</a> ()</td></tr>
+<tr class="separator:a61494fe6881c329415187bab90752c2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header signals_class_game_core"><td colspan="2" onclick="javascript:toggleInherit('signals_class_game_core')"><img src="closed.png" alt="-"/>&#160;Signaux hérités de <a class="el" href="class_game_core.html">GameCore</a></td></tr>
+<tr class="memitem:a6dfad19e467cc9eefbdd35862cd57b94 inherit signals_class_game_core"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a6dfad19e467cc9eefbdd35862cd57b94">notifyPlayerMoved</a> (<a class="elRef" href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a> newPlayerPosition)</td></tr>
+<tr class="separator:a6dfad19e467cc9eefbdd35862cd57b94 inherit signals_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9697026190c472aa7d634e24b35bfcc9 inherit signals_class_game_core"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a9697026190c472aa7d634e24b35bfcc9">notifyMouseMoved</a> (<a class="elRef" href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a> newMousePosition)</td></tr>
+<tr class="separator:a9697026190c472aa7d634e24b35bfcc9 inherit signals_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdb106ea6ea488b1a519e4f7a112abf4 inherit signals_class_game_core"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#abdb106ea6ea488b1a519e4f7a112abf4">notifyMouseButtonPressed</a> (<a class="elRef" href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a> mousePosition, <a class="elRef" href="http://qt-project.org/doc/qt-5/qt.html#MouseButton-enum">Qt::MouseButtons</a> buttons)</td></tr>
+<tr class="separator:abdb106ea6ea488b1a519e4f7a112abf4 inherit signals_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d9e9f62de0187bc449e1e6360e574a7 inherit signals_class_game_core"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a2d9e9f62de0187bc449e1e6360e574a7">notifyMouseButtonReleased</a> (<a class="elRef" href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a> mousePosition, <a class="elRef" href="http://qt-project.org/doc/qt-5/qt.html#MouseButton-enum">Qt::MouseButtons</a> buttons)</td></tr>
+<tr class="separator:a2d9e9f62de0187bc449e1e6360e574a7 inherit signals_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cdacef3fdd7907873b8963b517c5add inherit signals_class_game_core"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a9cdacef3fdd7907873b8963b517c5add">notifyPlayerPosition</a> (<a class="elRef" href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a> playerPosition)</td></tr>
+<tr class="separator:a9cdacef3fdd7907873b8963b517c5add inherit signals_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a462fb6cd594ca9ab4e2513b43c8597b7 inherit signals_class_game_core"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a462fb6cd594ca9ab4e2513b43c8597b7">notifyKeyPressed</a> (int key)</td></tr>
+<tr class="separator:a462fb6cd594ca9ab4e2513b43c8597b7 inherit signals_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a363b48fcc2f71e52894c5eaf064fd1b3 inherit signals_class_game_core"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a363b48fcc2f71e52894c5eaf064fd1b3">notifyKeyReleased</a> (int key)</td></tr>
+<tr class="separator:a363b48fcc2f71e52894c5eaf064fd1b3 inherit signals_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c071b8f2e509509f9f6762c9c0c92dd inherit signals_class_game_core"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a7c071b8f2e509509f9f6762c9c0c92dd">needChangeCore</a> (int newCore)</td></tr>
+<tr class="separator:a7c071b8f2e509509f9f6762c9c0c92dd inherit signals_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Fonctions membres publiques</h2></td></tr>
@@ -120,9 +147,11 @@ Fonctions membres publiques</h2></td></tr>
 <tr class="separator:a81025fa0f833b28d01e9d821a95403ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a417671cd1d78c09c0155f16a652650bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_survive_mode.html#a417671cd1d78c09c0155f16a652650bc">tick</a> (long long elapsedTimeInMilliseconds)</td></tr>
 <tr class="separator:a417671cd1d78c09c0155f16a652650bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80f7ef5c287e1a53ab8cad260b220637"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_survive_mode.html#a80f7ef5c287e1a53ab8cad260b220637">keyPressed</a> (int key)</td></tr>
+<tr class="separator:a80f7ef5c287e1a53ab8cad260b220637"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_game_core"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_game_core')"><img src="closed.png" alt="-"/>&#160;Fonctions membres publiques hérités de <a class="el" href="class_game_core.html">GameCore</a></td></tr>
-<tr class="memitem:a4ad25679d4041f90ac1fa6d16f900a37 inherit pub_methods_class_game_core"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a4ad25679d4041f90ac1fa6d16f900a37">GameCore</a> (<a class="el" href="class_game_core.html">GameCore</a> *pChildGame, <a class="elRef" href="http://qt-project.org/doc/qt-5/qobject.html">QObject</a> *pParent=nullptr)</td></tr>
-<tr class="separator:a4ad25679d4041f90ac1fa6d16f900a37 inherit pub_methods_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f80a12cacd1b7c422c56c123e4034c4 inherit pub_methods_class_game_core"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a6f80a12cacd1b7c422c56c123e4034c4">GameCore</a> (<a class="elRef" href="http://qt-project.org/doc/qt-5/qobject.html">QObject</a> *pParent=nullptr)</td></tr>
+<tr class="separator:a6f80a12cacd1b7c422c56c123e4034c4 inherit pub_methods_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7d1e03d52e81d846e5733d970120655 inherit pub_methods_class_game_core"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#af7d1e03d52e81d846e5733d970120655">keyPressed</a> (int key)</td></tr>
 <tr class="separator:af7d1e03d52e81d846e5733d970120655 inherit pub_methods_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e03c88acaf04467fc3213e09c58a441 inherit pub_methods_class_game_core"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a3e03c88acaf04467fc3213e09c58a441">keyReleased</a> (int key)</td></tr>
@@ -130,15 +159,13 @@ Fonctions membres publiques</h2></td></tr>
 <tr class="memitem:acb7e3ffb6923257ae234c274b2a2a2fc inherit pub_methods_class_game_core"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#acb7e3ffb6923257ae234c274b2a2a2fc">mouseMoved</a> (<a class="elRef" href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a> newMousePosition)</td></tr>
 <tr class="separator:acb7e3ffb6923257ae234c274b2a2a2fc inherit pub_methods_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1433068a5dcf2e4f7ddb7aee8475043b inherit pub_methods_class_game_core"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a1433068a5dcf2e4f7ddb7aee8475043b">mouseButtonPressed</a> (<a class="elRef" href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a> mousePosition, <a class="elRef" href="http://qt-project.org/doc/qt-5/qt.html#MouseButton-enum">Qt::MouseButtons</a> buttons)</td></tr>
-<tr class="memdesc:a1433068a5dcf2e4f7ddb7aee8475043b inherit pub_methods_class_game_core"><td class="mdescLeft">&#160;</td><td class="mdescRight">Traite l'appui sur un bouton de la souris.  <a href="class_game_core.html#a1433068a5dcf2e4f7ddb7aee8475043b">Plus de détails...</a><br /></td></tr>
+<tr class="memdesc:a1433068a5dcf2e4f7ddb7aee8475043b inherit pub_methods_class_game_core"><td class="mdescLeft">&#160;</td><td class="mdescRight">Traite l'appui sur un bouton de la souris.  <br /></td></tr>
 <tr class="separator:a1433068a5dcf2e4f7ddb7aee8475043b inherit pub_methods_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95621dec286dce595fd65418fbcee04a inherit pub_methods_class_game_core"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a95621dec286dce595fd65418fbcee04a">mouseButtonReleased</a> (<a class="elRef" href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a> mousePosition, <a class="elRef" href="http://qt-project.org/doc/qt-5/qt.html#MouseButton-enum">Qt::MouseButtons</a> buttons)</td></tr>
-<tr class="memdesc:a95621dec286dce595fd65418fbcee04a inherit pub_methods_class_game_core"><td class="mdescLeft">&#160;</td><td class="mdescRight">Traite le relâchement d'un bouton de la souris.  <a href="class_game_core.html#a95621dec286dce595fd65418fbcee04a">Plus de détails...</a><br /></td></tr>
+<tr class="memdesc:a95621dec286dce595fd65418fbcee04a inherit pub_methods_class_game_core"><td class="mdescLeft">&#160;</td><td class="mdescRight">Traite le relâchement d'un bouton de la souris.  <br /></td></tr>
 <tr class="separator:a95621dec286dce595fd65418fbcee04a inherit pub_methods_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b0dfc6a3b529cdb0035782923f093d2 inherit pub_methods_class_game_core"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a8b0dfc6a3b529cdb0035782923f093d2">tick</a> (long long elapsedTimeInMilliseconds)=0</td></tr>
 <tr class="separator:a8b0dfc6a3b529cdb0035782923f093d2 inherit pub_methods_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d2311dba0efc5c2c4651e7477b650e4 inherit pub_methods_class_game_core"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a3d2311dba0efc5c2c4651e7477b650e4">movePlayer</a> (long long elapsedTimeInMilliseconds)</td></tr>
-<tr class="separator:a3d2311dba0efc5c2c4651e7477b650e4 inherit pub_methods_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_qobject"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_qobject')"><img src="closed.png" alt="-"/>&#160;Fonctions membres publiques hérités de <a class="el"  href="http://qt-project.org/doc/qt-5/qobject.html">QObject</a></td></tr>
 <tr class="memitem:QObject inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://qt-project.org/doc/qt-5/qobject.html#QObject">QObject</a> (<a class="elRef" href="http://qt-project.org/doc/qt-5/qobject.html">QObject</a> *<a class="elRef" href="http://qt-project.org/doc/qt-5/qobject.html#parent">parent</a>)</td></tr>
 <tr class="separator:QObject inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -218,10 +245,37 @@ Fonctions membres privées</h2></td></tr>
 <tr class="memitem:a1b40cf31a3ad29446b2f7c5a7d1b3656"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_survive_mode.html#a1b40cf31a3ad29446b2f7c5a7d1b3656">spawnBasicEnemy</a> (int EnemyNumber=1)</td></tr>
 <tr class="separator:a1b40cf31a3ad29446b2f7c5a7d1b3656"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a172f8acc6f6cd95bda1da7fe2a529e5f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_survive_mode.html#a172f8acc6f6cd95bda1da7fe2a529e5f">spawnBossEnemy</a> ()</td></tr>
-<tr class="memdesc:a172f8acc6f6cd95bda1da7fe2a529e5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">fait spawn un boss  <a href="class_survive_mode.html#a172f8acc6f6cd95bda1da7fe2a529e5f">Plus de détails...</a><br /></td></tr>
+<tr class="memdesc:a172f8acc6f6cd95bda1da7fe2a529e5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">fait apparaître un boss  <br /></td></tr>
 <tr class="separator:a172f8acc6f6cd95bda1da7fe2a529e5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4822e0c2c7da1c4a8e57f007b0fcb62d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_survive_mode.html#a4822e0c2c7da1c4a8e57f007b0fcb62d">launchEnemy</a> (<a class="el" href="class_enemy.html">Enemy</a> *enemy)</td></tr>
 <tr class="separator:a4822e0c2c7da1c4a8e57f007b0fcb62d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b6300422d0eab2174947d65f4d5f92d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_survive_mode.html#a6b6300422d0eab2174947d65f4d5f92d">displayStat</a> (<a class="el" href="class_game_scene.html">GameScene</a> *pScene, int textSize=40, <a class="elRef" href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a> pos=<a class="elRef" href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a>(0, 0))</td></tr>
+<tr class="separator:a6b6300422d0eab2174947d65f4d5f92d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5f245f2a12e54f633b3ddc58b72ee0b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_survive_mode.html#ac5f245f2a12e54f633b3ddc58b72ee0b">shotBullet</a> ()</td></tr>
+<tr class="memdesc:ac5f245f2a12e54f633b3ddc58b72ee0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tir une balle.  <br /></td></tr>
+<tr class="separator:ac5f245f2a12e54f633b3ddc58b72ee0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ac259eed77e6dbff34455ec412f4681"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_survive_mode.html#a5ac259eed77e6dbff34455ec412f4681">launchNuke</a> ()</td></tr>
+<tr class="memdesc:a5ac259eed77e6dbff34455ec412f4681"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lance une bombe nucléaire.  <br /></td></tr>
+<tr class="separator:a5ac259eed77e6dbff34455ec412f4681"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab04648a66449927ba027b2df7a59415c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_survive_mode.html#ab04648a66449927ba027b2df7a59415c">updateGameTime</a> ()</td></tr>
+<tr class="memdesc:ab04648a66449927ba027b2df7a59415c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mets à jour le temps de jeux.  <br /></td></tr>
+<tr class="separator:ab04648a66449927ba027b2df7a59415c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a31f383718c4dc82039843d52340fa7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_survive_mode.html#a1a31f383718c4dc82039843d52340fa7">manageEnemySpawn</a> ()</td></tr>
+<tr class="memdesc:a1a31f383718c4dc82039843d52340fa7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contrôle l'apparition des ennemis.  <br /></td></tr>
+<tr class="separator:a1a31f383718c4dc82039843d52340fa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a6a84749fb9611dcb35e64cb61861f7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_survive_mode.html#a5a6a84749fb9611dcb35e64cb61861f7">choiceRandomNumber</a> ()</td></tr>
+<tr class="memdesc:a5a6a84749fb9611dcb35e64cb61861f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retourne un nombre choisi aléatoirement.  <br /></td></tr>
+<tr class="separator:a5a6a84749fb9611dcb35e64cb61861f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7aec45cf67b199fbbbba0c7fec8cc460"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_survive_mode.html#a7aec45cf67b199fbbbba0c7fec8cc460">reduceChance</a> (int bonusNumber)</td></tr>
+<tr class="separator:a7aec45cf67b199fbbbba0c7fec8cc460"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adde518481b37994aff8c17c0cc468c40"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_survive_mode.html#adde518481b37994aff8c17c0cc468c40">choiceRandomBonus</a> ()</td></tr>
+<tr class="memdesc:adde518481b37994aff8c17c0cc468c40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Choisi des bonus aleatoirement.  <br /></td></tr>
+<tr class="separator:adde518481b37994aff8c17c0cc468c40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8267a21f9d7fcbdb9ff8a1016041564a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_survive_mode.html#a8267a21f9d7fcbdb9ff8a1016041564a">applyBonus</a> (int bonusIndex)</td></tr>
+<tr class="separator:a8267a21f9d7fcbdb9ff8a1016041564a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab52d55af9b5d6758ff54cd079dcf4499"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_survive_mode.html#ab52d55af9b5d6758ff54cd079dcf4499">mouseButtonPressed</a> (<a class="elRef" href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a> mousePosition, <a class="elRef" href="http://qt-project.org/doc/qt-5/qt.html#MouseButton-enum">Qt::MouseButtons</a> buttons)</td></tr>
+<tr class="memdesc:ab52d55af9b5d6758ff54cd079dcf4499"><td class="mdescLeft">&#160;</td><td class="mdescRight">Traite l'appui sur un bouton de la souris.  <br /></td></tr>
+<tr class="separator:ab52d55af9b5d6758ff54cd079dcf4499"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Attributs privés</h2></td></tr>
@@ -229,28 +283,43 @@ Attributs privés</h2></td></tr>
 <tr class="separator:a6d1332704695d64f5bdb6849c2559d21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c2064d089ffb7b1e1ec9e8ec819c3b9"><td class="memItemLeft" align="right" valign="top">std::chrono::system_clock::time_point&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_survive_mode.html#a2c2064d089ffb7b1e1ec9e8ec819c3b9">m_rateBetweenBasicSpawn</a> = std::chrono::system_clock::now()</td></tr>
 <tr class="separator:a2c2064d089ffb7b1e1ec9e8ec819c3b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a656255058d9b83f845633ed9c530f145"><td class="memItemLeft" align="right" valign="top">std::chrono::system_clock::time_point&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_survive_mode.html#a656255058d9b83f845633ed9c530f145">m_timeInBreak</a> = std::chrono::system_clock::now()</td></tr>
+<tr class="separator:a656255058d9b83f845633ed9c530f145"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab33f1e93b10d57a3ac91d9eb9e77e07c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_level_up_card.html">LevelUpCard</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_survive_mode.html#ab33f1e93b10d57a3ac91d9eb9e77e07c">m_pBonusCard1</a> = nullptr</td></tr>
+<tr class="separator:ab33f1e93b10d57a3ac91d9eb9e77e07c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49de569d1910e262b2b84eb61ece22a6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_level_up_card.html">LevelUpCard</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_survive_mode.html#a49de569d1910e262b2b84eb61ece22a6">m_pBonusCard2</a> = nullptr</td></tr>
+<tr class="separator:a49de569d1910e262b2b84eb61ece22a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07b499103a71614d8b5f10767c2ad6cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_level_up_card.html">LevelUpCard</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_survive_mode.html#a07b499103a71614d8b5f10767c2ad6cf">m_pBonusCard3</a> = nullptr</td></tr>
+<tr class="separator:a07b499103a71614d8b5f10767c2ad6cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a837fc22e34d513426898123e56fa02b0"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="http://qt-project.org/doc/qt-5/qgraphicstextitem.html">QGraphicsTextItem</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_survive_mode.html#a837fc22e34d513426898123e56fa02b0">m_pHudTextBombe</a> = nullptr</td></tr>
+<tr class="separator:a837fc22e34d513426898123e56fa02b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59b947d082ffab539bb7761ab4c55636"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_survive_mode.html#a59b947d082ffab539bb7761ab4c55636">m_bonus1</a> = -1</td></tr>
+<tr class="separator:a59b947d082ffab539bb7761ab4c55636"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af91456d9a16db06678a086590dc21b61"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_survive_mode.html#af91456d9a16db06678a086590dc21b61">m_bonus2</a> = -1</td></tr>
+<tr class="separator:af91456d9a16db06678a086590dc21b61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbc4e94dd4e731c65032c71e8ffc2fe3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_survive_mode.html#acbc4e94dd4e731c65032c71e8ffc2fe3">m_bonus3</a> = -1</td></tr>
+<tr class="separator:acbc4e94dd4e731c65032c71e8ffc2fe3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b7d7241d1610d9c7542e09f10cd8eb9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_survive_mode.html#a4b7d7241d1610d9c7542e09f10cd8eb9">m_numberOfBombs</a> = 0</td></tr>
+<tr class="separator:a4b7d7241d1610d9c7542e09f10cd8eb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcbec9922ea6c47359030f7715d45107"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_survive_mode.html#afcbec9922ea6c47359030f7715d45107">m_basicHealthPoint</a> = 100</td></tr>
+<tr class="separator:afcbec9922ea6c47359030f7715d45107"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f641d053eac975ca2057351a359cbb2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_survive_mode.html#a6f641d053eac975ca2057351a359cbb2">m_basicSpeed</a> = 120</td></tr>
+<tr class="separator:a6f641d053eac975ca2057351a359cbb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7430f5e992a360365bec43cc7947ccff"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_survive_mode.html#a7430f5e992a360365bec43cc7947ccff">m_basicDamage</a> = 1</td></tr>
+<tr class="separator:a7430f5e992a360365bec43cc7947ccff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af69b4f8962dd644df44cdca6a1ac7776"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_survive_mode.html#af69b4f8962dd644df44cdca6a1ac7776">m_reactionTime</a> = 1</td></tr>
+<tr class="separator:af69b4f8962dd644df44cdca6a1ac7776"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91cbb52a615aa26ef505726c635d4bde"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_survive_mode.html#a91cbb52a615aa26ef505726c635d4bde">m_bossCanSpawn</a> = true</td></tr>
+<tr class="separator:a91cbb52a615aa26ef505726c635d4bde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade4e786fa73abd404b9122e2a574d71d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_survive_mode.html#ade4e786fa73abd404b9122e2a574d71d">m_autoFireOn</a> = false</td></tr>
+<tr class="separator:ade4e786fa73abd404b9122e2a574d71d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa69634c548611f66af40ccaa3e7a0415"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_survive_mode.html#aa69634c548611f66af40ccaa3e7a0415">m_waitingForChoice</a> = false</td></tr>
+<tr class="separator:aa69634c548611f66af40ccaa3e7a0415"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2e6c8e755d3cf33efcfe1efd201b029"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_survive_mode.html#ac2e6c8e755d3cf33efcfe1efd201b029">m_nukeNeedLaunch</a> = false</td></tr>
+<tr class="separator:ac2e6c8e755d3cf33efcfe1efd201b029"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Membres hérités additionnels</h2></td></tr>
-<tr class="inherit_header signals_class_game_core"><td colspan="2" onclick="javascript:toggleInherit('signals_class_game_core')"><img src="closed.png" alt="-"/>&#160;Signaux hérités de <a class="el" href="class_game_core.html">GameCore</a></td></tr>
-<tr class="memitem:a9697026190c472aa7d634e24b35bfcc9 inherit signals_class_game_core"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a9697026190c472aa7d634e24b35bfcc9">notifyMouseMoved</a> (<a class="elRef" href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a> newMousePosition)</td></tr>
-<tr class="separator:a9697026190c472aa7d634e24b35bfcc9 inherit signals_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abdb106ea6ea488b1a519e4f7a112abf4 inherit signals_class_game_core"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#abdb106ea6ea488b1a519e4f7a112abf4">notifyMouseButtonPressed</a> (<a class="elRef" href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a> mousePosition, <a class="elRef" href="http://qt-project.org/doc/qt-5/qt.html#MouseButton-enum">Qt::MouseButtons</a> buttons)</td></tr>
-<tr class="separator:abdb106ea6ea488b1a519e4f7a112abf4 inherit signals_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d9e9f62de0187bc449e1e6360e574a7 inherit signals_class_game_core"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a2d9e9f62de0187bc449e1e6360e574a7">notifyMouseButtonReleased</a> (<a class="elRef" href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a> mousePosition, <a class="elRef" href="http://qt-project.org/doc/qt-5/qt.html#MouseButton-enum">Qt::MouseButtons</a> buttons)</td></tr>
-<tr class="separator:a2d9e9f62de0187bc449e1e6360e574a7 inherit signals_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9cdacef3fdd7907873b8963b517c5add inherit signals_class_game_core"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a9cdacef3fdd7907873b8963b517c5add">notifyPlayerPosition</a> (<a class="elRef" href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a> playerPosition)</td></tr>
-<tr class="separator:a9cdacef3fdd7907873b8963b517c5add inherit signals_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a462fb6cd594ca9ab4e2513b43c8597b7 inherit signals_class_game_core"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a462fb6cd594ca9ab4e2513b43c8597b7">notifyKeyPressed</a> (int key)</td></tr>
-<tr class="separator:a462fb6cd594ca9ab4e2513b43c8597b7 inherit signals_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a363b48fcc2f71e52894c5eaf064fd1b3 inherit signals_class_game_core"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a363b48fcc2f71e52894c5eaf064fd1b3">notifyKeyReleased</a> (int key)</td></tr>
-<tr class="separator:a363b48fcc2f71e52894c5eaf064fd1b3 inherit signals_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a642bec4f124761d071cf9800dcfb7455 inherit signals_class_game_core"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a642bec4f124761d071cf9800dcfb7455">gameModeChanged</a> (int newMode)</td></tr>
-<tr class="separator:a642bec4f124761d071cf9800dcfb7455 inherit signals_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c071b8f2e509509f9f6762c9c0c92dd inherit signals_class_game_core"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a7c071b8f2e509509f9f6762c9c0c92dd">needChangeCore</a> (int newCore)</td></tr>
-<tr class="separator:a7c071b8f2e509509f9f6762c9c0c92dd inherit signals_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52fc869b91acf3e04be68cbfab0f4900 inherit signals_class_game_core"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a52fc869b91acf3e04be68cbfab0f4900">nukeIsLaunched</a> ()</td></tr>
-<tr class="separator:a52fc869b91acf3e04be68cbfab0f4900 inherit signals_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_qobject"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_qobject')"><img src="closed.png" alt="-"/>&#160;Fonctions membres publiques statiques hérités de <a class="el"  href="http://qt-project.org/doc/qt-5/qobject.html">QObject</a></td></tr>
 <tr class="memitem:tr inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="http://qt-project.org/doc/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://qt-project.org/doc/qt-5/qobject.html#tr">tr</a> (const char *sourceText, const char *disambiguation, int n)</td></tr>
 <tr class="separator:tr inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -274,24 +343,14 @@ Membres hérités additionnels</h2></td></tr>
 <tr class="separator:disconnect-3 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:disconnect-6 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://qt-project.org/doc/qt-5/qobject.html#disconnect-6">disconnect</a> (const <a class="elRef" href="http://qt-project.org/doc/qt-5/qobject.html">QObject</a> *<a class="elRef" href="http://qt-project.org/doc/qt-5/qobject.html#sender">sender</a>, PointerToMemberFunction signal, const <a class="elRef" href="http://qt-project.org/doc/qt-5/qobject.html">QObject</a> *receiver, PointerToMemberFunction method)</td></tr>
 <tr class="separator:disconnect-6 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_types_class_game_core"><td colspan="2" onclick="javascript:toggleInherit('pro_types_class_game_core')"><img src="closed.png" alt="-"/>&#160;Types protégés hérités de <a class="el" href="class_game_core.html">GameCore</a></td></tr>
-<tr class="memitem:a1265dd6dd8dacfb051bd2672fd06be2e inherit pro_types_class_game_core"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a1265dd6dd8dacfb051bd2672fd06be2e">gameMode</a> { <a class="el" href="class_game_core.html#a1265dd6dd8dacfb051bd2672fd06be2ea21128e3a574d96c23a1999639adb35ec">MENU</a>
-, <a class="el" href="class_game_core.html#a1265dd6dd8dacfb051bd2672fd06be2eab2858a1a9762a0bc0859da09028f2976">BREAK</a>
-, <a class="el" href="class_game_core.html#a1265dd6dd8dacfb051bd2672fd06be2eabb42b8a2992e3bd588c7a5b2b8073492">RUNNING</a>
-, <a class="el" href="class_game_core.html#a1265dd6dd8dacfb051bd2672fd06be2eaf047e19fcc5a120e8edc3d34455a1a04">ENDED</a>
- }</td></tr>
-<tr class="separator:a1265dd6dd8dacfb051bd2672fd06be2e inherit pro_types_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_game_core"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_game_core')"><img src="closed.png" alt="-"/>&#160;Fonctions membres protégées hérités de <a class="el" href="class_game_core.html">GameCore</a></td></tr>
-<tr class="memitem:a24b29b55b0d632246e03821f48ac54da inherit pro_methods_class_game_core"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a24b29b55b0d632246e03821f48ac54da">displayStat</a> (<a class="el" href="class_game_scene.html">GameScene</a> *pScene, int textSize=40, <a class="elRef" href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a> pos=<a class="elRef" href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a>(0, 0))</td></tr>
-<tr class="separator:a24b29b55b0d632246e03821f48ac54da inherit pro_methods_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d2311dba0efc5c2c4651e7477b650e4 inherit pro_methods_class_game_core"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a3d2311dba0efc5c2c4651e7477b650e4">movePlayer</a> (long long elapsedTimeInMilliseconds)</td></tr>
+<tr class="separator:a3d2311dba0efc5c2c4651e7477b650e4 inherit pro_methods_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab168ed4a9773ed4f2352ccf03db9353 inherit pro_methods_class_game_core"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#aab168ed4a9773ed4f2352ccf03db9353">displayStat</a> (<a class="el" href="class_game_scene.html">GameScene</a> *pScene, int textSize=40, <a class="elRef" href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a> pos=<a class="elRef" href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a>(0, 0))=0</td></tr>
+<tr class="separator:aab168ed4a9773ed4f2352ccf03db9353 inherit pro_methods_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac926a9a69e2aa23b4350726fe8baf5d1 inherit pro_methods_class_game_core"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#ac926a9a69e2aa23b4350726fe8baf5d1">clearStat</a> ()</td></tr>
-<tr class="memdesc:ac926a9a69e2aa23b4350726fe8baf5d1 inherit pro_methods_class_game_core"><td class="mdescLeft">&#160;</td><td class="mdescRight">Efface les statistique afficher.  <a href="class_game_core.html#ac926a9a69e2aa23b4350726fe8baf5d1">Plus de détails...</a><br /></td></tr>
+<tr class="memdesc:ac926a9a69e2aa23b4350726fe8baf5d1 inherit pro_methods_class_game_core"><td class="mdescLeft">&#160;</td><td class="mdescRight">Efface les statistiques affichées.  <br /></td></tr>
 <tr class="separator:ac926a9a69e2aa23b4350726fe8baf5d1 inherit pro_methods_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7912672586825aa9ab7f493c356decf1 inherit pro_methods_class_game_core"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a7912672586825aa9ab7f493c356decf1">choiceRandomBonus</a> ()</td></tr>
-<tr class="memdesc:a7912672586825aa9ab7f493c356decf1 inherit pro_methods_class_game_core"><td class="mdescLeft">&#160;</td><td class="mdescRight">Choisi des bonus aleatoirement.  <a href="class_game_core.html#a7912672586825aa9ab7f493c356decf1">Plus de détails...</a><br /></td></tr>
-<tr class="separator:a7912672586825aa9ab7f493c356decf1 inherit pro_methods_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad29fa494a9813da2b838471b88b2d504 inherit pro_methods_class_game_core"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#ad29fa494a9813da2b838471b88b2d504">applyBonus</a> (int bonusIndex)</td></tr>
-<tr class="separator:ad29fa494a9813da2b838471b88b2d504 inherit pro_methods_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_qobject"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_qobject')"><img src="closed.png" alt="-"/>&#160;Fonctions membres protégées hérités de <a class="el"  href="http://qt-project.org/doc/qt-5/qobject.html">QObject</a></td></tr>
 <tr class="memitem:sender inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="http://qt-project.org/doc/qt-5/qobject.html">QObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://qt-project.org/doc/qt-5/qobject.html#sender">sender</a> () const</td></tr>
 <tr class="separator:sender inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -316,8 +375,6 @@ Membres hérités additionnels</h2></td></tr>
 <tr class="separator:acc0650e6dc050a16d6b38c19080db6da inherit pro_attribs_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5af86ef207c5968d456d99ba8757bf0 inherit pro_attribs_class_game_core"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#ad5af86ef207c5968d456d99ba8757bf0">m_timeMinuteAlive</a> = 0</td></tr>
 <tr class="separator:ad5af86ef207c5968d456d99ba8757bf0 inherit pro_attribs_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae03eb49c30d60a7ad3a94f561b37d02f inherit pro_attribs_class_game_core"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#ae03eb49c30d60a7ad3a94f561b37d02f">m_numberOfBombs</a> = 0</td></tr>
-<tr class="separator:ae03eb49c30d60a7ad3a94f561b37d02f inherit pro_attribs_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada938d668d44decbd001599868967421 inherit pro_attribs_class_game_core"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game_canvas.html">GameCanvas</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#ada938d668d44decbd001599868967421">m_pGameCanvas</a> = nullptr</td></tr>
 <tr class="separator:ada938d668d44decbd001599868967421 inherit pro_attribs_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab932f6ecd365bcdc5d3a3c278641a9ec inherit pro_attribs_class_game_core"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game_scene.html">GameScene</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#ab932f6ecd365bcdc5d3a3c278641a9ec">m_pSceneBreak</a> = nullptr</td></tr>
@@ -326,28 +383,20 @@ Membres hérités additionnels</h2></td></tr>
 <tr class="separator:ae9a67d58f90f37711ebc1fdf986454ad inherit pro_attribs_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7792ee71659ea751a062d34dc2387a80 inherit pro_attribs_class_game_core"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game_scene.html">GameScene</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a7792ee71659ea751a062d34dc2387a80">m_pScene</a> = nullptr</td></tr>
 <tr class="separator:a7792ee71659ea751a062d34dc2387a80 inherit pro_attribs_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b7f71be04fe5c67c6336656af258e83 inherit pro_attribs_class_game_core"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="http://qt-project.org/doc/qt-5/qrectf.html">QRectF</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a6b7f71be04fe5c67c6336656af258e83">m_pMapEdge</a> = nullptr</td></tr>
+<tr class="separator:a6b7f71be04fe5c67c6336656af258e83 inherit pro_attribs_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a68be50a57bf376336e7bd9d36e79ffc6 inherit pro_attribs_class_game_core"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="http://qt-project.org/doc/qt-5/qgraphicsitem.html">QGraphicsItem</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a68be50a57bf376336e7bd9d36e79ffc6">m_pDisplayedStat</a> =nullptr</td></tr>
 <tr class="separator:a68be50a57bf376336e7bd9d36e79ffc6 inherit pro_attribs_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27d6d966adf6d589d494b36be76b19b5 inherit pro_attribs_class_game_core"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="http://qt-project.org/doc/qt-5/qgraphicstextitem.html">QGraphicsTextItem</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a27d6d966adf6d589d494b36be76b19b5">m_pHudTextTime</a> = nullptr</td></tr>
 <tr class="separator:a27d6d966adf6d589d494b36be76b19b5 inherit pro_attribs_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a906f3fd77e47b19f2c9b2bccf35b1f06 inherit pro_attribs_class_game_core"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="http://qt-project.org/doc/qt-5/qgraphicstextitem.html">QGraphicsTextItem</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a906f3fd77e47b19f2c9b2bccf35b1f06">m_pHudTextBombe</a> = nullptr</td></tr>
-<tr class="separator:a906f3fd77e47b19f2c9b2bccf35b1f06 inherit pro_attribs_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf622c8074794131398f6e6137db5648 inherit pro_attribs_class_game_core"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_player.html">Player</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#aaf622c8074794131398f6e6137db5648">m_pPlayer</a> = nullptr</td></tr>
 <tr class="separator:aaf622c8074794131398f6e6137db5648 inherit pro_attribs_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72fd35c0d56b12dfd006a35198378e34 inherit pro_attribs_class_game_core"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_sprite.html">Sprite</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a72fd35c0d56b12dfd006a35198378e34">m_pPlayerHitBox</a> = nullptr</td></tr>
 <tr class="separator:a72fd35c0d56b12dfd006a35198378e34 inherit pro_attribs_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a498e0c6c824ed9cf15ed8d9ad1a36fcf inherit pro_attribs_class_game_core"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_sprite.html">Sprite</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a498e0c6c824ed9cf15ed8d9ad1a36fcf">m_pButtonMenu</a> = nullptr</td></tr>
 <tr class="separator:a498e0c6c824ed9cf15ed8d9ad1a36fcf inherit pro_attribs_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a772a0301942d346d70d8dc3dc663d8d7 inherit pro_attribs_class_game_core"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_sprite.html">Sprite</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a772a0301942d346d70d8dc3dc663d8d7">m_pEndText</a> = nullptr</td></tr>
-<tr class="separator:a772a0301942d346d70d8dc3dc663d8d7 inherit pro_attribs_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1af9200f681e6edda177d2a5aed36d5b inherit pro_attribs_class_game_core"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_level_up_card.html">LevelUpCard</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a1af9200f681e6edda177d2a5aed36d5b">m_pBonusCard1</a> = nullptr</td></tr>
-<tr class="separator:a1af9200f681e6edda177d2a5aed36d5b inherit pro_attribs_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace8c268ca72061ec83ce9ddd47fe1517 inherit pro_attribs_class_game_core"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_level_up_card.html">LevelUpCard</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#ace8c268ca72061ec83ce9ddd47fe1517">m_pBonusCard2</a> = nullptr</td></tr>
-<tr class="separator:ace8c268ca72061ec83ce9ddd47fe1517 inherit pro_attribs_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38cf1d8725b34cd1c2c52b5966046e2f inherit pro_attribs_class_game_core"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_level_up_card.html">LevelUpCard</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a38cf1d8725b34cd1c2c52b5966046e2f">m_pBonusCard3</a> = nullptr</td></tr>
-<tr class="separator:a38cf1d8725b34cd1c2c52b5966046e2f inherit pro_attribs_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89716491214271a294c187d4cc446fb2 inherit pro_attribs_class_game_core"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game_core.html#a1265dd6dd8dacfb051bd2672fd06be2e">gameMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a89716491214271a294c187d4cc446fb2">m_gameMode</a> = <a class="el" href="class_game_core.html#a1265dd6dd8dacfb051bd2672fd06be2eabb42b8a2992e3bd588c7a5b2b8073492">RUNNING</a></td></tr>
-<tr class="separator:a89716491214271a294c187d4cc446fb2 inherit pro_attribs_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adec27ee2d0aef7b23834f4d0c98e6b66 inherit pro_attribs_class_game_core"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_sprite.html">Sprite</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#adec27ee2d0aef7b23834f4d0c98e6b66">m_pButtonReplay</a> = nullptr</td></tr>
+<tr class="separator:adec27ee2d0aef7b23834f4d0c98e6b66 inherit pro_attribs_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a92bcdd277097dbd48234164780488a inherit pro_attribs_class_game_core"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a8a92bcdd277097dbd48234164780488a">m_playerAxeX</a> = 0</td></tr>
 <tr class="separator:a8a92bcdd277097dbd48234164780488a inherit pro_attribs_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49f015d88816b7244b43cf3cc31b9096 inherit pro_attribs_class_game_core"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a49f015d88816b7244b43cf3cc31b9096">m_playerAxeY</a> = 0</td></tr>
@@ -360,26 +409,6 @@ Membres hérités additionnels</h2></td></tr>
 <tr class="separator:ad3bd99549083db33bf358d1fd0f944de inherit pro_attribs_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a104bd1eed8fbc5b237863a7735f23b inherit pro_attribs_class_game_core"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a6a104bd1eed8fbc5b237863a7735f23b">m_viewHeight</a> = 0</td></tr>
 <tr class="separator:a6a104bd1eed8fbc5b237863a7735f23b inherit pro_attribs_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac323a468a5ccc41ddc961431f261b332 inherit pro_attribs_class_game_core"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#ac323a468a5ccc41ddc961431f261b332">m_basicHealthPoint</a> = 100</td></tr>
-<tr class="separator:ac323a468a5ccc41ddc961431f261b332 inherit pro_attribs_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb640f3f0f3c978074bde0d948f59fe9 inherit pro_attribs_class_game_core"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#afb640f3f0f3c978074bde0d948f59fe9">m_basicSpeed</a> = 120</td></tr>
-<tr class="separator:afb640f3f0f3c978074bde0d948f59fe9 inherit pro_attribs_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a181db20516cde6710318b39fa425507c inherit pro_attribs_class_game_core"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a181db20516cde6710318b39fa425507c">m_basicDamage</a> = 1</td></tr>
-<tr class="separator:a181db20516cde6710318b39fa425507c inherit pro_attribs_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a330d331c7ec10cc6f9147c28f52d31 inherit pro_attribs_class_game_core"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a5a330d331c7ec10cc6f9147c28f52d31">m_bonus1</a> = -1</td></tr>
-<tr class="separator:a5a330d331c7ec10cc6f9147c28f52d31 inherit pro_attribs_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35a462475d1d5981e1a09529595a0855 inherit pro_attribs_class_game_core"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a35a462475d1d5981e1a09529595a0855">m_bonus2</a> = -1</td></tr>
-<tr class="separator:a35a462475d1d5981e1a09529595a0855 inherit pro_attribs_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a77fdc8abc1511ff61b4d6e3ef010f5f3 inherit pro_attribs_class_game_core"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a77fdc8abc1511ff61b4d6e3ef010f5f3">m_bonus3</a> = -1</td></tr>
-<tr class="separator:a77fdc8abc1511ff61b4d6e3ef010f5f3 inherit pro_attribs_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a847b9454d27ced48e2ca3b4ae7648a13 inherit pro_attribs_class_game_core"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a847b9454d27ced48e2ca3b4ae7648a13">m_reactionTime</a> = 1</td></tr>
-<tr class="separator:a847b9454d27ced48e2ca3b4ae7648a13 inherit pro_attribs_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a1c1c4440dfe158b2fcd4ea084e621f inherit pro_attribs_class_game_core"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a6a1c1c4440dfe158b2fcd4ea084e621f">m_autoFireOn</a> = false</td></tr>
-<tr class="separator:a6a1c1c4440dfe158b2fcd4ea084e621f inherit pro_attribs_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40a61ee15c2eff80c222fae1c8f9ebe8 inherit pro_attribs_class_game_core"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a40a61ee15c2eff80c222fae1c8f9ebe8">m_waitingForChoice</a> = false</td></tr>
-<tr class="separator:a40a61ee15c2eff80c222fae1c8f9ebe8 inherit pro_attribs_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9381066711949ed45a92524fbc7d5e6 inherit pro_attribs_class_game_core"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#aa9381066711949ed45a92524fbc7d5e6">m_nukeNeedLaunch</a> = false</td></tr>
-<tr class="separator:aa9381066711949ed45a92524fbc7d5e6 inherit pro_attribs_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c659fcecc96cf3975d59d143c00700b inherit pro_attribs_class_game_core"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a0c659fcecc96cf3975d59d143c00700b">m_lastMousePos</a></td></tr>
 <tr class="separator:a0c659fcecc96cf3975d59d143c00700b inherit pro_attribs_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a700c205e1c62bafa2f6be885e88b7aae inherit pro_attribs_class_game_core"><td class="memItemLeft" align="right" valign="top">qreal&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a700c205e1c62bafa2f6be885e88b7aae">m_shipAngle</a></td></tr>
@@ -388,16 +417,27 @@ Membres hérités additionnels</h2></td></tr>
 <tr class="separator:a9442a701469a5a55689c131fb6a7cde0 inherit pro_attribs_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0972e17181cb2d36c741709a0b283dee inherit pro_attribs_class_game_core"><td class="memItemLeft" align="right" valign="top">std::chrono::system_clock::time_point&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a0972e17181cb2d36c741709a0b283dee">m_rateBetweenShot</a> = std::chrono::system_clock::now()</td></tr>
 <tr class="separator:a0972e17181cb2d36c741709a0b283dee inherit pro_attribs_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2cf68c22cb17b7dc3794ea17d1e3f3c inherit pro_attribs_class_game_core"><td class="memItemLeft" align="right" valign="top">std::chrono::system_clock::time_point&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#aa2cf68c22cb17b7dc3794ea17d1e3f3c">m_timeInBreak</a> = std::chrono::system_clock::now()</td></tr>
-<tr class="separator:aa2cf68c22cb17b7dc3794ea17d1e3f3c inherit pro_attribs_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header properties_qobject"><td colspan="2" onclick="javascript:toggleInherit('properties_qobject')"><img src="closed.png" alt="-"/>&#160;Propriétés hérités de <a class="el"  href="http://qt-project.org/doc/qt-5/qobject.html">QObject</a></td></tr>
 <tr class="memitem:objectName-prop inherit properties_qobject"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://qt-project.org/doc/qt-5/qobject.html#objectName-prop">objectName</a></td></tr>
 <tr class="separator:objectName-prop inherit properties_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
-<div class="textblock"><p >Classe qui gère le mode de jeu "survivre". Elle gère l'apparition des ennemies et des boss. </p>
+<div class="textblock"><p>Classe qui gère le mode de jeu "survivre". </p>
+<p>Cette classe permet de gérer le temps de jeux, l'apparition des ennemies, le contrôle du clavier et souris, l’affichage des différentes scènes, le système de proposition de bonus à chaque nouveau niveau et l'application des différents bonus.</p>
+<p>tick cette méthode permet de gérer la mise à jour du temps de jeux, le tir automatique, le lancement du bonus "NUKE" et du déplacement du joueur.</p>
+<p>la methode spawnBasicEnemy prends en paramètre le nombre d'ennemis à ajouter sur la carte, cette méthode fait apparaitre x ennemis sur la carte.</p>
+<p>la methode spawnBossEnemy fait apparaitre un ennemi de type boss sur la carte.</p>
+<p>launchEnemy connecte l'ennemie passer en paramètre aux différentes méthodes.</p>
+<p>displayStat prends en paramètre, la scène où sera affiché le message, la taille du texte et sa position. Cette fonction permet d'afficher les statistiques de la partie dans la scène donnée.</p>
+<p>shotBullet permets de faire tirer une balle au vaisseau.</p>
+<p>launchNuke prépare le lancement de la bombe nucléaire dans la partie.</p>
+<p>updateGameTime mets à jour le temps de la partie.</p>
+<p>manageEnemySpawn contôle l'apparition des ennemies.</p>
+<p>choiceRandomNumber choisis un bonus aléatoire.</p>
+<p>reduceChance prend en paramètre le bonus choisi et réduis c'est chance d'apparition en fonction de sa rareté</p>
+<p>applyBonus prend en paramètre le bonus sélectionner par l'utilisateur et l'applique. </p>
 
-<p class="definition">Définition à la ligne <a class="el" href="survivemode_8h_source.html#l00014">14</a> du fichier <a class="el" href="survivemode_8h_source.html">survivemode.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="survivemode_8h_source.html#l00043">43</a> du fichier <a class="el" href="survivemode_8h_source.html">survivemode.h</a>.</p>
 </div><h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
 <a id="a81025fa0f833b28d01e9d821a95403ca" name="a81025fa0f833b28d01e9d821a95403ca"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a81025fa0f833b28d01e9d821a95403ca">&#9670;&#160;</a></span>SurviveMode()</h2>
@@ -432,7 +472,7 @@ Membres hérités additionnels</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >Initialise le contrôleur de jeu. </p><dl class="params"><dt>Paramètres</dt><dd>
+<p>Initialise le mode de jeu. </p><dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
     <tr><td class="paramname">pGameCanvas</td><td><a class="el" href="class_game_canvas.html" title="Classe de gestion des scènes du jeu et de sa cadence.">GameCanvas</a> pour lequel cet objet travaille. </td></tr>
     <tr><td class="paramname">pParent</td><td>Pointeur sur le parent (afin d'obtenir une destruction automatique de cet objet). </td></tr>
@@ -440,11 +480,193 @@ Membres hérités additionnels</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Définition à la ligne <a class="el" href="survivemode_8cpp_source.html#l00024">24</a> du fichier <a class="el" href="survivemode_8cpp_source.html">survivemode.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="survivemode_8cpp_source.html#l00026">26</a> du fichier <a class="el" href="survivemode_8cpp_source.html">survivemode.cpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Documentation des fonctions membres</h2>
+<a id="a8267a21f9d7fcbdb9ff8a1016041564a" name="a8267a21f9d7fcbdb9ff8a1016041564a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8267a21f9d7fcbdb9ff8a1016041564a">&#9670;&#160;</a></span>applyBonus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SurviveMode::applyBonus </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>bonusIndex</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Applique le bonus choisi </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bonusIndex</td><td>l'index du bonus à appliquer </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="survivemode_8cpp_source.html#l00399">399</a> du fichier <a class="el" href="survivemode_8cpp_source.html">survivemode.cpp</a>.</p>
+
+</div>
+</div>
+<a id="adde518481b37994aff8c17c0cc468c40" name="adde518481b37994aff8c17c0cc468c40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adde518481b37994aff8c17c0cc468c40">&#9670;&#160;</a></span>choiceRandomBonus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SurviveMode::choiceRandomBonus </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Choisi des bonus aleatoirement. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="survivemode_8cpp_source.html#l00382">382</a> du fichier <a class="el" href="survivemode_8cpp_source.html">survivemode.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a5a6a84749fb9611dcb35e64cb61861f7" name="a5a6a84749fb9611dcb35e64cb61861f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a6a84749fb9611dcb35e64cb61861f7">&#9670;&#160;</a></span>choiceRandomNumber()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SurviveMode::choiceRandomNumber </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Retourne un nombre choisi aléatoirement. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="survivemode_8cpp_source.html#l00317">317</a> du fichier <a class="el" href="survivemode_8cpp_source.html">survivemode.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a6b6300422d0eab2174947d65f4d5f92d" name="a6b6300422d0eab2174947d65f4d5f92d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b6300422d0eab2174947d65f4d5f92d">&#9670;&#160;</a></span>displayStat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SurviveMode::displayStat </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_game_scene.html">GameScene</a> *&#160;</td>
+          <td class="paramname"><em>pScene</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>textSize</em> = <code>40</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="elRef" href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a>&#160;</td>
+          <td class="paramname"><em>pos</em> = <code><a class="elRef" href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a>(0,&#160;0)</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Affiche les statistiques sur l'écran </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">scene</td><td>la scène ou afficher le message </td></tr>
+    <tr><td class="paramname">textSize</td><td>la taille du texte </td></tr>
+    <tr><td class="paramname">pos</td><td>la position du message </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implémente <a class="el" href="class_game_core.html#aab168ed4a9773ed4f2352ccf03db9353">GameCore</a>.</p>
+
+<p class="definition">Définition à la ligne <a class="el" href="survivemode_8cpp_source.html#l00285">285</a> du fichier <a class="el" href="survivemode_8cpp_source.html">survivemode.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a80f7ef5c287e1a53ab8cad260b220637" name="a80f7ef5c287e1a53ab8cad260b220637"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80f7ef5c287e1a53ab8cad260b220637">&#9670;&#160;</a></span>keyPressed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SurviveMode::keyPressed </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Traite la pression d'une touche. </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>Numéro de la touche (voir les constantes <a class="elRef" href="http://qt-project.org/doc/qt-5/qt.html">Qt</a>). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Réimplémentée à partir de <a class="el" href="class_game_core.html#af7d1e03d52e81d846e5733d970120655">GameCore</a>.</p>
+
+<p class="definition">Définition à la ligne <a class="el" href="survivemode_8cpp_source.html#l00502">502</a> du fichier <a class="el" href="survivemode_8cpp_source.html">survivemode.cpp</a>.</p>
+
+</div>
+</div>
 <a id="a4822e0c2c7da1c4a8e57f007b0fcb62d" name="a4822e0c2c7da1c4a8e57f007b0fcb62d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4822e0c2c7da1c4a8e57f007b0fcb62d">&#9670;&#160;</a></span>launchEnemy()</h2>
 
@@ -468,14 +690,114 @@ Membres hérités additionnels</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >Prépare un ennemie au lancement dans la scene, le connect au signal et crée la croix rouge en dessous </p><dl class="params"><dt>Paramètres</dt><dd>
+<p>Prépare un ennemi au lancement dans la scène, le connecte au signal et crée la croix rouge en dessous </p><dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramname">enemy</td><td>l'ennmie à initialiser </td></tr>
+    <tr><td class="paramname">enemy</td><td>l'ennemie à initialiser </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Définition à la ligne <a class="el" href="survivemode_8cpp_source.html#l00222">222</a> du fichier <a class="el" href="survivemode_8cpp_source.html">survivemode.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="survivemode_8cpp_source.html#l00258">258</a> du fichier <a class="el" href="survivemode_8cpp_source.html">survivemode.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a5ac259eed77e6dbff34455ec412f4681" name="a5ac259eed77e6dbff34455ec412f4681"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ac259eed77e6dbff34455ec412f4681">&#9670;&#160;</a></span>launchNuke()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SurviveMode::launchNuke </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Lance une bombe nucléaire. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="survivemode_8cpp_source.html#l00216">216</a> du fichier <a class="el" href="survivemode_8cpp_source.html">survivemode.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a1a31f383718c4dc82039843d52340fa7" name="a1a31f383718c4dc82039843d52340fa7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a31f383718c4dc82039843d52340fa7">&#9670;&#160;</a></span>manageEnemySpawn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SurviveMode::manageEnemySpawn </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Contrôle l'apparition des ennemis. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="survivemode_8cpp_source.html#l00175">175</a> du fichier <a class="el" href="survivemode_8cpp_source.html">survivemode.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ab52d55af9b5d6758ff54cd079dcf4499" name="ab52d55af9b5d6758ff54cd079dcf4499"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab52d55af9b5d6758ff54cd079dcf4499">&#9670;&#160;</a></span>mouseButtonPressed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SurviveMode::mouseButtonPressed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="elRef" href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a>&#160;</td>
+          <td class="paramname"><em>mousePosition</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="elRef" href="http://qt-project.org/doc/qt-5/qt.html#MouseButton-enum">Qt::MouseButtons</a>&#160;</td>
+          <td class="paramname"><em>buttons</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Traite l'appui sur un bouton de la souris. </p>
+
+<p>Réimplémentée à partir de <a class="el" href="class_game_core.html#a1433068a5dcf2e4f7ddb7aee8475043b">GameCore</a>.</p>
+
+<p class="definition">Définition à la ligne <a class="el" href="survivemode_8cpp_source.html#l00531">531</a> du fichier <a class="el" href="survivemode_8cpp_source.html">survivemode.cpp</a>.</p>
 
 </div>
 </div>
@@ -502,9 +824,97 @@ Membres hérités additionnels</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Propose un choix d'amélioration au joueur. </p>
+<p>Mets le jeu en pause, quand le joueur passe de niveau. </p>
 
-<p class="definition">Définition à la ligne <a class="el" href="survivemode_8cpp_source.html#l00240">240</a> du fichier <a class="el" href="survivemode_8cpp_source.html">survivemode.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="survivemode_8cpp_source.html#l00275">275</a> du fichier <a class="el" href="survivemode_8cpp_source.html">survivemode.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a61494fe6881c329415187bab90752c2c" name="a61494fe6881c329415187bab90752c2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61494fe6881c329415187bab90752c2c">&#9670;&#160;</a></span>nukeIsLaunched</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SurviveMode::nukeIsLaunched </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7aec45cf67b199fbbbba0c7fec8cc460" name="a7aec45cf67b199fbbbba0c7fec8cc460"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7aec45cf67b199fbbbba0c7fec8cc460">&#9670;&#160;</a></span>reduceChance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SurviveMode::reduceChance </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>bonusNumber</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Réduis les chances de certains bonus </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bonusNumber</td><td>le nombre du bonus choisi </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="survivemode_8cpp_source.html#l00346">346</a> du fichier <a class="el" href="survivemode_8cpp_source.html">survivemode.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac5f245f2a12e54f633b3ddc58b72ee0b" name="ac5f245f2a12e54f633b3ddc58b72ee0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5f245f2a12e54f633b3ddc58b72ee0b">&#9670;&#160;</a></span>shotBullet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SurviveMode::shotBullet </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Tir une balle. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="survivemode_8cpp_source.html#l00224">224</a> du fichier <a class="el" href="survivemode_8cpp_source.html">survivemode.cpp</a>.</p>
 
 </div>
 </div>
@@ -531,14 +941,14 @@ Membres hérités additionnels</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >fait spawn des <a class="el" href="class_enemy.html" title="Classe qui représente un Enemy. cette classe permet de gérer tous ce que consitue un ennemie.">Enemy</a> basic </p><dl class="params"><dt>Paramètres</dt><dd>
+<p>Fait apparaître des ennemies basiques </p><dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramname">enemyNumber</td><td>le nombre de <a class="el" href="class_enemy.html" title="Classe qui représente un Enemy. cette classe permet de gérer tous ce que consitue un ennemie.">Enemy</a> </td></tr>
+    <tr><td class="paramname">enemyNumber</td><td>le nombre de <a class="el" href="class_enemy.html" title="Classe qui représente un Enemy.">Enemy</a> à crée </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Définition à la ligne <a class="el" href="survivemode_8cpp_source.html#l00202">202</a> du fichier <a class="el" href="survivemode_8cpp_source.html">survivemode.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="survivemode_8cpp_source.html#l00238">238</a> du fichier <a class="el" href="survivemode_8cpp_source.html">survivemode.cpp</a>.</p>
 
 </div>
 </div>
@@ -565,9 +975,9 @@ Membres hérités additionnels</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>fait spawn un boss </p>
+<p>fait apparaître un boss </p>
 
-<p class="definition">Définition à la ligne <a class="el" href="survivemode_8cpp_source.html#l00211">211</a> du fichier <a class="el" href="survivemode_8cpp_source.html">survivemode.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="survivemode_8cpp_source.html#l00247">247</a> du fichier <a class="el" href="survivemode_8cpp_source.html">survivemode.cpp</a>.</p>
 
 </div>
 </div>
@@ -594,7 +1004,7 @@ Membres hérités additionnels</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >Cadence. </p><dl class="params"><dt>Paramètres</dt><dd>
+<p>Cadence du jeux. </p><dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
     <tr><td class="paramname">elapsedTimeInMilliseconds</td><td>Temps écoulé depuis le dernier appel. </td></tr>
   </table>
@@ -603,11 +1013,448 @@ Membres hérités additionnels</h2></td></tr>
 
 <p>Implémente <a class="el" href="class_game_core.html#a8b0dfc6a3b529cdb0035782923f093d2">GameCore</a>.</p>
 
-<p class="definition">Définition à la ligne <a class="el" href="survivemode_8cpp_source.html#l00128">128</a> du fichier <a class="el" href="survivemode_8cpp_source.html">survivemode.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="survivemode_8cpp_source.html#l00135">135</a> du fichier <a class="el" href="survivemode_8cpp_source.html">survivemode.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a8fc73b180ed081d695b8e492fc9ed213" name="a8fc73b180ed081d695b8e492fc9ed213"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fc73b180ed081d695b8e492fc9ed213">&#9670;&#160;</a></span>updateGameMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SurviveMode::updateGameMode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="survivemode_8cpp_source.html#l00462">462</a> du fichier <a class="el" href="survivemode_8cpp_source.html">survivemode.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ab04648a66449927ba027b2df7a59415c" name="ab04648a66449927ba027b2df7a59415c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab04648a66449927ba027b2df7a59415c">&#9670;&#160;</a></span>updateGameTime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SurviveMode::updateGameTime </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Mets à jour le temps de jeux. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="survivemode_8cpp_source.html#l00195">195</a> du fichier <a class="el" href="survivemode_8cpp_source.html">survivemode.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a3d08788914d52aaba5dce145e67862c5" name="a3d08788914d52aaba5dce145e67862c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d08788914d52aaba5dce145e67862c5">&#9670;&#160;</a></span>updateHUDPos</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SurviveMode::updateHUDPos </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Mets à jour l'emplacement de l'HUD quand la fenêtre change de taille </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">width</td><td>la largeur du nouvel écran </td></tr>
+    <tr><td class="paramname">height</td><td>la hauteur du nouvel écran </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="survivemode_8cpp_source.html#l00571">571</a> du fichier <a class="el" href="survivemode_8cpp_source.html">survivemode.cpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Documentation des données membres</h2>
+<a id="ade4e786fa73abd404b9122e2a574d71d" name="ade4e786fa73abd404b9122e2a574d71d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade4e786fa73abd404b9122e2a574d71d">&#9670;&#160;</a></span>m_autoFireOn</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SurviveMode::m_autoFireOn = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="survivemode_8h_source.html#l00079">79</a> du fichier <a class="el" href="survivemode_8h_source.html">survivemode.h</a>.</p>
+
+</div>
+</div>
+<a id="a7430f5e992a360365bec43cc7947ccff" name="a7430f5e992a360365bec43cc7947ccff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7430f5e992a360365bec43cc7947ccff">&#9670;&#160;</a></span>m_basicDamage</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SurviveMode::m_basicDamage = 1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="survivemode_8h_source.html#l00074">74</a> du fichier <a class="el" href="survivemode_8h_source.html">survivemode.h</a>.</p>
+
+</div>
+</div>
+<a id="afcbec9922ea6c47359030f7715d45107" name="afcbec9922ea6c47359030f7715d45107"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcbec9922ea6c47359030f7715d45107">&#9670;&#160;</a></span>m_basicHealthPoint</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SurviveMode::m_basicHealthPoint = 100</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="survivemode_8h_source.html#l00072">72</a> du fichier <a class="el" href="survivemode_8h_source.html">survivemode.h</a>.</p>
+
+</div>
+</div>
+<a id="a6f641d053eac975ca2057351a359cbb2" name="a6f641d053eac975ca2057351a359cbb2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f641d053eac975ca2057351a359cbb2">&#9670;&#160;</a></span>m_basicSpeed</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SurviveMode::m_basicSpeed = 120</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="survivemode_8h_source.html#l00073">73</a> du fichier <a class="el" href="survivemode_8h_source.html">survivemode.h</a>.</p>
+
+</div>
+</div>
+<a id="a59b947d082ffab539bb7761ab4c55636" name="a59b947d082ffab539bb7761ab4c55636"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59b947d082ffab539bb7761ab4c55636">&#9670;&#160;</a></span>m_bonus1</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SurviveMode::m_bonus1 = -1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="survivemode_8h_source.html#l00068">68</a> du fichier <a class="el" href="survivemode_8h_source.html">survivemode.h</a>.</p>
+
+</div>
+</div>
+<a id="af91456d9a16db06678a086590dc21b61" name="af91456d9a16db06678a086590dc21b61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af91456d9a16db06678a086590dc21b61">&#9670;&#160;</a></span>m_bonus2</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SurviveMode::m_bonus2 = -1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="survivemode_8h_source.html#l00069">69</a> du fichier <a class="el" href="survivemode_8h_source.html">survivemode.h</a>.</p>
+
+</div>
+</div>
+<a id="acbc4e94dd4e731c65032c71e8ffc2fe3" name="acbc4e94dd4e731c65032c71e8ffc2fe3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbc4e94dd4e731c65032c71e8ffc2fe3">&#9670;&#160;</a></span>m_bonus3</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SurviveMode::m_bonus3 = -1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="survivemode_8h_source.html#l00070">70</a> du fichier <a class="el" href="survivemode_8h_source.html">survivemode.h</a>.</p>
+
+</div>
+</div>
+<a id="a91cbb52a615aa26ef505726c635d4bde" name="a91cbb52a615aa26ef505726c635d4bde"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91cbb52a615aa26ef505726c635d4bde">&#9670;&#160;</a></span>m_bossCanSpawn</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double SurviveMode::m_bossCanSpawn = true</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="survivemode_8h_source.html#l00077">77</a> du fichier <a class="el" href="survivemode_8h_source.html">survivemode.h</a>.</p>
+
+</div>
+</div>
+<a id="ac2e6c8e755d3cf33efcfe1efd201b029" name="ac2e6c8e755d3cf33efcfe1efd201b029"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2e6c8e755d3cf33efcfe1efd201b029">&#9670;&#160;</a></span>m_nukeNeedLaunch</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SurviveMode::m_nukeNeedLaunch = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="survivemode_8h_source.html#l00081">81</a> du fichier <a class="el" href="survivemode_8h_source.html">survivemode.h</a>.</p>
+
+</div>
+</div>
+<a id="a4b7d7241d1610d9c7542e09f10cd8eb9" name="a4b7d7241d1610d9c7542e09f10cd8eb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b7d7241d1610d9c7542e09f10cd8eb9">&#9670;&#160;</a></span>m_numberOfBombs</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SurviveMode::m_numberOfBombs = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="survivemode_8h_source.html#l00071">71</a> du fichier <a class="el" href="survivemode_8h_source.html">survivemode.h</a>.</p>
+
+</div>
+</div>
+<a id="ab33f1e93b10d57a3ac91d9eb9e77e07c" name="ab33f1e93b10d57a3ac91d9eb9e77e07c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab33f1e93b10d57a3ac91d9eb9e77e07c">&#9670;&#160;</a></span>m_pBonusCard1</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_level_up_card.html">LevelUpCard</a>* SurviveMode::m_pBonusCard1 = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="survivemode_8h_source.html#l00063">63</a> du fichier <a class="el" href="survivemode_8h_source.html">survivemode.h</a>.</p>
+
+</div>
+</div>
+<a id="a49de569d1910e262b2b84eb61ece22a6" name="a49de569d1910e262b2b84eb61ece22a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49de569d1910e262b2b84eb61ece22a6">&#9670;&#160;</a></span>m_pBonusCard2</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_level_up_card.html">LevelUpCard</a>* SurviveMode::m_pBonusCard2 = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="survivemode_8h_source.html#l00064">64</a> du fichier <a class="el" href="survivemode_8h_source.html">survivemode.h</a>.</p>
+
+</div>
+</div>
+<a id="a07b499103a71614d8b5f10767c2ad6cf" name="a07b499103a71614d8b5f10767c2ad6cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07b499103a71614d8b5f10767c2ad6cf">&#9670;&#160;</a></span>m_pBonusCard3</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_level_up_card.html">LevelUpCard</a>* SurviveMode::m_pBonusCard3 = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="survivemode_8h_source.html#l00065">65</a> du fichier <a class="el" href="survivemode_8h_source.html">survivemode.h</a>.</p>
+
+</div>
+</div>
+<a id="a837fc22e34d513426898123e56fa02b0" name="a837fc22e34d513426898123e56fa02b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a837fc22e34d513426898123e56fa02b0">&#9670;&#160;</a></span>m_pHudTextBombe</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" href="http://qt-project.org/doc/qt-5/qgraphicstextitem.html">QGraphicsTextItem</a>* SurviveMode::m_pHudTextBombe = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="survivemode_8h_source.html#l00066">66</a> du fichier <a class="el" href="survivemode_8h_source.html">survivemode.h</a>.</p>
+
+</div>
+</div>
 <a id="a2c2064d089ffb7b1e1ec9e8ec819c3b9" name="a2c2064d089ffb7b1e1ec9e8ec819c3b9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2c2064d089ffb7b1e1ec9e8ec819c3b9">&#9670;&#160;</a></span>m_rateBetweenBasicSpawn</h2>
 
@@ -628,7 +1475,31 @@ Membres hérités additionnels</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="survivemode_8h_source.html#l00025">25</a> du fichier <a class="el" href="survivemode_8h_source.html">survivemode.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="survivemode_8h_source.html#l00055">55</a> du fichier <a class="el" href="survivemode_8h_source.html">survivemode.h</a>.</p>
+
+</div>
+</div>
+<a id="af69b4f8962dd644df44cdca6a1ac7776" name="af69b4f8962dd644df44cdca6a1ac7776"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af69b4f8962dd644df44cdca6a1ac7776">&#9670;&#160;</a></span>m_reactionTime</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double SurviveMode::m_reactionTime = 1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="survivemode_8h_source.html#l00076">76</a> du fichier <a class="el" href="survivemode_8h_source.html">survivemode.h</a>.</p>
 
 </div>
 </div>
@@ -652,18 +1523,66 @@ Membres hérités additionnels</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="survivemode_8h_source.html#l00023">23</a> du fichier <a class="el" href="survivemode_8h_source.html">survivemode.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="survivemode_8h_source.html#l00053">53</a> du fichier <a class="el" href="survivemode_8h_source.html">survivemode.h</a>.</p>
 
 </div>
 </div>
-<hr/>La documentation de cette classe a été générée à partir du fichier suivant :<ul>
+<a id="a656255058d9b83f845633ed9c530f145" name="a656255058d9b83f845633ed9c530f145"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a656255058d9b83f845633ed9c530f145">&#9670;&#160;</a></span>m_timeInBreak</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::chrono::system_clock::time_point SurviveMode::m_timeInBreak = std::chrono::system_clock::now()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="survivemode_8h_source.html#l00056">56</a> du fichier <a class="el" href="survivemode_8h_source.html">survivemode.h</a>.</p>
+
+</div>
+</div>
+<a id="aa69634c548611f66af40ccaa3e7a0415" name="aa69634c548611f66af40ccaa3e7a0415"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa69634c548611f66af40ccaa3e7a0415">&#9670;&#160;</a></span>m_waitingForChoice</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SurviveMode::m_waitingForChoice = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="survivemode_8h_source.html#l00080">80</a> du fichier <a class="el" href="survivemode_8h_source.html">survivemode.h</a>.</p>
+
+</div>
+</div>
+<hr/>La documentation de cette classe a été générée à partir des fichiers suivants :<ul>
 <li><a class="el" href="survivemode_8h_source.html">survivemode.h</a></li>
 <li><a class="el" href="survivemode_8cpp_source.html">survivemode.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Généré le Mardi 6 Décembre 2022 11:38:42 pour 2022-JCO-SpaceSurvivors par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Généré le Lundi 16 Janvier 2023 09:15:40 pour 2022-JCO-SpaceSurvivors par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

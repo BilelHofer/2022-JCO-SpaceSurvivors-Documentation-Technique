@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>2022-JCO-SpaceSurvivors:  Fichier source de poisonbomb.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">2022-JCO-SpaceSurvivors<span id="projectnumber">&#160;0.1</span>
+   </div>
+   <div id="projectbrief">2022-JCO-SpaceSurvivors</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">poisonbomb.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="poisonbomb_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#ifndef POISONBOMB_H</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#define POISONBOMB_H</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;<a class="code" href="sprite_8h.html">sprite.h</a>&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;ctime&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;QObject&gt;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;<a class="code" href="player_8h.html">player.h</a>&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="class_poison_bomb.html">   30</a></span><span class="keyword">class </span><a class="code hl_class" href="class_poison_bomb.html">PoisonBomb</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_sprite.html">Sprite</a></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>{</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    Q_OBJECT</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <a class="code hl_class" href="class_poison_bomb.html">PoisonBomb</a>(<a class="code hl_classRef" href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a> <a class="code hl_property" href="class_sprite.html#a310ef946cb04bfaf2074da2e91afd082">pos</a>, <span class="keywordtype">double</span> size, <span class="keywordtype">int</span> animationSpeed, <span class="keywordtype">int</span> zoneDamage, <span class="keywordtype">int</span> percentOfSlowness);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_poison_bomb.html#a61da69bacf757bbb14de677a37a79d75">tick</a>(<span class="keywordtype">long</span> <span class="keywordtype">long</span> elapsedTimeInMilliseconds);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_poison_bomb.html#add492ae4196ca8582ae4e0ba4b4ddbb3">startBomb</a>();</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="class_poison_bomb.html#acb59787e23232a27aa769ccd0999d181">   40</a></span>    <a class="code hl_class" href="class_sprite.html">Sprite</a>* <a class="code hl_variable" href="class_poison_bomb.html#acb59787e23232a27aa769ccd0999d181">m_endBomb</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="class_poison_bomb.html#a94db434c1c0fa5c23744d9ca2f615159">   41</a></span>    <a class="code hl_class" href="class_sprite.html">Sprite</a>* <a class="code hl_variable" href="class_poison_bomb.html#a94db434c1c0fa5c23744d9ca2f615159">m_startBomb</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="class_poison_bomb.html#a15adefbdbec4ac1e4ede6dd89ce99b11">   42</a></span>    <a class="code hl_class" href="class_sprite.html">Sprite</a>* <a class="code hl_variable" href="class_poison_bomb.html#a15adefbdbec4ac1e4ede6dd89ce99b11">m_bomb1</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="class_poison_bomb.html#a486fec6a6553670cba593edf1f7cf2c0">   43</a></span>    <a class="code hl_class" href="class_sprite.html">Sprite</a>* <a class="code hl_variable" href="class_poison_bomb.html#a486fec6a6553670cba593edf1f7cf2c0">m_bomb2</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="class_poison_bomb.html#a0a1fa3788ee4a3855b2b423adbef723b">   45</a></span>    <a class="code hl_class" href="class_player.html">Player</a>* <a class="code hl_variable" href="class_poison_bomb.html#a0a1fa3788ee4a3855b2b423adbef723b">m_pPlayer</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="class_poison_bomb.html#ab1d2ef6e531fad69ad07722fc94b0708">   48</a></span>    <a class="code hl_classRef" href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a> <a class="code hl_variable" href="class_poison_bomb.html#ab1d2ef6e531fad69ad07722fc94b0708">m_pos</a> = <a class="code hl_classRef" href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a>(0, 0);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="class_poison_bomb.html#a94b790fe8e3880d79e0db205074e03c7">   49</a></span>    <span class="keywordtype">double</span> <a class="code hl_variable" href="class_poison_bomb.html#a94b790fe8e3880d79e0db205074e03c7">m_timeOfTheBomb</a> = 10.0;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="class_poison_bomb.html#a62db6a7f13748c9a115d7db53eb769ec">   50</a></span>    <span class="keywordtype">double</span> <a class="code hl_variable" href="class_poison_bomb.html#a62db6a7f13748c9a115d7db53eb769ec">m_zoneDamageRate</a> = 1.0;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="class_poison_bomb.html#ae743cd46cb94b126b6bf7847e296033c">   51</a></span>    <span class="keywordtype">double</span> <a class="code hl_variable" href="class_poison_bomb.html#ae743cd46cb94b126b6bf7847e296033c">m_size</a> = 0;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="class_poison_bomb.html#a578c14e29f2399efe77af927939fe62b">   53</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="class_poison_bomb.html#a578c14e29f2399efe77af927939fe62b">m_bombAlive</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="class_poison_bomb.html#a6badeea6fbcf5069e7f475bbec415b06">   54</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="class_poison_bomb.html#a6badeea6fbcf5069e7f475bbec415b06">m_speedAlreadyDecrease</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="class_poison_bomb.html#a26199c4b3cec75b7b72d2d78d7c659fe">   56</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_poison_bomb.html#a26199c4b3cec75b7b72d2d78d7c659fe">m_zoneDamage</a> = 1;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="class_poison_bomb.html#ab8db8a8a3eb7b46dc359f7ffed78c336">   57</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_poison_bomb.html#ab8db8a8a3eb7b46dc359f7ffed78c336">m_percentOfSlowness</a> = 0;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="class_poison_bomb.html#a6190bb650b2b8f3cd15f00c2bf86d4df">   58</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_poison_bomb.html#a6190bb650b2b8f3cd15f00c2bf86d4df">m_speedInLess</a> = 0;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="class_poison_bomb.html#a318dd0a898c7fb89cdb1a47c64ec86b4">   59</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_poison_bomb.html#a318dd0a898c7fb89cdb1a47c64ec86b4">m_animationSpeed</a> = 0;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="class_poison_bomb.html#aea9743fd51b56d00568befb8963c2bdd">   61</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_poison_bomb.html#aea9743fd51b56d00568befb8963c2bdd">m_zoneDurationInMilliseconds</a> = 0;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="class_poison_bomb.html#a72ac22ecfbd5c625ae0bcad0dec27844">   62</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_poison_bomb.html#a72ac22ecfbd5c625ae0bcad0dec27844">m_playerInvulnerable</a> = 0;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_poison_bomb.html#a723664090f63435f1b98b397766e2a92">launchDeath</a>();</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="keyword">public</span> slots:</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_poison_bomb.html#a3a5d25dac2619ec6e634212e6a44dcc9">createsTheBomb</a>();</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>signals:</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="class_poison_bomb.html#a95b080864c576032b667ee1a6d9408b9">   70</a></span>    <span class="keywordtype">void</span> <a class="code hl_signal" href="class_poison_bomb.html#a95b080864c576032b667ee1a6d9408b9">notifyPlayerTakingDamage</a>(<span class="keywordtype">int</span> damageAmount);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>};</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="preprocessor">#endif </span><span class="comment">// POISONBOMB_H</span></div>
+<div class="ttc" id="aclass_player_html"><div class="ttname"><a href="class_player.html">Player</a></div><div class="ttdoc">Classe qui représente un vaisseau spatial.</div><div class="ttdef"><b>Definition:</b> <a href="player_8h_source.html#l00033">player.h:34</a></div></div>
+<div class="ttc" id="aclass_poison_bomb_html"><div class="ttname"><a href="class_poison_bomb.html">PoisonBomb</a></div><div class="ttdoc">Classe qui représente une bombe de poison.</div><div class="ttdef"><b>Definition:</b> <a href="poisonbomb_8h_source.html#l00030">poisonbomb.h:31</a></div></div>
+<div class="ttc" id="aclass_poison_bomb_html_a0a1fa3788ee4a3855b2b423adbef723b"><div class="ttname"><a href="class_poison_bomb.html#a0a1fa3788ee4a3855b2b423adbef723b">PoisonBomb::m_pPlayer</a></div><div class="ttdeci">Player * m_pPlayer</div><div class="ttdef"><b>Definition:</b> <a href="poisonbomb_8h_source.html#l00045">poisonbomb.h:45</a></div></div>
+<div class="ttc" id="aclass_poison_bomb_html_a15adefbdbec4ac1e4ede6dd89ce99b11"><div class="ttname"><a href="class_poison_bomb.html#a15adefbdbec4ac1e4ede6dd89ce99b11">PoisonBomb::m_bomb1</a></div><div class="ttdeci">Sprite * m_bomb1</div><div class="ttdef"><b>Definition:</b> <a href="poisonbomb_8h_source.html#l00042">poisonbomb.h:42</a></div></div>
+<div class="ttc" id="aclass_poison_bomb_html_a26199c4b3cec75b7b72d2d78d7c659fe"><div class="ttname"><a href="class_poison_bomb.html#a26199c4b3cec75b7b72d2d78d7c659fe">PoisonBomb::m_zoneDamage</a></div><div class="ttdeci">int m_zoneDamage</div><div class="ttdef"><b>Definition:</b> <a href="poisonbomb_8h_source.html#l00056">poisonbomb.h:56</a></div></div>
+<div class="ttc" id="aclass_poison_bomb_html_a318dd0a898c7fb89cdb1a47c64ec86b4"><div class="ttname"><a href="class_poison_bomb.html#a318dd0a898c7fb89cdb1a47c64ec86b4">PoisonBomb::m_animationSpeed</a></div><div class="ttdeci">int m_animationSpeed</div><div class="ttdef"><b>Definition:</b> <a href="poisonbomb_8h_source.html#l00059">poisonbomb.h:59</a></div></div>
+<div class="ttc" id="aclass_poison_bomb_html_a3a5d25dac2619ec6e634212e6a44dcc9"><div class="ttname"><a href="class_poison_bomb.html#a3a5d25dac2619ec6e634212e6a44dcc9">PoisonBomb::createsTheBomb</a></div><div class="ttdeci">void createsTheBomb()</div><div class="ttdoc">Crée la bombe.</div><div class="ttdef"><b>Definition:</b> <a href="poisonbomb_8cpp_source.html#l00104">poisonbomb.cpp:104</a></div></div>
+<div class="ttc" id="aclass_poison_bomb_html_a486fec6a6553670cba593edf1f7cf2c0"><div class="ttname"><a href="class_poison_bomb.html#a486fec6a6553670cba593edf1f7cf2c0">PoisonBomb::m_bomb2</a></div><div class="ttdeci">Sprite * m_bomb2</div><div class="ttdef"><b>Definition:</b> <a href="poisonbomb_8h_source.html#l00043">poisonbomb.h:43</a></div></div>
+<div class="ttc" id="aclass_poison_bomb_html_a578c14e29f2399efe77af927939fe62b"><div class="ttname"><a href="class_poison_bomb.html#a578c14e29f2399efe77af927939fe62b">PoisonBomb::m_bombAlive</a></div><div class="ttdeci">bool m_bombAlive</div><div class="ttdef"><b>Definition:</b> <a href="poisonbomb_8h_source.html#l00053">poisonbomb.h:53</a></div></div>
+<div class="ttc" id="aclass_poison_bomb_html_a6190bb650b2b8f3cd15f00c2bf86d4df"><div class="ttname"><a href="class_poison_bomb.html#a6190bb650b2b8f3cd15f00c2bf86d4df">PoisonBomb::m_speedInLess</a></div><div class="ttdeci">int m_speedInLess</div><div class="ttdef"><b>Definition:</b> <a href="poisonbomb_8h_source.html#l00058">poisonbomb.h:58</a></div></div>
+<div class="ttc" id="aclass_poison_bomb_html_a61da69bacf757bbb14de677a37a79d75"><div class="ttname"><a href="class_poison_bomb.html#a61da69bacf757bbb14de677a37a79d75">PoisonBomb::tick</a></div><div class="ttdeci">virtual void tick(long long elapsedTimeInMilliseconds)</div><div class="ttdef"><b>Definition:</b> <a href="poisonbomb_8cpp_source.html#l00050">poisonbomb.cpp:50</a></div></div>
+<div class="ttc" id="aclass_poison_bomb_html_a62db6a7f13748c9a115d7db53eb769ec"><div class="ttname"><a href="class_poison_bomb.html#a62db6a7f13748c9a115d7db53eb769ec">PoisonBomb::m_zoneDamageRate</a></div><div class="ttdeci">double m_zoneDamageRate</div><div class="ttdef"><b>Definition:</b> <a href="poisonbomb_8h_source.html#l00050">poisonbomb.h:50</a></div></div>
+<div class="ttc" id="aclass_poison_bomb_html_a6badeea6fbcf5069e7f475bbec415b06"><div class="ttname"><a href="class_poison_bomb.html#a6badeea6fbcf5069e7f475bbec415b06">PoisonBomb::m_speedAlreadyDecrease</a></div><div class="ttdeci">bool m_speedAlreadyDecrease</div><div class="ttdef"><b>Definition:</b> <a href="poisonbomb_8h_source.html#l00054">poisonbomb.h:54</a></div></div>
+<div class="ttc" id="aclass_poison_bomb_html_a723664090f63435f1b98b397766e2a92"><div class="ttname"><a href="class_poison_bomb.html#a723664090f63435f1b98b397766e2a92">PoisonBomb::launchDeath</a></div><div class="ttdeci">void launchDeath()</div><div class="ttdoc">Lance la mort de cette bombe.</div><div class="ttdef"><b>Definition:</b> <a href="poisonbomb_8cpp_source.html#l00144">poisonbomb.cpp:144</a></div></div>
+<div class="ttc" id="aclass_poison_bomb_html_a72ac22ecfbd5c625ae0bcad0dec27844"><div class="ttname"><a href="class_poison_bomb.html#a72ac22ecfbd5c625ae0bcad0dec27844">PoisonBomb::m_playerInvulnerable</a></div><div class="ttdeci">int m_playerInvulnerable</div><div class="ttdef"><b>Definition:</b> <a href="poisonbomb_8h_source.html#l00062">poisonbomb.h:62</a></div></div>
+<div class="ttc" id="aclass_poison_bomb_html_a94b790fe8e3880d79e0db205074e03c7"><div class="ttname"><a href="class_poison_bomb.html#a94b790fe8e3880d79e0db205074e03c7">PoisonBomb::m_timeOfTheBomb</a></div><div class="ttdeci">double m_timeOfTheBomb</div><div class="ttdef"><b>Definition:</b> <a href="poisonbomb_8h_source.html#l00049">poisonbomb.h:49</a></div></div>
+<div class="ttc" id="aclass_poison_bomb_html_a94db434c1c0fa5c23744d9ca2f615159"><div class="ttname"><a href="class_poison_bomb.html#a94db434c1c0fa5c23744d9ca2f615159">PoisonBomb::m_startBomb</a></div><div class="ttdeci">Sprite * m_startBomb</div><div class="ttdef"><b>Definition:</b> <a href="poisonbomb_8h_source.html#l00041">poisonbomb.h:41</a></div></div>
+<div class="ttc" id="aclass_poison_bomb_html_a95b080864c576032b667ee1a6d9408b9"><div class="ttname"><a href="class_poison_bomb.html#a95b080864c576032b667ee1a6d9408b9">PoisonBomb::notifyPlayerTakingDamage</a></div><div class="ttdeci">void notifyPlayerTakingDamage(int damageAmount)</div></div>
+<div class="ttc" id="aclass_poison_bomb_html_ab1d2ef6e531fad69ad07722fc94b0708"><div class="ttname"><a href="class_poison_bomb.html#ab1d2ef6e531fad69ad07722fc94b0708">PoisonBomb::m_pos</a></div><div class="ttdeci">QPointF m_pos</div><div class="ttdef"><b>Definition:</b> <a href="poisonbomb_8h_source.html#l00048">poisonbomb.h:48</a></div></div>
+<div class="ttc" id="aclass_poison_bomb_html_ab8db8a8a3eb7b46dc359f7ffed78c336"><div class="ttname"><a href="class_poison_bomb.html#ab8db8a8a3eb7b46dc359f7ffed78c336">PoisonBomb::m_percentOfSlowness</a></div><div class="ttdeci">int m_percentOfSlowness</div><div class="ttdef"><b>Definition:</b> <a href="poisonbomb_8h_source.html#l00057">poisonbomb.h:57</a></div></div>
+<div class="ttc" id="aclass_poison_bomb_html_acb59787e23232a27aa769ccd0999d181"><div class="ttname"><a href="class_poison_bomb.html#acb59787e23232a27aa769ccd0999d181">PoisonBomb::m_endBomb</a></div><div class="ttdeci">Sprite * m_endBomb</div><div class="ttdef"><b>Definition:</b> <a href="poisonbomb_8h_source.html#l00040">poisonbomb.h:40</a></div></div>
+<div class="ttc" id="aclass_poison_bomb_html_add492ae4196ca8582ae4e0ba4b4ddbb3"><div class="ttname"><a href="class_poison_bomb.html#add492ae4196ca8582ae4e0ba4b4ddbb3">PoisonBomb::startBomb</a></div><div class="ttdeci">void startBomb()</div><div class="ttdoc">Lance l'animation de commencement de la bombe.</div><div class="ttdef"><b>Definition:</b> <a href="poisonbomb_8cpp_source.html#l00181">poisonbomb.cpp:181</a></div></div>
+<div class="ttc" id="aclass_poison_bomb_html_ae743cd46cb94b126b6bf7847e296033c"><div class="ttname"><a href="class_poison_bomb.html#ae743cd46cb94b126b6bf7847e296033c">PoisonBomb::m_size</a></div><div class="ttdeci">double m_size</div><div class="ttdef"><b>Definition:</b> <a href="poisonbomb_8h_source.html#l00051">poisonbomb.h:51</a></div></div>
+<div class="ttc" id="aclass_poison_bomb_html_aea9743fd51b56d00568befb8963c2bdd"><div class="ttname"><a href="class_poison_bomb.html#aea9743fd51b56d00568befb8963c2bdd">PoisonBomb::m_zoneDurationInMilliseconds</a></div><div class="ttdeci">int m_zoneDurationInMilliseconds</div><div class="ttdef"><b>Definition:</b> <a href="poisonbomb_8h_source.html#l00061">poisonbomb.h:61</a></div></div>
+<div class="ttc" id="aclass_sprite_html"><div class="ttname"><a href="class_sprite.html">Sprite</a></div><div class="ttdoc">Classe qui représente un élément d'animation graphique 2D.</div><div class="ttdef"><b>Definition:</b> <a href="sprite_8h_source.html#l00114">sprite.h:115</a></div></div>
+<div class="ttc" id="aclass_sprite_html_a310ef946cb04bfaf2074da2e91afd082"><div class="ttname"><a href="class_sprite.html#a310ef946cb04bfaf2074da2e91afd082">Sprite::pos</a></div><div class="ttdeci">QPointF pos</div><div class="ttdef"><b>Definition:</b> <a href="sprite_8h_source.html#l00001">sprite.h:120</a></div></div>
+<div class="ttc" id="aplayer_8h_html"><div class="ttname"><a href="player_8h.html">player.h</a></div><div class="ttdoc">Déclaration de la classe Player.</div></div>
+<div class="ttc" id="aqpointf_html"><div class="ttname"><a href="http://qt-project.org/doc/qt-5/qpointf.html">QPointF</a></div></div>
+<div class="ttc" id="asprite_8h_html"><div class="ttname"><a href="sprite_8h.html">sprite.h</a></div><div class="ttdoc">Déclaration de la classe Sprite.</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Lundi 16 Janvier 2023 09:15:38 pour 2022-JCO-SpaceSurvivors par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+</small></address>
+</body>
+</html>

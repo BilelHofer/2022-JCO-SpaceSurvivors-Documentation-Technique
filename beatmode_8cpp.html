@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
-<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>2022-JCO-SpaceSurvivors: Référence du fichier beatmode.cpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
@@ -30,7 +30,7 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Généré par Doxygen 1.9.5 -->
+<!-- Généré par Doxygen 1.9.6 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 var searchBox = new SearchBox("searchBox", "search/",'.html');
@@ -82,11 +82,12 @@ $(function() {
 <code>#include &lt;QDebug&gt;</code><br />
 <code>#include &lt;QGraphicsTextItem&gt;</code><br />
 <code>#include &lt;QSettings&gt;</code><br />
+<code>#include &lt;QDir&gt;</code><br />
 <code>#include &quot;<a class="el" href="gamescene_8h_source.html">gamescene.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="gamecanvas_8h_source.html">gamecanvas.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="resources_8h_source.html">resources.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="utilities_8h_source.html">utilities.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="player_8h_source.html">player.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="toolbox_8h_source.html">toolbox.h</a>&quot;</code><br />
 </div>
 <p><a href="beatmode_8cpp_source.html">Aller au code source de ce fichier.</a></p>
 <table class="memberdecls">
@@ -96,6 +97,10 @@ Variables</h2></td></tr>
 <tr class="separator:aa4ab1c2c315cd91a2dfe1f5a78c45445"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5710f1fc62dc9f1062ed7376efe359bc"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="beatmode_8cpp.html#a5710f1fc62dc9f1062ed7376efe359bc">SCENE_HEIGHT</a> = 2000</td></tr>
 <tr class="separator:a5710f1fc62dc9f1062ed7376efe359bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae704ab792371a6923583d562dc404821"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="beatmode_8cpp.html#ae704ab792371a6923583d562dc404821">ZONE_WIDTH</a> = 1900</td></tr>
+<tr class="separator:ae704ab792371a6923583d562dc404821"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af30f5429653883cc25b5e2d7d61e0d97"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="beatmode_8cpp.html#af30f5429653883cc25b5e2d7d61e0d97">ZONE_HEIGHT</a> = 1900</td></tr>
+<tr class="separator:af30f5429653883cc25b5e2d7d61e0d97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Documentation des variables</h2>
 <a id="a5710f1fc62dc9f1062ed7376efe359bc" name="a5710f1fc62dc9f1062ed7376efe359bc"></a>
@@ -110,7 +115,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="beatmode_8cpp_source.html#l00023">23</a> du fichier <a class="el" href="beatmode_8cpp_source.html">beatmode.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="beatmode_8cpp_source.html#l00024">24</a> du fichier <a class="el" href="beatmode_8cpp_source.html">beatmode.cpp</a>.</p>
 
 </div>
 </div>
@@ -125,18 +130,50 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Fichier qui contient toute la logique de ce mode de jeu.</p>
+<p>Fichier qui contient toute la logique de ce mode de jeu.</p>
 <dl class="section author"><dt>Auteur</dt><dd>Hofer </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>Octobre 2022 </dd></dl>
 
-<p class="definition">Définition à la ligne <a class="el" href="beatmode_8cpp_source.html#l00022">22</a> du fichier <a class="el" href="beatmode_8cpp_source.html">beatmode.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="beatmode_8cpp_source.html#l00023">23</a> du fichier <a class="el" href="beatmode_8cpp_source.html">beatmode.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af30f5429653883cc25b5e2d7d61e0d97" name="af30f5429653883cc25b5e2d7d61e0d97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af30f5429653883cc25b5e2d7d61e0d97">&#9670;&#160;</a></span>ZONE_HEIGHT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int ZONE_HEIGHT = 1900</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="beatmode_8cpp_source.html#l00026">26</a> du fichier <a class="el" href="beatmode_8cpp_source.html">beatmode.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ae704ab792371a6923583d562dc404821" name="ae704ab792371a6923583d562dc404821"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae704ab792371a6923583d562dc404821">&#9670;&#160;</a></span>ZONE_WIDTH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int ZONE_WIDTH = 1900</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="beatmode_8cpp_source.html#l00025">25</a> du fichier <a class="el" href="beatmode_8cpp_source.html">beatmode.cpp</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Généré le Mardi 6 Décembre 2022 11:38:40 pour 2022-JCO-SpaceSurvivors par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Généré le Lundi 16 Janvier 2023 09:15:38 pour 2022-JCO-SpaceSurvivors par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>
