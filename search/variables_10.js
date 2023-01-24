@@ -1,7 +1,7 @@
 var searchData=
 [
   ['s_5fspritecount_0',['s_spriteCount',['../class_sprite.html#ab707f08eeff19b012494272af3f4cfb9',1,'Sprite']]],
-  ['scene_5fheight_1',['SCENE_HEIGHT',['../survivemode_8cpp.html#a5710f1fc62dc9f1062ed7376efe359bc',1,'SCENE_HEIGHT():&#160;survivemode.cpp'],['../beatmode_8cpp.html#a5710f1fc62dc9f1062ed7376efe359bc',1,'SCENE_HEIGHT():&#160;beatmode.cpp']]],
+  ['scene_5fheight_1',['SCENE_HEIGHT',['../beatmode_8cpp.html#a5710f1fc62dc9f1062ed7376efe359bc',1,'SCENE_HEIGHT():&#160;beatmode.cpp'],['../survivemode_8cpp.html#a5710f1fc62dc9f1062ed7376efe359bc',1,'SCENE_HEIGHT():&#160;survivemode.cpp']]],
   ['scene_5fwidth_2',['SCENE_WIDTH',['../survivemode_8cpp.html#aa4ab1c2c315cd91a2dfe1f5a78c45445',1,'SCENE_WIDTH():&#160;survivemode.cpp'],['../menucore_8cpp.html#aa4ab1c2c315cd91a2dfe1f5a78c45445',1,'SCENE_WIDTH():&#160;menucore.cpp'],['../beatmode_8cpp.html#aa4ab1c2c315cd91a2dfe1f5a78c45445',1,'SCENE_WIDTH():&#160;beatmode.cpp']]],
   ['scenelayers_3',['SceneLayers',['http://qt-project.org/doc/qt-5/qgraphicsscene.html#SceneLayer-enum',1,'QGraphicsScene']]],
   ['screenorientations_4',['ScreenOrientations',['http://qt-project.org/doc/qt-5/qt.html#ScreenOrientation-enum',1,'Qt']]],
@@ -10,16 +10,17 @@ var searchData=
   ['sectionflags_7',['SectionFlags',['http://qt-project.org/doc/qt-5/qstring.html#SectionFlag-enum',1,'QString']]],
   ['sections_8',['Sections',['http://qt-project.org/doc/qt-5/qdatetimeedit.html#Section-enum',1,'QDateTimeEdit']]],
   ['selectionflags_9',['SelectionFlags',['http://qt-project.org/doc/qt-5/qitemselectionmodel.html#SelectionFlag-enum',1,'QItemSelectionModel']]],
-  ['settingsmap_10',['SettingsMap',['http://qt-project.org/doc/qt-5/qsettings.html#SettingsMap-typedef',1,'QSettings']]],
-  ['severities_11',['Severities',['http://qt-project.org/doc/qt-5/qopengldebugmessage.html#Severity-enum',1,'QOpenGLDebugMessage']]],
-  ['shadertype_12',['ShaderType',['http://qt-project.org/doc/qt-5/qopenglshader.html#ShaderTypeBit-enum',1,'QOpenGLShader']]],
-  ['shotpressed_13',['ShotPressed',['../class_beat_mode.html#a301dc3e04366b0a5b2c0f48adc47f285',1,'BeatMode']]],
-  ['size_5ftype_14',['size_type',['http://qt-project.org/doc/qt-5/qjsonarray.html#size_type-typedef',1,'QJsonArray::size_type()'],['http://qt-project.org/doc/qt-5/qstring.html#size_type-typedef',1,'QString::size_type()'],['http://qt-project.org/doc/qt-5/qvarlengtharray.html#size_type-typedef',1,'QVarLengthArray::size_type()'],['http://qt-project.org/doc/qt-5/qvector.html#size_type-typedef',1,'QVector::size_type()'],['http://qt-project.org/doc/qt-5/qmap.html#size_type-typedef',1,'QMap::size_type()'],['http://qt-project.org/doc/qt-5/qlist.html#size_type-typedef',1,'QList::size_type()'],['http://qt-project.org/doc/qt-5/qlinkedlist.html#size_type-typedef',1,'QLinkedList::size_type()'],['http://qt-project.org/doc/qt-5/qhash.html#size_type-typedef',1,'QHash::size_type()'],['http://qt-project.org/doc/qt-5/qjsonobject.html#size_type-typedef',1,'QJsonObject::size_type()'],['http://qt-project.org/doc/qt-5/qset.html#size_type-typedef',1,'QSet::size_type()']]],
-  ['sortflags_15',['SortFlags',['http://qt-project.org/doc/qt-5/qdir.html#SortFlag-enum',1,'QDir']]],
-  ['sources_16',['Sources',['http://qt-project.org/doc/qt-5/qopengldebugmessage.html#Source-enum',1,'QOpenGLDebugMessage']]],
-  ['standardbuttons_17',['StandardButtons',['http://qt-project.org/doc/qt-5/qmessagebox.html#StandardButton-enum',1,'QMessageBox::StandardButtons()'],['http://qt-project.org/doc/qt-5/qdialogbuttonbox.html#StandardButton-enum',1,'QDialogButtonBox::StandardButtons()']]],
-  ['state_18',['State',['http://qt-project.org/doc/qt-5/qstyle.html#StateFlag-enum',1,'QStyle']]],
-  ['stepenabled_19',['StepEnabled',['http://qt-project.org/doc/qt-5/qabstractspinbox.html#StepEnabledFlag-enum',1,'QAbstractSpinBox']]],
-  ['subcontrols_20',['SubControls',['http://qt-project.org/doc/qt-5/qstyle.html#SubControl-enum',1,'QStyle']]],
-  ['subwindowoptions_21',['SubWindowOptions',['http://qt-project.org/doc/qt-5/qmdisubwindow.html#SubWindowOption-enum',1,'QMdiSubWindow']]]
+  ['settings_5fmarge_10',['SETTINGS_MARGE',['../class_menu_core.html#a9ee4f7741cd2ebe1cb3d644562992476',1,'MenuCore']]],
+  ['settingsmap_11',['SettingsMap',['http://qt-project.org/doc/qt-5/qsettings.html#SettingsMap-typedef',1,'QSettings']]],
+  ['severities_12',['Severities',['http://qt-project.org/doc/qt-5/qopengldebugmessage.html#Severity-enum',1,'QOpenGLDebugMessage']]],
+  ['shadertype_13',['ShaderType',['http://qt-project.org/doc/qt-5/qopenglshader.html#ShaderTypeBit-enum',1,'QOpenGLShader']]],
+  ['shotpressed_14',['ShotPressed',['../class_beat_mode.html#a301dc3e04366b0a5b2c0f48adc47f285',1,'BeatMode']]],
+  ['size_5ftype_15',['size_type',['http://qt-project.org/doc/qt-5/qjsonarray.html#size_type-typedef',1,'QJsonArray::size_type()'],['http://qt-project.org/doc/qt-5/qstring.html#size_type-typedef',1,'QString::size_type()'],['http://qt-project.org/doc/qt-5/qvarlengtharray.html#size_type-typedef',1,'QVarLengthArray::size_type()'],['http://qt-project.org/doc/qt-5/qvector.html#size_type-typedef',1,'QVector::size_type()'],['http://qt-project.org/doc/qt-5/qmap.html#size_type-typedef',1,'QMap::size_type()'],['http://qt-project.org/doc/qt-5/qlist.html#size_type-typedef',1,'QList::size_type()'],['http://qt-project.org/doc/qt-5/qlinkedlist.html#size_type-typedef',1,'QLinkedList::size_type()'],['http://qt-project.org/doc/qt-5/qhash.html#size_type-typedef',1,'QHash::size_type()'],['http://qt-project.org/doc/qt-5/qjsonobject.html#size_type-typedef',1,'QJsonObject::size_type()'],['http://qt-project.org/doc/qt-5/qset.html#size_type-typedef',1,'QSet::size_type()']]],
+  ['sortflags_16',['SortFlags',['http://qt-project.org/doc/qt-5/qdir.html#SortFlag-enum',1,'QDir']]],
+  ['sources_17',['Sources',['http://qt-project.org/doc/qt-5/qopengldebugmessage.html#Source-enum',1,'QOpenGLDebugMessage']]],
+  ['standardbuttons_18',['StandardButtons',['http://qt-project.org/doc/qt-5/qmessagebox.html#StandardButton-enum',1,'QMessageBox::StandardButtons()'],['http://qt-project.org/doc/qt-5/qdialogbuttonbox.html#StandardButton-enum',1,'QDialogButtonBox::StandardButtons()']]],
+  ['state_19',['State',['http://qt-project.org/doc/qt-5/qstyle.html#StateFlag-enum',1,'QStyle']]],
+  ['stepenabled_20',['StepEnabled',['http://qt-project.org/doc/qt-5/qabstractspinbox.html#StepEnabledFlag-enum',1,'QAbstractSpinBox']]],
+  ['subcontrols_21',['SubControls',['http://qt-project.org/doc/qt-5/qstyle.html#SubControl-enum',1,'QStyle']]],
+  ['subwindowoptions_22',['SubWindowOptions',['http://qt-project.org/doc/qt-5/qmdisubwindow.html#SubWindowOption-enum',1,'QMdiSubWindow']]]
 ];

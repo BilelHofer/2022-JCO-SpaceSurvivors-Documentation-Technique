@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['game_0',['GAME',['../class_game_canvas.html#a7798e81e43727862359ef27bf0f8c2aaae354a7e8f589aaa2724ae44a5f68720e',1,'GameCanvas']]]
+  ['end_5fof_5fcycle_5fstop_0',['END_OF_CYCLE_STOP',['../class_sprite.html#a4d99346e8d2a496efce98c9e07f189c4ae0bae374317193cb4b51fc94e776f055',1,'Sprite']]],
+  ['ended_1',['ENDED',['../class_game_scene.html#a3634e16b17df15071f6ca9106ceb4027adaa43c90441e817e09a5f273f6b8539d',1,'GameScene']]]
 ];

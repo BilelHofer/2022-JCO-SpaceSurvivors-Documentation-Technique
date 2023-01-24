@@ -260,9 +260,9 @@ Fonctions membres privées</h2></td></tr>
 <tr class="memitem:ab04648a66449927ba027b2df7a59415c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_survive_mode.html#ab04648a66449927ba027b2df7a59415c">updateGameTime</a> ()</td></tr>
 <tr class="memdesc:ab04648a66449927ba027b2df7a59415c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mets à jour le temps de jeux.  <br /></td></tr>
 <tr class="separator:ab04648a66449927ba027b2df7a59415c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a31f383718c4dc82039843d52340fa7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_survive_mode.html#a1a31f383718c4dc82039843d52340fa7">manageEnemySpawn</a> ()</td></tr>
-<tr class="memdesc:a1a31f383718c4dc82039843d52340fa7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contrôle l'apparition des ennemis.  <br /></td></tr>
-<tr class="separator:a1a31f383718c4dc82039843d52340fa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad00298f7fe42c1148d9fa16bf980aa9e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_survive_mode.html#ad00298f7fe42c1148d9fa16bf980aa9e">manageMobSpawn</a> ()</td></tr>
+<tr class="memdesc:ad00298f7fe42c1148d9fa16bf980aa9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contrôle l'apparition des ennemis.  <br /></td></tr>
+<tr class="separator:ad00298f7fe42c1148d9fa16bf980aa9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a6a84749fb9611dcb35e64cb61861f7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_survive_mode.html#a5a6a84749fb9611dcb35e64cb61861f7">choiceRandomNumber</a> ()</td></tr>
 <tr class="memdesc:a5a6a84749fb9611dcb35e64cb61861f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retourne un nombre choisi aléatoirement.  <br /></td></tr>
 <tr class="separator:a5a6a84749fb9611dcb35e64cb61861f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -317,6 +317,12 @@ Attributs privés</h2></td></tr>
 <tr class="separator:aa69634c548611f66af40ccaa3e7a0415"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2e6c8e755d3cf33efcfe1efd201b029"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_survive_mode.html#ac2e6c8e755d3cf33efcfe1efd201b029">m_nukeNeedLaunch</a> = false</td></tr>
 <tr class="separator:ac2e6c8e755d3cf33efcfe1efd201b029"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f120667168a1e5cc2e49c03e98d5745"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_survive_mode.html#a9f120667168a1e5cc2e49c03e98d5745">m_needFire</a> = false</td></tr>
+<tr class="separator:a9f120667168a1e5cc2e49c03e98d5745"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f9bc551962529ddfe80f1802482384f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_survive_mode.html#a6f9bc551962529ddfe80f1802482384f">m_needChest</a> = false</td></tr>
+<tr class="separator:a6f9bc551962529ddfe80f1802482384f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03f281831fea14a705aab36b07c8504d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_survive_mode.html#a03f281831fea14a705aab36b07c8504d">m_timeInMillisecondsChestSpawn</a> = 60000</td></tr>
+<tr class="separator:a03f281831fea14a705aab36b07c8504d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Membres hérités additionnels</h2></td></tr>
@@ -343,6 +349,18 @@ Membres hérités additionnels</h2></td></tr>
 <tr class="separator:disconnect-3 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:disconnect-6 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://qt-project.org/doc/qt-5/qobject.html#disconnect-6">disconnect</a> (const <a class="elRef" href="http://qt-project.org/doc/qt-5/qobject.html">QObject</a> *<a class="elRef" href="http://qt-project.org/doc/qt-5/qobject.html#sender">sender</a>, PointerToMemberFunction signal, const <a class="elRef" href="http://qt-project.org/doc/qt-5/qobject.html">QObject</a> *receiver, PointerToMemberFunction method)</td></tr>
 <tr class="separator:disconnect-6 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_types_class_game_core"><td colspan="2" onclick="javascript:toggleInherit('pro_types_class_game_core')"><img src="closed.png" alt="-"/>&#160;Types protégés hérités de <a class="el" href="class_game_core.html">GameCore</a></td></tr>
+<tr class="memitem:ae86769a4c02624a847054e345323f401 inherit pro_types_class_game_core"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#ae86769a4c02624a847054e345323f401">hotkeys</a> { <br />
+&#160;&#160;<a class="el" href="class_game_core.html#ae86769a4c02624a847054e345323f401a42b44413da46fa76dfc690534180f74c">UP</a>
+, <a class="el" href="class_game_core.html#ae86769a4c02624a847054e345323f401af036168a5628fef6dd93bdc1d00e0e8b">DOWN</a>
+, <a class="el" href="class_game_core.html#ae86769a4c02624a847054e345323f401a0b2d30d9b9efd3a3665197f99631c006">LEFT</a>
+, <a class="el" href="class_game_core.html#ae86769a4c02624a847054e345323f401a06ebbc0145bbcef0d1603be56ceb8d37">RIGHT</a>
+, <br />
+&#160;&#160;<a class="el" href="class_game_core.html#ae86769a4c02624a847054e345323f401ae615d3b48c7a6d087022b6afde9d30ff">ACTIVE</a>
+, <a class="el" href="class_game_core.html#ae86769a4c02624a847054e345323f401ab2858a1a9762a0bc0859da09028f2976">BREAK</a>
+<br />
+ }</td></tr>
+<tr class="separator:ae86769a4c02624a847054e345323f401 inherit pro_types_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_game_core"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_game_core')"><img src="closed.png" alt="-"/>&#160;Fonctions membres protégées hérités de <a class="el" href="class_game_core.html">GameCore</a></td></tr>
 <tr class="memitem:a3d2311dba0efc5c2c4651e7477b650e4 inherit pro_methods_class_game_core"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a3d2311dba0efc5c2c4651e7477b650e4">movePlayer</a> (long long elapsedTimeInMilliseconds)</td></tr>
 <tr class="separator:a3d2311dba0efc5c2c4651e7477b650e4 inherit pro_methods_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -351,6 +369,8 @@ Membres hérités additionnels</h2></td></tr>
 <tr class="memitem:ac926a9a69e2aa23b4350726fe8baf5d1 inherit pro_methods_class_game_core"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#ac926a9a69e2aa23b4350726fe8baf5d1">clearStat</a> ()</td></tr>
 <tr class="memdesc:ac926a9a69e2aa23b4350726fe8baf5d1 inherit pro_methods_class_game_core"><td class="mdescLeft">&#160;</td><td class="mdescRight">Efface les statistiques affichées.  <br /></td></tr>
 <tr class="separator:ac926a9a69e2aa23b4350726fe8baf5d1 inherit pro_methods_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59b3cfafa73ff08da825032305b0a359 inherit pro_methods_class_game_core"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a59b3cfafa73ff08da825032305b0a359">applyShipBonus</a> ()</td></tr>
+<tr class="separator:a59b3cfafa73ff08da825032305b0a359 inherit pro_methods_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_qobject"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_qobject')"><img src="closed.png" alt="-"/>&#160;Fonctions membres protégées hérités de <a class="el"  href="http://qt-project.org/doc/qt-5/qobject.html">QObject</a></td></tr>
 <tr class="memitem:sender inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="http://qt-project.org/doc/qt-5/qobject.html">QObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://qt-project.org/doc/qt-5/qobject.html#sender">sender</a> () const</td></tr>
 <tr class="separator:sender inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -371,6 +391,12 @@ Membres hérités additionnels</h2></td></tr>
 <tr class="memitem:disconnectNotify inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://qt-project.org/doc/qt-5/qobject.html#disconnectNotify">disconnectNotify</a> (const <a class="elRef" href="http://qt-project.org/doc/qt-5/qmetamethod.html">QMetaMethod</a> &amp;signal)</td></tr>
 <tr class="separator:disconnectNotify inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_class_game_core"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_game_core')"><img src="closed.png" alt="-"/>&#160;Attributs protégés hérités de <a class="el" href="class_game_core.html">GameCore</a></td></tr>
+<tr class="memitem:a1177dd7f60276b5738087b5e889aa12a inherit pro_attribs_class_game_core"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="class_game_core.html#ae86769a4c02624a847054e345323f401">hotkeys</a>, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a1177dd7f60276b5738087b5e889aa12a">key_map</a></td></tr>
+<tr class="separator:a1177dd7f60276b5738087b5e889aa12a inherit pro_attribs_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ca2f4806fc0285e58a6734e0514852e inherit pro_attribs_class_game_core"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_config.html">Config</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a9ca2f4806fc0285e58a6734e0514852e">m_pConfig</a> = nullptr</td></tr>
+<tr class="separator:a9ca2f4806fc0285e58a6734e0514852e inherit pro_attribs_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4c3c909c7f023d88fab2c5db49aa555 inherit pro_attribs_class_game_core"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#ad4c3c909c7f023d88fab2c5db49aa555">m_breakKey</a></td></tr>
+<tr class="separator:ad4c3c909c7f023d88fab2c5db49aa555 inherit pro_attribs_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc0650e6dc050a16d6b38c19080db6da inherit pro_attribs_class_game_core"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#acc0650e6dc050a16d6b38c19080db6da">m_timeSecondeAlive</a> = 0</td></tr>
 <tr class="separator:acc0650e6dc050a16d6b38c19080db6da inherit pro_attribs_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5af86ef207c5968d456d99ba8757bf0 inherit pro_attribs_class_game_core"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#ad5af86ef207c5968d456d99ba8757bf0">m_timeMinuteAlive</a> = 0</td></tr>
@@ -415,8 +441,8 @@ Membres hérités additionnels</h2></td></tr>
 <tr class="separator:a700c205e1c62bafa2f6be885e88b7aae inherit pro_attribs_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9442a701469a5a55689c131fb6a7cde0 inherit pro_attribs_class_game_core"><td class="memItemLeft" align="right" valign="top">std::chrono::system_clock::time_point&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a9442a701469a5a55689c131fb6a7cde0">m_rateSeconde</a> = std::chrono::system_clock::now()</td></tr>
 <tr class="separator:a9442a701469a5a55689c131fb6a7cde0 inherit pro_attribs_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0972e17181cb2d36c741709a0b283dee inherit pro_attribs_class_game_core"><td class="memItemLeft" align="right" valign="top">std::chrono::system_clock::time_point&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a0972e17181cb2d36c741709a0b283dee">m_rateBetweenShot</a> = std::chrono::system_clock::now()</td></tr>
-<tr class="separator:a0972e17181cb2d36c741709a0b283dee inherit pro_attribs_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4320916f4ebf10efe36145414b04ec6f inherit pro_attribs_class_game_core"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_core.html#a4320916f4ebf10efe36145414b04ec6f">m_delayBetweenShot</a> = 0</td></tr>
+<tr class="separator:a4320916f4ebf10efe36145414b04ec6f inherit pro_attribs_class_game_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header properties_qobject"><td colspan="2" onclick="javascript:toggleInherit('properties_qobject')"><img src="closed.png" alt="-"/>&#160;Propriétés hérités de <a class="el"  href="http://qt-project.org/doc/qt-5/qobject.html">QObject</a></td></tr>
 <tr class="memitem:objectName-prop inherit properties_qobject"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="http://qt-project.org/doc/qt-5/qobject.html#objectName-prop">objectName</a></td></tr>
 <tr class="separator:objectName-prop inherit properties_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -437,7 +463,7 @@ Membres hérités additionnels</h2></td></tr>
 <p>reduceChance prend en paramètre le bonus choisi et réduis c'est chance d'apparition en fonction de sa rareté</p>
 <p>applyBonus prend en paramètre le bonus sélectionner par l'utilisateur et l'applique. </p>
 
-<p class="definition">Définition à la ligne <a class="el" href="survivemode_8h_source.html#l00043">43</a> du fichier <a class="el" href="survivemode_8h_source.html">survivemode.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="survivemode_8h_source.html#l00044">44</a> du fichier <a class="el" href="survivemode_8h_source.html">survivemode.h</a>.</p>
 </div><h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
 <a id="a81025fa0f833b28d01e9d821a95403ca" name="a81025fa0f833b28d01e9d821a95403ca"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a81025fa0f833b28d01e9d821a95403ca">&#9670;&#160;</a></span>SurviveMode()</h2>
@@ -480,7 +506,7 @@ Membres hérités additionnels</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Définition à la ligne <a class="el" href="survivemode_8cpp_source.html#l00026">26</a> du fichier <a class="el" href="survivemode_8cpp_source.html">survivemode.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="survivemode_8cpp_source.html#l00027">27</a> du fichier <a class="el" href="survivemode_8cpp_source.html">survivemode.cpp</a>.</p>
 
 </div>
 </div>
@@ -515,7 +541,7 @@ Membres hérités additionnels</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Définition à la ligne <a class="el" href="survivemode_8cpp_source.html#l00399">399</a> du fichier <a class="el" href="survivemode_8cpp_source.html">survivemode.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="survivemode_8cpp_source.html#l00429">429</a> du fichier <a class="el" href="survivemode_8cpp_source.html">survivemode.cpp</a>.</p>
 
 </div>
 </div>
@@ -544,7 +570,7 @@ Membres hérités additionnels</h2></td></tr>
 
 <p>Choisi des bonus aleatoirement. </p>
 
-<p class="definition">Définition à la ligne <a class="el" href="survivemode_8cpp_source.html#l00382">382</a> du fichier <a class="el" href="survivemode_8cpp_source.html">survivemode.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="survivemode_8cpp_source.html#l00412">412</a> du fichier <a class="el" href="survivemode_8cpp_source.html">survivemode.cpp</a>.</p>
 
 </div>
 </div>
@@ -573,7 +599,7 @@ Membres hérités additionnels</h2></td></tr>
 
 <p>Retourne un nombre choisi aléatoirement. </p>
 
-<p class="definition">Définition à la ligne <a class="el" href="survivemode_8cpp_source.html#l00317">317</a> du fichier <a class="el" href="survivemode_8cpp_source.html">survivemode.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="survivemode_8cpp_source.html#l00347">347</a> du fichier <a class="el" href="survivemode_8cpp_source.html">survivemode.cpp</a>.</p>
 
 </div>
 </div>
@@ -627,7 +653,7 @@ Membres hérités additionnels</h2></td></tr>
 
 <p>Implémente <a class="el" href="class_game_core.html#aab168ed4a9773ed4f2352ccf03db9353">GameCore</a>.</p>
 
-<p class="definition">Définition à la ligne <a class="el" href="survivemode_8cpp_source.html#l00285">285</a> du fichier <a class="el" href="survivemode_8cpp_source.html">survivemode.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="survivemode_8cpp_source.html#l00315">315</a> du fichier <a class="el" href="survivemode_8cpp_source.html">survivemode.cpp</a>.</p>
 
 </div>
 </div>
@@ -663,7 +689,7 @@ Membres hérités additionnels</h2></td></tr>
 
 <p>Réimplémentée à partir de <a class="el" href="class_game_core.html#af7d1e03d52e81d846e5733d970120655">GameCore</a>.</p>
 
-<p class="definition">Définition à la ligne <a class="el" href="survivemode_8cpp_source.html#l00502">502</a> du fichier <a class="el" href="survivemode_8cpp_source.html">survivemode.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="survivemode_8cpp_source.html#l00532">532</a> du fichier <a class="el" href="survivemode_8cpp_source.html">survivemode.cpp</a>.</p>
 
 </div>
 </div>
@@ -697,7 +723,7 @@ Membres hérités additionnels</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Définition à la ligne <a class="el" href="survivemode_8cpp_source.html#l00258">258</a> du fichier <a class="el" href="survivemode_8cpp_source.html">survivemode.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="survivemode_8cpp_source.html#l00288">288</a> du fichier <a class="el" href="survivemode_8cpp_source.html">survivemode.cpp</a>.</p>
 
 </div>
 </div>
@@ -726,12 +752,12 @@ Membres hérités additionnels</h2></td></tr>
 
 <p>Lance une bombe nucléaire. </p>
 
-<p class="definition">Définition à la ligne <a class="el" href="survivemode_8cpp_source.html#l00216">216</a> du fichier <a class="el" href="survivemode_8cpp_source.html">survivemode.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="survivemode_8cpp_source.html#l00249">249</a> du fichier <a class="el" href="survivemode_8cpp_source.html">survivemode.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a1a31f383718c4dc82039843d52340fa7" name="a1a31f383718c4dc82039843d52340fa7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1a31f383718c4dc82039843d52340fa7">&#9670;&#160;</a></span>manageEnemySpawn()</h2>
+<a id="ad00298f7fe42c1148d9fa16bf980aa9e" name="ad00298f7fe42c1148d9fa16bf980aa9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad00298f7fe42c1148d9fa16bf980aa9e">&#9670;&#160;</a></span>manageMobSpawn()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -740,7 +766,7 @@ Membres hérités additionnels</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void SurviveMode::manageEnemySpawn </td>
+          <td class="memname">void SurviveMode::manageMobSpawn </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -755,7 +781,7 @@ Membres hérités additionnels</h2></td></tr>
 
 <p>Contrôle l'apparition des ennemis. </p>
 
-<p class="definition">Définition à la ligne <a class="el" href="survivemode_8cpp_source.html#l00175">175</a> du fichier <a class="el" href="survivemode_8cpp_source.html">survivemode.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="survivemode_8cpp_source.html#l00196">196</a> du fichier <a class="el" href="survivemode_8cpp_source.html">survivemode.cpp</a>.</p>
 
 </div>
 </div>
@@ -797,7 +823,7 @@ Membres hérités additionnels</h2></td></tr>
 
 <p>Réimplémentée à partir de <a class="el" href="class_game_core.html#a1433068a5dcf2e4f7ddb7aee8475043b">GameCore</a>.</p>
 
-<p class="definition">Définition à la ligne <a class="el" href="survivemode_8cpp_source.html#l00531">531</a> du fichier <a class="el" href="survivemode_8cpp_source.html">survivemode.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="survivemode_8cpp_source.html#l00576">576</a> du fichier <a class="el" href="survivemode_8cpp_source.html">survivemode.cpp</a>.</p>
 
 </div>
 </div>
@@ -826,7 +852,7 @@ Membres hérités additionnels</h2></td></tr>
 
 <p>Mets le jeu en pause, quand le joueur passe de niveau. </p>
 
-<p class="definition">Définition à la ligne <a class="el" href="survivemode_8cpp_source.html#l00275">275</a> du fichier <a class="el" href="survivemode_8cpp_source.html">survivemode.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="survivemode_8cpp_source.html#l00305">305</a> du fichier <a class="el" href="survivemode_8cpp_source.html">survivemode.cpp</a>.</p>
 
 </div>
 </div>
@@ -885,7 +911,7 @@ Membres hérités additionnels</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Définition à la ligne <a class="el" href="survivemode_8cpp_source.html#l00346">346</a> du fichier <a class="el" href="survivemode_8cpp_source.html">survivemode.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="survivemode_8cpp_source.html#l00376">376</a> du fichier <a class="el" href="survivemode_8cpp_source.html">survivemode.cpp</a>.</p>
 
 </div>
 </div>
@@ -914,7 +940,7 @@ Membres hérités additionnels</h2></td></tr>
 
 <p>Tir une balle. </p>
 
-<p class="definition">Définition à la ligne <a class="el" href="survivemode_8cpp_source.html#l00224">224</a> du fichier <a class="el" href="survivemode_8cpp_source.html">survivemode.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="survivemode_8cpp_source.html#l00257">257</a> du fichier <a class="el" href="survivemode_8cpp_source.html">survivemode.cpp</a>.</p>
 
 </div>
 </div>
@@ -948,7 +974,7 @@ Membres hérités additionnels</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Définition à la ligne <a class="el" href="survivemode_8cpp_source.html#l00238">238</a> du fichier <a class="el" href="survivemode_8cpp_source.html">survivemode.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="survivemode_8cpp_source.html#l00268">268</a> du fichier <a class="el" href="survivemode_8cpp_source.html">survivemode.cpp</a>.</p>
 
 </div>
 </div>
@@ -977,7 +1003,7 @@ Membres hérités additionnels</h2></td></tr>
 
 <p>fait apparaître un boss </p>
 
-<p class="definition">Définition à la ligne <a class="el" href="survivemode_8cpp_source.html#l00247">247</a> du fichier <a class="el" href="survivemode_8cpp_source.html">survivemode.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="survivemode_8cpp_source.html#l00277">277</a> du fichier <a class="el" href="survivemode_8cpp_source.html">survivemode.cpp</a>.</p>
 
 </div>
 </div>
@@ -1013,7 +1039,7 @@ Membres hérités additionnels</h2></td></tr>
 
 <p>Implémente <a class="el" href="class_game_core.html#a8b0dfc6a3b529cdb0035782923f093d2">GameCore</a>.</p>
 
-<p class="definition">Définition à la ligne <a class="el" href="survivemode_8cpp_source.html#l00135">135</a> du fichier <a class="el" href="survivemode_8cpp_source.html">survivemode.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="survivemode_8cpp_source.html#l00143">143</a> du fichier <a class="el" href="survivemode_8cpp_source.html">survivemode.cpp</a>.</p>
 
 </div>
 </div>
@@ -1040,7 +1066,7 @@ Membres hérités additionnels</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="survivemode_8cpp_source.html#l00462">462</a> du fichier <a class="el" href="survivemode_8cpp_source.html">survivemode.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="survivemode_8cpp_source.html#l00492">492</a> du fichier <a class="el" href="survivemode_8cpp_source.html">survivemode.cpp</a>.</p>
 
 </div>
 </div>
@@ -1069,7 +1095,7 @@ Membres hérités additionnels</h2></td></tr>
 
 <p>Mets à jour le temps de jeux. </p>
 
-<p class="definition">Définition à la ligne <a class="el" href="survivemode_8cpp_source.html#l00195">195</a> du fichier <a class="el" href="survivemode_8cpp_source.html">survivemode.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="survivemode_8cpp_source.html#l00228">228</a> du fichier <a class="el" href="survivemode_8cpp_source.html">survivemode.cpp</a>.</p>
 
 </div>
 </div>
@@ -1114,7 +1140,7 @@ Membres hérités additionnels</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Définition à la ligne <a class="el" href="survivemode_8cpp_source.html#l00571">571</a> du fichier <a class="el" href="survivemode_8cpp_source.html">survivemode.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="survivemode_8cpp_source.html#l00617">617</a> du fichier <a class="el" href="survivemode_8cpp_source.html">survivemode.cpp</a>.</p>
 
 </div>
 </div>
@@ -1139,7 +1165,7 @@ Membres hérités additionnels</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="survivemode_8h_source.html#l00079">79</a> du fichier <a class="el" href="survivemode_8h_source.html">survivemode.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="survivemode_8h_source.html#l00081">81</a> du fichier <a class="el" href="survivemode_8h_source.html">survivemode.h</a>.</p>
 
 </div>
 </div>
@@ -1163,7 +1189,7 @@ Membres hérités additionnels</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="survivemode_8h_source.html#l00074">74</a> du fichier <a class="el" href="survivemode_8h_source.html">survivemode.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="survivemode_8h_source.html#l00076">76</a> du fichier <a class="el" href="survivemode_8h_source.html">survivemode.h</a>.</p>
 
 </div>
 </div>
@@ -1187,7 +1213,7 @@ Membres hérités additionnels</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="survivemode_8h_source.html#l00072">72</a> du fichier <a class="el" href="survivemode_8h_source.html">survivemode.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="survivemode_8h_source.html#l00074">74</a> du fichier <a class="el" href="survivemode_8h_source.html">survivemode.h</a>.</p>
 
 </div>
 </div>
@@ -1211,7 +1237,7 @@ Membres hérités additionnels</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="survivemode_8h_source.html#l00073">73</a> du fichier <a class="el" href="survivemode_8h_source.html">survivemode.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="survivemode_8h_source.html#l00075">75</a> du fichier <a class="el" href="survivemode_8h_source.html">survivemode.h</a>.</p>
 
 </div>
 </div>
@@ -1235,7 +1261,7 @@ Membres hérités additionnels</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="survivemode_8h_source.html#l00068">68</a> du fichier <a class="el" href="survivemode_8h_source.html">survivemode.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="survivemode_8h_source.html#l00070">70</a> du fichier <a class="el" href="survivemode_8h_source.html">survivemode.h</a>.</p>
 
 </div>
 </div>
@@ -1259,7 +1285,7 @@ Membres hérités additionnels</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="survivemode_8h_source.html#l00069">69</a> du fichier <a class="el" href="survivemode_8h_source.html">survivemode.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="survivemode_8h_source.html#l00071">71</a> du fichier <a class="el" href="survivemode_8h_source.html">survivemode.h</a>.</p>
 
 </div>
 </div>
@@ -1283,7 +1309,7 @@ Membres hérités additionnels</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="survivemode_8h_source.html#l00070">70</a> du fichier <a class="el" href="survivemode_8h_source.html">survivemode.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="survivemode_8h_source.html#l00072">72</a> du fichier <a class="el" href="survivemode_8h_source.html">survivemode.h</a>.</p>
 
 </div>
 </div>
@@ -1307,7 +1333,55 @@ Membres hérités additionnels</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="survivemode_8h_source.html#l00077">77</a> du fichier <a class="el" href="survivemode_8h_source.html">survivemode.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="survivemode_8h_source.html#l00079">79</a> du fichier <a class="el" href="survivemode_8h_source.html">survivemode.h</a>.</p>
+
+</div>
+</div>
+<a id="a6f9bc551962529ddfe80f1802482384f" name="a6f9bc551962529ddfe80f1802482384f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f9bc551962529ddfe80f1802482384f">&#9670;&#160;</a></span>m_needChest</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SurviveMode::m_needChest = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="survivemode_8h_source.html#l00085">85</a> du fichier <a class="el" href="survivemode_8h_source.html">survivemode.h</a>.</p>
+
+</div>
+</div>
+<a id="a9f120667168a1e5cc2e49c03e98d5745" name="a9f120667168a1e5cc2e49c03e98d5745"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f120667168a1e5cc2e49c03e98d5745">&#9670;&#160;</a></span>m_needFire</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SurviveMode::m_needFire = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="survivemode_8h_source.html#l00084">84</a> du fichier <a class="el" href="survivemode_8h_source.html">survivemode.h</a>.</p>
 
 </div>
 </div>
@@ -1331,7 +1405,7 @@ Membres hérités additionnels</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="survivemode_8h_source.html#l00081">81</a> du fichier <a class="el" href="survivemode_8h_source.html">survivemode.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="survivemode_8h_source.html#l00083">83</a> du fichier <a class="el" href="survivemode_8h_source.html">survivemode.h</a>.</p>
 
 </div>
 </div>
@@ -1355,7 +1429,7 @@ Membres hérités additionnels</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="survivemode_8h_source.html#l00071">71</a> du fichier <a class="el" href="survivemode_8h_source.html">survivemode.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="survivemode_8h_source.html#l00073">73</a> du fichier <a class="el" href="survivemode_8h_source.html">survivemode.h</a>.</p>
 
 </div>
 </div>
@@ -1379,7 +1453,7 @@ Membres hérités additionnels</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="survivemode_8h_source.html#l00063">63</a> du fichier <a class="el" href="survivemode_8h_source.html">survivemode.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="survivemode_8h_source.html#l00065">65</a> du fichier <a class="el" href="survivemode_8h_source.html">survivemode.h</a>.</p>
 
 </div>
 </div>
@@ -1403,7 +1477,7 @@ Membres hérités additionnels</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="survivemode_8h_source.html#l00064">64</a> du fichier <a class="el" href="survivemode_8h_source.html">survivemode.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="survivemode_8h_source.html#l00066">66</a> du fichier <a class="el" href="survivemode_8h_source.html">survivemode.h</a>.</p>
 
 </div>
 </div>
@@ -1427,7 +1501,7 @@ Membres hérités additionnels</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="survivemode_8h_source.html#l00065">65</a> du fichier <a class="el" href="survivemode_8h_source.html">survivemode.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="survivemode_8h_source.html#l00067">67</a> du fichier <a class="el" href="survivemode_8h_source.html">survivemode.h</a>.</p>
 
 </div>
 </div>
@@ -1451,7 +1525,7 @@ Membres hérités additionnels</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="survivemode_8h_source.html#l00066">66</a> du fichier <a class="el" href="survivemode_8h_source.html">survivemode.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="survivemode_8h_source.html#l00068">68</a> du fichier <a class="el" href="survivemode_8h_source.html">survivemode.h</a>.</p>
 
 </div>
 </div>
@@ -1475,7 +1549,7 @@ Membres hérités additionnels</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="survivemode_8h_source.html#l00055">55</a> du fichier <a class="el" href="survivemode_8h_source.html">survivemode.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="survivemode_8h_source.html#l00057">57</a> du fichier <a class="el" href="survivemode_8h_source.html">survivemode.h</a>.</p>
 
 </div>
 </div>
@@ -1499,7 +1573,7 @@ Membres hérités additionnels</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="survivemode_8h_source.html#l00076">76</a> du fichier <a class="el" href="survivemode_8h_source.html">survivemode.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="survivemode_8h_source.html#l00078">78</a> du fichier <a class="el" href="survivemode_8h_source.html">survivemode.h</a>.</p>
 
 </div>
 </div>
@@ -1523,7 +1597,7 @@ Membres hérités additionnels</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="survivemode_8h_source.html#l00053">53</a> du fichier <a class="el" href="survivemode_8h_source.html">survivemode.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="survivemode_8h_source.html#l00055">55</a> du fichier <a class="el" href="survivemode_8h_source.html">survivemode.h</a>.</p>
 
 </div>
 </div>
@@ -1547,7 +1621,31 @@ Membres hérités additionnels</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="survivemode_8h_source.html#l00056">56</a> du fichier <a class="el" href="survivemode_8h_source.html">survivemode.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="survivemode_8h_source.html#l00058">58</a> du fichier <a class="el" href="survivemode_8h_source.html">survivemode.h</a>.</p>
+
+</div>
+</div>
+<a id="a03f281831fea14a705aab36b07c8504d" name="a03f281831fea14a705aab36b07c8504d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03f281831fea14a705aab36b07c8504d">&#9670;&#160;</a></span>m_timeInMillisecondsChestSpawn</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SurviveMode::m_timeInMillisecondsChestSpawn = 60000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="survivemode_8h_source.html#l00086">86</a> du fichier <a class="el" href="survivemode_8h_source.html">survivemode.h</a>.</p>
 
 </div>
 </div>
@@ -1571,7 +1669,7 @@ Membres hérités additionnels</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="survivemode_8h_source.html#l00080">80</a> du fichier <a class="el" href="survivemode_8h_source.html">survivemode.h</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="survivemode_8h_source.html#l00082">82</a> du fichier <a class="el" href="survivemode_8h_source.html">survivemode.h</a>.</p>
 
 </div>
 </div>
@@ -1582,7 +1680,7 @@ Membres hérités additionnels</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Généré le Lundi 16 Janvier 2023 09:15:40 pour 2022-JCO-SpaceSurvivors par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Généré le Mardi 24 Janvier 2023 15:23:23 pour 2022-JCO-SpaceSurvivors par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>
